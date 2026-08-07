@@ -1,0 +1,141 @@
+.aboutSection {
+  padding: 10rem 0;
+  background-color: var(--background);
+  overflow: hidden;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+.imageWrapper::before {
+  content: '';
+  display: block;
+  padding-top: 110%;
+}
+
+.imageWrapper img {
+  object-fit: cover;
+  transition: transform 1.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.aboutSection:hover .imageWrapper img {
+  transform: scale(1.05);
+}
+
+.contentWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: inline-block;
+  font-family: monospace;
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  background-color: rgba(0, 255, 65, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 255, 65, 0.3);
+}
+
+/* Slider Container */
+.sliderViewport {
+  position: relative;
+  height: 280px; 
+  overflow: hidden;
+  margin-bottom: 2rem;
+  cursor: grab;
+  user-select: none;
+}
+
+.sliderViewport:active {
+  cursor: grabbing;
+}
+
+.slideTrack {
+  display: flex;
+  height: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+.slide h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #ffffff 30%, #00ff41 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.slide p {
+  font-size: 1.25rem;
+  color: #9ca3af;
+  line-height: 1.7;
+  max-width: 90%;
+}
+
+/* Navigation Controls */
+.sliderControls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dot {
+  width: 40px;
+  height: 3px;
+  background-color: var(--border);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dot.activeDot {
+  background-color: var(--primary);
+  width: 70px;
+}
+
+.dot:hover {
+  background-color: #6b7280;
+}
+
+.dot.activeDot:hover {
+  background-color: var(--primary);
+}
+
+@media (max-width: 900px) {
+  .aboutGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .slide h2 {
+    font-size: 3rem;
+  }
+  .sliderViewport {
+    height: 320px;
+  }
+}

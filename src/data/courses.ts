@@ -1,0 +1,64 @@
+export const courses = [
+  {
+    id: 1,
+    title: "Microsoft Azure Course",
+    category: "Cloud Security",
+    level: "Intermediate",
+    duration: "40 Hours",
+    description: "The Microsoft Azure Cloud training course is designed to advance candidates with the skills required to work with...",
+    link: "/provided-course/microsoft-azure-course/",
+    icon: "https://cyberiumx.com/wp-content/uploads/2026/02/azure-scaled.png"
+  },
+  {
+    id: 2,
+    title: "AWS Penetration Testing & Security",
+    category: "Cloud Security",
+    level: "Advanced",
+    duration: "60 Hours",
+    description: "Most organizations have misconfigured policies for AWS services such as S3, EC2, Lambda, VPC, RDS, EBS, etc., which attackers can...",
+    link: "/provided-course/aws-penetration-testing-security/",
+    icon: "https://cyberiumx.com/wp-content/uploads/2025/02/aws.svg"
+  },
+  {
+    id: 3,
+    title: "Bug Bounty Course",
+    category: "Penetration Testing",
+    level: "Beginner",
+    duration: "30 Hours",
+    description: "The Bug Bounty Hunting course is designed to teach people the skills required to exploit, identify, and report security vulnerabilities...",
+    link: "/provided-course/bug-bounty-course/",
+    icon: "https://cyberiumx.com/wp-content/uploads/2025/02/bug-hosting.svg"
+  },
+  {
+    id: 4,
+    title: "Certified Ethical Hacker CEHv13 AI",
+    category: "Penetration Testing",
+    level: "Intermediate",
+    duration: "80 Hours",
+    description: "The Certified Ethical Hacker- Artificial Intelligence (CEHv13- AI) course is one of the most important and demanding certification courses designed...",
+    link: "/provided-course/certified-ethical-hacker-cehv13-ai/",
+    icon: "https://cyberiumx.com/wp-content/uploads/2025/02/hacking-folder.svg"
+  },
+  {
+    id: 5,
+    title: "eJPTv2 Course",
+    category: "Penetration Testing",
+    level: "Beginner",
+    duration: "35 Hours",
+    description: "The eJPTv2 training course is designed to provide a strong foundation in Ethical Hacking and Penetration Testing by gaining hands-on...",
+    link: "/provided-course/ejptv2-course/",
+    icon: "https://cyberiumx.com/wp-content/uploads/2025/02/education-program.svg"
+  },
+  {
+    id: 6,
+    title: "Networking For Ethical Hackers",
+    category: "Networking",
+    level: "Beginner",
+    duration: "25 Hours",
+    description: "A strong foundation in networking is essential for anyone pursuing a career in ethical hacking. This comprehensive course provides an...",
+    link: "/provided-course/networking-for-ethical-hackers-course/",
+    icon: "https://cyberiumx.com/wp-content/uploads/2025/02/4158561_access_control_cyber_monitoring_remote_icon.svg"
+  }
+];
+
+export const categories = ["All", "Cloud Security", "Penetration Testing", "Networking"];
