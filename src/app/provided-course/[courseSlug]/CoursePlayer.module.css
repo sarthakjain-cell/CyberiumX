@@ -56,7 +56,7 @@
 .playBtn {
   width: 80px;
   height: 80px;
-  background: rgba(0, 255, 65, 0.15);
+  background: rgba(252, 22, 22, 0.15);
   backdrop-filter: blur(5px);
   border: 2px solid var(--primary);
   border-radius: 50%;
@@ -66,13 +66,13 @@
   color: var(--primary);
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+  box-shadow: 0 0 15px rgba(252, 22, 22, 0.2);
 }
 
 .playBtn:hover {
   transform: scale(1.1);
-  background: rgba(0, 255, 65, 0.3);
-  box-shadow: 0 0 30px rgba(0, 255, 65, 0.5);
+  background: rgba(252, 22, 22, 0.3);
+  box-shadow: 0 0 30px rgba(252, 22, 22, 0.5);
 }
 
 .tabsHeader {
@@ -209,8 +209,8 @@
   align-items: flex-start;
   gap: 1rem;
   padding: 1rem;
-  background: rgba(0, 255, 65, 0.03);
-  border: 1px solid rgba(0, 255, 65, 0.15);
+  background: rgba(252, 22, 22, 0.03);
+  border: 1px solid rgba(252, 22, 22, 0.15);
   border-radius: 8px;
 }
 

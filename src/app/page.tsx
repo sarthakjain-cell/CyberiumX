@@ -1,6 +1,8 @@
 import Hero from '@/components/Hero';
 import AboutUs from '@/components/AboutUs';
 import CoursesGrid from '@/components/CoursesGrid';
+import ServicesPreview from '@/components/ServicesPreview';
+import BlogPreview from '@/components/BlogPreview';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -26,7 +28,9 @@ export default function Home() {
       <main>
         <Hero />
         <AboutUs />
+        <ServicesPreview />
         <CoursesGrid />
+        <BlogPreview />
       </main>
       <Footer />
     </>

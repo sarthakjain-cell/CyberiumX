@@ -5,15 +5,18 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from './CoursesGrid.module.css';
-import { courses } from '@/data/courses';
+import { courses, categories } from '@/data/courses';
 
 export default function CoursesGrid() {
   const [activeFilter, setActiveFilter] = useState('All');
-  const categories = ['All', 'Security', 'Cloud', 'Networking', 'Compliance'];
+  const [searchQuery, setSearchQuery] = useState('');
   
-  const filteredCourses = activeFilter === 'All' 
-    ? courses 
-    : courses.filter(c => c.category === activeFilter);
+  const filteredCourses = courses.filter(c => {
+    const matchesCategory = activeFilter === 'All' || c.category === activeFilter;
+    const matchesSearch = c.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                          c.description.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesCategory && matchesSearch;
+  });
 
   // Staggered animation variants
   const containerVariants = {
@@ -52,6 +55,32 @@ export default function CoursesGrid() {
         >
           <h2>Advanced Training Modules</h2>
           <p style={{ color: '#9ca3af', fontSize: '1.1rem' }}>Master the tools and techniques used by elite cybersecurity professionals.</p>
+        </motion.div>
+
+        <motion.div 
+          className={styles.searchContainer}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          style={{ maxWidth: '600px', margin: '0 auto 2rem', position: 'relative' }}
+        >
+          <input 
+            type="text" 
+            placeholder="Search courses..." 
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            style={{
+              width: '100%',
+              padding: '1rem 1.5rem',
+              borderRadius: '8px',
+              border: '1px solid var(--border)',
+              background: 'var(--surface)',
+              color: '#fff',
+              fontSize: '1.1rem',
+              outline: 'none'
+            }}
+          />
         </motion.div>
 
         <motion.div 

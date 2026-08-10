@@ -5,7 +5,20 @@ import { useParams, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { courses } from '@/data/courses';
+import { curriculums } from '@/data/curriculums';
 import styles from './CoursePlayer.module.css';
+
+interface Lesson {
+  title: string;
+  duration: string;
+  completed: boolean;
+}
+
+interface Module {
+  title: string;
+  duration: string;
+  lessons: Lesson[];
+}
 
 export default function CoursePlayerPage() {
   const params = useParams();
@@ -14,7 +27,7 @@ export default function CoursePlayerPage() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   // Interactive Curriculum State
-  const [modules, setModules] = useState([
+  const defaultModules: Module[] = [
     {
       title: "Module 1: Intelligence Gathering",
       duration: "45m",
@@ -41,17 +54,31 @@ export default function CoursePlayerPage() {
         { title: "Post-Exploitation", duration: "1h 0m", completed: false },
       ]
     }
-  ]);
+  ];
 
-  // Find the course based on the slug. We extract the slug from the end of the link.
   const course = courses.find(c => {
     const slug = c.link.split('/').filter(Boolean).pop();
     return slug === params.courseSlug;
   });
 
+  const [modules, setModules] = useState<Module[]>(course && curriculums[course.id] ? curriculums[course.id] : defaultModules);
+
   useEffect(() => {
+    if (course) {
+      const savedProgress = localStorage.getItem(`course_progress_${course.id}`);
+      if (savedProgress) {
+        const progressObj = JSON.parse(savedProgress);
+        setModules((prev: Module[]) => prev.map((mod: Module, mIdx: number) => ({
+          ...mod,
+          lessons: mod.lessons.map((lesson: Lesson, lIdx: number) => ({
+            ...lesson,
+            completed: progressObj[`${mIdx}-${lIdx}`] !== undefined ? progressObj[`${mIdx}-${lIdx}`] : lesson.completed
+          }))
+        })));
+      }
+    }
     setIsLoaded(true);
-  }, []);
+  }, [course]);
 
   if (!isLoaded) return null; // Avoid hydration mismatch
 
@@ -70,20 +97,34 @@ export default function CoursePlayerPage() {
   // Curriculum State moved to top to satisfy React Rules of Hooks
 
   const toggleLesson = (mIdx: number, lIdx: number) => {
-    setModules(prev => prev.map((mod, i) => {
-      if (i !== mIdx) return mod;
-      return {
-        ...mod,
-        lessons: mod.lessons.map((lesson, j) => {
-          if (j !== lIdx) return lesson;
-          return { ...lesson, completed: !lesson.completed };
-        })
-      };
-    }));
+    setModules((prev: Module[]) => {
+      const newModules = prev.map((mod: Module, i: number) => {
+        if (i !== mIdx) return mod;
+        return {
+          ...mod,
+          lessons: mod.lessons.map((lesson: Lesson, j: number) => {
+            if (j !== lIdx) return lesson;
+            return { ...lesson, completed: !lesson.completed };
+          })
+        };
+      });
+
+      if (course) {
+        const progressObj: any = {};
+        newModules.forEach((m: Module, i: number) => {
+          m.lessons.forEach((l: Lesson, j: number) => {
+            progressObj[`${i}-${j}`] = l.completed;
+          });
+        });
+        localStorage.setItem(`course_progress_${course.id}`, JSON.stringify(progressObj));
+      }
+
+      return newModules;
+    });
   };
 
-  const totalLessons = modules.reduce((acc, m) => acc + m.lessons.length, 0);
-  const completedLessons = modules.reduce((acc, m) => acc + m.lessons.filter(l => l.completed).length, 0);
+  const totalLessons = modules.reduce((acc: number, m: Module) => acc + m.lessons.length, 0);
+  const completedLessons = modules.reduce((acc: number, m: Module) => acc + m.lessons.filter((l: Lesson) => l.completed).length, 0);
   const progressPercent = Math.round((completedLessons / totalLessons) * 100);
   const isCertified = completedLessons === totalLessons;
 
@@ -208,7 +249,7 @@ export default function CoursePlayerPage() {
             </div>
           </div>
 
-          <div className={styles.certificateUnlock} style={{ borderColor: isCertified ? 'var(--primary)' : 'rgba(0, 255, 65, 0.15)', background: isCertified ? 'rgba(0, 255, 65, 0.1)' : 'rgba(0, 255, 65, 0.03)' }}>
+          <div className={styles.certificateUnlock} style={{ borderColor: isCertified ? 'var(--primary)' : 'rgba(252, 22, 22, 0.15)', background: isCertified ? 'rgba(252, 22, 22, 0.1)' : 'rgba(252, 22, 22, 0.03)' }}>
             <div className={styles.certIcon}>
               {isCertified ? (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
@@ -219,6 +260,9 @@ export default function CoursePlayerPage() {
             <div className={styles.certText}>
               <h4>{isCertified ? 'Certificate Unlocked!' : 'Certificate Locked'}</h4>
               <p>{isCertified ? 'Congratulations! You can now download your official certificate.' : `Complete ${totalLessons - completedLessons} more lessons to earn your official ${course.category} certification.`}</p>
+              {isCertified && (
+                <a href={`/certificate/${course.id}`} className="btn-primary" style={{ display: 'inline-block', marginTop: '1rem', padding: '0.5rem 1rem', fontSize: '0.85rem' }}>View Certificate</a>
+              )}
             </div>
           </div>
         </div>
@@ -226,14 +270,14 @@ export default function CoursePlayerPage() {
         <div className={styles.curriculum}>
           <h3>Course Content</h3>
           
-          {modules.map((mod, idx) => (
+          {modules.map((mod: Module, idx: number) => (
             <div key={idx} className={styles.module}>
               <div className={styles.moduleHeader}>
                 <span className={styles.moduleTitle}>{mod.title}</span>
                 <span className={styles.moduleMeta}>{mod.duration}</span>
               </div>
               <div className={styles.lessonList}>
-                {mod.lessons.map((lesson, lIdx) => (
+                {mod.lessons.map((lesson: Lesson, lIdx: number) => (
                   <div key={lIdx} className={styles.lesson} onClick={() => toggleLesson(idx, lIdx)}>
                     <div className={`${styles.checkbox} ${lesson.completed ? styles.completed : ''}`}>
                       {lesson.completed && <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12"></polyline></svg>}

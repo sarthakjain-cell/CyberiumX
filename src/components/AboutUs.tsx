@@ -8,18 +8,18 @@ import styles from './AboutUs.module.css';
 const slides = [
   {
     id: 0,
-    title: "Our Mission.",
-    content: "Equipping professionals with practical skills to create a safer digital world. We demystify security and empower individuals against evolving threats."
+    title: "Welcome to CyberiumX!",
+    content: "At CyberiumX, we are impassioned about Cyber Security and devoted to providing valuable information and resources to help individuals and organizations stay safe in the digital world."
   },
   {
     id: 1,
-    title: "What We Offer.",
-    content: "Top-quality, job-oriented training and certifications. From Cloud Security to Bug Bounties, our curriculum is designed by industry experts for complete real-world exposure."
+    title: "Our Goal.",
+    content: "Our goal is to demystify Cyber Security and empower our readers with the knowledge they need to protect themselves against evolving threats. CyberiumX is a trusted leader in Cyber Security training."
   },
   {
     id: 2,
-    title: "Why Choose Us.",
-    content: "We move beyond theory. Our programs are 100% practical, focusing on real-world simulations to give you hands-on experience defending against actual cyber threats."
+    title: "Our Mission.",
+    content: "Our mission is to equip Cyber Security professionals with practical skills and in-depth knowledge to help create a safer digital world. We provide top-quality training, certifications, degree programs, and cyber ranges."
   }
 ];
 
