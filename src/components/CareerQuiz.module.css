@@ -1,0 +1,111 @@
+.quizSection {
+  padding: 6rem 2rem;
+  background: #0b0d14;
+  position: relative;
+  z-index: 2;
+}
+
+.quizContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(20, 24, 32, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  padding: 4rem;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4), inset 0 0 20px rgba(255,255,255,0.02);
+}
+
+.quizBadge {
+  display: inline-block;
+  background: rgba(252, 22, 22, 0.1);
+  color: #fc1616;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.quizTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.quizSubtitle {
+  color: #9ca3af;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.questionText {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  margin-bottom: 2rem;
+}
+
+.optionsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.optionBtn {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 16px;
+  color: #d1d5db;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.optionBtn:hover {
+  background: rgba(252, 22, 22, 0.05);
+  border-color: rgba(252, 22, 22, 0.4);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(252, 22, 22, 0.1);
+}
+
+.resultBox {
+  background: linear-gradient(135deg, rgba(252, 22, 22, 0.1) 0%, rgba(20, 24, 32, 0.8) 100%);
+  border: 1px solid rgba(252, 22, 22, 0.3);
+  border-radius: 16px;
+  padding: 3rem;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.resultIntro {
+  color: #fc1616;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.resultCourse {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .quizContainer { padding: 2rem; }
+  .optionsGrid { grid-template-columns: 1fr; }
+  .quizTitle { font-size: 2rem; }
+}

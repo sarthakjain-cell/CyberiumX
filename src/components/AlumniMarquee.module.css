@@ -1,0 +1,87 @@
+.marqueeSection {
+  padding: 4rem 0;
+  background: #0b0d14;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  position: relative;
+}
+
+.marqueeTitle {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+}
+
+.marqueeContainer {
+  display: flex;
+  width: 200%;
+  animation: scroll 40s linear infinite;
+}
+
+.marqueeContainer:hover {
+  animation-play-state: paused;
+}
+
+.marqueeContent {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  align-items: center;
+}
+
+.logoItem {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoItem:hover {
+  color: #fff;
+  transform: scale(1.1);
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.logoIcon {
+  font-size: 1.8rem;
+  color: #fc1616;
+}
+
+/* Gradient fade at edges */
+.marqueeSection::before,
+.marqueeSection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+}
+
+.marqueeSection::before {
+  left: 0;
+  background: linear-gradient(to right, #0b0d14, transparent);
+}
+
+.marqueeSection::after {
+  right: 0;
+  background: linear-gradient(to left, #0b0d14, transparent);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+  .logoItem { font-size: 1.2rem; }
+  .logoIcon { font-size: 1.4rem; }
+}

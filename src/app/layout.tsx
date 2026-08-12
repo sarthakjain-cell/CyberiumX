@@ -38,6 +38,8 @@ export const metadata: Metadata = {
   },
 };
 
+import Footer from "@/components/Footer";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -48,6 +50,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

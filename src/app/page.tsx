@@ -1,9 +1,11 @@
 import Hero from '@/components/Hero';
+import AlumniMarquee from '@/components/AlumniMarquee';
+import CareerQuiz from '@/components/CareerQuiz';
+import InteractiveTerminal from '@/components/InteractiveTerminal';
 import AboutUs from '@/components/AboutUs';
-import CoursesGrid from '@/components/CoursesGrid';
 import ServicesPreview from '@/components/ServicesPreview';
+import CoursesGrid from '@/components/CoursesGrid';
 import BlogPreview from '@/components/BlogPreview';
-import Footer from '@/components/Footer';
 
 export default function Home() {
   const jsonLd = {
@@ -27,12 +29,14 @@ export default function Home() {
       />
       <main>
         <Hero />
+        <AlumniMarquee />
+        <CareerQuiz />
         <AboutUs />
+        <InteractiveTerminal />
         <ServicesPreview />
         <CoursesGrid />
         <BlogPreview />
       </main>
-      <Footer />
     </>
   );
 }

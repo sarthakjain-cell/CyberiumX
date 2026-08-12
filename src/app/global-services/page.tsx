@@ -1,110 +1,152 @@
 "use client";
 
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
-import styles from '../services/Services.module.css'; // Reuse services styling
+import styles from './GlobalServices.module.css';
 
 const globalCourses = [
-  "Ethical Hacking Training",
-  "CEH (Certified Ethical Hacker) Training",
-  "OSCP Training",
-  "Web Application Penetration Testing",
-  "Network Penetration Testing",
-  "Bug Bounty Training",
-  "Kali Linux Training"
+  { title: "Ethical Hacking Training", description: "Master the fundamentals of ethical hacking. Learn how to identify, exploit, and secure vulnerabilities in enterprise systems using real-world scenarios." },
+  { title: "CEH (Certified Ethical Hacker) Training", description: "Get prepared for the CEH certification. This comprehensive training covers advanced footprinting, network scanning, and system hacking techniques." },
+  { title: "OSCP Training", description: "Rigorous, hands-on training preparing you for the Offensive Security Certified Professional exam. Focuses exclusively on practical penetration testing." },
+  { title: "Web Application Penetration Testing", description: "Deep dive into securing web applications. Learn to discover and exploit OWASP Top 10 vulnerabilities like SQLi, XSS, and CSRF." },
+  { title: "Network Penetration Testing", description: "Learn to secure enterprise networks. Covers advanced routing protocols, wireless security, and exploiting network misconfigurations." },
+  { title: "Bug Bounty Training", description: "Learn how to legally hack and get paid. Discover methodologies for finding high-severity bugs in major platforms and bug bounty programs." },
+  { title: "Kali Linux Training", description: "Master the industry-standard penetration testing operating system. Learn to utilize hundreds of built-in security and forensics tools." }
 ];
 
 const globalServices = [
-  "Website security testing",
-  "Network security assessment",
-  "Vulnerability assessment",
-  "Penetration testing",
-  "Social media security"
+  { title: "Website security testing", description: "Comprehensive security audits of your web applications to uncover vulnerabilities before malicious actors can exploit them." },
+  { title: "Network security assessment", description: "Deep analysis of your internal and external network infrastructure to identify misconfigurations and weak points." },
+  { title: "Vulnerability assessment", description: "Automated and manual scanning of your digital assets to catalog and prioritize security flaws for remediation." },
+  { title: "Penetration testing", description: "Simulated cyber attacks on your organization's systems to evaluate the effectiveness of your security controls." },
+  { title: "Social media security", description: "Protect your brand and executives from social engineering, account takeover, and OSINT-based targeted attacks." }
 ];
 
 export default function GlobalServicesPage() {
+  const [activeItem, setActiveItem] = useState<{title: string, description: string} | null>(null);
+
   return (
-    <div className="container">
-      <section className={styles.servicesHero}>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h1 className={styles.title}>Global Services</h1>
-          <p className={styles.subtitle}>
-            Cybersecurity Training & Security Services Worldwide
-          </p>
-        </motion.div>
-
-        <div className={styles.articleContent}>
+    <div className={styles.pageContainer}>
+      
+      {/* Premium Hero Section */}
+      <section className={styles.heroSection}>
+        <div className={styles.heroBackground}></div>
+        <div className={styles.heroContent}>
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className={styles.textSection}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
           >
-            <p>
-              In today’s rapidly evolving digital world, cybersecurity has become a global priority. Businesses, governments, and individuals rely heavily on technology, making them increasingly vulnerable to cyber threats. From ransomware attacks to data breaches, organizations across the world are facing serious security challenges that require skilled professionals and strong security solutions.
+            <span className={styles.heroBadge}>Worldwide Reach</span>
+            <h1 className={styles.heroTitle}>Global Cybersecurity<br/>Training & Services</h1>
+            <p className={styles.heroDesc}>
+              Providing elite training and robust security solutions to businesses, governments, and individuals across Australia, Canada, the UK, Germany, and beyond.
             </p>
-            <p>
-              Recognizing the growing global demand for cybersecurity expertise, CyberiumX is proud to announce the expansion of its cybersecurity training and security services to multiple countries around the world. With a strong reputation for delivering practical and industry-focused cybersecurity education, CyberiumX is now providing training and security solutions to students and organizations in countries such as Australia, Canada, the United Kingdom, Germany, and many others.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className={styles.textSection}
-          >
-            <h2>The Growing Global Need for Cybersecurity</h2>
-            <p>
-              Cybercrime is increasing at an alarming rate across the globe. Organizations in almost every industry—including finance, healthcare, government, and technology—are constantly targeted by cyber attackers seeking to exploit vulnerabilities in networks and applications.
-            </p>
-            <p>
-              Countries such as the United States, the United Kingdom, Canada, Australia, and Germany have witnessed a sharp rise in cyber attacks in recent years. As a result, the demand for skilled cybersecurity professionals has grown dramatically. Companies are actively searching for experts who can identify vulnerabilities, perform penetration testing, and strengthen their security infrastructure.
-            </p>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className={styles.textSection}
-          >
-            <h2>Global Cybersecurity Training Programs</h2>
-            <p>
-              CyberiumX offers a wide range of cybersecurity courses designed for beginners, IT professionals, and aspiring ethical hackers. These training programs focus on practical learning and real-world scenarios to help students build strong technical expertise.
-            </p>
-            <ul style={{ color: '#9ca3af', lineHeight: '1.8', margin: '1rem 0 2rem 2rem' }}>
-              {globalCourses.map((course, i) => (
-                <li key={i}>{course}</li>
-              ))}
-            </ul>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className={styles.textSection}
-          >
-            <h2>Professional Cybersecurity Services for Businesses</h2>
-            <p>
-              In addition to cybersecurity training, CyberiumX also provides professional security services to organizations across the globe. Businesses today must take proactive steps to secure their digital infrastructure, and CyberiumX helps them achieve this goal through expert security assessments.
-            </p>
-            <ul style={{ color: '#9ca3af', lineHeight: '1.8', margin: '1rem 0 2rem 2rem' }}>
-              {globalServices.map((service, i) => (
-                <li key={i}>{service}</li>
-              ))}
-            </ul>
-            <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-               <Link href="/contact-us" className="btn-primary">Get Started</Link>
-            </div>
           </motion.div>
         </div>
       </section>
+
+      {/* Floating Callout Card */}
+      <section className={styles.calloutSection}>
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className={styles.calloutCard}
+        >
+          <h2 style={{ fontSize: '1.8rem', marginBottom: '1.5rem', color: '#fff' }}>The Growing Global Need</h2>
+          <p>
+            In today’s rapidly evolving digital world, cybersecurity has become a global priority. Businesses, governments, and individuals rely heavily on technology, making them increasingly vulnerable to cyber threats. From ransomware attacks to data breaches, organizations across the world are facing serious security challenges.
+          </p>
+          <p>
+            Cybercrime is increasing at an alarming rate across the globe. Countries such as the United States, the United Kingdom, Canada, Australia, and Germany have witnessed a sharp rise in cyber attacks in recent years. Companies are actively searching for experts who can identify vulnerabilities, perform penetration testing, and strengthen their security infrastructure.
+          </p>
+        </motion.div>
+      </section>
+
+      {/* Grid Sections */}
+      <section className={styles.contentSection}>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <h2 className={styles.sectionTitle}>Global Training Programs</h2>
+          <div className={styles.grid}>
+            {globalCourses.map((course, i) => (
+              <div key={i} className={styles.gridCard} onClick={() => setActiveItem(course)} style={{ cursor: 'pointer' }}>
+                <div className={styles.iconBox}>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </div>
+                <div className={styles.cardText}>{course.title}</div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <h2 className={styles.sectionTitle}>Professional Security Services</h2>
+          <div className={styles.grid}>
+            {globalServices.map((service, i) => (
+              <div key={i} className={styles.gridCard} onClick={() => setActiveItem(service)} style={{ cursor: 'pointer' }}>
+                <div className={styles.iconBox}>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </div>
+                <div className={styles.cardText}>{service.title}</div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+      </section>
+
+      {/* CTA Section */}
+      <section className={styles.ctaSection}>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+        >
+          <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', fontWeight: 800 }}>Ready to Secure Your Infrastructure?</h2>
+          <p style={{ color: '#9ca3af', marginBottom: '2.5rem', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto 2.5rem' }}>
+            Whether you are looking to upskill your team or require a comprehensive security assessment, CyberiumX is your global partner.
+          </p>
+          <Link href="/contact-us" className="btn-primary" style={{ padding: '1rem 3rem', fontSize: '1.2rem' }}>Get Started Today</Link>
+        </motion.div>
+      </section>
+
+      {/* Interactive Modal Overlay */}
+      <AnimatePresence>
+        {activeItem && (
+          <motion.div 
+            className={styles.modalOverlay}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setActiveItem(null)}
+          >
+            <motion.div 
+              className={styles.modalContent}
+              initial={{ scale: 0.95, y: 20 }}
+              animate={{ scale: 1, y: 0 }}
+              exit={{ scale: 0.95, y: 20 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button className={styles.closeBtn} onClick={() => setActiveItem(null)}>✕</button>
+              <h3 className={styles.modalTitle}>{activeItem.title}</h3>
+              <p className={styles.modalDesc}>{activeItem.description}</p>
+              <Link href="/contact-us" className="btn-primary" style={{ display: 'inline-block' }}>Inquire Now</Link>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
     </div>
   );
 }

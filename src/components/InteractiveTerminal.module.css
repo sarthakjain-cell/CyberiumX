@@ -1,0 +1,100 @@
+.terminalSection {
+  padding: 6rem 2rem;
+  background: #0b0d14;
+}
+
+.terminalContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(252, 22, 22, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #111827;
+}
+
+.terminalHeader {
+  background: #1f2937;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #374151;
+}
+
+.trafficLights {
+  display: flex;
+  gap: 8px;
+}
+
+.light {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.red { background: #ef4444; }
+.yellow { background: #f59e0b; }
+.green { background: #10b981; }
+
+.terminalTitle {
+  flex-grow: 1;
+  text-align: center;
+  color: #9ca3af;
+  font-family: monospace;
+  font-size: 0.9rem;
+  margin-right: 44px; /* to balance traffic lights */
+}
+
+.terminalBody {
+  padding: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #a7f3d0; /* hacker green */
+  height: 400px;
+  overflow-y: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.line {
+  margin-bottom: 0.5rem;
+}
+
+.prompt {
+  color: #ef4444; /* red prompt */
+  margin-right: 0.75rem;
+  font-weight: bold;
+}
+
+.inputLine {
+  display: flex;
+  align-items: center;
+}
+
+.cmdInput {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+  flex-grow: 1;
+  outline: none;
+  caret-color: #ef4444;
+}
+
+.output {
+  color: #d1d5db;
+  white-space: pre-wrap;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid #ef4444;
+  white-space: nowrap;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
