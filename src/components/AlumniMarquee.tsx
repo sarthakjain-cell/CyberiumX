@@ -22,7 +22,7 @@ export default function AlumniMarquee() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
-        <h3 className={styles.marqueeTitle}>Our Alumni Secure Infrastructure At</h3>
+        <h2 className={styles.marqueeTitle}>Our Alumni Secure Infrastructure At</h2>
         
         <div className={styles.marqueeContainer}>
           {/* First set */}

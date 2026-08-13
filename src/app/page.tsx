@@ -4,7 +4,7 @@ import CareerQuiz from '@/components/CareerQuiz';
 import InteractiveTerminal from '@/components/InteractiveTerminal';
 import AboutUs from '@/components/AboutUs';
 import ServicesPreview from '@/components/ServicesPreview';
-import CoursesGrid from '@/components/CoursesGrid';
+import CoursesPreview from '@/components/CoursesPreview';
 import BlogPreview from '@/components/BlogPreview';
 
 export default function Home() {
@@ -34,7 +34,7 @@ export default function Home() {
         <AboutUs />
         <InteractiveTerminal />
         <ServicesPreview />
-        <CoursesGrid />
+        <CoursesPreview />
         <BlogPreview />
       </main>
     </>

@@ -82,6 +82,7 @@ export default function InteractiveTerminal() {
               onKeyDown={handleCommand}
               spellCheck={false}
               autoFocus
+              aria-label="Terminal Input"
             />
           </div>
           <div ref={endRef} />

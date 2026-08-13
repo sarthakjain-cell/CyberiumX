@@ -13,6 +13,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+import { Outfit } from "next/font/google";
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "800", "900"]
+});
+
 export const metadata: Metadata = {
   title: "Best Cyber Security Training Centre | CyberiumX",
   description: "If you are aiming to become a cybersecurity expert, CyberiumX is the best Cyber Security training centre to boost your journey.",
@@ -47,7 +54,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable}`} suppressHydrationWarning>
         <Navbar />
         {children}
         <Footer />

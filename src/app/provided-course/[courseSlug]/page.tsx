@@ -133,7 +133,7 @@ export default function CourseLandingPage() {
             <div className={styles.certPreviewBox}>
               <div style={{ color: '#fc1616', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.8rem', fontWeight: 700, marginBottom: '1rem' }}>CyberiumX Education & Training</div>
               <div className={styles.certTitle}>Certificate of Completion</div>
-              <div style={{ color: '#d1d5db', marginBottom: '2rem' }}>This certifies that you have successfully completed<br/><span style={{ fontWeight: 700, color: '#fff', fontSize: '1.2rem', display: 'block', marginTop: '0.5rem' }}>{courseData.title}</span></div>
+              <div style={{ color: '#d1d5db', marginBottom: '2rem' }}>This certifies that you have successfully completed<br/><span style={{ fontWeight: 700, color: '#fff', fontSize: '1.2rem', display: 'block', marginTop: '0.5rem' }}>{course.title}</span></div>
               <div className={styles.certSeal}>CX SEAL</div>
             </div>
           </div>

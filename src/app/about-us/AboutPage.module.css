@@ -1,0 +1,263 @@
+.pageContainer {
+  min-height: 100vh;
+  background-color: #0b0d14;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Premium Hero Section */
+.heroSection {
+  padding: 10rem 2rem 8rem;
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  background: linear-gradient(180deg, rgba(15, 17, 21, 0.9) 0%, #0b0d14 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroBackground {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: 
+    radial-gradient(circle at 50% 30%, rgba(252, 22, 22, 0.1), transparent 60%),
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 50px 50px, 50px 50px;
+  z-index: 0;
+  animation: bgPulse 10s ease-in-out infinite alternate;
+}
+
+@keyframes bgPulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.05); opacity: 1; }
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+}
+
+.heroBadge {
+  display: inline-block;
+  background: rgba(252, 22, 22, 0.1);
+  color: #fc1616;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid rgba(252, 22, 22, 0.3);
+  margin-bottom: 2rem;
+}
+
+.heroTitle {
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #ffffff 0%, #9ca3af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroDesc {
+  font-size: 1.25rem;
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+/* Global Impact Stats */
+.statsSection {
+  padding: 5rem 2rem;
+  position: relative;
+  z-index: 2;
+  margin-top: -4rem;
+}
+
+.statsGrid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  background: rgba(20, 24, 32, 0.8);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 24px;
+  padding: 3rem;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(255,255,255,0.02);
+}
+
+.statItem {
+  text-align: center;
+}
+
+.statNumber {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-family: monospace;
+}
+
+.statLabel {
+  color: #fc1616;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+/* Core Values Bento Grid */
+.valuesSection {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.bentoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.bentoCard {
+  background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 24px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(20px);
+}
+
+.bentoCard:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(252, 22, 22, 0.3);
+  box-shadow: 0 15px 40px rgba(252, 22, 22, 0.1);
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+.valueIcon {
+  width: 60px;
+  height: 60px;
+  background: rgba(252, 22, 22, 0.1);
+  color: #fc1616;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.valueTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.valueDesc {
+  color: #9ca3af;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* The CyberiumX Story Timeline */
+.timelineSection {
+  padding: 6rem 2rem;
+  background: linear-gradient(180deg, #0b0d14 0%, rgba(20, 24, 32, 0.5) 100%);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.timelineContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* The line */
+.timelineContainer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 30px;
+  height: 100%; width: 2px;
+  background: rgba(252, 22, 22, 0.3);
+}
+
+.timelineItem {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 4rem;
+}
+
+.timelineItem:last-child {
+  margin-bottom: 0;
+}
+
+/* The dot */
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  left: 21px; top: 0;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: #0b0d14;
+  border: 4px solid #fc1616;
+  z-index: 2;
+  box-shadow: 0 0 15px rgba(252, 22, 22, 0.5);
+}
+
+.timelineYear {
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fc1616;
+  margin-bottom: 0.5rem;
+}
+
+.timelineTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.timelineDesc {
+  color: #9ca3af;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .heroTitle { font-size: 3.5rem; }
+  .statsGrid { grid-template-columns: 1fr; gap: 3rem; }
+  .bentoGrid { grid-template-columns: 1fr; }
+  .span2 { grid-column: span 1; }
+}
+
+@media (max-width: 600px) {
+  .heroTitle { font-size: 2.5rem; }
+  .timelineContainer::before { left: 20px; }
+  .timelineItem { padding-left: 60px; }
+  .timelineItem::before { left: 11px; width: 16px; height: 16px; }
+}

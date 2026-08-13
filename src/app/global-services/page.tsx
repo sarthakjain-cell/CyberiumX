@@ -66,21 +66,31 @@ export default function GlobalServicesPage() {
       </section>
 
       {/* Grid Sections */}
-      <section className={styles.contentSection}>
+      <section className={styles.contentSection} style={{ position: 'relative' }}>
         
+        {/* Ambient Orbs */}
+        <div className={styles.ambientOrb1}></div>
+        <div className={styles.ambientOrb2}></div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
           <h2 className={styles.sectionTitle}>Global Training Programs</h2>
-          <div className={styles.grid}>
+          <div className={styles.bentoGrid}>
             {globalCourses.map((course, i) => (
-              <div key={i} className={styles.gridCard} onClick={() => setActiveItem(course)} style={{ cursor: 'pointer' }}>
+              <div 
+                key={i} 
+                className={`${styles.bentoCard} ${i % 4 === 0 || i % 4 === 3 ? styles.span2 : ''}`} 
+                onClick={() => setActiveItem(course)} 
+                style={{ cursor: 'pointer' }}
+              >
                 <div className={styles.iconBox}>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
                 </div>
                 <div className={styles.cardText}>{course.title}</div>
+                <div className={styles.cardDesc}>{course.description}</div>
               </div>
             ))}
           </div>
@@ -92,13 +102,19 @@ export default function GlobalServicesPage() {
           viewport={{ once: true }}
         >
           <h2 className={styles.sectionTitle}>Professional Security Services</h2>
-          <div className={styles.grid}>
+          <div className={styles.bentoGrid}>
             {globalServices.map((service, i) => (
-              <div key={i} className={styles.gridCard} onClick={() => setActiveItem(service)} style={{ cursor: 'pointer' }}>
+              <div 
+                key={i} 
+                className={`${styles.bentoCard} ${i % 3 === 0 ? styles.span2 : ''}`} 
+                onClick={() => setActiveItem(service)} 
+                style={{ cursor: 'pointer' }}
+              >
                 <div className={styles.iconBox}>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                 </div>
                 <div className={styles.cardText}>{service.title}</div>
+                <div className={styles.cardDesc}>{service.description}</div>
               </div>
             ))}
           </div>
