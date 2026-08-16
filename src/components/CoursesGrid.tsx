@@ -125,17 +125,11 @@ export default function CoursesGrid() {
               {/* Dynamic Scarcity/Urgency Badge */}
               <div style={{ marginBottom: '1rem' }}>
                 <span style={{ 
-                  background: 'rgba(239, 68, 68, 0.1)', 
-                  color: '#ef4444', 
-                  padding: '4px 10px', 
-                  borderRadius: '12px', 
-                  fontSize: '0.75rem', 
-                  fontWeight: 800,
-                  textTransform: 'uppercase',
-                  border: '1px solid rgba(239, 68, 68, 0.3)',
-                  boxShadow: '0 0 10px rgba(239, 68, 68, 0.2)'
+                  background: 'rgba(239, 68, 68, 0.1)', color: '#ef4444', padding: '4px 10px', 
+                  borderRadius: '12px', fontSize: '0.75rem', fontWeight: 800,
+                  textTransform: 'uppercase', border: '1px solid rgba(239, 68, 68, 0.3)'
                 }}>
-                  {course.id.length % 2 === 0 ? '🔥 High Demand' : `⏳ Only ${(course.id.length % 3) + 1} Seats Left`}
+                  {String(course.id).length % 2 === 0 ? '🔥 High Demand' : `⏳ Only ${(String(course.id).length % 3) + 1} Seats Left`}
                 </span>
               </div>
               

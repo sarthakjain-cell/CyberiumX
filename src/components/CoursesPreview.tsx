@@ -9,7 +9,7 @@ import { courses } from '@/data/courses';
 export default function CoursesPreview() {
   const topCourses = courses.slice(0, 3);
 
-  const containerVariants = {
+  const containerVariants: any = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -17,7 +17,7 @@ export default function CoursesPreview() {
     }
   };
 
-  const cardVariants = {
+  const cardVariants: any = {
     hidden: { opacity: 0, y: 50 },
     visible: { 
       opacity: 1, y: 0,
@@ -63,7 +63,7 @@ export default function CoursesPreview() {
                   borderRadius: '12px', fontSize: '0.75rem', fontWeight: 800,
                   textTransform: 'uppercase', border: '1px solid rgba(239, 68, 68, 0.3)'
                 }}>
-                  {course.id.length % 2 === 0 ? '🔥 High Demand' : `⏳ Only ${(course.id.length % 3) + 1} Seats Left`}
+                  {String(course.id).length % 2 === 0 ? '🔥 High Demand' : `⏳ Only ${(String(course.id).length % 3) + 1} Seats Left`}
                 </span>
               </div>
               

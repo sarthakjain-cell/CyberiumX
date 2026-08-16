@@ -119,7 +119,7 @@ export default function CourseLandingPage() {
         <div className={styles.mainContent}>
           <h2 className={styles.sectionTitle}>What you&apos;ll learn</h2>
           <div className={styles.skillsGrid}>
-            {skills.map((skill, idx) => (
+            {skills.map((skill: any, idx: number) => (
               <div key={idx} className={styles.skillBadge}>
                 <span className={styles.skillCheck}>✓</span>
                 {skill}
@@ -142,13 +142,13 @@ export default function CourseLandingPage() {
           <p style={{ color: '#9ca3af', marginBottom: '2rem' }}>This course is broken down into highly structured modules containing video lectures, interactive labs, and quizzes.</p>
           
           <div className={styles.syllabusContainer}>
-            {syllabus.map((mod, idx) => (
+            {syllabus.map((mod: any, idx: number) => (
               <div key={idx} className={styles.syllabusModule}>
                 <h3 className={styles.moduleTitle}>{mod.title}</h3>
                 <div className={styles.moduleMeta}>{mod.duration} • {mod.lessons.length} Lessons</div>
                 
                 <ul className={styles.lessonList}>
-                  {mod.lessons.map((lesson, lIdx) => (
+                  {mod.lessons.map((lesson: any, lIdx: number) => (
                     <li key={lIdx} className={styles.lessonItem}>
                       <span style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                         <span style={{ color: '#fc1616' }}>▶</span>
