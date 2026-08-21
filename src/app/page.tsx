@@ -6,6 +6,8 @@ import AboutUs from '@/components/AboutUs';
 import ServicesPreview from '@/components/ServicesPreview';
 import CoursesPreview from '@/components/CoursesPreview';
 import BlogPreview from '@/components/BlogPreview';
+import StandOut from '@/components/StandOut';
+import Testimonials from '@/components/Testimonials';
 
 export default function Home() {
   const jsonLd = {
@@ -31,10 +33,12 @@ export default function Home() {
         <Hero />
         <AlumniMarquee />
         <CareerQuiz />
+        <StandOut />
+        <CoursesPreview />
+        <Testimonials />
         <AboutUs />
         <InteractiveTerminal />
         <ServicesPreview />
-        <CoursesPreview />
         <BlogPreview />
       </main>
     </>

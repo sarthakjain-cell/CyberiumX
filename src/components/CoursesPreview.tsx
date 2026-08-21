@@ -68,6 +68,7 @@ export default function CoursesPreview() {
               </div>
               
               <h3 className={styles.cardTitle}>{course.title}</h3>
+              <p className={styles.cardDesc}>{course.description}</p>
               
               <div className={styles.ratingRow}>
                 <span className={styles.stars}>★★★★★</span>

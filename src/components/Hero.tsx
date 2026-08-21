@@ -14,12 +14,12 @@ export default function Hero() {
           </div>
           
           <h1 className={styles.heroTitle}>
-            Master the Art of <br />
-            <span className={styles.glitchText}>Offensive Security</span>
+            Your Cyber Security <br />
+            <span className={styles.glitchText}>Journey Starts Here !!</span>
           </h1>
           
           <p className={styles.heroDesc}>
-            Join the elite ranks of Cyber Security professionals. Train in real-world simulated environments and learn to defend critical infrastructure against advanced persistent threats.
+            Join CyberiumX trainings and gain cutting-edge skills to defend against cyber threats like a pro.
           </p>
           
           <div className={styles.heroBtns}>
