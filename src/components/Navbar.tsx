@@ -20,8 +20,7 @@ export default function Navbar() {
 
   return (
     <header 
-      className={`${styles.navbar} ${scrolled ? styles.scrolledNavbar : ''}`} 
-      style={{ backgroundColor: 'var(--background)' }}
+      className={`${styles.navbar} ${scrolled ? styles.scrolledNavbar : ''}`}
     >
       <div className={styles.navContainer}>
         <Link href="/" className={styles.logo}>
@@ -41,8 +40,14 @@ export default function Navbar() {
 
           <Link href="/global-services" className={`${styles.navLink} ${pathname.startsWith('/global-services') ? styles.active : ''}`}>Global Services</Link>
 
-          <Link href="/blog" className={`${styles.navLink} ${pathname === '/blog' ? styles.active : ''}`}>Blog</Link>
-          <Link href="/faq" className={`${styles.navLink} ${pathname === '/faq' ? styles.active : ''}`}>Reviews/FAQ</Link>
+          <div className={styles.dropdown}>
+            <span className={`${styles.navLink} ${pathname === '/blog' || pathname === '/faq' || pathname === '/verify' ? styles.active : ''}`} style={{cursor: 'pointer'}}>More ▾</span>
+            <div className={styles.dropdownContent}>
+              <Link href="/blog" className={styles.dropdownItem}>Blog</Link>
+              <Link href="/faq" className={styles.dropdownItem}>Reviews/FAQ</Link>
+              <Link href="/verify" className={styles.dropdownItem} style={{ color: '#10b981', fontWeight: 600 }}>Verify</Link>
+            </div>
+          </div>
           <Link href="/contact-us" className={`${styles.navLink} ${pathname === '/contact-us' ? styles.active : ''}`}>Contact Us</Link>
           
           <Link href="/login" className={styles.navLink} style={{ color: '#9ca3af', display: 'flex', alignItems: 'center', gap: '0.5rem', marginLeft: '1rem' }}>

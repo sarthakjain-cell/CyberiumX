@@ -237,10 +237,6 @@
   line-height: 1.6;
   margin-bottom: 1.5rem;
   flex-grow: 1;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
   background: rgba(255, 255, 255, 0.04);
   padding: 1rem;
   border-radius: 8px;

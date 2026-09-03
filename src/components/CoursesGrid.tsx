@@ -10,8 +10,20 @@ import { courses, categories } from '@/data/courses';
 export default function CoursesGrid() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
+  const [allCourses, setAllCourses] = useState(courses);
+
+  useState(() => {
+    fetch('/api/data')
+      .then(res => res.json())
+      .then(data => {
+        if (data.courses && data.courses.length > 0) {
+          setAllCourses([...data.courses, ...courses]);
+        }
+      })
+      .catch(err => console.error(err));
+  });
   
-  const filteredCourses = courses.filter(c => {
+  const filteredCourses = allCourses.filter(c => {
     const matchesCategory = activeFilter === 'All' || c.category === activeFilter;
     const matchesSearch = c.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
                           c.description.toLowerCase().includes(searchQuery.toLowerCase());

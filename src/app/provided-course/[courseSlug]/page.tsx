@@ -164,13 +164,46 @@ export default function CourseLandingPage() {
         </div>
         
         <div className={styles.sidebarContent}>
-           {/* Placeholder for sidebar content like related courses or student reviews */}
            <div style={{ background: 'rgba(255,255,255,0.02)', padding: '2rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)', position: 'sticky', top: '100px' }}>
               <h3 style={{ marginBottom: '1rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>Earn a Career Certificate</h3>
-              <p style={{ fontSize: '0.9rem', color: '#9ca3af', marginBottom: '1.5rem', lineHeight: 1.6 }}>Add this credential to your LinkedIn profile, resume, or CV. Share it on social media and in your performance review.</p>
+              <p style={{ fontSize: '0.9rem', color: '#9ca3af', marginBottom: '1.5rem', lineHeight: 1.6 }}>Add this credential to your LinkedIn profile, resume, or CV. Share it on social media.</p>
               
-              <h3 style={{ marginBottom: '1rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>100% Online & Flexible</h3>
-              <p style={{ fontSize: '0.9rem', color: '#9ca3af', lineHeight: 1.6 }}>Learn at your own pace. Start instantly and learn on your own schedule.</p>
+              <h3 style={{ marginBottom: '1rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>Student Review / Report Issue</h3>
+              <form onSubmit={async (e) => {
+                e.preventDefault();
+                const form = e.target as any;
+                const comment = form.comment.value;
+                const name = form.userName.value;
+                if (!comment) return;
+                
+                await fetch('/api/data', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({
+                    type: 'ADD_REVIEW',
+                    courseId: course.id,
+                    courseTitle: course.title,
+                    userName: name || 'Student User',
+                    comment
+                  })
+                });
+                alert('Feedback submitted! The team will review it shortly.');
+                form.reset();
+              }}>
+                <input 
+                  type="text" 
+                  name="userName" 
+                  placeholder="Your Name (Optional)" 
+                  style={{ width: '100%', padding: '0.6rem', marginBottom: '0.75rem', background: 'rgba(0,0,0,0.4)', border: '1px solid var(--border)', color: '#fff', borderRadius: '6px' }} 
+                />
+                <textarea 
+                  name="comment" 
+                  placeholder="Leave a review or report an issue..." 
+                  required 
+                  style={{ width: '100%', padding: '0.6rem', marginBottom: '0.75rem', background: 'rgba(0,0,0,0.4)', border: '1px solid var(--border)', color: '#fff', borderRadius: '6px', minHeight: '80px' }}
+                />
+                <button type="submit" className="btn-primary" style={{ width: '100%', padding: '0.6rem' }}>Submit Feedback</button>
+              </form>
            </div>
         </div>
 
