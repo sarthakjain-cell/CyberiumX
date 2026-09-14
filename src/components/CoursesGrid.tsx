@@ -134,14 +134,14 @@ export default function CoursesGrid() {
                 </div>
               </div>
 
-              {/* Dynamic Scarcity/Urgency Badge */}
+              {/* Highly Demanded Course Badge */}
               <div style={{ marginBottom: '1rem' }}>
                 <span style={{ 
-                  background: 'rgba(239, 68, 68, 0.1)', color: '#ef4444', padding: '4px 10px', 
+                  background: 'rgba(255, 22, 22, 0.12)', color: '#ff1616', padding: '4px 12px', 
                   borderRadius: '12px', fontSize: '0.75rem', fontWeight: 800,
-                  textTransform: 'uppercase', border: '1px solid rgba(239, 68, 68, 0.3)'
+                  textTransform: 'uppercase', border: '1px solid rgba(255, 22, 22, 0.3)'
                 }}>
-                  {String(course.id).length % 2 === 0 ? '🔥 High Demand' : `⏳ Only ${(String(course.id).length % 3) + 1} Seats Left`}
+                  🔥 Highly Demanded Course
                 </span>
               </div>
               
@@ -150,7 +150,7 @@ export default function CoursesGrid() {
               
               <div className={styles.ratingRow}>
                 <span className={styles.stars}>★★★★★</span>
-                <span className={styles.ratingText}>4.9 (2.4k reviews)</span>
+                <span className={styles.ratingText}>{['5.0', '4.9', '4.8'][course.id % 3]}</span>
               </div>
               
               <div className={styles.metaRow}>

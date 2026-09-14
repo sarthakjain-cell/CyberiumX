@@ -166,8 +166,7 @@ export default function CourseLandingPage() {
             <div className={styles.statsRow}>
               <div className={styles.statItem}>
                 <span className={styles.statIcon}>★★★★★</span>
-                <span style={{ fontWeight: 700, color: '#fff' }}>4.9</span>
-                <span>(2.4k reviews)</span>
+                <span style={{ fontWeight: 700, color: '#fff' }}>{['5.0', '4.9', '4.8'][course.id % 3]}</span>
               </div>
               <div className={styles.statItem}>
                 <span style={{ fontWeight: 700, color: '#fff' }}>{course.level}</span>
@@ -182,7 +181,7 @@ export default function CourseLandingPage() {
           
           <div className={styles.heroRight}>
             <div className={styles.enrollCard}>
-              <div style={{ color: '#fc1616', fontWeight: 700, marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.85rem' }}>Limited Time Offer</div>
+              <div style={{ color: '#ff1616', fontWeight: 700, marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.85rem' }}>🔥 Highly Demanded Course</div>
               <div className={styles.enrollPrice}>₹4,999</div>
               <div className={styles.enrollSub}>One-time payment for lifetime access & certificate</div>
               
