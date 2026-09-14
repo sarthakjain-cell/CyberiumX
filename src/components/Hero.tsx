@@ -46,10 +46,6 @@ export default function Hero() {
               </AnimatePresence>
             </div>
           </div>
-
-          <div className={styles.terminalWrapper}>
-            &gt; INITIALIZING SECURE PROTOCOLS...<span className={styles.cursor}>_</span>
-          </div>
           
           <h1 className={styles.heroTitle}>
             Your Cyber Security <br />
