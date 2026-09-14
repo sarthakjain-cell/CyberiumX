@@ -45,6 +45,7 @@ export const metadata: Metadata = {
   },
 };
 
+import CyberBackground from "@/components/CyberBackground";
 import Footer from "@/components/Footer";
 
 export default function RootLayout({
@@ -55,6 +56,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable}`} suppressHydrationWarning>
+        <CyberBackground />
         <Navbar />
         {children}
         <Footer />

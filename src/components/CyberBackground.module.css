@@ -1,0 +1,118 @@
+.bgContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Radar Scan Line */
+.radarScan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 22, 22, 0.8) 50%, transparent 100%);
+  box-shadow: 0 0 15px #ff1616;
+  animation: scanLine 8s ease-in-out infinite;
+  opacity: 0.6;
+}
+
+@keyframes scanLine {
+  0% { transform: translateY(-10px); }
+  50% { transform: translateY(100vh); }
+  100% { transform: translateY(-10px); }
+}
+
+/* Cyber Grid Lines */
+.cyberGridOverlay {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 22, 22, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 22, 22, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: 0.8;
+}
+
+/* Floating Code Particles Container */
+.codeStream {
+  position: absolute;
+  inset: 0;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.75rem;
+  color: rgba(255, 22, 22, 0.35);
+  user-select: none;
+}
+
+.floatingCode {
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 2px;
+  animation: floatUp linear infinite;
+  text-shadow: 0 0 8px rgba(255, 22, 22, 0.6);
+  white-space: nowrap;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(105vh) scale(0.9);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1.1);
+    opacity: 0;
+  }
+}
+
+/* Glowing Cyber Orbs */
+.orbTopLeft {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 22, 22, 0.07) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: pulseOrb 10s ease-in-out infinite alternate;
+}
+
+.orbBottomRight {
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 22, 22, 0.06) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(90px);
+  animation: pulseOrb 12s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes pulseOrb {
+  0% { transform: scale(1); opacity: 0.5; }
+  100% { transform: scale(1.2); opacity: 0.9; }
+}
+
+/* Mouse Glow Cursor Spotlight */
+.mouseGlow {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 22, 22, 0.08) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s;
+  filter: blur(50px);
+}
