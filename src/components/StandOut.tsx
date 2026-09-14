@@ -34,8 +34,15 @@ export default function StandOut() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <span className={styles.badge}>Why Choose Us</span>
-          <h2 className={styles.title}>What makes CyberiumX training Stand Out?</h2>
+          <div className={styles.highlightBadge}>
+            <span className={styles.fireIcon}>⚡</span> WHY CHOOSE US
+          </div>
+          <h2 className={styles.title}>
+            What Makes <span className={styles.gradientHighlight}>CyberiumX Training Stand Out?</span>
+          </h2>
+          <p className={styles.subtitle}>
+            Empowering next-generation security leaders with real-world cyber ranges, hands-on toolkits, and elite mentorship.
+          </p>
         </motion.div>
 
         <div className={styles.grid}>
