@@ -74,14 +74,16 @@ export default function BlogPreview() {
               if (img) img.style.transform = 'scale(1)';
             }}
           >
-            <div style={{ position: 'relative', width: '100%', height: '200px', overflow: 'hidden' }}>
-              <Image 
+            <div style={{ position: 'relative', width: '100%', height: '200px', overflow: 'hidden', background: '#0a0a0a' }}>
+              <img 
                 src={blog.image} 
                 alt={blog.title} 
-                fill 
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                style={{ objectFit: 'cover', transition: 'transform 0.5s ease' }}
-                unoptimized
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = '/logo.png';
+                  (e.target as HTMLImageElement).style.objectFit = 'contain';
+                  (e.target as HTMLImageElement).style.padding = '2rem';
+                }}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }}
               />
             </div>
             <div style={{ padding: '2rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
