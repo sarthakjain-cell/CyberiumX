@@ -22,7 +22,6 @@ export default function AlumniMarquee() {
         viewport={{ once: true }}
       >
         <div className={styles.titleWrapper}>
-          <span className={styles.pulseBadge}>CAREER IMPACT</span>
           <h2 className={styles.marqueeTitle}>
             Our Alumni <span className={styles.highlightText}>Secure Infrastructure</span> At
           </h2>
