@@ -31,7 +31,7 @@ export default function AlumniMarquee() {
                 {company.logoUrl ? (
                   <img src={company.logoUrl} alt={`${company.name} logo`} />
                 ) : (
-                  <span className={styles.textBadge}>{company.iconText}</span>
+                  <span className={styles.textBadge}>{(company as any).iconText || company.name.substring(0,2)}</span>
                 )}
                 <span style={{ color: company.brandColor }}>{company.name}</span>
               </div>
@@ -44,7 +44,7 @@ export default function AlumniMarquee() {
                 {company.logoUrl ? (
                   <img src={company.logoUrl} alt={`${company.name} logo`} />
                 ) : (
-                  <span className={styles.textBadge}>{company.iconText}</span>
+                  <span className={styles.textBadge}>{(company as any).iconText || company.name.substring(0,2)}</span>
                 )}
                 <span style={{ color: company.brandColor }}>{company.name}</span>
               </div>

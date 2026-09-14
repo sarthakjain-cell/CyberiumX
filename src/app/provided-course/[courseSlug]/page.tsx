@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
+import Script from 'next/script';
 import { courses } from '@/data/courses';
 import { curriculums } from '@/data/curriculums';
 import styles from './CourseLanding.module.css';
@@ -11,6 +12,8 @@ export default function CourseLandingPage() {
   const params = useParams();
   const router = useRouter();
   const [isEnrolling, setIsEnrolling] = useState(false);
+  const [razorpayLoaded, setRazorpayLoaded] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const course = courses.find(c => {
     const slug = c.link.split('/').filter(Boolean).pop();
@@ -31,7 +34,6 @@ export default function CourseLandingPage() {
 
   const syllabus = curriculums[course.id] || [];
   
-  // Mock Skills based on course title
   const skills = [
     "Threat Modeling & Architecture",
     "Exploitation Techniques",
@@ -41,17 +43,100 @@ export default function CourseLandingPage() {
     "Secure Configuration Management"
   ];
 
-  const handleEnroll = () => {
+  const handleEnroll = async () => {
     setIsEnrolling(true);
-    // Simulate payment gateway delay
-    setTimeout(() => {
-      // After secure processing, redirect to actual learning player
-      router.push(`/provided-course/${params.courseSlug}/learn`);
-    }, 2500);
+    setErrorMessage('');
+
+    try {
+      // 1. Create order on backend
+      const res = await fetch('/api/razorpay/order', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          amount: 4999, // INR ₹4,999
+          courseId: course.id,
+          courseTitle: course.title
+        })
+      });
+
+      const orderData = await res.json();
+
+      if (!res.ok || orderData.error) {
+        throw new Error(orderData.error || 'Failed to initiate secure checkout');
+      }
+
+      // 2. Open Razorpay Checkout overlay
+      if (typeof window !== 'undefined' && (window as any).Razorpay) {
+        const options = {
+          key: orderData.keyId,
+          amount: orderData.amount,
+          currency: orderData.currency,
+          name: "CyberiumX Security Training",
+          description: course.title,
+          image: "/logo.png",
+          order_id: orderData.id,
+          handler: async function (response: any) {
+            setIsEnrolling(true);
+            try {
+              // 3. Verify payment signature on backend
+              const verifyRes = await fetch('/api/razorpay/verify', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  razorpay_order_id: response.razorpay_order_id,
+                  razorpay_payment_id: response.razorpay_payment_id,
+                  razorpay_signature: response.razorpay_signature,
+                  courseSlug: params.courseSlug,
+                  courseTitle: course.title
+                })
+              });
+
+              const verifyData = await verifyRes.json();
+
+              if (verifyRes.ok && verifyData.success) {
+                router.push(`/provided-course/${params.courseSlug}/learn?enrolled=true`);
+              } else {
+                setErrorMessage(verifyData.error || 'Payment verification failed.');
+                setIsEnrolling(false);
+              }
+            } catch (err: any) {
+              setErrorMessage('Payment verification error: ' + err.message);
+              setIsEnrolling(false);
+            }
+          },
+          prefill: {
+            name: "CyberiumX Student",
+            email: "student@cyberiumx.com"
+          },
+          theme: {
+            color: "#fc1616"
+          },
+          modal: {
+            ondismiss: function() {
+              setIsEnrolling(false);
+            }
+          }
+        };
+
+        const razorpayPopup = new (window as any).Razorpay(options);
+        razorpayPopup.open();
+      } else {
+        throw new Error('Razorpay Checkout SDK failed to load. Please refresh and try again.');
+      }
+
+    } catch (err: any) {
+      console.error(err);
+      setErrorMessage(err.message || 'Error launching checkout.');
+      setIsEnrolling(false);
+    }
   };
 
   return (
     <div className={styles.landingContainer}>
+      <Script 
+        src="https://checkout.razorpay.com/v1/checkout.js" 
+        onLoad={() => setRazorpayLoaded(true)} 
+      />
       
       {/* Hero Section */}
       <section className={styles.heroSection}>
@@ -97,12 +182,20 @@ export default function CourseLandingPage() {
           
           <div className={styles.heroRight}>
             <div className={styles.enrollCard}>
-              <div style={{ color: '#fc1616', fontWeight: 700, marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.85rem' }}>Limited Time Access</div>
-              <div className={styles.enrollPrice}>$499</div>
-              <div className={styles.enrollSub}>One-time payment for lifetime access</div>
-              <button className={styles.enrollBtn} onClick={handleEnroll}>
-                Enroll Now
+              <div style={{ color: '#fc1616', fontWeight: 700, marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.85rem' }}>Limited Time Offer</div>
+              <div className={styles.enrollPrice}>₹4,999</div>
+              <div className={styles.enrollSub}>One-time payment for lifetime access & certificate</div>
+              
+              {errorMessage && (
+                <div style={{ padding: '0.6rem', marginBottom: '1rem', background: 'rgba(239, 68, 68, 0.15)', border: '1px solid #ef4444', borderRadius: '6px', color: '#f87171', fontSize: '0.85rem' }}>
+                  {errorMessage}
+                </div>
+              )}
+
+              <button className={styles.enrollBtn} onClick={handleEnroll} disabled={isEnrolling}>
+                {isEnrolling ? 'Initiating Checkout...' : 'Enroll Now via Razorpay'}
               </button>
+              
               <div className={styles.guarantee}>
                 <span>🛡️</span> 30-Day Money-Back Guarantee
               </div>
@@ -209,13 +302,13 @@ export default function CourseLandingPage() {
 
       </section>
 
-      {/* Simulated Payment Gateway Modal */}
+      {/* Payment Processing Spinner */}
       {isEnrolling && (
         <div className={styles.modalOverlay}>
           <div className={styles.modalContent}>
             <div className={styles.spinner}></div>
-            <h3 style={{ marginBottom: '0.5rem' }}>Processing Secure Checkout...</h3>
-            <p style={{ color: '#9ca3af', fontSize: '0.9rem' }}>Please do not close this window. You will be redirected to the course player shortly.</p>
+            <h3 style={{ marginBottom: '0.5rem' }}>Connecting to Razorpay Secure Gateway...</h3>
+            <p style={{ color: '#9ca3af', fontSize: '0.9rem' }}>Please complete your payment in the Razorpay window.</p>
           </div>
         </div>
       )}
