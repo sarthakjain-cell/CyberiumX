@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -12,7 +12,7 @@ export default function CoursesGrid() {
   const [searchQuery, setSearchQuery] = useState('');
   const [allCourses, setAllCourses] = useState(courses);
 
-  useState(() => {
+  useEffect(() => {
     fetch('/api/data')
       .then(res => res.json())
       .then(data => {
@@ -21,7 +21,7 @@ export default function CoursesGrid() {
         }
       })
       .catch(err => console.error(err));
-  });
+  }, []);
   
   const filteredCourses = allCourses.filter(c => {
     const matchesCategory = activeFilter === 'All' || c.category === activeFilter;
