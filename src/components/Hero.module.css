@@ -47,6 +47,46 @@
   max-width: 900px;
 }
 
+.welcomeBanner {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 22, 22, 0.4);
+  box-shadow: 0 0 25px rgba(255, 22, 22, 0.25), inset 0 0 10px rgba(255, 22, 22, 0.1);
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(12px);
+  max-width: 100%;
+}
+
+.welcomeTag {
+  background: linear-gradient(135deg, #ff1616 0%, #b90b0b 100%);
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 900;
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  box-shadow: 0 0 12px rgba(255, 22, 22, 0.6);
+  flex-shrink: 0;
+}
+
+.rotatingTextWrapper {
+  display: inline-block;
+  min-height: 24px;
+}
+
+.rotatingPartText {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  font-family: var(--font-geist-mono), monospace;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
 .terminalWrapper {
   font-family: monospace;
   font-size: 1.1rem;
