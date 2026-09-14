@@ -34,7 +34,13 @@ export default function AlumniMarquee() {
             {companies.map((company, index) => (
               <div key={index} className={styles.logoItem}>
                 {company.logoUrl ? (
-                  <img src={company.logoUrl} alt={`${company.name} logo`} />
+                  <img 
+                    src={company.logoUrl} 
+                    alt={`${company.name} logo`} 
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).style.display = 'none';
+                    }}
+                  />
                 ) : (
                   <span className={styles.textBadge}>{(company as any).iconText || company.name.substring(0,2)}</span>
                 )}
@@ -47,7 +53,13 @@ export default function AlumniMarquee() {
             {companies.map((company, index) => (
               <div key={`dup-${index}`} className={styles.logoItem}>
                 {company.logoUrl ? (
-                  <img src={company.logoUrl} alt={`${company.name} logo`} />
+                  <img 
+                    src={company.logoUrl} 
+                    alt={`${company.name} logo`} 
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).style.display = 'none';
+                    }}
+                  />
                 ) : (
                   <span className={styles.textBadge}>{(company as any).iconText || company.name.substring(0,2)}</span>
                 )}

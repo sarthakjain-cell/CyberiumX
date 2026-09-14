@@ -126,7 +126,16 @@ export default function CoursesGrid() {
               
               <div className={styles.cardHeader}>
                 <div className={styles.iconWrapper}>
-                  <Image src={course.icon} alt={course.title} width={34} height={34} />
+                  <img 
+                    src={course.icon} 
+                    alt={course.title} 
+                    width={34} 
+                    height={34}
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = '/logo.png';
+                    }}
+                    style={{ objectFit: 'contain' }}
+                  />
                 </div>
                 <div className={styles.providerInfo}>
                   <span className={styles.providerName}>CyberiumX</span>
