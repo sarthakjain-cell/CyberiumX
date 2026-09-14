@@ -36,7 +36,6 @@ export default function Home() {
         <StandOut />
         <CoursesPreview />
         <Testimonials />
-        <AboutUs />
         <InteractiveTerminal />
         <ServicesPreview />
         <BlogPreview />
