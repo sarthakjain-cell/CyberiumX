@@ -12,15 +12,16 @@ const CheckCircle = ({ size = 24, color = "currentColor" }) => (
 const features = [
   "Intensive Hands-On Training",
   "Industry-Recognized Global Certifications",
-  "Virtual Lab Practice",
+  "Virtual Lab Practice & Cyber Ranges",
   "CTF (Capture The Flag) Challenges",
   "Comprehensive Course Material",
-  "Expert-Led Training",
+  "Expert-Led Training by Elite Hackers",
   "Complimentary High-Quality E-Learning Access",
-  "Exam Prep Mastery",
-  "Hands-on Cybersecurity Toolkit",
-  "Mock Interviews and Career Prep",
-  "Exam Success Strategy"
+  "Exam Prep Mastery & Practice Tests",
+  "Hands-on Cybersecurity Toolkit & Playbooks",
+  "Mock Interviews & Career Placement Support",
+  "Exam Success Strategy & Mentorship",
+  "24/7 Dedicated Mentor & Alumni Support Network"
 ];
 
 export default function StandOut() {
@@ -48,7 +49,7 @@ export default function StandOut() {
               transition={{ delay: idx * 0.05 }}
             >
               <div className={styles.iconBox}>
-                <CheckCircle size={24} color="#ef4444" />
+                <CheckCircle size={24} color="#ff1616" />
               </div>
               <span className={styles.featureText}>{feature}</span>
             </motion.div>
