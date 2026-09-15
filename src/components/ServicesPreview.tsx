@@ -4,19 +4,19 @@ import Link from 'next/link';
 
 export default function ServicesPreview() {
   return (
-    <section className="container" style={{ padding: '4rem 1.5rem', position: 'relative', zIndex: 2 }}>
+    <section className="container" style={{ padding: '1rem 1.5rem 0.5rem 1.5rem', position: 'relative', zIndex: 2 }}>
       <div style={{
         background: 'rgba(10, 10, 10, 0.85)',
         border: '1px solid rgba(255, 22, 22, 0.25)',
-        borderRadius: '24px',
-        padding: '3.5rem 2rem',
-        boxShadow: '0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 22, 22, 0.08)',
+        borderRadius: '20px',
+        padding: '2rem 1.5rem',
+        boxShadow: '0 15px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 22, 22, 0.08)',
         backdropFilter: 'blur(16px)',
         WebkitBackdropFilter: 'blur(16px)'
       }}>
         
         {/* Section Header */}
-        <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
+        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
           <div style={{
             display: 'inline-flex',
             alignItems: 'center',

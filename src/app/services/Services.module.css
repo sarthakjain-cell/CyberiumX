@@ -1,5 +1,5 @@
 .servicesHero {
-  padding: 8rem 0 4rem;
+  padding: 4rem 0 2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -15,7 +15,7 @@
   color: #9ca3af;
   font-size: 1.25rem;
   max-width: 600px;
-  margin: 0 auto 3rem;
+  margin: 0 auto 2rem;
   line-height: 1.6;
 }
 
@@ -23,7 +23,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  padding: 2rem 0 5rem;
+  padding: 1.5rem 0 2rem;
 }
 
 .card {
