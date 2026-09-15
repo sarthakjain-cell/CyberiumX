@@ -14,9 +14,8 @@ export async function POST(req: Request) {
       );
     }
 
-    // Default price fallback if not provided or 0
-    const parsedAmount = Number(amount) > 0 ? Number(amount) : 4999;
-    const amountInPaise = Math.round(parsedAmount * 100);
+    // Test Mode Override: Set amount to ₹1 (100 paise) for testing
+    const amountInPaise = 100;
 
     const authString = Buffer.from(`${keyId}:${keySecret}`).toString('base64');
 

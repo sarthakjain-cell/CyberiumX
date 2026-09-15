@@ -182,8 +182,8 @@ export default function CourseLandingPage() {
           <div className={styles.heroRight}>
             <div className={styles.enrollCard}>
               <div style={{ color: '#ff1616', fontWeight: 700, marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.85rem' }}>🔥 Highly Demanded Course</div>
-              <div className={styles.enrollPrice}>₹4,999</div>
-              <div className={styles.enrollSub}>One-time payment for lifetime access & certificate</div>
+              <div className={styles.enrollPrice}>₹1 <span style={{ fontSize: '0.9rem', color: '#10b981' }}>(TEST MODE)</span></div>
+              <div className={styles.enrollSub}>Test Mode: Pay ₹1 to verify full Razorpay checkout & signature authentication</div>
               
               {errorMessage && (
                 <div style={{ padding: '0.6rem', marginBottom: '1rem', background: 'rgba(239, 68, 68, 0.15)', border: '1px solid #ef4444', borderRadius: '6px', color: '#f87171', fontSize: '0.85rem' }}>
@@ -192,7 +192,7 @@ export default function CourseLandingPage() {
               )}
 
               <button className={styles.enrollBtn} onClick={handleEnroll} disabled={isEnrolling}>
-                {isEnrolling ? 'Initiating Checkout...' : 'Enroll Now via Razorpay'}
+                {isEnrolling ? 'Initiating Checkout...' : 'Enroll Now for ₹1 (Razorpay Test)'}
               </button>
               
               <div className={styles.guarantee}>
