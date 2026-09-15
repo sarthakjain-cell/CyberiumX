@@ -15,9 +15,8 @@ export default function ServicesPreview() {
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           style={{
             background: 'rgba(15, 23, 42, 0.65)',
             border: '1px solid rgba(255, 22, 22, 0.2)',
@@ -51,10 +50,8 @@ export default function ServicesPreview() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           style={{
             background: 'rgba(15, 23, 42, 0.65)',
             border: '1px solid rgba(255, 22, 22, 0.2)',

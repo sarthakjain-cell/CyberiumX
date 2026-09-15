@@ -89,9 +89,8 @@ export default function ServicesPage() {
     <div className="container">
       <section className={styles.servicesHero}>
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 1, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
         >
           <h1 className={styles.title}>7X-Security</h1>
           <p className={styles.subtitle}>
@@ -101,9 +100,8 @@ export default function ServicesPage() {
 
         <div className={styles.articleContent}>
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             className={styles.textSection}
           >
             <h2>Why Every Business is a Target Today</h2>
@@ -116,9 +114,8 @@ export default function ServicesPage() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             className={styles.textSection}
           >
             <h2>Why Businesses Need Multi-Layer Cybersecurity Protection</h2>
@@ -136,10 +133,8 @@ export default function ServicesPage() {
             <motion.div
               key={index}
               className={styles.card}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              initial={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
             >
               <div className={styles.cardIcon}>
                 {layer.icon}
@@ -151,9 +146,8 @@ export default function ServicesPage() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           className={styles.textSection}
           style={{ marginTop: '4rem' }}
         >

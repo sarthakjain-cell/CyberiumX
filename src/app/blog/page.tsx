@@ -61,9 +61,8 @@ export default function BlogPage() {
     <div className="container">
       <section className={styles.blogHero}>
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 1, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
         >
           <h1 className={styles.title}>Our Blogs</h1>
           <p className={styles.subtitle}>
@@ -76,10 +75,8 @@ export default function BlogPage() {
             <motion.div
               key={index}
               className={styles.blogCard}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              initial={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
             >
               <div className={styles.blogImageWrapper}>
                 <Image 

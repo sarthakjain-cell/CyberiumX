@@ -10,7 +10,7 @@ export default function CoursesPreview() {
   const topCourses = courses.slice(0, 3);
 
   const containerVariants: any = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 1 },
     visible: {
       opacity: 1,
       transition: { staggerChildren: 0.15 }
@@ -18,7 +18,7 @@ export default function CoursesPreview() {
   };
 
   const cardVariants: any = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 1, y: 0 },
     visible: { 
       opacity: 1, y: 0,
       transition: { type: "spring", stiffness: 100, damping: 15 }
@@ -39,9 +39,8 @@ export default function CoursesPreview() {
         <motion.div 
           className={styles.grid}
           variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          initial="visible"
+          animate="visible"
         >
           {topCourses.map((course) => (
             <motion.div key={course.id} className={styles.card} variants={cardVariants}>

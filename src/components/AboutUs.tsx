@@ -58,10 +58,8 @@ export default function AboutUs() {
         
         <motion.div 
           className={styles.imageWrapper}
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8 }}
+          initial={{ opacity: 1, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
         >
           <Image 
             src="/about_us.png" 
@@ -76,10 +74,8 @@ export default function AboutUs() {
         
         <motion.div 
           className={styles.contentWrapper}
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          initial={{ opacity: 1, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
         >
           <span className={styles.label}>&gt; SYSTEM_LOG: ABOUT_US</span>
           

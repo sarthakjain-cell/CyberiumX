@@ -17,9 +17,8 @@ export default function AlumniMarquee() {
   return (
     <section className={styles.marqueeSection}>
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
+        initial={{ opacity: 1 }}
+        animate={{ opacity: 1 }}
       >
         <div className={styles.titleWrapper}>
           <h2 className={styles.marqueeTitle}>

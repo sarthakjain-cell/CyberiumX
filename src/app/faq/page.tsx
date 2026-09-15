@@ -102,9 +102,8 @@ export default function ReviewsAndFaqPage() {
       {/* Reviews Section */}
       <section className={styles.faqSection} style={{ paddingBottom: '2rem' }}>
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 1, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
         >
           <h1 className={styles.title}>What Our Learners Say</h1>
           <p className={styles.subtitle}>
@@ -117,10 +116,8 @@ export default function ReviewsAndFaqPage() {
             <motion.div
               key={index}
               className={styles.reviewCard}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
+              initial={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
             >
               <div className={styles.reviewHeader}>
                 <div className={styles.avatar}>
@@ -144,10 +141,8 @@ export default function ReviewsAndFaqPage() {
       {/* FAQs Section */}
       <section className={styles.faqSection} style={{ paddingTop: '2rem' }}>
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
         >
           <h1 className={styles.title}>Frequently Asked Questions</h1>
         </motion.div>
@@ -157,10 +152,8 @@ export default function ReviewsAndFaqPage() {
             <motion.div 
               key={index} 
               className={`${styles.faqItem} ${activeIndex === index ? styles.active : ''}`}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: (index % 5) * 0.1 }}
+              initial={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
             >
               <button 
                 className={styles.faqQuestion} 

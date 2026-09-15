@@ -60,9 +60,8 @@ export default function InteractiveTerminal() {
     <section className={styles.terminalSection}>
       <motion.div 
         className={styles.terminalContainer}
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        initial={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
       >
         <div className={styles.terminalHeader}>
           <div className={styles.trafficLights}>

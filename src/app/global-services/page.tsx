@@ -34,9 +34,8 @@ export default function GlobalServicesPage() {
         <div className={styles.heroBackground}></div>
         <div className={styles.heroContent}>
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
           >
             <span className={styles.heroBadge}>Worldwide Reach</span>
             <h1 className={styles.heroTitle}>Global Cybersecurity<br/>Training & Services</h1>
@@ -50,9 +49,8 @@ export default function GlobalServicesPage() {
       {/* Floating Callout Card */}
       <section className={styles.calloutSection}>
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 1, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
           className={styles.calloutCard}
         >
           <h2 style={{ fontSize: '1.8rem', marginBottom: '1.5rem', color: '#fff' }}>The Growing Global Need</h2>
@@ -73,9 +71,8 @@ export default function GlobalServicesPage() {
         <div className={styles.ambientOrb2}></div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
         >
           <h2 className={styles.sectionTitle}>Global Training Programs</h2>
           <div className={styles.bentoGrid}>
@@ -97,9 +94,8 @@ export default function GlobalServicesPage() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
         >
           <h2 className={styles.sectionTitle}>Professional Security Services</h2>
           <div className={styles.bentoGrid}>
@@ -125,9 +121,8 @@ export default function GlobalServicesPage() {
       {/* CTA Section */}
       <section className={styles.ctaSection}>
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 1, scale: 1 }}
+          animate={{ opacity: 1, scale: 1 }}
         >
           <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', fontWeight: 800 }}>Ready to Secure Your Infrastructure?</h2>
           <p style={{ color: '#9ca3af', marginBottom: '2.5rem', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto 2.5rem' }}>

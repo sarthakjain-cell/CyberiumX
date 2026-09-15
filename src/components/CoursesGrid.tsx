@@ -32,7 +32,7 @@ export default function CoursesGrid() {
 
   // Staggered animation variants
   const containerVariants = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 1 },
     visible: {
       opacity: 1,
       transition: {
@@ -42,7 +42,7 @@ export default function CoursesGrid() {
   };
 
   const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 1, y: 0 },
     visible: { 
       opacity: 1, 
       y: 0,
@@ -60,10 +60,8 @@ export default function CoursesGrid() {
         
         <motion.div 
           className={styles.sectionHeader}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
         >
           <div className={styles.pulseBadge}>PREMIUM TRAINING</div>
           <h2 className={styles.mainTitle}>Our Courses</h2>
@@ -72,10 +70,8 @@ export default function CoursesGrid() {
 
         <motion.div 
           className={styles.searchContainer}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1 }}
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
           style={{ maxWidth: '600px', margin: '0 auto 2rem', position: 'relative' }}
         >
           <input 
@@ -98,10 +94,8 @@ export default function CoursesGrid() {
 
         <motion.div 
           className={styles.filterBar}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
         >
           {categories.map((cat) => (
             <button 
@@ -117,9 +111,8 @@ export default function CoursesGrid() {
         <motion.div 
           className={styles.grid}
           variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          initial="visible"
+          animate="visible"
         >
           {filteredCourses.map((course) => (
             <motion.div key={course.id} className={styles.card} variants={cardVariants}>
@@ -187,9 +180,8 @@ export default function CoursesGrid() {
       {/* CTA Section */}
       <div className={styles.ctaSection}>
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
         >
           <h2 className={styles.ctaTitle}>Need Help Choosing a Course?</h2>
           <p className={styles.ctaDesc}>

@@ -12,9 +12,9 @@ export default function AboutUsPage() {
         <div className={styles.heroBackground}></div>
         <div className={styles.heroContent}>
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.6 }}
           >
             <span className={styles.heroBadge}>Our Mission</span>
             <h1 className={styles.heroTitle}>Securing the Future of<br/>Digital Infrastructure</h1>
@@ -29,9 +29,8 @@ export default function AboutUsPage() {
       <section className={styles.statsSection}>
         <motion.div 
           className={styles.statsGrid}
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
           <div className={styles.statItem}>
@@ -53,9 +52,8 @@ export default function AboutUsPage() {
       <section className={styles.valuesSection}>
         <motion.h2 
           className={styles.sectionTitle}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
         >
           Our Core Values
         </motion.h2>
@@ -64,9 +62,8 @@ export default function AboutUsPage() {
           {/* Value 1 */}
           <motion.div 
             className={`${styles.bentoCard} ${styles.span2}`}
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
           >
             <div className={styles.valueIcon}>
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
@@ -80,10 +77,8 @@ export default function AboutUsPage() {
           {/* Value 2 */}
           <motion.div 
             className={styles.bentoCard}
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
+            initial={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
           >
             <div className={styles.valueIcon}>
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
@@ -97,10 +92,8 @@ export default function AboutUsPage() {
           {/* Value 3 */}
           <motion.div 
             className={styles.bentoCard}
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
+            initial={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
           >
             <div className={styles.valueIcon}>
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
@@ -114,10 +107,8 @@ export default function AboutUsPage() {
           {/* Value 4 */}
           <motion.div 
             className={`${styles.bentoCard} ${styles.span2}`}
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
+            initial={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
           >
             <div className={styles.valueIcon}>
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
@@ -134,9 +125,8 @@ export default function AboutUsPage() {
       <section className={styles.timelineSection}>
         <motion.h2 
           className={styles.sectionTitle}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
         >
           The CyberiumX Story
         </motion.h2>
@@ -145,9 +135,8 @@ export default function AboutUsPage() {
           
           <motion.div 
             className={styles.timelineItem}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            initial={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
           >
             <div className={styles.timelineYear}>2018</div>
             <h3 className={styles.timelineTitle}>The Inception</h3>
@@ -158,9 +147,8 @@ export default function AboutUsPage() {
 
           <motion.div 
             className={styles.timelineItem}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            initial={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
           >
             <div className={styles.timelineYear}>2021</div>
             <h3 className={styles.timelineTitle}>Global Expansion</h3>
@@ -171,9 +159,8 @@ export default function AboutUsPage() {
 
           <motion.div 
             className={styles.timelineItem}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            initial={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
           >
             <div className={styles.timelineYear}>2024</div>
             <h3 className={styles.timelineTitle}>Enterprise Security Division</h3>
@@ -184,9 +171,8 @@ export default function AboutUsPage() {
 
           <motion.div 
             className={styles.timelineItem}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            initial={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
           >
             <div className={styles.timelineYear}>Present</div>
             <h3 className={styles.timelineTitle}>The Future of Cyber</h3>

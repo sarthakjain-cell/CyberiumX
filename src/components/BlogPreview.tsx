@@ -45,10 +45,8 @@ export default function BlogPreview() {
         {blogs.map((blog, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+            initial={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             style={{
               background: 'var(--glass-bg)',
               border: '1px solid var(--border)',

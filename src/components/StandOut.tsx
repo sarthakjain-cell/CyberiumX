@@ -30,9 +30,8 @@ export default function StandOut() {
       <div className="container">
         <motion.div 
           className={styles.header}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
         >
           <div className={styles.highlightBadge}>
             <span className={styles.fireIcon}>⚡</span> WHY CHOOSE US
@@ -50,10 +49,8 @@ export default function StandOut() {
             <motion.div 
               key={idx}
               className={styles.featureCard}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.05 }}
+              initial={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
             >
               <div className={styles.iconBox}>
                 <CheckCircle size={24} color="#ff1616" />
