@@ -113,17 +113,6 @@
   box-shadow: 0 0 20px rgba(29, 161, 242, 0.7) !important;
 }
 
-.telegram {
-  color: #24A1DE !important;
-  border-color: rgba(36, 161, 222, 0.4) !important;
-  background: rgba(36, 161, 222, 0.12) !important;
-}
-.telegram:hover {
-  background: #24A1DE !important;
-  color: #ffffff !important;
-  box-shadow: 0 0 20px rgba(36, 161, 222, 0.7) !important;
-}
-
 .whatsapp {
   color: #25D366 !important;
   border-color: rgba(37, 211, 102, 0.4) !important;
@@ -133,17 +122,6 @@
   background: #25D366 !important;
   color: #ffffff !important;
   box-shadow: 0 0 20px rgba(37, 211, 102, 0.7) !important;
-}
-
-.youtube {
-  color: #FF0000 !important;
-  border-color: rgba(255, 0, 0, 0.4) !important;
-  background: rgba(255, 0, 0, 0.12) !important;
-}
-.youtube:hover {
-  background: #FF0000 !important;
-  color: #ffffff !important;
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.7) !important;
 }
 
 .footerCol h4 {
