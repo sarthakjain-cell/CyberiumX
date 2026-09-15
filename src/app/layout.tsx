@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import CyberBackground from "@/components/CyberBackground";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +15,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-import { Outfit } from "next/font/google";
 const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
@@ -21,16 +22,21 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Best Cyber Security Training Centre | CyberiumX",
+  title: "CyberiumX | Elite Cyber Security Training & Global Services",
   description: "If you are aiming to become a cybersecurity expert, CyberiumX is the best Cyber Security training centre to boost your journey.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
-    title: "CyberiumX | Elite Cyber Security Training",
+    title: "CyberiumX | Elite Cyber Security Training & Global Services",
     description: "Master real-world hacking and penetration testing with our expert-led, practical training programs.",
     url: "https://cyberiumx.com",
     siteName: "CyberiumX",
     images: [
       {
-        url: "https://cyberiumx.com/wp-content/uploads/2026/02/cyberiumx-og.jpg", // Optimized OG Image
+        url: "/logo.png",
         width: 1200,
         height: 630,
       },
@@ -40,13 +46,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CyberiumX | Elite Cyber Security Training",
+    title: "CyberiumX | Elite Cyber Security Training & Global Services",
     description: "Master real-world hacking and penetration testing with our expert-led, practical training programs.",
   },
 };
-
-import CyberBackground from "@/components/CyberBackground";
-import Footer from "@/components/Footer";
 
 export default function RootLayout({
   children,

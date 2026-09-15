@@ -19,25 +19,33 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header 
-      className={`${styles.navbar} ${scrolled ? styles.scrolledNavbar : ''}`}
-    >
+    <header className={`${styles.navbar} ${scrolled ? styles.scrolledNavbar : ''}`}>
       <div className={styles.navContainer}>
-        <Link href="/" className={styles.logo}>
-          <Image 
+        <Link href="/" className={styles.logo} style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', textDecoration: 'none' }}>
+          <img 
             src="/logo.png" 
-            alt="CyberiumX Logo" 
-            width={200} 
-            height={50} 
-            priority 
+            alt="CyberiumX" 
+            style={{ height: '38px', width: 'auto', objectFit: 'contain' }}
+            onError={(e) => {
+              (e.target as HTMLImageElement).style.display = 'none';
+            }}
           />
+          <span style={{ 
+            fontSize: '1.45rem', 
+            fontWeight: 900, 
+            color: '#ffffff', 
+            letterSpacing: '-0.03em',
+            fontFamily: 'var(--font-outfit), sans-serif' 
+          }}>
+            Cyberium<span style={{ color: '#ff1616', textShadow: '0 0 10px rgba(255, 22, 22, 0.6)' }}>X</span>
+          </span>
         </Link>
+
         <nav className={styles.navLinks}>
           <Link href="/" className={`${styles.navLink} ${pathname === '/' ? styles.active : ''}`}>Home</Link>
           <Link href="/about-us" className={`${styles.navLink} ${pathname === '/about-us' ? styles.active : ''}`}>About Us</Link>
           <Link href="/services" className={`${styles.navLink} ${styles.specialLink}`}>7X-Security</Link>
           <Link href="/courses" className={`${styles.navLink} ${pathname.startsWith('/courses') || pathname.startsWith('/provided-course') ? styles.active : ''}`}>Our Courses</Link>
-
           <Link href="/global-services" className={`${styles.navLink} ${pathname.startsWith('/global-services') ? styles.active : ''}`}>Global Services</Link>
 
           <div className={styles.dropdown}>
