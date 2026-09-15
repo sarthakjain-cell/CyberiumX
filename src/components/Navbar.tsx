@@ -66,7 +66,7 @@ export default function Navbar() {
           </Link>
           <Link href="https://wa.me/+919318492128" className={styles.getStartedBtn}>Get Started</Link>
         </nav>
-        <button className={styles.mobileMenuBtn} aria-label="Menu">☰</button>
+        <button className={styles.mobileMenuBtn} aria-label="Toggle Navigation Menu">☰</button>
       </div>
     </header>
   );

@@ -1,10 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Allow all local network IPs as requested by Next.js dev server
   allowedDevOrigins: ['192.168.137.1', 'localhost'],
   images: {
-    qualities: [25, 50, 75, 85, 100],
+    formats: ['image/avif', 'image/webp'],
+    qualities: [50, 75, 85],
     remotePatterns: [
       {
         protocol: 'https',
@@ -12,11 +12,39 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.simpleicons.org',
+      },
+      {
+        protocol: 'https',
         hostname: 'images.unsplash.com',
       },
     ],
-  }
+  },
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'all, index, follow',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN',
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
-      

@@ -97,8 +97,8 @@ export default function BlogPreview() {
               </h3>
               <p style={{ color: '#9ca3af', lineHeight: 1.6, marginBottom: '2rem', flexGrow: 1 }}>{blog.desc}</p>
               <div style={{ marginTop: 'auto' }}>
-                <Link href={blog.link} target="_blank" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', textDecoration: 'none', fontWeight: 500 }}>
-                  Read More
+                <Link href={blog.link} target="_blank" aria-label={`Read article: ${blog.title}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', textDecoration: 'none', fontWeight: 500 }}>
+                  <span>Read Article</span>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </Link>
               </div>

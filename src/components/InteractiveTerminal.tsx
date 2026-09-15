@@ -80,11 +80,11 @@ export default function InteractiveTerminal() {
           ))}
 
           <div className={styles.quickMenu}>
-            <span style={{color: '#9ca3af', fontSize: '0.85rem', marginRight: '0.5rem'}}>Quick Menu:</span>
-            <button className={styles.quickBtn} onClick={() => setInput('courses')}>[ courses ]</button>
-            <button className={styles.quickBtn} onClick={() => setInput('services')}>[ services ]</button>
-            <button className={styles.quickBtn} onClick={() => setInput('blog')}>[ blog ]</button>
-            <button className={styles.quickBtn} onClick={() => setInput('enroll')}>[ enroll ]</button>
+            <span style={{color: '#d1d5db', fontSize: '0.85rem', marginRight: '0.5rem'}}>Quick Menu:</span>
+            <button className={styles.quickBtn} onClick={() => setInput('courses')} aria-label="Execute command courses">[ courses ]</button>
+            <button className={styles.quickBtn} onClick={() => setInput('services')} aria-label="Execute command services">[ services ]</button>
+            <button className={styles.quickBtn} onClick={() => setInput('blog')} aria-label="Execute command blog">[ blog ]</button>
+            <button className={styles.quickBtn} onClick={() => setInput('enroll')} aria-label="Execute command enroll">[ enroll ]</button>
           </div>
 
           <div className={styles.inputLine}>
