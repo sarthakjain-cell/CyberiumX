@@ -32,6 +32,9 @@ export default function AlumniMarquee() {
                   <img 
                     src={company.logoUrl} 
                     alt={`${company.name} logo`} 
+                    width={40}
+                    height={40}
+                    loading="lazy"
                     onError={(e) => {
                       (e.target as HTMLImageElement).style.display = 'none';
                     }}
@@ -51,6 +54,9 @@ export default function AlumniMarquee() {
                   <img 
                     src={company.logoUrl} 
                     alt={`${company.name} logo`} 
+                    width={40}
+                    height={40}
+                    loading="lazy"
                     onError={(e) => {
                       (e.target as HTMLImageElement).style.display = 'none';
                     }}

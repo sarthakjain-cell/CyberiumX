@@ -1,9 +1,14 @@
-"use client";
-
-import { motion } from 'framer-motion';
-import Image from 'next/image';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import styles from './Services.module.css';
+
+export const metadata: Metadata = {
+  title: "7X-Security Protection & Enterprise Services | CyberiumX",
+  description: "Explore CyberiumX 7X-Security Protection Framework: Security Auditing, Penetration Testing, Web Security, Vulnerability Assessment, and Managed Defense.",
+  alternates: {
+    canonical: "https://cyberiumx.com/services",
+  },
+};
 
 const layers = [
   {
@@ -88,20 +93,15 @@ export default function ServicesPage() {
   return (
     <div className="container">
       <section className={styles.servicesHero}>
-        <motion.div
-          initial={{ opacity: 1, y: 0 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
+        <div>
           <h1 className={styles.title}>7X-Security</h1>
           <p className={styles.subtitle}>
             The CyberiumX 7-Layer Cybersecurity Protection Framework, designed to provide comprehensive protection against modern cyber threats.
           </p>
-        </motion.div>
+        </div>
 
         <div className={styles.articleContent}>
-          <motion.div
-            initial={{ opacity: 1, y: 0 }}
-            animate={{ opacity: 1, y: 0 }}
+          <div
             className={styles.textSection}
           >
             <h2>Why Every Business is a Target Today</h2>
@@ -111,11 +111,9 @@ export default function ServicesPage() {
             <p>
               Studies show that 68% of security breaches involve human error, demonstrating how attackers often manipulate people rather than just technology. In many cases, cybercriminals simply trick employees into revealing login credentials.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 1, y: 0 }}
-            animate={{ opacity: 1, y: 0 }}
+          <div
             className={styles.textSection}
           >
             <h2>Why Businesses Need Multi-Layer Cybersecurity Protection</h2>
@@ -125,29 +123,25 @@ export default function ServicesPage() {
             <p>
               Cybersecurity experts therefore recommend adopting defense-in-depth strategies, also known as layered security models. This approach ensures that security measures are applied at multiple levels—including infrastructure, applications, users, networks, and monitoring systems.
             </p>
-          </motion.div>
+          </div>
         </div>
 
         <div className={styles.grid}>
           {layers.map((layer, index) => (
-            <motion.div
+            <div
               key={index}
               className={styles.card}
-              initial={{ opacity: 1, y: 0 }}
-              animate={{ opacity: 1, y: 0 }}
             >
               <div className={styles.cardIcon}>
                 {layer.icon}
               </div>
               <h3 className={styles.cardTitle}>{layer.title}</h3>
               <p className={styles.cardDesc}>{layer.desc}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 1, y: 0 }}
-          animate={{ opacity: 1, y: 0 }}
+        <div
           className={styles.textSection}
           style={{ marginTop: '4rem' }}
         >
@@ -158,7 +152,7 @@ export default function ServicesPage() {
           <div style={{ textAlign: 'center', marginTop: '2rem' }}>
              <Link href="/contact-us" className="btn-primary">Book a Demo</Link>
           </div>
-        </motion.div>
+        </div>
 
       </section>
     </div>

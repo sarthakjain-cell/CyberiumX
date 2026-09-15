@@ -1,4 +1,13 @@
+import type { Metadata } from 'next';
 import styles from './AboutPage.module.css';
+
+export const metadata: Metadata = {
+  title: "About Us | CyberiumX - Elite Cybersecurity Institute",
+  description: "CyberiumX is an elite, globally recognized cybersecurity institute dedicated to forging the next generation of ethical hackers, security auditors, and penetration testers.",
+  alternates: {
+    canonical: "https://cyberiumx.com/about-us",
+  },
+};
 
 export default function AboutUsPage() {
   return (

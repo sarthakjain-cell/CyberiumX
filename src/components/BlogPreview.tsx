@@ -76,6 +76,9 @@ export default function BlogPreview() {
               <img 
                 src={blog.image} 
                 alt={blog.title} 
+                width={400}
+                height={200}
+                loading="lazy"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = '/logo.png';
                   (e.target as HTMLImageElement).style.objectFit = 'contain';

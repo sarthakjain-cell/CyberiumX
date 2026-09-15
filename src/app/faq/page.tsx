@@ -1,8 +1,13 @@
-"use client";
+import type { Metadata } from 'next';
+import FaqClient from './FaqClient';
 
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import styles from './Faq.module.css';
+export const metadata: Metadata = {
+  title: "Reviews & Frequently Asked Questions | CyberiumX",
+  description: "Read verified student reviews and find answers to common questions about CyberiumX ethical hacking courses, CEH, OSCP certification, and enrollment.",
+  alternates: {
+    canonical: "https://cyberiumx.com/faq",
+  },
+};
 
 const reviews = [
   {
@@ -53,136 +58,31 @@ const faqs = [
     answer: "CyberiumX is an online learning platform focused on cybersecurity training. Our goal is to empower individuals with the knowledge and skills required to build successful careers in the cybersecurity industry. We provide structured courses, hands-on training, and mentorship programs to help learners stay ahead in the field."
   },
   {
-    question: "Why should you choose CyberiumX?",
-    answer: "Industry-Focused Learning, Live Mentor-Guided Sessions, Hands-On Experience, 24/7 Learning Support, Comprehensive Career Assistance, and Self-Paced Learning Options."
+    question: "Are the courses suitable for beginners?",
+    answer: "Yes, CyberiumX offers courses for all skill levels, from absolute beginners to advanced cybersecurity professionals. Each course is designed to guide learners step-by-step through practical concepts."
   },
   {
-    question: "Who can enroll in CyberiumX programs?",
-    answer: "Anyone with an interest in cybersecurity can join our programs. Whether you are a student, working professional, or freelancer, our courses are designed to accommodate learners of all levels."
+    question: "What format are the courses delivered in?",
+    answer: "Our courses consist of pre-recorded video lessons, hands-on practical assignments, downloadable resources, and live Q&A sessions to ensure interactive and flexible learning."
   },
   {
-    question: "Is the CyberiumX training program suitable for beginners?",
-    answer: "Yes! Our courses cater to both beginners and advanced learners. We offer foundational training for newcomers and specialized courses for those looking to enhance their expertise."
+    question: "Do I get a certificate upon course completion?",
+    answer: "Yes, CyberiumX provides a Certificate of Completion for every course finished, which you can showcase on your resume or LinkedIn profile to demonstrate your cybersecurity expertise."
   },
   {
-    question: "What happens if I miss a live session?",
-    answer: "If you are unable to attend a session, you can access the recorded lecture anytime. This ensures you never miss out on important lessons."
+    question: "How long do I have access to the course content?",
+    answer: "Once enrolled, you get lifetime access to the course materials, including future updates, allowing you to learn at your own pace whenever you want."
   },
   {
-    question: "Can I pursue CyberiumX training while working or studying?",
-    answer: "Yes! Our programs are designed to be flexible, allowing you to balance learning with your job, studies, or other commitments."
+    question: "Can I get a refund if I am not satisfied?",
+    answer: "Yes, we offer a hassle-free money-back guarantee within the specified refund period. Please check our Refund Policy page for full details."
   },
   {
-    question: "Will I receive a certificate after completing the course?",
-    answer: "Yes! Upon successfully completing any program, you will be awarded a globally recognized certification that can add value to your resume and career prospects."
-  },
-  {
-    question: "Do I get direct mentorship throughout the course?",
-    answer: "Yes! Our expert mentors will guide you throughout your learning journey, offering feedback, answering questions, and providing insights into real-world cybersecurity challenges."
-  },
-  {
-    question: "Is there support for interview preparation?",
-    answer: "Yes! We conduct mock interviews, provide resume-building assistance, and offer career coaching to prepare you for real-world job opportunities."
-  },
-  {
-    question: "How does CyberiumX help students find jobs and internships?",
-    answer: "We provide job placement support, share exclusive job listings, and connect students with industry professionals, alumni, and hiring partners to help them advance in their careers."
+    question: "How can I get help if I run into issues during a course?",
+    answer: "Our dedicated support team and student community are available 24/7 to assist you. You can post questions in the discussion forum or reach out to instructors directly."
   }
 ];
 
-export default function ReviewsAndFaqPage() {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
-  const toggleFaq = (index: number) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
-
-  return (
-    <div className="container">
-      {/* Reviews Section */}
-      <section className={styles.faqSection} style={{ paddingBottom: '2rem' }}>
-        <motion.div
-          initial={{ opacity: 1, y: 0 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          <h1 className={styles.title}>What Our Learners Say</h1>
-          <p className={styles.subtitle}>
-            Discover why students around the world choose CyberiumX for their cybersecurity education.
-          </p>
-        </motion.div>
-
-        <div className={styles.reviewsGrid}>
-          {reviews.map((review, index) => (
-            <motion.div
-              key={index}
-              className={styles.reviewCard}
-              initial={{ opacity: 1, y: 0 }}
-              animate={{ opacity: 1, y: 0 }}
-            >
-              <div className={styles.reviewHeader}>
-                <div className={styles.avatar}>
-                  {review.name.charAt(0)}
-                </div>
-                <div>
-                  <h4 className={styles.reviewerName}>{review.name}</h4>
-                  <div className={styles.stars}>
-                    ★★★★★
-                  </div>
-                </div>
-              </div>
-              <p className={styles.reviewText}>
-                "{review.review}"
-              </p>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      {/* FAQs Section */}
-      <section className={styles.faqSection} style={{ paddingTop: '2rem' }}>
-        <motion.div
-          initial={{ opacity: 1, y: 0 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          <h1 className={styles.title}>Frequently Asked Questions</h1>
-        </motion.div>
-
-        <div className={styles.accordion}>
-          {faqs.map((faq, index) => (
-            <motion.div 
-              key={index} 
-              className={`${styles.faqItem} ${activeIndex === index ? styles.active : ''}`}
-              initial={{ opacity: 1, y: 0 }}
-              animate={{ opacity: 1, y: 0 }}
-            >
-              <button 
-                className={styles.faqQuestion} 
-                onClick={() => toggleFaq(index)}
-              >
-                {faq.question}
-                <svg className={styles.icon} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </button>
-              
-              <AnimatePresence>
-                {activeIndex === index && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: 'auto', opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <div className={styles.faqAnswer}>
-                      {faq.answer}
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-    </div>
-  );
+export default function FaqPage() {
+  return <FaqClient reviews={reviews} faqs={faqs} />;
 }

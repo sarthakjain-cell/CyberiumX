@@ -1,8 +1,12 @@
+import type { Metadata } from 'next';
 import styles from './ContactUs.module.css';
 
-export const metadata = {
-  title: 'Contact Us | CyberiumX',
-  description: 'Get in touch with CyberiumX today.'
+export const metadata: Metadata = {
+  title: 'Contact Us | CyberiumX Cybersecurity Training & Support',
+  description: 'Have questions about ethical hacking courses, CEH/OSCP training, enterprise security audits, or enrollments? Contact the CyberiumX expert team today.',
+  alternates: {
+    canonical: 'https://cyberiumx.com/contact-us',
+  },
 };
 
 export default function ContactUsPage() {
@@ -48,16 +52,16 @@ export default function ContactUsPage() {
           <div className={styles.formSection}>
             <form>
               <div className={styles.formGroup}>
-                <label>First Name</label>
-                <input type="text" className={styles.formInput} placeholder="Jane" />
+                <label htmlFor="firstName">First Name</label>
+                <input id="firstName" type="text" className={styles.formInput} placeholder="Jane" />
               </div>
               <div className={styles.formGroup}>
-                <label>Email Address</label>
-                <input type="email" className={styles.formInput} placeholder="jane@example.com" />
+                <label htmlFor="emailAddress">Email Address</label>
+                <input id="emailAddress" type="email" className={styles.formInput} placeholder="jane@example.com" />
               </div>
               <div className={styles.formGroup}>
-                <label>How can we help?</label>
-                <textarea className={styles.formInput} placeholder="Tell us about your project..."></textarea>
+                <label htmlFor="message">How can we help?</label>
+                <textarea id="message" className={styles.formInput} placeholder="Tell us about your project..."></textarea>
               </div>
               <button type="button" className="btn-primary" style={{ width: '100%', padding: '1rem', fontSize: '1.1rem' }}>Send Message</button>
             </form>

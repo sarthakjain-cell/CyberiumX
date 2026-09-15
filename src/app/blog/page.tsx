@@ -1,9 +1,14 @@
-"use client";
-
-import { motion } from 'framer-motion';
+import type { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import styles from './Blog.module.css';
+
+export const metadata: Metadata = {
+  title: "Cybersecurity Insights & Blog | CyberiumX",
+  description: "Stay ahead of digital threats with expert cybersecurity tutorials, ethical hacking guides, pentesting tips, and security news from CyberiumX.",
+  alternates: {
+    canonical: "https://cyberiumx.com/blog",
+  },
+};
 
 const blogs = [
   {
@@ -60,32 +65,28 @@ export default function BlogPage() {
   return (
     <div className="container">
       <section className={styles.blogHero}>
-        <motion.div
-          initial={{ opacity: 1, y: 0 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
+        <div>
           <h1 className={styles.title}>Our Blogs</h1>
           <p className={styles.subtitle}>
             Explore our latest articles, write-ups, and guides on everything cybersecurity.
           </p>
-        </motion.div>
+        </div>
 
         <div className={styles.blogGrid}>
           {blogs.map((blog, index) => (
-            <motion.div
+            <div
               key={index}
               className={styles.blogCard}
-              initial={{ opacity: 1, y: 0 }}
-              animate={{ opacity: 1, y: 0 }}
             >
               <div className={styles.blogImageWrapper}>
-                <Image 
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img 
                   src={blog.image} 
                   alt={blog.title} 
-                  fill 
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  width={400}
+                  height={200}
+                  loading="lazy"
                   className={styles.blogImage}
-                  unoptimized // since we use external URL
                 />
               </div>
               <div className={styles.blogCardContent}>
@@ -107,7 +108,7 @@ export default function BlogPage() {
                   </Link>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>

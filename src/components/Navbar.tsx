@@ -24,7 +24,9 @@ export default function Navbar() {
         <Link href="/" className={styles.logo} style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', textDecoration: 'none' }}>
           <img 
             src="/logo.png" 
-            alt="CyberiumX" 
+            alt="CyberiumX Logo" 
+            width={140}
+            height={38}
             style={{ height: '38px', width: 'auto', objectFit: 'contain' }}
             onError={(e) => {
               (e.target as HTMLImageElement).style.display = 'none';
