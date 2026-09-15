@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function ServicesPreview() {
   return (
-    <section className="container" style={{ padding: '6rem 0' }}>
+    <section className="container" style={{ padding: '2rem 0 5rem 0' }}>
       <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
         <h2 style={{ fontSize: '3rem', marginBottom: '1rem', color: '#fff' }}>7X-Security & Global Services</h2>
         <p style={{ color: '#9ca3af', maxWidth: '600px', margin: '0 auto', fontSize: '1.2rem' }}>

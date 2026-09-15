@@ -36,8 +36,8 @@ export default function Home() {
         <StandOut />
         <CoursesPreview />
         <Testimonials />
-        <InteractiveTerminal />
         <ServicesPreview />
+        <InteractiveTerminal />
         <BlogPreview />
       </main>
     </>
