@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import styles from './CyberBackground.module.css';
 
 interface Node {
@@ -16,13 +16,13 @@ interface Node {
 interface DataPacket {
   fromNode: number;
   toNode: number;
-  progress: number; // 0 to 1
+  progress: number;
   speed: number;
 }
 
 export default function CyberBackground() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const [mousePos, setMousePos] = useState({ x: -1000, y: -1000 });
+  const glowRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -35,20 +35,22 @@ export default function CyberBackground() {
     let width = (canvas.width = window.innerWidth);
     let height = (canvas.height = window.innerHeight);
 
-    // Create network nodes
-    const nodeCount = Math.floor(Math.min(width, height) / 25) + 20; // ~40 nodes on standard screen
+    const isMobile = width < 768;
+
+    // Create network nodes - lightweight on mobile
+    const nodeCount = isMobile ? 18 : Math.min(45, Math.floor(Math.min(width, height) / 25) + 15);
     const nodes: Node[] = Array.from({ length: nodeCount }).map(() => ({
       x: Math.random() * width,
       y: Math.random() * height,
-      vx: (Math.random() - 0.5) * 0.4, // Slow drift
-      vy: (Math.random() - 0.5) * 0.4,
-      radius: 2 + Math.random() * 1.5,
+      vx: (Math.random() - 0.5) * 0.3,
+      vy: (Math.random() - 0.5) * 0.3,
+      radius: 1.5 + Math.random() * 1.5,
       pulsePhase: Math.random() * Math.PI * 2,
-      pulseSpeed: 0.02 + Math.random() * 0.02
+      pulseSpeed: 0.015 + Math.random() * 0.015
     }));
 
-    // Create data packets moving between connected nodes
-    const packetCount = 12;
+    // Data packets
+    const packetCount = isMobile ? 4 : 8;
     const packets: DataPacket[] = [];
 
     const findConnectedNeighbors = (nodeIndex: number) => {
@@ -57,13 +59,12 @@ export default function CyberBackground() {
       nodes.forEach((n, idx) => {
         if (idx !== nodeIndex) {
           const dist = Math.hypot(n.x - curr.x, n.y - curr.y);
-          if (dist < 160) neighbors.push(idx);
+          if (dist < 140) neighbors.push(idx);
         }
       });
       return neighbors;
     };
 
-    // Initialize packets
     for (let i = 0; i < packetCount; i++) {
       const from = Math.floor(Math.random() * nodeCount);
       const neighbors = findConnectedNeighbors(from);
@@ -72,7 +73,7 @@ export default function CyberBackground() {
         fromNode: from,
         toNode: to,
         progress: Math.random(),
-        speed: 0.004 + Math.random() * 0.006
+        speed: 0.003 + Math.random() * 0.005
       });
     }
 
@@ -82,44 +83,45 @@ export default function CyberBackground() {
       height = canvas.height = window.innerHeight;
     };
 
+    // Direct DOM mutation for GPU-accelerated mouse glow without React re-renders
+    let rafMouseMove: number | null = null;
     const handleMouseMove = (e: MouseEvent) => {
-      setMousePos({ x: e.clientX, y: e.clientY });
+      if (rafMouseMove) return;
+      rafMouseMove = requestAnimationFrame(() => {
+        if (glowRef.current) {
+          glowRef.current.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+        }
+        rafMouseMove = null;
+      });
     };
 
-    window.addEventListener('resize', handleResize);
-    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('resize', handleResize, { passive: true });
+    window.addEventListener('mousemove', handleMouseMove, { passive: true });
 
-    let time = 0;
+    const maxDist = isMobile ? 120 : 150;
 
     const render = () => {
-      time += 0.05;
       ctx.clearRect(0, 0, width, height);
 
-      const maxDist = 160;
-
-      // Update & Draw Nodes
+      // Draw Nodes & Connections
       nodes.forEach((node, i) => {
-        // Move node
         node.x += node.vx;
         node.y += node.vy;
 
-        // Bounce at boundaries
         if (node.x < 0 || node.x > width) node.vx *= -1;
         if (node.y < 0 || node.y > height) node.vy *= -1;
 
-        // Update pulse phase
         node.pulsePhase += node.pulseSpeed;
-        const currentPulse = Math.sin(node.pulsePhase) * 0.5 + 0.5; // 0 to 1
-        const currentRadius = node.radius + currentPulse * 1.2;
-        const opacity = 0.4 + currentPulse * 0.45;
+        const currentPulse = Math.sin(node.pulsePhase) * 0.5 + 0.5;
+        const currentRadius = node.radius + currentPulse;
+        const opacity = 0.35 + currentPulse * 0.4;
 
-        // Draw connections to nearby nodes
         for (let j = i + 1; j < nodes.length; j++) {
           const target = nodes[j];
           const dist = Math.hypot(target.x - node.x, target.y - node.y);
 
           if (dist < maxDist) {
-            const lineOpacity = (1 - dist / maxDist) * 0.22;
+            const lineOpacity = (1 - dist / maxDist) * 0.2;
             ctx.beginPath();
             ctx.moveTo(node.x, node.y);
             ctx.lineTo(target.x, target.y);
@@ -129,18 +131,13 @@ export default function CyberBackground() {
           }
         }
 
-        // Draw Node Dot with Glow
-        ctx.save();
         ctx.beginPath();
         ctx.arc(node.x, node.y, currentRadius, 0, Math.PI * 2);
         ctx.fillStyle = `rgba(255, 22, 22, ${opacity})`;
-        ctx.shadowColor = '#ff1616';
-        ctx.shadowBlur = 10 + currentPulse * 8;
         ctx.fill();
-        ctx.restore();
       });
 
-      // Update & Draw Data Packets
+      // Draw Data Packets
       packets.forEach((pkt) => {
         pkt.progress += pkt.speed;
 
@@ -149,21 +146,14 @@ export default function CyberBackground() {
 
         if (!from || !to) return;
 
-        // Calculate packet current position
         const px = from.x + (to.x - from.x) * pkt.progress;
         const py = from.y + (to.y - from.y) * pkt.progress;
 
-        // Draw animated data pulse dot
-        ctx.save();
         ctx.beginPath();
-        ctx.arc(px, py, 2.5, 0, Math.PI * 2);
+        ctx.arc(px, py, 2, 0, Math.PI * 2);
         ctx.fillStyle = '#ffffff';
-        ctx.shadowColor = '#ff1616';
-        ctx.shadowBlur = 15;
         ctx.fill();
-        ctx.restore();
 
-        // When packet completes path, pick next node hop
         if (pkt.progress >= 1) {
           pkt.progress = 0;
           pkt.fromNode = pkt.toNode;
@@ -185,14 +175,16 @@ export default function CyberBackground() {
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('mousemove', handleMouseMove);
       cancelAnimationFrame(animationFrameId);
+      if (rafMouseMove) cancelAnimationFrame(rafMouseMove);
     };
   }, []);
 
   return (
     <div className={styles.bgContainer} aria-hidden="true">
       <div 
+        ref={glowRef}
         className={styles.mouseGlow}
-        style={{ left: `${mousePos.x}px`, top: `${mousePos.y}px` }}
+        style={{ transform: 'translate3d(-1000px, -1000px, 0)', willChange: 'transform' }}
       />
       <canvas ref={canvasRef} className={styles.canvas} />
     </div>

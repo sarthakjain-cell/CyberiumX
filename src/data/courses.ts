@@ -7,7 +7,7 @@ export const courses = [
     duration: "40 Hours",
     description: "Course Overview The Microsoft Azure Cloud training course is designed to advance candidates with the skills required to work with...",
     link: "/provided-course/microsoft-azure-course/",
-    icon: "https://cyberiumx.com/wp-content/uploads/2026/02/azure-scaled.png"
+    icon: "https://cdn.simpleicons.org/microsoftazure/0089D6"
   },
   {
     id: 2,
