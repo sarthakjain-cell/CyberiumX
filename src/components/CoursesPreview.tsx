@@ -1,29 +1,11 @@
 "use client";
 
 import Link from 'next/link';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
 import styles from './CoursesGrid.module.css'; // Reuse the grid CSS
 import { courses } from '@/data/courses';
 
 export default function CoursesPreview() {
   const topCourses = courses.slice(0, 3);
-
-  const containerVariants: any = {
-    hidden: { opacity: 1 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.15 }
-    }
-  };
-
-  const cardVariants: any = {
-    hidden: { opacity: 1, y: 0 },
-    visible: { 
-      opacity: 1, y: 0,
-      transition: { type: "spring", stiffness: 100, damping: 15 }
-    }
-  };
 
   return (
     <section className={styles.coursesSection} style={{ padding: '6rem 2rem' }}>
@@ -36,14 +18,9 @@ export default function CoursesPreview() {
           </p>
         </div>
 
-        <motion.div 
-          className={styles.grid}
-          variants={containerVariants}
-          initial="visible"
-          animate="visible"
-        >
+        <div className={styles.grid}>
           {topCourses.map((course) => (
-            <motion.div key={course.id} className={styles.card} variants={cardVariants}>
+            <div key={course.id} className={styles.card}>
               
               <div className={styles.cardHeader}>
                 <div className={styles.iconWrapper}>
@@ -93,9 +70,9 @@ export default function CoursesPreview() {
                 <Link href={course.link} className={styles.cardLink} aria-label={`View details for ${course.title}`}>View Details</Link>
                 <Link href={course.link} className={styles.cardLinkReveal} aria-hidden="true" tabIndex={-1}>Explore Course →</Link>
               </div>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
 
         <div style={{ textAlign: 'center', marginTop: '4rem' }}>
           <Link href="/courses" className="btn-primary" style={{ padding: '1rem 3rem', fontSize: '1.2rem' }}>

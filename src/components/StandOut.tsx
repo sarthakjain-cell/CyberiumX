@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
 import styles from "./StandOut.module.css";
+
 const CheckCircle = ({ size = 24, color = "currentColor" }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
@@ -28,11 +28,7 @@ export default function StandOut() {
   return (
     <section className={styles.standOutSection}>
       <div className="container">
-        <motion.div 
-          className={styles.header}
-          initial={{ opacity: 1, y: 0 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
+        <div className={styles.header}>
           <div className={styles.highlightBadge}>
             <span className={styles.fireIcon}>⚡</span> WHY CHOOSE US
           </div>
@@ -42,21 +38,16 @@ export default function StandOut() {
           <p className={styles.subtitle}>
             Empowering next-generation security leaders with real-world cyber ranges, hands-on toolkits, and elite mentorship.
           </p>
-        </motion.div>
+        </div>
 
         <div className={styles.grid}>
           {features.map((feature, idx) => (
-            <motion.div 
-              key={idx}
-              className={styles.featureCard}
-              initial={{ opacity: 1, y: 0 }}
-              animate={{ opacity: 1, y: 0 }}
-            >
+            <div key={idx} className={styles.featureCard}>
               <div className={styles.iconBox}>
                 <CheckCircle size={24} color="#ff1616" />
               </div>
               <span className={styles.featureText}>{feature}</span>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

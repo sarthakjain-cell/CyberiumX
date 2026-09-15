@@ -58,11 +58,7 @@ export default function InteractiveTerminal() {
 
   return (
     <section className={styles.terminalSection}>
-      <motion.div 
-        className={styles.terminalContainer}
-        initial={{ opacity: 1, y: 0 }}
-        animate={{ opacity: 1, y: 0 }}
-      >
+      <div className={styles.terminalContainer}>
         <div className={styles.terminalHeader}>
           <div className={styles.trafficLights}>
             <div className={`${styles.light} ${styles.red}`}></div>
@@ -105,7 +101,7 @@ export default function InteractiveTerminal() {
           </div>
           <div ref={endRef} />
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

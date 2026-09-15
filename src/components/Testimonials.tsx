@@ -66,15 +66,11 @@ export default function Testimonials() {
   return (
     <section className={styles.testimonialSection}>
       <div className="container">
-        <motion.div 
-          className={styles.header}
-          initial={{ opacity: 1, y: 0 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
+        <div className={styles.header}>
           <span className={styles.badge}>STUDENT FEEDBACK</span>
           <h2 className={styles.title}>What <span className={styles.highlightText}>Our Learners Say</span></h2>
           <p className={styles.subtitle}>Real stories from cybersecurity professionals and students trained by CyberiumX.</p>
-        </motion.div>
+        </div>
       </div>
 
       {/* Infinite Moving Marquee Track */}

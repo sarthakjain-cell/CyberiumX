@@ -16,10 +16,7 @@ const companies = [
 export default function AlumniMarquee() {
   return (
     <section className={styles.marqueeSection}>
-      <motion.div
-        initial={{ opacity: 1 }}
-        animate={{ opacity: 1 }}
-      >
+      <div>
         <div className={styles.titleWrapper}>
           <h2 className={styles.marqueeTitle}>
             Our Alumni <span className={styles.highlightText}>Secure Infrastructure</span> At
@@ -66,7 +63,7 @@ export default function AlumniMarquee() {
             ))}
           </div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }
