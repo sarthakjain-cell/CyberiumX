@@ -1,6 +1,8 @@
 .blogHero {
   padding: 8rem 0 4rem;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .title {

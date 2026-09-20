@@ -33,7 +33,7 @@ const blogs = [
 
 export default function BlogPreview() {
   return (
-    <section className="container" style={{ padding: '1.5rem 0 4rem 0' }}>
+    <section className="container" style={{ padding: '1.5rem 0 4rem 0', position: 'relative', zIndex: 1 }}>
       <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
         <h2 style={{ fontSize: '3rem', marginBottom: '1rem', color: '#fff' }}>Latest Insights & Writeups</h2>
         <p style={{ color: '#9ca3af', maxWidth: '600px', margin: '0 auto', fontSize: '1.2rem' }}>
