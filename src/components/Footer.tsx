@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import PaymentMethods from './PaymentMethods';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -115,7 +116,9 @@ export default function Footer() {
 
       </div>
 
-
+      <div className="container">
+        <PaymentMethods />
+      </div>
       
       {/* Bottom Copyright Bar */}
       <div className={styles.footerBottom}>
