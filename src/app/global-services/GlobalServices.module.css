@@ -1,7 +1,9 @@
 .pageContainer {
   min-height: 100vh;
-  background-color: #0b0d14;
+  background-color: transparent;
   color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 /* Premium Hero Section */
