@@ -29,9 +29,6 @@ export default function StandOut() {
     <section className={styles.standOutSection}>
       <div className="container">
         <div className={styles.header}>
-          <div className={styles.highlightBadge}>
-            <span className={styles.fireIcon}>⚡</span> WHY CHOOSE US
-          </div>
           <h2 className={styles.title}>
             What Makes <span className={styles.gradientHighlight}>CyberiumX Training Stand Out?</span>
           </h2>
