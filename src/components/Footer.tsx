@@ -115,21 +115,7 @@ export default function Footer() {
 
       </div>
 
-      {/* Sources & Studies Bar */}
-      <div className={styles.sourcesBar}>
-        <div className="container">
-          <div className={styles.sourcesGrid}>
-            <div className={styles.sourceItem}>
-              <span className={styles.sourceTag}>REPORT</span>
-              <a href="https://cyberiumx.com" target="_blank" rel="noopener noreferrer">IDC Whitepaper: Cybersecurity Training ROI Study & Enterprise Impact</a>
-            </div>
-            <div className={styles.sourceItem}>
-              <span className={styles.sourceTag}>STUDY</span>
-              <a href="https://cyberiumx.com" target="_blank" rel="noopener noreferrer">Total Economic Impact Study of CyberiumX Virtual Cyber Ranges</a>
-            </div>
-          </div>
-        </div>
-      </div>
+
       
       {/* Bottom Copyright Bar */}
       <div className={styles.footerBottom}>
