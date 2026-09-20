@@ -26,20 +26,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.6;
-  filter: grayscale(100%);
   transition: all 0.3s ease;
+  min-width: 80px; /* Ensure they don't squish */
 }
 
 .logoItem:hover {
-  opacity: 1;
-  filter: grayscale(0%);
   transform: translateY(-2px);
 }
 
 .svgIcon {
   height: 32px;
   width: auto;
+  max-width: 120px; /* Prevent SVG from expanding infinitely */
 }
 
 @media (max-width: 768px) {
