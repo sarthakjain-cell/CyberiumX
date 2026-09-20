@@ -2,7 +2,6 @@
 
 import { useState, useRef, useEffect } from "react";
 import styles from "./InteractiveTerminal.module.css";
-import { motion } from "framer-motion";
 
 export default function InteractiveTerminal() {
   const [history, setHistory] = useState<{cmd: string, out: string}[]>([
@@ -57,7 +56,19 @@ export default function InteractiveTerminal() {
   };
 
   return (
-    <section className={styles.terminalSection}>
+    <section className={`container ${styles.terminalSection}`}>
+      <div className={styles.sectionHeader}>
+        <div className={styles.badge}>
+          <span>💻</span> INTERACTIVE CYBER TERMINAL
+        </div>
+        <h2 className={styles.sectionTitle}>
+          Live Cyber <span className={styles.highlight}>CLI Terminal</span>
+        </h2>
+        <p className={styles.sectionSubtitle}>
+          Test your clearance level, scan simulated targets, and navigate the platform in real time.
+        </p>
+      </div>
+
       <div className={styles.terminalContainer}>
         <div className={styles.terminalHeader}>
           <div className={styles.trafficLights}>
@@ -80,7 +91,9 @@ export default function InteractiveTerminal() {
           ))}
 
           <div className={styles.quickMenu}>
-            <span style={{color: '#d1d5db', fontSize: '0.85rem', marginRight: '0.5rem'}}>Quick Menu:</span>
+            <span style={{color: '#9ca3af', fontSize: '0.85rem', marginRight: '0.5rem'}}>Quick Commands:</span>
+            <button className={styles.quickBtn} onClick={() => setInput('whoami')} aria-label="Execute command whoami">[ whoami ]</button>
+            <button className={styles.quickBtn} onClick={() => setInput('scan network')} aria-label="Execute command scan network">[ scan network ]</button>
             <button className={styles.quickBtn} onClick={() => setInput('courses')} aria-label="Execute command courses">[ courses ]</button>
             <button className={styles.quickBtn} onClick={() => setInput('services')} aria-label="Execute command services">[ services ]</button>
             <button className={styles.quickBtn} onClick={() => setInput('blog')} aria-label="Execute command blog">[ blog ]</button>
@@ -97,6 +110,7 @@ export default function InteractiveTerminal() {
               onKeyDown={handleCommand}
               spellCheck={false}
               aria-label="Terminal Input"
+              placeholder="Type command (e.g. help, whoami, scan network)..."
             />
           </div>
           <div ref={endRef} />
@@ -105,3 +119,4 @@ export default function InteractiveTerminal() {
     </section>
   );
 }
+
