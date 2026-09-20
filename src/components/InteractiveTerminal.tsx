@@ -8,16 +8,20 @@ export default function InteractiveTerminal() {
     { cmd: "cyberium --version", out: "CyberiumX Advanced Terminal v2.1.0\nReady for input. Type 'help' for available commands." }
   ]);
   const [input, setInput] = useState("");
-  const endRef = useRef<HTMLDivElement>(null);
+  const terminalBodyRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (history.length > 1) {
-      endRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (history.length > 1 && terminalBodyRef.current) {
+      terminalBodyRef.current.scrollTo({
+        top: terminalBodyRef.current.scrollHeight,
+        behavior: "smooth"
+      });
     }
   }, [history]);
 
   const handleCommand = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
+      e.preventDefault();
       const cmd = input.trim().toLowerCase();
       let out = "";
 
@@ -50,7 +54,7 @@ export default function InteractiveTerminal() {
         out = `Command not found: ${cmd}. Type 'help' for a list of commands.`;
       }
 
-      setHistory([...history, { cmd: input, out }]);
+      setHistory(prev => [...prev, { cmd: input, out }]);
       setInput("");
     }
   };
@@ -76,7 +80,7 @@ export default function InteractiveTerminal() {
           <div className={styles.terminalTitle}>root@cyberiumx:~</div>
         </div>
 
-        <div className={styles.terminalBody}>
+        <div className={styles.terminalBody} ref={terminalBodyRef}>
           {history.map((h, i) => (
             <div key={i}>
               <div className={styles.line}>
@@ -110,10 +114,10 @@ export default function InteractiveTerminal() {
               placeholder="Type command (e.g. help, whoami, scan network)..."
             />
           </div>
-          <div ref={endRef} />
         </div>
       </div>
     </section>
   );
 }
+
 
