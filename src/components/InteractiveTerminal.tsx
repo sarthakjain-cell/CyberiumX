@@ -58,9 +58,6 @@ export default function InteractiveTerminal() {
   return (
     <section className={`container ${styles.terminalSection}`}>
       <div className={styles.sectionHeader}>
-        <div className={styles.badge}>
-          <span>💻</span> INTERACTIVE CYBER TERMINAL
-        </div>
         <h2 className={styles.sectionTitle}>
           Live Cyber <span className={styles.highlight}>CLI Terminal</span>
         </h2>
