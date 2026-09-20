@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import styles from './GlobalServices.module.css';
 
@@ -10,6 +8,24 @@ interface Item {
   description: string;
 }
 
+const courseIcons: Record<string, string> = {
+  "Ethical Hacking Training": "🛡️",
+  "CEH (Certified Ethical Hacker) Training": "📜",
+  "OSCP Training": "🎯",
+  "Web Application Penetration Testing": "🌐",
+  "Network Penetration Testing": "📡",
+  "Bug Bounty Training": "💰",
+  "Kali Linux Training": "🐧"
+};
+
+const serviceIcons: Record<string, string> = {
+  "Website security testing": "🔒",
+  "Network security assessment": "⚡",
+  "Vulnerability assessment": "🔍",
+  "Penetration testing": "⚔️",
+  "Social media security": "📲"
+};
+
 export default function GlobalServicesClient({
   courses,
   services
@@ -17,8 +33,6 @@ export default function GlobalServicesClient({
   courses: Item[];
   services: Item[];
 }) {
-  const [activeItem, setActiveItem] = useState<Item | null>(null);
-
   return (
     <div className={styles.pageContainer}>
       {/* Premium Hero Section */}
@@ -29,7 +43,7 @@ export default function GlobalServicesClient({
             <span className={styles.heroBadge}>Worldwide Reach</span>
             <h1 className={styles.heroTitle}>Global Cybersecurity<br/>Training & Services</h1>
             <p className={styles.heroDesc}>
-              Providing elite training and robust security solutions to businesses, governments, and individuals across Australia, Canada, the UK, Germany, and beyond.
+              Providing elite training and robust security solutions to businesses, governments, and individuals across Australia, Canada, the UK, Germany, and worldwide.
             </p>
           </div>
         </div>
@@ -48,42 +62,73 @@ export default function GlobalServicesClient({
         </div>
       </section>
 
-      {/* 2-Column Bento Grid Section */}
+      {/* Global Courses Section */}
       <section className={styles.contentSection}>
-        <div className={styles.gridContainer}>
-          
-          {/* Column 1: Global Training */}
-          <div className={styles.columnCard}>
-            <div className={styles.columnHeader}>
-              <span className={styles.columnBadge}>Global Courses</span>
-              <h2 className={styles.columnTitle}>Cyber Security Training</h2>
-            </div>
-            <div className={styles.itemList}>
-              {courses.map((item, idx) => (
-                <div key={idx} className={styles.interactiveItem} onClick={() => setActiveItem(item)}>
-                  <span>{item.title}</span>
-                  <span className={styles.arrowIcon}>→</span>
-                </div>
-              ))}
-            </div>
+        <div className={styles.sectionHeaderContainer}>
+          <div className={styles.sectionBadge}>
+            <span>📚</span> GLOBAL ACADEMY & COURSES
           </div>
+          <h2 className={styles.sectionTitle}>
+            Global Cyber Security <span className={styles.highlight}>Training</span>
+          </h2>
+          <p className={styles.sectionDesc}>
+            Industry-leading certifications and practical hands-on labs designed for global learners.
+          </p>
+        </div>
 
-          {/* Column 2: Global Services */}
-          <div className={styles.columnCard}>
-            <div className={styles.columnHeader}>
-              <span className={styles.columnBadge} style={{ color: '#00ff41', borderColor: 'rgba(0,255,65,0.3)', background: 'rgba(0,255,65,0.1)' }}>Global Protection</span>
-              <h2 className={styles.columnTitle}>Cyber Security Services</h2>
-            </div>
-            <div className={styles.itemList}>
-              {services.map((item, idx) => (
-                <div key={idx} className={styles.interactiveItem} onClick={() => setActiveItem(item)}>
-                  <span>{item.title}</span>
-                  <span className={styles.arrowIcon}>→</span>
+        <div className={styles.cardsGrid}>
+          {courses.map((item, idx) => (
+            <div key={idx} className={styles.serviceCard}>
+              <div className={styles.cardHeaderRow}>
+                <div className={styles.cardIconBox}>
+                  {courseIcons[item.title] || "🛡️"}
                 </div>
-              ))}
+                <h3 className={styles.cardTitle}>{item.title}</h3>
+              </div>
+              <p className={styles.cardDescription}>{item.description}</p>
+              <div className={styles.cardFooter}>
+                <Link href="/courses" className={styles.cardLink}>
+                  <span>Explore Course</span>
+                  <span className={styles.arrow}>→</span>
+                </Link>
+              </div>
             </div>
-          </div>
+          ))}
+        </div>
+      </section>
 
+      {/* Global Services Section */}
+      <section className={styles.contentSectionAlt}>
+        <div className={styles.sectionHeaderContainer}>
+          <div className={styles.sectionBadgeGreen}>
+            <span>🛡️</span> ENTERPRISE PROTECTION
+          </div>
+          <h2 className={styles.sectionTitle}>
+            Global Protection & <span className={styles.highlightGreen}>Cyber Security Services</span>
+          </h2>
+          <p className={styles.sectionDesc}>
+            Proactive security audits, vulnerability assessments, and penetration testing for global enterprises.
+          </p>
+        </div>
+
+        <div className={styles.cardsGrid}>
+          {services.map((item, idx) => (
+            <div key={idx} className={styles.serviceCardGreen}>
+              <div className={styles.cardHeaderRow}>
+                <div className={styles.cardIconBoxGreen}>
+                  {serviceIcons[item.title] || "🔒"}
+                </div>
+                <h3 className={styles.cardTitle}>{item.title}</h3>
+              </div>
+              <p className={styles.cardDescription}>{item.description}</p>
+              <div className={styles.cardFooter}>
+                <Link href="/contact-us" className={styles.cardLinkGreen}>
+                  <span>Inquire Security Service</span>
+                  <span className={styles.arrow}>→</span>
+                </Link>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -97,32 +142,7 @@ export default function GlobalServicesClient({
           <Link href="/contact-us" className="btn-primary" style={{ padding: '1rem 3rem', fontSize: '1.2rem' }}>Get Started Today</Link>
         </div>
       </section>
-
-      {/* Interactive Modal Overlay */}
-      <AnimatePresence>
-        {activeItem && (
-          <motion.div 
-            className={styles.modalOverlay}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setActiveItem(null)}
-          >
-            <motion.div 
-              className={styles.modalContent}
-              initial={{ scale: 0.95, y: 20 }}
-              animate={{ scale: 1, y: 0 }}
-              exit={{ scale: 0.95, y: 20 }}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <button className={styles.closeBtn} onClick={() => setActiveItem(null)} aria-label="Close modal">✕</button>
-              <h3 className={styles.modalTitle}>{activeItem.title}</h3>
-              <p className={styles.modalDesc}>{activeItem.description}</p>
-              <Link href="/contact-us" className="btn-primary" style={{ display: 'inline-block' }}>Inquire Now</Link>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </div>
   );
 }
+

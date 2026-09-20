@@ -6,12 +6,12 @@
 
 /* Premium Hero Section */
 .heroSection {
-  padding: 8rem 2rem 6rem;
+  padding: 8rem 2rem 5rem;
   position: relative;
   overflow: hidden;
   text-align: center;
   border-bottom: 1px solid rgba(255,255,255,0.05);
-  background: linear-gradient(180deg, rgba(15, 17, 21, 0.9) 0%, #0b0d14 100%);
+  background: linear-gradient(180deg, rgba(15, 17, 21, 0.95) 0%, #0b0d14 100%);
 }
 
 .heroBackground {
@@ -48,7 +48,7 @@
 }
 
 .heroTitle {
-  font-size: 4.5rem;
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
   font-weight: 900;
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
@@ -64,22 +64,22 @@
   line-height: 1.6;
 }
 
-/* Callout Card (For the data-driven text) */
+/* Callout Card */
 .calloutSection {
   max-width: 1000px;
-  margin: -3rem auto 4rem;
+  margin: -2.5rem auto 3rem;
   position: relative;
   z-index: 10;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
 .calloutCard {
-  background: rgba(20, 24, 32, 0.8);
-  border: 1px solid rgba(252, 22, 22, 0.2);
+  background: rgba(18, 22, 30, 0.9);
+  border: 1px solid rgba(252, 22, 22, 0.25);
   border-radius: 20px;
-  padding: 3rem;
+  padding: 2.5rem;
   backdrop-filter: blur(20px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(252, 22, 22, 0.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6), inset 0 0 20px rgba(252, 22, 22, 0.05);
   text-align: center;
 }
 
@@ -87,155 +87,221 @@
   font-size: 1.1rem;
   color: #d1d5db;
   line-height: 1.8;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .calloutCard p:last-child {
   margin-bottom: 0;
 }
 
-/* Grids Section */
+/* Content Sections */
 .contentSection {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 3.5rem 1.5rem;
 }
 
-.sectionTitle {
-  font-size: 2.5rem;
-  font-weight: 800;
+.contentSectionAlt {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sectionHeaderContainer {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-/* Ambient Background Orbs */
-.ambientOrb1, .ambientOrb2 {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(100px);
-  z-index: 0;
-  opacity: 0.15;
-  pointer-events: none;
+.sectionBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 22, 22, 0.12);
+  color: #ff1616;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 22, 22, 0.35);
+  box-shadow: 0 0 15px rgba(255, 22, 22, 0.2);
 }
 
-.ambientOrb1 {
-  width: 400px;
-  height: 400px;
-  background: #fc1616;
-  top: 10%;
-  left: -100px;
+.sectionBadgeGreen {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(16, 185, 129, 0.12);
+  color: #10b981;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
 }
 
-.ambientOrb2 {
-  width: 500px;
-  height: 500px;
-  background: #3b82f6;
-  bottom: 20%;
-  right: -150px;
+.sectionTitle {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
 }
 
-/* Bento Layout */
-.bentoGrid {
+.highlight {
+  color: #ff1616;
+  text-shadow: 0 0 20px rgba(255, 22, 22, 0.4);
+}
+
+.highlightGreen {
+  color: #10b981;
+  text-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+}
+
+.sectionDesc {
+  color: #9ca3af;
+  font-size: 1.15rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Cards Grid */
+.cardsGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  margin-bottom: 5rem;
-  position: relative;
-  z-index: 1;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
 }
 
-@media (max-width: 900px) {
-  .bentoGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .bentoGrid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Glassmorphic Bento Card */
-.bentoCard {
-  background: linear-gradient(135deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.01) 100%);
-  border-radius: 24px;
-  padding: 2.5rem 2rem;
+.serviceCard {
+  background: rgba(18, 22, 30, 0.85);
+  border: 1px solid rgba(255, 22, 22, 0.2);
+  border-radius: 16px;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 1.25rem;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(20px);
-  position: relative;
-  overflow: hidden;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* Spanning options for Bento effect */
-.span2 {
-  grid-column: span 2;
-}
-@media (max-width: 900px) {
-  .span2 {
-    grid-column: span 1;
-  }
+.serviceCard:hover {
+  transform: translateY(-5px);
+  border-color: #ff1616;
+  box-shadow: 0 15px 40px rgba(255, 22, 22, 0.2);
 }
 
-.bentoCard::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: radial-gradient(circle at top right, rgba(252, 22, 22, 0.1), transparent 70%);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.bentoCard:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 15px 40px rgba(252, 22, 22, 0.15);
-}
-
-.bentoCard:hover::before {
-  opacity: 1;
-}
-
-.iconBox {
-  width: 50px;
-  height: 50px;
-  background: rgba(252, 22, 22, 0.1);
-  color: #fc1616;
+.serviceCardGreen {
+  background: rgba(18, 22, 30, 0.85);
+  border: 1px solid rgba(16, 185, 129, 0.2);
   border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.serviceCardGreen:hover {
+  transform: translateY(-5px);
+  border-color: #10b981;
+  box-shadow: 0 15px 40px rgba(16, 185, 129, 0.2);
+}
+
+.cardHeaderRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.cardIconBox {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(255, 22, 22, 0.12);
+  border: 1px solid rgba(255, 22, 22, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
   flex-shrink: 0;
-  transition: all 0.4s ease;
-  z-index: 2;
 }
 
-.bentoCard:hover .iconBox {
-  background: #fc1616;
-  color: #fff;
-  transform: rotate(10deg);
-  box-shadow: 0 0 20px rgba(252, 22, 22, 0.4);
+.cardIconBoxGreen {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
 }
 
-.cardText {
+.cardTitle {
+  font-size: 1.35rem;
   font-weight: 700;
-  font-size: 1.2rem;
-  color: #fff;
-  z-index: 2;
-  transition: color 0.3s ease;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.3;
 }
 
-.cardDesc {
-  color: #9ca3af;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  z-index: 2;
+.cardDescription {
+  color: #d1d5db;
+  font-size: 1rem;
+  line-height: 1.65;
+  margin-bottom: 1.75rem;
+  flex-grow: 1;
+}
+
+.cardFooter {
+  margin-top: auto;
+}
+
+.cardLink {
+  color: #ff1616;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.2s ease;
+}
+
+.cardLink:hover {
+  gap: 0.85rem;
+  text-shadow: 0 0 10px rgba(255, 22, 22, 0.5);
+}
+
+.cardLinkGreen {
+  color: #10b981;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.2s ease;
+}
+
+.cardLinkGreen:hover {
+  gap: 0.85rem;
+  text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
+
+.arrow {
+  font-size: 1.2rem;
 }
 
 /* Call to Action */
@@ -246,62 +312,16 @@
   border-top: 1px solid rgba(255,255,255,0.05);
 }
 
-/* Modal Styling */
-.modalOverlay {
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.85);
-  backdrop-filter: blur(8px);
-  z-index: 10000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.modalContent {
-  background: #0b0d14;
-  border: 1px solid rgba(252, 22, 22, 0.3);
-  padding: 3rem;
-  border-radius: 20px;
-  max-width: 600px;
-  width: 100%;
-  position: relative;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 30px rgba(252, 22, 22, 0.1);
-}
-
-.closeBtn {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  background: none;
-  border: none;
-  color: #9ca3af;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.closeBtn:hover {
-  color: #fff;
-}
-
-.modalTitle {
-  font-size: 1.8rem;
+.ctaBox h2 {
+  font-size: 2.2rem;
   font-weight: 800;
-  margin-bottom: 1rem;
   color: #fff;
-}
-
-.modalDesc {
-  color: #d1d5db;
-  line-height: 1.7;
-  font-size: 1.05rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
-  .heroTitle { font-size: 3rem; }
-  .calloutCard { padding: 2rem; }
-  .modalContent { padding: 2rem; }
+  .heroSection { padding: 6rem 1.5rem 4rem; }
+  .calloutCard { padding: 1.75rem; }
+  .cardsGrid { grid-template-columns: 1fr; }
 }
+
