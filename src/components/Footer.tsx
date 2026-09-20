@@ -11,7 +11,7 @@ export default function Footer() {
         
         {/* Column 1: Brand & Contact Info */}
         <div className={styles.brandCol}>
-          <Image src="/logo.png" alt="CyberiumX Logo" width={300} height={85} style={{ objectFit: 'contain', height: '85px', width: 'auto', marginBottom: '1.25rem' }} />
+          <Image src="/logo.png" alt="CyberiumX Logo" width={400} height={115} style={{ objectFit: 'contain', height: '115px', width: 'auto', marginBottom: '1.25rem' }} />
           <p className={styles.brandDesc}>
             CyberiumX is a trusted global leader in Cybersecurity Education, Penetration Testing, and Managed Security Services.
           </p>
