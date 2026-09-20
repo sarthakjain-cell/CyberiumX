@@ -8,6 +8,7 @@ import CoursesPreview from '@/components/CoursesPreview';
 import BlogPreview from '@/components/BlogPreview';
 import StandOut from '@/components/StandOut';
 import Testimonials from '@/components/Testimonials';
+import TrustBadge from '@/components/TrustBadge';
 
 export default function Home() {
   const jsonLd = {
@@ -44,6 +45,7 @@ export default function Home() {
         <ServicesPreview />
         <InteractiveTerminal />
         <BlogPreview />
+        <TrustBadge />
       </main>
     </>
   );

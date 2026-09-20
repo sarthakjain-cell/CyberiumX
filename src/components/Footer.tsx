@@ -127,6 +127,7 @@ export default function Footer() {
               <Link href="/terms">Terms</Link>
               <Link href="/disclaimer">Disclaimer</Link>
               <Link href="/verify">Certificate Directory</Link>
+              <a href="https://jsdl.in/DT-23VTC9S887W" target="_blank" rel="noopener noreferrer" aria-label="View our reviews on Justdial">Reviews on Justdial</a>
             </div>
           </div>
         </div>
