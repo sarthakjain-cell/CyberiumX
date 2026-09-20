@@ -18,8 +18,13 @@ export default function Home() {
     "logo": "https://cyberiumx.com/logo.png",
     "description": "Elite Cyber Security Training Centre offering real-world hacking and penetration testing courses.",
     "sameAs": [
-      "https://www.linkedin.com/company/cyberiumx",
-      "https://twitter.com/cyberiumx"
+      "https://www.linkedin.com/company/cyberiumx/",
+      "https://www.facebook.com/cyberiumxtraining",
+      "https://www.instagram.com/cyber_iumx",
+      "https://youtube.com/@cyberiumx",
+      "https://wa.me/+919318492128",
+      "https://x.com/cyber_iumx",
+      "https://jsdl.in/DT-23VTC9S887W"
     ]
   };
 

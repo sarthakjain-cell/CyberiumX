@@ -102,6 +102,28 @@
   box-shadow: 0 0 20px rgba(220, 39, 67, 0.7) !important;
 }
 
+.facebook {
+  color: #1877F2 !important;
+  border-color: rgba(24, 119, 242, 0.4) !important;
+  background: rgba(24, 119, 242, 0.12) !important;
+}
+.facebook:hover {
+  background: #1877F2 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 20px rgba(24, 119, 242, 0.7) !important;
+}
+
+.youtube {
+  color: #FF0000 !important;
+  border-color: rgba(255, 0, 0, 0.4) !important;
+  background: rgba(255, 0, 0, 0.12) !important;
+}
+.youtube:hover {
+  background: #FF0000 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.7) !important;
+}
+
 .twitter {
   color: #1DA1F2 !important;
   border-color: rgba(29, 161, 242, 0.4) !important;
@@ -122,6 +144,17 @@
   background: #25D366 !important;
   color: #ffffff !important;
   box-shadow: 0 0 20px rgba(37, 211, 102, 0.7) !important;
+}
+
+.justdial {
+  color: #FF6600 !important;
+  border-color: rgba(255, 102, 0, 0.4) !important;
+  background: rgba(255, 102, 0, 0.12) !important;
+}
+.justdial:hover {
+  background: #FF6600 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 20px rgba(255, 102, 0, 0.7) !important;
 }
 
 .footerCol h4 {
