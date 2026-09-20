@@ -26,7 +26,7 @@ export default function PaymentMethods() {
 
         {/* Remitly */}
         <div className={styles.logoItem} title="Remitly">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Remitly_Logo.svg" alt="Remitly" className={styles.svgIcon} loading="lazy" />
+          <img src="https://logo.clearbit.com/remitly.com" alt="Remitly" className={styles.svgIcon} loading="lazy" />
         </div>
 
       </div>
