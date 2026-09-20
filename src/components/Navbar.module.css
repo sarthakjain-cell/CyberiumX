@@ -211,9 +211,26 @@
   border-left: 1px solid rgba(252, 22, 22, 0.2);
 }
 
-.dropdown:hover .dropdownContent {
-  display: block;
-  animation: dropdownFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+.dropdownShow {
+  display: block !important;
+  opacity: 1 !important;
+  transform: translateX(-50%) translateY(0) !important;
+}
+
+@media (max-width: 1400px) {
+  .mobileNavShow {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background: rgba(5, 7, 10, 0.95);
+    padding: 2rem;
+    border-bottom: 1px solid rgba(255, 22, 22, 0.3);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+  }
 }
 
 @keyframes dropdownFadeIn {

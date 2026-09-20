@@ -10,6 +10,9 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
+  const [moreOpen, setMoreOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -43,30 +46,40 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <nav className={styles.navLinks}>
-          <Link href="/" className={`${styles.navLink} ${pathname === '/' ? styles.active : ''}`}>Home</Link>
-          <Link href="/about-us" className={`${styles.navLink} ${pathname === '/about-us' ? styles.active : ''}`}>About Us</Link>
-          <Link href="/services" className={`${styles.navLink} ${styles.specialLink}`}>7X-Security</Link>
-          <Link href="/courses" className={`${styles.navLink} ${pathname.startsWith('/courses') || pathname.startsWith('/provided-course') ? styles.active : ''}`}>Our Courses</Link>
-          <Link href="/global-services" className={`${styles.navLink} ${pathname.startsWith('/global-services') ? styles.active : ''}`}>Global Services</Link>
+        <nav className={`${styles.navLinks} ${mobileOpen ? styles.mobileNavShow : ''}`}>
+          <Link href="/" className={`${styles.navLink} ${pathname === '/' ? styles.active : ''}`} onClick={() => setMobileOpen(false)}>Home</Link>
+          <Link href="/about-us" className={`${styles.navLink} ${pathname === '/about-us' ? styles.active : ''}`} onClick={() => setMobileOpen(false)}>About Us</Link>
+          <Link href="/services" className={`${styles.navLink} ${styles.specialLink}`} onClick={() => setMobileOpen(false)}>7X-Security</Link>
+          <Link href="/courses" className={`${styles.navLink} ${pathname.startsWith('/courses') || pathname.startsWith('/provided-course') ? styles.active : ''}`} onClick={() => setMobileOpen(false)}>Our Courses</Link>
+          <Link href="/global-services" className={`${styles.navLink} ${pathname.startsWith('/global-services') ? styles.active : ''}`} onClick={() => setMobileOpen(false)}>Global Services</Link>
 
-          <div className={styles.dropdown}>
-            <span className={`${styles.navLink} ${pathname === '/blog' || pathname === '/faq' || pathname === '/verify' ? styles.active : ''}`} style={{cursor: 'pointer'}}>More ▾</span>
-            <div className={styles.dropdownContent}>
-              <Link href="/blog" className={styles.dropdownItem}>Blog</Link>
-              <Link href="/faq" className={styles.dropdownItem}>Reviews/FAQ</Link>
-              <Link href="/verify" className={styles.dropdownItem} style={{ color: '#10b981', fontWeight: 600 }}>Verify</Link>
+          <div 
+            className={styles.dropdown}
+            onMouseEnter={() => setMoreOpen(true)}
+            onMouseLeave={() => setMoreOpen(false)}
+          >
+            <span 
+              className={`${styles.navLink} ${pathname === '/blog' || pathname === '/faq' || pathname === '/verify' ? styles.active : ''}`} 
+              style={{cursor: 'pointer'}}
+              onClick={() => setMoreOpen(!moreOpen)}
+            >
+              More ▾
+            </span>
+            <div className={`${styles.dropdownContent} ${moreOpen ? styles.dropdownShow : ''}`}>
+              <Link href="/blog" className={styles.dropdownItem} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>Blog</Link>
+              <Link href="/faq" className={styles.dropdownItem} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>Reviews/FAQ</Link>
+              <Link href="/verify" className={styles.dropdownItem} style={{ color: '#10b981', fontWeight: 600 }} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>Verify</Link>
             </div>
           </div>
-          <Link href="/contact-us" className={`${styles.navLink} ${pathname === '/contact-us' ? styles.active : ''}`}>Contact Us</Link>
+          <Link href="/contact-us" className={`${styles.navLink} ${pathname === '/contact-us' ? styles.active : ''}`} onClick={() => setMobileOpen(false)}>Contact Us</Link>
           
-          <Link href="/login" className={styles.navLink} style={{ color: '#9ca3af', display: 'flex', alignItems: 'center', gap: '0.5rem', marginLeft: '1rem' }}>
+          <Link href="/login" className={styles.navLink} style={{ color: '#9ca3af', display: 'flex', alignItems: 'center', gap: '0.5rem', marginLeft: '1rem' }} onClick={() => setMobileOpen(false)}>
             <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
             Login
           </Link>
-          <Link href="https://wa.me/+919318492128" className={styles.getStartedBtn}>Get Started</Link>
+          <Link href="https://wa.me/+919318492128" className={styles.getStartedBtn} onClick={() => setMobileOpen(false)}>Get Started</Link>
         </nav>
-        <button className={styles.mobileMenuBtn} aria-label="Toggle Navigation Menu">☰</button>
+        <button className={styles.mobileMenuBtn} onClick={() => setMobileOpen(!mobileOpen)} aria-label="Toggle Navigation Menu">☰</button>
       </div>
     </header>
   );

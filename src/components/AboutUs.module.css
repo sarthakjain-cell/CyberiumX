@@ -56,8 +56,9 @@
 /* Slider Container */
 .sliderViewport {
   position: relative;
-  height: 280px; 
-  overflow: hidden;
+  height: auto;
+  min-height: 260px;
+  overflow: visible;
   margin-bottom: 2rem;
   cursor: grab;
   user-select: none;
