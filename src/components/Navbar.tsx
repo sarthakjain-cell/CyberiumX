@@ -21,25 +21,25 @@ export default function Navbar() {
   return (
     <header className={`${styles.navbar} ${scrolled ? styles.scrolledNavbar : ''}`}>
       <div className={styles.navContainer}>
-        <Link href="/" className={styles.logo} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none' }}>
+        <Link href="/" className={styles.logo} style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', textDecoration: 'none' }}>
           <img 
             src="/logo.png" 
             alt="CyberiumX Logo" 
-            width={180}
-            height={55}
-            style={{ height: '55px', width: 'auto', objectFit: 'contain' }}
+            width={240}
+            height={72}
+            style={{ height: '72px', width: 'auto', objectFit: 'contain' }}
             onError={(e) => {
               (e.target as HTMLImageElement).style.display = 'none';
             }}
           />
           <span style={{ 
-            fontSize: '1.65rem', 
+            fontSize: '1.9rem', 
             fontWeight: 900, 
             color: '#ffffff', 
             letterSpacing: '-0.03em',
             fontFamily: 'var(--font-outfit), sans-serif' 
           }}>
-            Cyberium<span style={{ color: '#ff1616', textShadow: '0 0 12px rgba(255, 22, 22, 0.6)' }}>X</span>
+            Cyberium<span style={{ color: '#ff1616', textShadow: '0 0 14px rgba(255, 22, 22, 0.6)' }}>X</span>
           </span>
         </Link>
 
