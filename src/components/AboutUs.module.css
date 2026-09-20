@@ -84,10 +84,7 @@
   letter-spacing: -0.05em;
   margin-bottom: 1.5rem;
   line-height: 1.1;
-  background: linear-gradient(135deg, #ffffff 30%, #00ff41 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #ffffff;
 }
 
 .slide p {

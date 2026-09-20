@@ -36,11 +36,8 @@
 }
 
 .highlightText {
-  color: #fc1616;
-  background: linear-gradient(135deg, #ffffff 30%, #fc1616 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 15px rgba(252, 22, 22, 0.4));
+  color: #ff1616;
+  text-shadow: 0 0 15px rgba(255, 22, 22, 0.4);
 }
 
 .marqueeContainer {
