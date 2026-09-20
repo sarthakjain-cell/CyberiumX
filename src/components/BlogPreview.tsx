@@ -58,18 +58,12 @@ export default function BlogPreview() {
               overflow: 'hidden'
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'translateY(-5px)';
               e.currentTarget.style.borderColor = 'var(--primary)';
               e.currentTarget.style.boxShadow = '0 10px 30px rgba(252, 22, 22, 0.1)';
-              const img = e.currentTarget.querySelector('img');
-              if (img) img.style.transform = 'scale(1.05)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.transform = 'none';
               e.currentTarget.style.borderColor = 'var(--border)';
               e.currentTarget.style.boxShadow = 'none';
-              const img = e.currentTarget.querySelector('img');
-              if (img) img.style.transform = 'scale(1)';
             }}
           >
             <div style={{ position: 'relative', width: '100%', height: '200px', overflow: 'hidden', background: '#0a0a0a' }}>

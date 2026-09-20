@@ -36,7 +36,6 @@
 }
 
 .blogCard:hover {
-  transform: translateY(-5px);
   border-color: var(--primary);
   box-shadow: 0 10px 30px rgba(252, 22, 22, 0.1);
 }
@@ -119,7 +118,7 @@
 }
 
 .blogCard:hover .blogImage {
-  transform: scale(1.05);
+  /* removed scale transition */
 }
 
 .blogCardContent {
