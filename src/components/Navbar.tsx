@@ -63,7 +63,7 @@ export default function Navbar() {
               style={{cursor: 'pointer'}}
               onClick={() => setMoreOpen(!moreOpen)}
             >
-              More ▾
+              More ▼
             </span>
             <div className={`${styles.dropdownContent} ${moreOpen ? styles.dropdownShow : ''}`}>
               <Link href="/blog" className={styles.dropdownItem} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>Blog</Link>
@@ -79,7 +79,9 @@ export default function Navbar() {
           </Link>
           <Link href="https://wa.me/+919318492128" className={styles.getStartedBtn} onClick={() => setMobileOpen(false)}>Get Started</Link>
         </nav>
-        <button className={styles.mobileMenuBtn} onClick={() => setMobileOpen(!mobileOpen)} aria-label="Toggle Navigation Menu">☰</button>
+        <button className={styles.mobileMenuBtn} onClick={() => setMobileOpen(!mobileOpen)} aria-label="Toggle Navigation Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
       </div>
     </header>
   );

@@ -51,13 +51,13 @@ export default function FaqClient({
         <div className={styles.reviewsGrid}>
           {reviews.map((item, index) => (
             <div key={index} className={styles.reviewCard}>
-              <div className={styles.stars}>★★★★★</div>
+              <div className={styles.stars}></div>
               <p className={styles.reviewText}>&quot;{item.review}&quot;</p>
               <div className={styles.authorRow}>
                 <div className={styles.avatar}>{item.name.charAt(0)}</div>
                 <div className={styles.authorInfo}>
                   <div className={styles.authorName}>{item.name}</div>
-                  <div className={styles.verifiedBadge}>✓ Verified Alumni</div>
+                  <div className={styles.verifiedBadge}> Verified Alumni</div>
                 </div>
               </div>
             </div>

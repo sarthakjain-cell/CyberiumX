@@ -143,7 +143,7 @@ export default function CoursesGrid() {
                   borderRadius: '12px', fontSize: '0.75rem', fontWeight: 800,
                   textTransform: 'uppercase', border: '1px solid rgba(255, 22, 22, 0.3)'
                 }}>
-                  🔥 Highly Demanded Course
+                   Highly Demanded Course
                 </span>
               </div>
               
@@ -151,7 +151,7 @@ export default function CoursesGrid() {
               <p className={styles.cardDesc}>{course.description}</p>
               
               <div className={styles.ratingRow}>
-                <span className={styles.stars}>★★★★★</span>
+                <span className={styles.stars}></span>
                 <span className={styles.ratingText}>{['5.0', '4.9', '4.8'][course.id % 3]}</span>
               </div>
               

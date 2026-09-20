@@ -8,23 +8,6 @@ interface Item {
   description: string;
 }
 
-const courseIcons: Record<string, string> = {
-  "Ethical Hacking Training": "🛡️",
-  "CEH (Certified Ethical Hacker) Training": "📜",
-  "OSCP Training": "🎯",
-  "Web Application Penetration Testing": "🌐",
-  "Network Penetration Testing": "📡",
-  "Bug Bounty Training": "💰",
-  "Kali Linux Training": "🐧"
-};
-
-const serviceIcons: Record<string, string> = {
-  "Website security testing": "🔒",
-  "Network security assessment": "⚡",
-  "Vulnerability assessment": "🔍",
-  "Penetration testing": "⚔️",
-  "Social media security": "📲"
-};
 
 export default function GlobalServicesClient({
   courses,
@@ -66,7 +49,7 @@ export default function GlobalServicesClient({
       <section className={styles.contentSection}>
         <div className={styles.sectionHeaderContainer}>
           <div className={styles.sectionBadge}>
-            <span>📚</span> GLOBAL ACADEMY & COURSES
+            GLOBAL ACADEMY & COURSES
           </div>
           <h2 className={styles.sectionTitle}>
             Global Cyber Security <span className={styles.highlight}>Training</span>
@@ -80,9 +63,7 @@ export default function GlobalServicesClient({
           {courses.map((item, idx) => (
             <div key={idx} className={styles.serviceCard}>
               <div className={styles.cardHeaderRow}>
-                <div className={styles.cardIconBox}>
-                  {courseIcons[item.title] || "🛡️"}
-                </div>
+
                 <h3 className={styles.cardTitle}>{item.title}</h3>
               </div>
               <p className={styles.cardDescription}>{item.description}</p>
@@ -101,7 +82,7 @@ export default function GlobalServicesClient({
       <section className={styles.contentSectionAlt}>
         <div className={styles.sectionHeaderContainer}>
           <div className={styles.sectionBadgeGreen}>
-            <span>🛡️</span> ENTERPRISE PROTECTION
+            ENTERPRISE PROTECTION
           </div>
           <h2 className={styles.sectionTitle}>
             Global Protection & <span className={styles.highlightGreen}>Cyber Security Services</span>
@@ -115,9 +96,7 @@ export default function GlobalServicesClient({
           {services.map((item, idx) => (
             <div key={idx} className={styles.serviceCardGreen}>
               <div className={styles.cardHeaderRow}>
-                <div className={styles.cardIconBoxGreen}>
-                  {serviceIcons[item.title] || "🔒"}
-                </div>
+
                 <h3 className={styles.cardTitle}>{item.title}</h3>
               </div>
               <p className={styles.cardDescription}>{item.description}</p>

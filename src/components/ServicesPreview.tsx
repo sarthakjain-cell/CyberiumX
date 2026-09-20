@@ -7,50 +7,43 @@ const featuredServices = [
     title: "Network Penetration Testing",
     category: "Training & Audits",
     desc: "Simulate real active directory & network infrastructure attacks to identify misconfigurations and secure internal assets.",
-    link: "/global-services",
-    icon: "📡"
+    link: "/global-services"
   },
   {
     title: "Bug Bounty Training",
     category: "Specialized Course",
     desc: "Master methodologies for discovering high-severity vulnerabilities in live enterprise applications and earn bounties legally.",
-    link: "/global-services",
-    icon: "💰"
+    link: "/global-services"
   },
   {
     title: "Kali Linux Training",
     category: "Hands-on Practical",
     desc: "Deep dive into Kali Linux operating system, mastering hundreds of built-in penetration testing and forensics tools.",
-    link: "/global-services",
-    icon: "🐧"
+    link: "/global-services"
   },
   {
     title: "Website Security Testing",
     category: "Global Protection",
     desc: "Comprehensive Web Application PenTesting uncovering OWASP Top 10 vulnerabilities like SQLi, XSS, and broken auth.",
-    link: "/services",
-    icon: "🔒"
+    link: "/services"
   },
   {
     title: "Network Security Assessment",
     category: "Enterprise Defense",
     desc: "In-depth auditing of internal & external firewall, router, and cloud network configurations against cyber threats.",
-    link: "/services",
-    icon: "⚡"
+    link: "/services"
   },
   {
     title: "Vulnerability Assessment",
     category: "Security Service",
     desc: "Automated and expert manual scanning of digital assets to catalog, rate, and prioritize security flaw remediation.",
-    link: "/services",
-    icon: "🔍"
+    link: "/services"
   },
   {
     title: "Penetration Testing (VAPT)",
     category: "Offensive Security",
     desc: "Simulated real-world cyber attacks evaluating defense controls, wireless networks, and mobile application infrastructure.",
-    link: "/services",
-    icon: "⚔️"
+    link: "/services"
   }
 ];
 
@@ -85,7 +78,7 @@ export default function ServicesPreview() {
             border: '1px solid rgba(255, 22, 22, 0.35)',
             boxShadow: '0 0 15px rgba(255, 22, 22, 0.2)'
           }}>
-            <span>🛡️</span> ENTERPRISE PROTECTION & GLOBAL SERVICES
+            ENTERPRISE PROTECTION & GLOBAL SERVICES
           </div>
 
           <h2 style={{ 
@@ -133,7 +126,6 @@ export default function ServicesPreview() {
           >
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
-                <span style={{ fontSize: '1.75rem' }}>🛡️</span>
                 <h3 style={{ fontSize: '1.8rem', color: '#ffffff', fontWeight: 700, margin: 0 }}>
                   7-Layer Security Audit
                 </h3>
@@ -176,7 +168,6 @@ export default function ServicesPreview() {
           >
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
-                <span style={{ fontSize: '1.75rem' }}>🌐</span>
                 <h3 style={{ fontSize: '1.8rem', color: '#ffffff', fontWeight: 700, margin: 0 }}>
                   Global Reach & Protection
                 </h3>
@@ -247,8 +238,7 @@ export default function ServicesPreview() {
               }}
             >
               <div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
-                  <span style={{ fontSize: '1.35rem' }}>{service.icon}</span>
+                <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', marginBottom: '0.5rem' }}>
                   <span style={{ color: '#ff1616', fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.5px', background: 'rgba(255, 22, 22, 0.1)', padding: '2px 8px', borderRadius: '4px' }}>
                     {service.category}
                   </span>

@@ -165,7 +165,7 @@ export default function CourseLandingPage() {
             
             <div className={styles.statsRow}>
               <div className={styles.statItem}>
-                <span className={styles.statIcon}>★★★★★</span>
+                <span className={styles.statIcon}></span>
                 <span style={{ fontWeight: 700, color: '#fff' }}>{['5.0', '4.9', '4.8'][course.id % 3]}</span>
               </div>
               <div className={styles.statItem}>
@@ -181,7 +181,7 @@ export default function CourseLandingPage() {
           
           <div className={styles.heroRight}>
             <div className={styles.enrollCard}>
-              <div style={{ color: '#ff1616', fontWeight: 700, marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.85rem' }}>🔥 Highly Demanded Course</div>
+              <div style={{ color: '#ff1616', fontWeight: 700, marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.85rem' }}> Highly Demanded Course</div>
               <div className={styles.enrollPrice}>₹1 <span style={{ fontSize: '0.9rem', color: '#10b981' }}>(TEST MODE)</span></div>
               <div className={styles.enrollSub}>Test Mode: Pay ₹1 to verify full Razorpay checkout & signature authentication</div>
               
@@ -196,7 +196,7 @@ export default function CourseLandingPage() {
               </button>
               
               <div className={styles.guarantee}>
-                <span>🛡️</span> 30-Day Money-Back Guarantee
+                <span>️</span> 30-Day Money-Back Guarantee
               </div>
               <p style={{ marginTop: '1.5rem', fontSize: '0.85rem', color: '#9ca3af' }}>Join 25,000+ enrolled students</p>
             </div>
@@ -213,7 +213,7 @@ export default function CourseLandingPage() {
           <div className={styles.skillsGrid}>
             {skills.map((skill: any, idx: number) => (
               <div key={idx} className={styles.skillBadge}>
-                <span className={styles.skillCheck}>✓</span>
+                <span className={styles.skillCheck}></span>
                 {skill}
               </div>
             ))}
@@ -243,7 +243,7 @@ export default function CourseLandingPage() {
                   {mod.lessons.map((lesson: any, lIdx: number) => (
                     <li key={lIdx} className={styles.lessonItem}>
                       <span style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                        <span style={{ color: '#fc1616' }}>▶</span>
+                        <span style={{ color: '#fc1616' }}></span>
                         {lesson.title}
                       </span>
                       <span style={{ color: '#9ca3af' }}>{lesson.duration}</span>

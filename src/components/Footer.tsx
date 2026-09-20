@@ -18,15 +18,15 @@ export default function Footer() {
           
           <div className={styles.contactInfo}>
             <div className={styles.contactItem}>
-              <span className={styles.contactIcon}>📞</span>
+              <span className={styles.contactIcon}></span>
               <a href="tel:+919318492128">+91-9318492128</a>
             </div>
             <div className={styles.contactItem}>
-              <span className={styles.contactIcon}>✉️</span>
+              <span className={styles.contactIcon}>️</span>
               <a href="mailto:contact@cyberiumx.com">contact@cyberiumx.com</a>
             </div>
             <div className={styles.contactItem}>
-              <span className={styles.contactIcon}>📍</span>
+              <span className={styles.contactIcon}></span>
               <span>Noida, Uttar Pradesh, India</span>
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function Footer() {
             </div>
             <div className={styles.sourceItem}>
               <span className={styles.sourceTag}>STUDY</span>
-              <a href="https://cyberiumx.com" target="_blank" rel="noopener noreferrer">Total Economic Impact™ Study of CyberiumX Virtual Cyber Ranges</a>
+              <a href="https://cyberiumx.com" target="_blank" rel="noopener noreferrer">Total Economic Impact Study of CyberiumX Virtual Cyber Ranges</a>
             </div>
           </div>
         </div>

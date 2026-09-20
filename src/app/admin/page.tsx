@@ -237,7 +237,7 @@ export default function AdminPage() {
                           onClick={() => handleRemoveModule(idx)}
                           style={{ background: 'transparent', border: 'none', color: '#ef4444', cursor: 'pointer', padding: '0.5rem' }}
                         >
-                          ✕
+                          
                         </button>
                       )}
                     </div>
