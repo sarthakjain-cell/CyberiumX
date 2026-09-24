@@ -26,13 +26,6 @@ export default function LoginPage() {
       <div className={styles.formSide}>
         <div className={styles.formWrapper}>
           
-          <div className={styles.brand}>
-            <Link href="/">
-              <span className={styles.brandPrimary}>Cyberium</span>
-              <span className={styles.brandSecondary}>X</span>
-            </Link>
-          </div>
-
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
