@@ -76,7 +76,11 @@ export default function Hero() {
               <span className={styles.googleRatingText}><strong>4.9/5</strong> Rating</span>
               <span className={styles.googleDivider}>•</span>
               <span className={styles.googleReviewCount}>500+ Google Reviews</span>
-              <span className={styles.googleProofTag}>View Proof ↗</span>
+              <span className={styles.googleProofTag} aria-hidden="true">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+              </span>
             </button>
           </div>
           
