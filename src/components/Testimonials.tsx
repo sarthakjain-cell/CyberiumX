@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import styles from "./Testimonials.module.css";
 
-const Star = ({ size = 18, color = "#ff1616", fill = "#ff1616" }) => (
+const Star = ({ size = 16, color = "#fbbf24", fill = "#fbbf24" }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill={fill} stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
   </svg>

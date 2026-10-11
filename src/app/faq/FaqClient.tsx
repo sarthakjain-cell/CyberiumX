@@ -34,7 +34,7 @@ export default function FaqClient({
       <section className={styles.heroSection}>
         <div>
           <span className={styles.badge}>Student Feedback & Help Center</span>
-          <h1 className={styles.heroTitle}>Student Reviews & FAQ</h1>
+          <h1 className={styles.heroTitle}>FAQs</h1>
           <p className={styles.heroDesc}>
             Hear directly from our global alumni community and find answers to common questions about CyberiumX courses, certifications, and career support.
           </p>
@@ -51,7 +51,16 @@ export default function FaqClient({
         <div className={styles.reviewsGrid}>
           {reviews.map((item, index) => (
             <div key={index} className={styles.reviewCard}>
-              <div className={styles.stars}></div>
+              <div className={styles.ratingRow}>
+                <div className={styles.starsRow} aria-label="5 out of 5 stars">
+                  {[0, 1, 2, 3, 4].map((starIdx) => (
+                    <svg key={starIdx} width="16" height="16" viewBox="0 0 24 24" fill="#fbbf24">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                  ))}
+                </div>
+                <span className={styles.ratingBadge}>5.0 ★ 5 Star</span>
+              </div>
               <p className={styles.reviewText}>&quot;{item.review}&quot;</p>
               <div className={styles.authorRow}>
                 <div className={styles.avatar}>{item.name.charAt(0)}</div>

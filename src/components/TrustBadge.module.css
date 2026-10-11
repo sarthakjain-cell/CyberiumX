@@ -1,72 +1,173 @@
 .trustSection {
-  padding: 4rem 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 6rem 1.5rem;
   position: relative;
   z-index: 2;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 22, 22, 0.05) 0%, transparent 70%);
 }
 
-.trustCard {
-  background: #0d1117; /* Solid dark background instead of heavy glassmorphism */
-  border: 1px solid rgba(255, 22, 22, 0.4);
-  border-radius: 12px;
-  padding: 2.5rem 3rem;
+.trustContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionHeader {
+  margin-bottom: 3.5rem;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255, 122, 0, 0.12);
+  color: #ff7a00;
+  border: 1px solid rgba(255, 122, 0, 0.35);
+  padding: 0.45rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(255, 122, 0, 0.15);
+}
+
+.title {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #9ca3af;
+  font-size: 1.15rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.awardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.awardCard {
+  background: rgba(15, 20, 30, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  max-width: 700px;
-  width: 100%;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 22, 22, 0.05);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(15px);
+  position: relative;
 }
 
-.trustIcon {
-  color: #10b981; /* Green for verified */
-  margin-bottom: 1rem;
+.awardCard:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 122, 0, 0.5);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 122, 0, 0.2);
+}
+
+.imageWrapper {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  background: #080b11;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.awardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.awardCard:hover .awardImg {
+  transform: scale(1.04);
+}
+
+.awardCaption {
+  padding: 1.75rem 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.captionBadge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #ff7a00;
+}
+
+.awardCaption h4 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.awardCard:hover .awardCaption h4 {
+  color: #ff9433;
+}
+
+.awardCaption p {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.ctaWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.trustTitle {
-  font-size: 1.8rem;
-  color: #ffffff;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.trustSubtitle {
-  font-size: 1.1rem;
-  color: #9ca3af;
-  margin-bottom: 2rem;
-}
-
-.trustButton {
-  background: transparent;
-  color: #ff1616;
-  border: 1px solid rgba(255, 22, 22, 0.5);
-  padding: 0.75rem 2rem;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: all 0.2s ease;
+.verifyButton {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, #ff1616 0%, #b90b0b 100%);
+  color: #ffffff;
+  padding: 1rem 2.5rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(255, 22, 22, 0.35);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.trustButton:hover {
-  background: rgba(255, 22, 22, 0.1);
-  border-color: #ff1616;
+.verifyButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(255, 22, 22, 0.5);
+  background: linear-gradient(135deg, #ff2e2e 0%, #d10c0c 100%);
 }
 
 @media (max-width: 768px) {
-  .trustCard {
-    padding: 2rem 1.5rem;
+  .trustSection {
+    padding: 4rem 1rem;
   }
-  .trustTitle {
-    font-size: 1.5rem;
+  .awardGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .awardCaption {
+    padding: 1.5rem;
   }
 }

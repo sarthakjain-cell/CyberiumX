@@ -3,7 +3,6 @@ import AlumniMarquee from '@/components/AlumniMarquee';
 import CareerQuiz from '@/components/CareerQuiz';
 import InteractiveTerminal from '@/components/InteractiveTerminal';
 import AboutUs from '@/components/AboutUs';
-import ServicesPreview from '@/components/ServicesPreview';
 import CoursesPreview from '@/components/CoursesPreview';
 import BlogPreview from '@/components/BlogPreview';
 import StandOut from '@/components/StandOut';
@@ -42,7 +41,6 @@ export default function Home() {
         <StandOut />
         <CoursesPreview />
         <Testimonials />
-        <ServicesPreview />
         <InteractiveTerminal />
         <BlogPreview />
         <TrustBadge />
