@@ -64,7 +64,7 @@ export default function CoursesGrid() {
           animate={{ opacity: 1, y: 0 }}
         >
           <div className={styles.pulseBadge}>PREMIUM TRAINING</div>
-          <h2 className={styles.mainTitle}>Our Courses</h2>
+          <h2 className={styles.mainTitle}>Best Online Cybersecurity Training</h2>
           <p style={{ color: '#9ca3af', fontSize: '1.25rem', maxWidth: '700px', margin: '0 auto' }}>Master the tools and techniques used by elite cybersecurity professionals. Launch your career with industry-recognized certifications.</p>
         </motion.div>
 
@@ -117,42 +117,48 @@ export default function CoursesGrid() {
           {filteredCourses.map((course) => (
             <motion.div key={course.id} className={styles.card} variants={cardVariants}>
               
-              <div className={styles.cardHeader}>
-                <div className={styles.iconWrapper}>
+              {/* Course Icon centered in the middle with white background */}
+              <div className={styles.centerIconContainer}>
+                <div className={styles.centerIconBox}>
                   <img 
                     src={course.icon} 
                     alt={course.title} 
-                    width={34} 
-                    height={34}
+                    width={40} 
+                    height={40}
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = '/logo.png';
                     }}
                     style={{ objectFit: 'contain' }}
                   />
                 </div>
-                <div className={styles.providerInfo}>
-                  <span className={styles.providerName}>CyberiumX</span>
-                  <span className={styles.certType}>Professional Certificate</span>
-                </div>
               </div>
 
+              {/* Course Name */}
+              <h3 className={styles.cardTitle}>{course.title}</h3>
+
               {/* Highly Demanded Course Badge */}
-              <div style={{ marginBottom: '1rem' }}>
-                <span style={{ 
-                  background: 'rgba(255, 22, 22, 0.12)', color: '#ff1616', padding: '4px 12px', 
-                  borderRadius: '12px', fontSize: '0.75rem', fontWeight: 800,
-                  textTransform: 'uppercase', border: '1px solid rgba(255, 22, 22, 0.3)'
-                }}>
-                   Highly Demanded Course
+              <div className={styles.badgeWrapper}>
+                <span className={styles.demandedBadge}>
+                  Highly Demanded Course
                 </span>
               </div>
               
-              <h3 className={styles.cardTitle}>{course.title}</h3>
-              <p className={styles.cardDesc}>{course.description}</p>
+              {/* Course Overview */}
+              <p className={styles.cardDesc}>
+                <strong className={styles.descPrefix}>Course Overview: </strong>
+                {course.description.replace(/^Course Overview:?\s*/i, '')}
+              </p>
               
+              {/* Stars with Rating */}
               <div className={styles.ratingRow}>
-                <span className={styles.stars}></span>
-                <span className={styles.ratingText}>{['5.0', '4.9', '4.8'][course.id % 3]}</span>
+                <div className={styles.stars} aria-label="5 out of 5 stars">
+                  {[0, 1, 2, 3, 4].map((starIdx) => (
+                    <svg key={starIdx} width="16" height="16" viewBox="0 0 24 24" fill="#facc15">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                  ))}
+                </div>
+                <span className={styles.ratingText}>{['5.0', '4.9', '5.0'][course.id % 3]}</span>
               </div>
               
               <div className={styles.metaRow}>
