@@ -170,11 +170,9 @@ export default function CoursesGrid() {
               </div>
               
               <div className={styles.cardFooter}>
-                <Link href={course.link} className={styles.cardLink} aria-label={`View details for ${course.title}`}>
-                  View Details
-                </Link>
-                <Link href={course.link} className={styles.cardLinkReveal} aria-hidden="true" tabIndex={-1}>
-                  Explore Course →
+                <Link href={course.link} className={styles.cardLink} aria-label={`Explore ${course.title}`}>
+                  <span>Explore Course</span>
+                  <span className={styles.cardArrow}>→</span>
                 </Link>
               </div>
             </motion.div>
