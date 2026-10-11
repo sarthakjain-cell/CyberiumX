@@ -67,7 +67,7 @@ export default function Navbar() {
             </span>
             <div className={`${styles.dropdownContent} ${moreOpen ? styles.dropdownShow : ''}`}>
               <Link href="/blog" className={styles.dropdownItem} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>Blog</Link>
-              <Link href="/faq" className={styles.dropdownItem} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>Reviews/FAQ</Link>
+              <Link href="/faq" className={styles.dropdownItem} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>FAQs</Link>
               <Link href="/verify" className={styles.dropdownItem} style={{ color: '#10b981', fontWeight: 600 }} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>Verify</Link>
             </div>
           </div>

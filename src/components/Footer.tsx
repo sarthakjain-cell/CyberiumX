@@ -104,7 +104,7 @@ export default function Footer() {
         <div className={styles.footerCol}>
           <h4>Support & Legal</h4>
           <ul className={styles.footerLinks}>
-            <li><Link href="/faq">Help Center & FAQ</Link></li>
+            <li><Link href="/faq">Help Center & FAQs</Link></li>
             <li><Link href="/contact-us">Contact Support</Link></li>
             <li><Link href="/terms">Terms of Service</Link></li>
             <li><Link href="/privacy-policy">Privacy Policy</Link></li>

@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import FaqClient from './FaqClient';
 
 export const metadata: Metadata = {
-  title: "Reviews & Frequently Asked Questions | CyberiumX",
-  description: "Read verified student reviews and find answers to common questions about CyberiumX ethical hacking courses, CEH, OSCP certification, and enrollment.",
+  title: "FAQs | CyberiumX",
+  description: "Frequently Asked Questions (FAQs) and verified student reviews about CyberiumX ethical hacking courses, CEH, OSCP certification, and enrollment.",
   alternates: {
     canonical: "https://cyberiumx.com/faq",
   },
