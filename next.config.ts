@@ -24,6 +24,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/faq',
+        destination: '/faqs',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

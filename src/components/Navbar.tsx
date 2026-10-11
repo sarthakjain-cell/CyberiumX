@@ -59,7 +59,7 @@ export default function Navbar() {
             onMouseLeave={() => setMoreOpen(false)}
           >
             <span 
-              className={`${styles.navLink} ${pathname === '/blog' || pathname === '/faq' || pathname === '/verify' ? styles.active : ''}`} 
+              className={`${styles.navLink} ${pathname === '/blog' || pathname === '/faqs' || pathname === '/faq' || pathname === '/verify' ? styles.active : ''}`} 
               style={{cursor: 'pointer'}}
               onClick={() => setMoreOpen(!moreOpen)}
             >
@@ -67,7 +67,7 @@ export default function Navbar() {
             </span>
             <div className={`${styles.dropdownContent} ${moreOpen ? styles.dropdownShow : ''}`}>
               <Link href="/blog" className={styles.dropdownItem} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>Blog</Link>
-              <Link href="/faq" className={styles.dropdownItem} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>FAQs</Link>
+              <Link href="/faqs" className={styles.dropdownItem} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>FAQs</Link>
               <Link href="/verify" className={styles.dropdownItem} style={{ color: '#10b981', fontWeight: 600 }} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>Verify</Link>
             </div>
           </div>

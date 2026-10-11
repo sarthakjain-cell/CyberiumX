@@ -94,7 +94,7 @@ export default function Footer() {
             <li><Link href="/global-services">Government & Defence</Link></li>
             <li><Link href="/global-services">University & Campus Training</Link></li>
             <li><Link href="/contact-us">Become a Partner</Link></li>
-            <li><Link href="/faq">Learner Community</Link></li>
+            <li><Link href="/faqs">Learner Community</Link></li>
             <li><Link href="/blog">Cybersecurity Blog</Link></li>
             <li><Link href="/blog">Research & Writeups</Link></li>
           </ul>
@@ -104,12 +104,12 @@ export default function Footer() {
         <div className={styles.footerCol}>
           <h4>Support & Legal</h4>
           <ul className={styles.footerLinks}>
-            <li><Link href="/faq">Help Center & FAQs</Link></li>
+            <li><Link href="/faqs">Help Center & FAQs</Link></li>
             <li><Link href="/contact-us">Contact Support</Link></li>
             <li><Link href="/terms">Terms of Service</Link></li>
             <li><Link href="/privacy-policy">Privacy Policy</Link></li>
             <li><Link href="/disclaimer">Disclaimer</Link></li>
-            <li><Link href="/faq">Cookies Preference</Link></li>
+            <li><Link href="/faqs">Cookies Preference</Link></li>
             <li><Link href="/verify">Accessibility</Link></li>
           </ul>
         </div>

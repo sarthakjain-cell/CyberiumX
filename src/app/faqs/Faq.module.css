@@ -1,0 +1,235 @@
+.pageContainer {
+  min-height: 100vh;
+  background-color: transparent;
+  color: #fff;
+  padding-bottom: 5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.heroSection {
+  padding: 8rem 2rem 4rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: linear-gradient(180deg, rgba(15, 17, 21, 0.95) 0%, #0b0d14 100%);
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 18px;
+  background: rgba(255, 22, 22, 0.12);
+  border: 1px solid rgba(255, 22, 22, 0.35);
+  color: #ff1616;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 0 15px rgba(255, 22, 22, 0.2);
+}
+
+.heroTitle {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.heroDesc {
+  color: #9ca3af;
+  font-size: 1.15rem;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.reviewsSection {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionHeader h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.sectionHeader p {
+  color: #9ca3af;
+  font-size: 1.1rem;
+}
+
+.reviewsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.reviewCard {
+  background: rgba(18, 22, 30, 0.85);
+  border: 1px solid rgba(255, 22, 22, 0.25);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.reviewCard:hover {
+  transform: translateY(-5px);
+  border-color: #ff1616;
+  box-shadow: 0 15px 40px rgba(255, 22, 22, 0.25);
+}
+
+.stars {
+  color: #fbbf24;
+  font-size: 1.25rem;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.starsRow {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.ratingBadge {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.reviewText {
+  color: #e5e7eb !important;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-style: normal;
+  margin-bottom: 1.75rem;
+  flex-grow: 1;
+}
+
+.authorRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 22, 22, 0.15);
+  color: #ff1616;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 800;
+  border: 1px solid rgba(255, 22, 22, 0.35);
+  flex-shrink: 0;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorName {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.verifiedBadge {
+  font-size: 0.8rem;
+  color: #10b981;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+/* FAQ Section */
+.faqSection {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.faqContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.faqItem {
+  background: rgba(18, 22, 30, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faqItem:hover {
+  border-color: rgba(255, 22, 22, 0.4);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.faqQuestion {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.faqQuestion:hover {
+  color: #ff1616;
+}
+
+.icon {
+  color: #ff1616;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.faqAnswer {
+  padding: 0 1.5rem 1.5rem;
+  color: #d1d5db;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
