@@ -47,6 +47,14 @@
   max-width: 900px;
 }
 
+.topBannersRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
 .welcomeBanner {
   display: inline-flex;
   align-items: center;
@@ -56,7 +64,7 @@
   box-shadow: 0 0 25px rgba(255, 22, 22, 0.25), inset 0 0 10px rgba(255, 22, 22, 0.1);
   padding: 0.5rem 1.25rem;
   border-radius: 50px;
-  margin-bottom: 0.85rem;
+  margin-bottom: 0;
   backdrop-filter: blur(12px);
   max-width: 100%;
 }
@@ -66,20 +74,53 @@
   align-items: center;
   gap: 0.65rem;
   background: rgba(10, 15, 26, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(66, 133, 244, 0.15);
-  padding: 0.45rem 1.1rem;
+  padding: 0.45rem 1rem 0.45rem 0.85rem;
   border-radius: 9999px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   backdrop-filter: blur(12px);
   width: fit-content;
-  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
+  font-family: inherit;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .googleReviewBadge:hover {
-  border-color: rgba(66, 133, 244, 0.45);
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(66, 133, 244, 0.3);
-  transform: translateY(-1px);
+  border-color: rgba(66, 133, 244, 0.6);
+  background: rgba(15, 23, 42, 0.95);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6), 0 0 25px rgba(66, 133, 244, 0.35);
+  transform: translateY(-2px);
+}
+
+.googleReviewBadge:focus-visible {
+  outline: 2px solid #4285F4;
+  outline-offset: 2px;
+}
+
+.googleProofTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: rgba(66, 133, 244, 0.15);
+  color: #60a5fa;
+  border: 1px solid rgba(66, 133, 244, 0.35);
+  padding: 3px 9px;
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  margin-left: 0.25rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.googleReviewBadge:hover .googleProofTag {
+  background: #4285F4;
+  color: #ffffff;
+  border-color: #4285F4;
+  box-shadow: 0 0 12px rgba(66, 133, 244, 0.6);
 }
 
 .googleIconBox {
