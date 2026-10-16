@@ -1,135 +1,101 @@
 "use client";
 
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from './CoursesGrid.module.css';
-import { courses, categories } from '@/data/courses';
+
+const coursesList = [
+  {
+    id: 'cehv13',
+    title: 'CEHv13',
+    subtitle: 'Certified Ethical Hacker v13 AI',
+    overview: 'The Certified Ethical Hacker (CEHv13 - AI) course is designed to equip candidates with cutting-edge skills in vulnerability assessment, threat intelligence, and AI-driven ethical hacking.',
+    rating: '5.0',
+    level: 'Intermediate',
+    duration: '80 Hours',
+    link: '/provided-course/certified-ethical-hacker-cehv13-ai/',
+    renderIcon: () => (
+      <svg width="44" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="10" fill="#0f172a"/>
+        <path d="M24 8L36 13V23C36 30.5 30.9 37.4 24 39.5C17.1 37.4 12 30.5 12 23V13L24 8Z" fill="#ff1616"/>
+        <path d="M24 16C20.7 16 18 18.7 18 22C18 24.2 19.2 26.1 21 27.2V31H27V27.2C28.8 26.1 30 24.2 30 22C30 18.7 27.3 16 24 16Z" fill="#ffffff"/>
+        <circle cx="22" cy="21" r="1.5" fill="#0f172a"/>
+        <circle cx="26" cy="21" r="1.5" fill="#0f172a"/>
+        <rect x="22.5" y="28" width="3" height="3" fill="#ff1616"/>
+      </svg>
+    )
+  },
+  {
+    id: 'ccna',
+    title: 'CCNA',
+    subtitle: 'Cisco Certified Network Associate',
+    overview: 'The CCNA training program frames foundational and advanced enterprise networking concepts, IP connectivity, network security, switching, and routing protocols.',
+    rating: '4.9',
+    level: 'Beginner',
+    duration: '50 Hours',
+    link: '/provided-course/ccna-course/',
+    renderIcon: () => (
+      <svg width="44" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="10" fill="#032541"/>
+        <circle cx="24" cy="24" r="6" fill="#049fd9"/>
+        <circle cx="13" cy="16" r="4" fill="#00b4d8"/>
+        <circle cx="35" cy="16" r="4" fill="#00b4d8"/>
+        <circle cx="13" cy="32" r="4" fill="#00b4d8"/>
+        <circle cx="35" cy="32" r="4" fill="#00b4d8"/>
+        <path d="M16 18L20 21M28 21L32 18M16 30L20 27M28 27L32 30" stroke="#ffffff" strokeWidth="2" strokeLinecap="round"/>
+        <circle cx="24" cy="24" r="2.5" fill="#ffffff"/>
+      </svg>
+    )
+  },
+  {
+    id: 'oscp',
+    title: 'OSCP+',
+    subtitle: 'OffSec Certified Professional',
+    overview: 'The OffSec Certified Professional (OSCP+) course is an elite, hands-on penetration testing certification preparing professionals to conduct real-world security assessments and attack simulations.',
+    rating: '5.0',
+    level: 'Advanced',
+    duration: '90 Hours',
+    link: '/provided-course/oscp-course/',
+    renderIcon: () => (
+      <svg width="44" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="10" fill="#18181b"/>
+        <circle cx="24" cy="24" r="14" stroke="#e11d48" strokeWidth="2.5" strokeDasharray="3 3"/>
+        <circle cx="24" cy="24" r="9" stroke="#ffffff" strokeWidth="2"/>
+        <circle cx="24" cy="24" r="3.5" fill="#e11d48"/>
+        <line x1="24" y1="6" x2="24" y2="12" stroke="#e11d48" strokeWidth="2.5" strokeLinecap="round"/>
+        <line x1="24" y1="36" x2="24" y2="42" stroke="#e11d48" strokeWidth="2.5" strokeLinecap="round"/>
+        <line x1="6" y1="24" x2="12" y2="24" stroke="#e11d48" strokeWidth="2.5" strokeLinecap="round"/>
+        <line x1="36" y1="24" x2="42" y2="24" stroke="#e11d48" strokeWidth="2.5" strokeLinecap="round"/>
+      </svg>
+    )
+  }
+];
 
 export default function CoursesGrid() {
-  const [activeFilter, setActiveFilter] = useState('All');
-  const [searchQuery, setSearchQuery] = useState('');
-  const [allCourses, setAllCourses] = useState(courses);
-
-  useEffect(() => {
-    fetch('/api/data')
-      .then(res => res.json())
-      .then(data => {
-        if (data.courses && data.courses.length > 0) {
-          setAllCourses([...data.courses, ...courses]);
-        }
-      })
-      .catch(err => console.error(err));
-  }, []);
-  
-  const filteredCourses = allCourses.filter(c => {
-    const matchesCategory = activeFilter === 'All' || c.category === activeFilter;
-    const matchesSearch = c.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                          c.description.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesCategory && matchesSearch;
-  });
-
-  // Staggered animation variants
-  const containerVariants = {
-    hidden: { opacity: 1 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15
-      }
-    }
-  };
-
-  const cardVariants = {
-    hidden: { opacity: 1, y: 0 },
-    visible: { 
-      opacity: 1, 
-      y: 0,
-      transition: {
-        type: "spring" as const,
-        stiffness: 100,
-        damping: 15
-      }
-    }
-  };
-
   return (
-    <section className={styles.coursesSection}>
-      <div className="container">
+    <section className={styles.coursesSection} style={{ padding: '3rem 2rem 6rem' }}>
+      <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         
-        <motion.div 
-          className={styles.sectionHeader}
-          initial={{ opacity: 1, y: 0 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
+        <div className={styles.sectionHeader}>
           <div className={styles.pulseBadge}>PREMIUM TRAINING</div>
           <h2 className={styles.mainTitle}>Best Online Cybersecurity Training</h2>
-          <p style={{ color: '#9ca3af', fontSize: '1.25rem', maxWidth: '700px', margin: '0 auto' }}>Master the tools and techniques used by elite cybersecurity professionals. Launch your career with industry-recognized certifications.</p>
-        </motion.div>
+          <p style={{ color: '#9ca3af', fontSize: '1.25rem', maxWidth: '700px', margin: '0 auto' }}>
+            Master real-world offensive defense with our globally recognized, expert-led training tracks.
+          </p>
+        </div>
 
-        <motion.div 
-          className={styles.searchContainer}
-          initial={{ opacity: 1 }}
-          animate={{ opacity: 1 }}
-          style={{ maxWidth: '600px', margin: '0 auto 2rem', position: 'relative' }}
-        >
-          <input 
-            type="text" 
-            placeholder="Search courses..." 
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            style={{
-              width: '100%',
-              padding: '1rem 1.5rem',
-              borderRadius: '8px',
-              border: '1px solid var(--border)',
-              background: 'var(--surface)',
-              color: '#fff',
-              fontSize: '1.1rem',
-              outline: 'none'
-            }}
-          />
-        </motion.div>
-
-        <motion.div 
-          className={styles.filterBar}
-          initial={{ opacity: 1 }}
-          animate={{ opacity: 1 }}
-        >
-          {categories.map((cat) => (
-            <button 
-              key={cat}
-              className={`${styles.filterBtn} ${activeFilter === cat ? styles.active : ''}`}
-              onClick={() => setActiveFilter(cat)}
+        <div className={styles.grid}>
+          {coursesList.map((course) => (
+            <motion.div 
+              key={course.id} 
+              className={styles.card}
+              initial={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
             >
-              {cat}
-            </button>
-          ))}
-        </motion.div>
-
-        <motion.div 
-          className={styles.grid}
-          variants={containerVariants}
-          initial="visible"
-          animate="visible"
-        >
-          {filteredCourses.map((course) => (
-            <motion.div key={course.id} className={styles.card} variants={cardVariants}>
-              
               {/* Course Icon centered in the middle with white background */}
               <div className={styles.centerIconContainer}>
-                <div className={styles.centerIconBox}>
-                  <img 
-                    src={course.icon} 
-                    alt={course.title} 
-                    width={40} 
-                    height={40}
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = '/logo.png';
-                    }}
-                    style={{ objectFit: 'contain' }}
-                  />
+                <div className={styles.centerIconBox} title={course.subtitle}>
+                  {course.renderIcon()}
                 </div>
               </div>
 
@@ -146,29 +112,29 @@ export default function CoursesGrid() {
               {/* Course Overview */}
               <p className={styles.cardDesc}>
                 <strong className={styles.descPrefix}>Course Overview: </strong>
-                {course.description.replace(/^Course Overview:?\s*/i, '')}
+                {course.overview}
               </p>
               
               {/* Stars with Rating */}
               <div className={styles.ratingRow}>
-                <div className={styles.stars} aria-label="5 out of 5 stars">
-                  {[0, 1, 2, 3, 4].map((starIdx) => (
-                    <svg key={starIdx} width="16" height="16" viewBox="0 0 24 24" fill="#facc15">
+                <div className={styles.stars} aria-label={`${course.rating} out of 5 stars`}>
+                  {[0, 1, 2, 3, 4].map((i) => (
+                    <svg key={i} width="16" height="16" viewBox="0 0 24 24" fill="#facc15">
                       <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                     </svg>
                   ))}
                 </div>
-                <span className={styles.ratingText}>{['5.0', '4.9', '5.0'][course.id % 3]}</span>
+                <span className={styles.ratingText}>{course.rating}</span>
               </div>
               
+              {/* Meta stats */}
               <div className={styles.metaRow}>
                 <span className={styles.metaItem}>{course.level}</span>
                 <span className={styles.metaDot}>•</span>
                 <span className={styles.metaItem}>{course.duration}</span>
-                <span className={styles.metaDot}>•</span>
-                <span className={styles.metaItem}>{course.category}</span>
               </div>
               
+              {/* Action Footer: Centered with rounded edges */}
               <div className={styles.cardFooter}>
                 <Link href={course.link} className={styles.cardLink} aria-label={`Explore ${course.title}`}>
                   <span>Explore Course</span>
@@ -177,24 +143,17 @@ export default function CoursesGrid() {
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
         
       </div>
       
       {/* CTA Section */}
       <div className={styles.ctaSection}>
-        <motion.div
-          initial={{ opacity: 1, y: 0 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          <h2 className={styles.ctaTitle}>Need Help Choosing a Course?</h2>
-          <p className={styles.ctaDesc}>
-            Our cybersecurity experts can help you find the perfect training path for your career goals.
-          </p>
-          <Link href="/contact-us" className="btn-primary" style={{ padding: '0.75rem 2.5rem', fontSize: '1.1rem' }}>
-            Contact Us
-          </Link>
-        </motion.div>
+        <h3 className={styles.ctaTitle}>Need Guidance on Choosing the Right Track?</h3>
+        <p className={styles.ctaDesc}>Talk with our senior cybersecurity career consultants for a customized roadmap.</p>
+        <Link href="/contact-us" className="btn-primary" style={{ padding: '0.9rem 2.5rem', display: 'inline-block', marginTop: '1rem' }}>
+          Consult an Advisor
+        </Link>
       </div>
     </section>
   );

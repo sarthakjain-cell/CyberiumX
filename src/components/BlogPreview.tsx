@@ -4,34 +4,11 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const blogs = [
-  {
-    title: "Best Laptops for Cybersecurity Training in 2025",
-    category: "Generic",
-    date: "24 July 2025",
-    desc: "If you’re planning to build a career in cybersecurity, your laptop is one of the most important tools you’ll invest in...",
-    link: "https://cyberiumx.com/generic/best-laptops-for-cybersecurity-training-in-2025/",
-    image: "https://cyberiumx.com/wp-content/uploads/2025/07/PortSwigger-1.jpg"
-  },
-  {
-    title: "How to Build a Cybersecurity Lab at Home",
-    category: "Generic",
-    date: "13 July 2025",
-    desc: "If you're passionate about cybersecurity and ethical hacking, practical hands-on experience is essential...",
-    link: "https://cyberiumx.com/generic/how-to-build-a-cybersecurity-lab-at-home/",
-    image: "https://cyberiumx.com/wp-content/uploads/2025/07/PortSwigger.jpg"
-  },
-  {
-    title: "CyberChef : The Basics",
-    category: "TryHackMe",
-    date: "2 November 2024",
-    desc: "In this blog, we will cover the concepts as well as the answers for the “CyberChef: The Basics” room...",
-    link: "https://cyberiumx.com/write-ups/tryhackme-answers-for-cyberchef-the-basics/",
-    image: "https://cyberiumx.com/wp-content/uploads/2024/11/CyberChef-_-The-Basics.jpg"
-  }
-];
+import { blogs } from '@/data/blogs';
 
 export default function BlogPreview() {
+  const previewBlogs = blogs.slice(0, 3);
+
   return (
     <section className="container" style={{ padding: '1.5rem 0 4rem 0', position: 'relative', zIndex: 1 }}>
       <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
@@ -42,7 +19,7 @@ export default function BlogPreview() {
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', textAlign: 'left' }}>
-        {blogs.map((blog, index) => (
+        {previewBlogs.map((blog, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 1, y: 0 }}
@@ -66,32 +43,30 @@ export default function BlogPreview() {
               e.currentTarget.style.boxShadow = 'none';
             }}
           >
-            <div style={{ position: 'relative', width: '100%', height: '200px', overflow: 'hidden', background: '#0a0a0a' }}>
+            <div style={{ position: 'relative', width: '100%', height: '210px', overflow: 'hidden', background: '#0a0e17', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <img 
                 src={blog.image} 
                 alt={blog.title} 
-                width={400}
-                height={200}
                 loading="lazy"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = '/logo.png';
                   (e.target as HTMLImageElement).style.objectFit = 'contain';
                   (e.target as HTMLImageElement).style.padding = '2rem';
                 }}
-                style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block', transition: 'transform 0.4s ease' }}
               />
             </div>
             <div style={{ padding: '2rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', fontSize: '0.9rem' }}>
                 <span style={{ color: 'var(--primary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px' }}>{blog.category}</span>
-                <span style={{ color: '#6b7280' }}>{blog.date}</span>
+                <span style={{ color: '#9ca3af', fontSize: '0.85rem' }}>{blog.readTime}</span>
               </div>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', lineHeight: 1.4, color: '#fff' }}>
-                <Link href={blog.link} target="_blank" style={{ color: '#fff', textDecoration: 'none' }}>{blog.title}</Link>
+              <h3 style={{ fontSize: '1.4rem', marginBottom: '1rem', lineHeight: 1.4, color: '#fff' }}>
+                <Link href={`/blog/${blog.slug}`} style={{ color: '#fff', textDecoration: 'none' }}>{blog.title}</Link>
               </h3>
               <p style={{ color: '#9ca3af', lineHeight: 1.6, marginBottom: '2rem', flexGrow: 1 }}>{blog.desc}</p>
               <div style={{ marginTop: 'auto' }}>
-                <Link href={blog.link} target="_blank" aria-label={`Read article: ${blog.title}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', textDecoration: 'none', fontWeight: 500 }}>
+                <Link href={`/blog/${blog.slug}`} aria-label={`Read article: ${blog.title}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', textDecoration: 'none', fontWeight: 500 }}>
                   <span>Read Article</span>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </Link>

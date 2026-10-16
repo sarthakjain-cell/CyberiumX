@@ -14,6 +14,7 @@ export default function CourseLandingPage() {
   const [isEnrolling, setIsEnrolling] = useState(false);
   const [razorpayLoaded, setRazorpayLoaded] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const course = courses.find(c => {
     const slug = c.link.split('/').filter(Boolean).pop();
@@ -209,6 +210,17 @@ export default function CourseLandingPage() {
       <section className={styles.contentArea}>
         
         <div className={styles.mainContent}>
+          {/* 1. Course Overview Section */}
+          <h2 className={styles.sectionTitle}>Course Overview</h2>
+          <div className={styles.overviewBox}>
+            <p>
+              {course.overview || course.description}
+            </p>
+            <p>
+              This comprehensive training includes core industry toolchains, vulnerability assessment frameworks, defensive configurations, practical cyber ranges, and real-world attack mitigation strategies. Practical skills will be reinforced through dedicated hands-on virtual labs and live simulations guided by certified security practitioners. By the end of this course, learners will gain industry-ready skills and deep technical confidence.
+            </p>
+          </div>
+
           <h2 className={styles.sectionTitle}>What you&apos;ll learn</h2>
           <div className={styles.skillsGrid}>
             {skills.map((skill: any, idx: number) => (
@@ -219,18 +231,8 @@ export default function CourseLandingPage() {
             ))}
           </div>
 
-          <div className={styles.certSection}>
-            <h2 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '0.5rem' }}>Earn a Career Certificate</h2>
-            <p style={{ color: '#9ca3af', marginBottom: '2rem' }}>Add this credential to your LinkedIn profile, resume, or CV upon completion.</p>
-            <div className={styles.certPreviewBox}>
-              <div style={{ color: '#fc1616', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.8rem', fontWeight: 700, marginBottom: '1rem' }}>CyberiumX Education & Training</div>
-              <div className={styles.certTitle}>Certificate of Completion</div>
-              <div style={{ color: '#d1d5db', marginBottom: '2rem' }}>This certifies that you have successfully completed<br/><span style={{ fontWeight: 700, color: '#fff', fontSize: '1.2rem', display: 'block', marginTop: '0.5rem' }}>{course.title}</span></div>
-              <div className={styles.certSeal}>CX SEAL</div>
-            </div>
-          </div>
-
-          <h2 className={styles.sectionTitle}>Course Syllabus</h2>
+          {/* 2. Course Syllabus Section */}
+          <h2 className={styles.sectionTitle} style={{ marginTop: '3.5rem' }}>Course Syllabus</h2>
           <p style={{ color: '#9ca3af', marginBottom: '2rem' }}>This course is broken down into highly structured modules containing video lectures, interactive labs, and quizzes.</p>
           
           <div className={styles.syllabusContainer}>
@@ -252,6 +254,78 @@ export default function CourseLandingPage() {
                 </ul>
               </div>
             ))}
+          </div>
+
+          {/* 3. Who Can Enroll? Section */}
+          <h2 className={styles.sectionTitle} style={{ marginTop: '3.5rem' }}>Who can enroll?</h2>
+          <div className={styles.whoCanEnrollBox}>
+            <p>
+              This course is apt for individuals seeking a high-growth career in cybersecurity and defensive/offensive computing, from beginners to experienced IT professionals. System administrators, developers, network engineers, and security analysts can join this course and learn how to identify vulnerabilities, deploy hardened architectures, and defend critical assets.
+            </p>
+            <ul className={styles.whoList}>
+              <li>Aspiring Ethical Hackers and Penetration Testers looking for real-world lab mastery</li>
+              <li>IT Administrators, Network Engineers, and Cloud Developers wanting to advance in security</li>
+              <li>College students and freshers aiming to crack top cybersecurity job interviews</li>
+              <li>Corporate professionals needing accredited certification credentials</li>
+            </ul>
+          </div>
+
+          {/* 4. Need Help? FAQ Section */}
+          <div className={styles.needHelpSection}>
+            <h2 className={styles.sectionTitle}>Need Help?</h2>
+            <p style={{ color: '#9ca3af' }}>Answers to common questions about this course, prerequisites, and certifications.</p>
+
+            <div className={styles.faqAccordion}>
+              {[
+                {
+                  q: "What does this cybersecurity training cover?",
+                  a: "This training covers practical security principles, threat intelligence, vulnerability identification, exploitation frameworks, and real-world defense techniques."
+                },
+                {
+                  q: "Do I need prior cybersecurity experience to enroll?",
+                  a: "No prior hacking experience is required for beginner tracks. A basic understanding of computers and networking is helpful, and our mentors guide you from ground zero."
+                },
+                {
+                  q: "Will I get access to hands-on practice labs?",
+                  a: "Yes! Every student receives dedicated access to live virtual cyber ranges, practice targets, and simulated enterprise networks."
+                },
+                {
+                  q: "Is there guidance for international certification exams?",
+                  a: "Yes, we provide exam blueprint preparation, practice questions, and mock review sessions to ensure high pass rates in globally recognized exams."
+                },
+                {
+                  q: "What career support is included?",
+                  a: "We offer resume reviews, LinkedIn profile optimization, mock interview prep, and direct hiring partner referrals."
+                }
+              ].map((faqItem, fIdx) => (
+                <div key={fIdx} className={styles.faqItem}>
+                  <button 
+                    type="button" 
+                    className={styles.faqQuestionBtn}
+                    onClick={() => setOpenFaq(openFaq === fIdx ? null : fIdx)}
+                  >
+                    <span>{faqItem.q}</span>
+                    <span>{openFaq === fIdx ? '−' : '+'}</span>
+                  </button>
+                  {openFaq === fIdx && (
+                    <div className={styles.faqAnswer}>
+                      <p>{faqItem.a}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className={styles.certSection} style={{ marginTop: '3.5rem' }}>
+            <h2 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '0.5rem' }}>Earn a Career Certificate</h2>
+            <p style={{ color: '#9ca3af', marginBottom: '2rem' }}>Add this credential to your LinkedIn profile, resume, or CV upon completion.</p>
+            <div className={styles.certPreviewBox}>
+              <div style={{ color: '#fc1616', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.8rem', fontWeight: 700, marginBottom: '1rem' }}>CyberiumX Education & Training</div>
+              <div className={styles.certTitle}>Certificate of Completion</div>
+              <div style={{ color: '#d1d5db', marginBottom: '2rem' }}>This certifies that you have successfully completed<br/><span style={{ fontWeight: 700, color: '#fff', fontSize: '1.2rem', display: 'block', marginTop: '0.5rem' }}>{course.title}</span></div>
+              <div className={styles.certSeal}>CX SEAL</div>
+            </div>
           </div>
         </div>
         

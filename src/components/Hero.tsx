@@ -51,12 +51,13 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Google Reviews Social Proof Badge (Clickable for proof) */}
-            <button
-              type="button"
+            {/* Google Reviews Social Proof Badge (Direct link to Google reviews) */}
+            <a
+              href="https://www.google.com/search?q=CyberiumX+reviews"
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.googleReviewBadge}
-              onClick={() => setShowReviewsModal(true)}
-              aria-label="View verified Google reviews and proof"
+              aria-label="View verified Google reviews for CyberiumX"
             >
               <div className={styles.googleIconBox}>
                 <svg viewBox="0 0 24 24" width="16" height="16">
@@ -75,13 +76,13 @@ export default function Hero() {
               </div>
               <span className={styles.googleRatingText}><strong>4.9/5</strong> Rating</span>
               <span className={styles.googleDivider}>•</span>
-              <span className={styles.googleReviewCount}>500+ Google Reviews</span>
+              <span className={styles.googleReviewCount}>Google Reviews</span>
               <span className={styles.googleProofTag} aria-hidden="true">
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M7 17L17 7M17 7H7M17 7V17" />
                 </svg>
               </span>
-            </button>
+            </a>
           </div>
           
           <h1 className={styles.heroTitle}>

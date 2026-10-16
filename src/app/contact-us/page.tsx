@@ -22,12 +22,28 @@ export default function ContactUsPage() {
           {/* Left Side: Info & Socials */}
           <div className={styles.infoSection}>
             <div className={styles.infoBlock}>
-              <h3>Chat to us</h3>
-              <p>Our friendly team is here to help.<br/>info@cyberiumx.com</p>
+              <h3>Email us</h3>
+              <p>
+                Our admissions and support team is ready to help.<br/>
+                <a href="mailto:contact@cyberiumx.com" style={{ color: 'var(--primary)', textDecoration: 'none', fontWeight: 600 }}>
+                  contact@cyberiumx.com
+                </a>
+              </p>
             </div>
             <div className={styles.infoBlock}>
-              <h3>Call us</h3>
-              <p>Mon-Fri from 8am to 5pm.<br/>+91 93184 92128</p>
+              <h3>WhatsApp us 24x7</h3>
+              <p>
+                Direct instant support with technical counselors.<br/>
+                <a href="https://wa.me/919318492128" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', textDecoration: 'none', fontWeight: 600 }}>
+                  +91 93184 92128
+                </a>
+              </p>
+            </div>
+            <div className={styles.infoBlock}>
+              <h3>Visit us</h3>
+              <p>
+                Noida, Uttar Pradesh, India
+              </p>
             </div>
             <div className={styles.infoBlock}>
               <h3>Follow us</h3>
