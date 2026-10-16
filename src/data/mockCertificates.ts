@@ -54,5 +54,27 @@ export const mockCertificates: CertificateRecord[] = [
     grade: "A",
     status: "VALID",
     credentialHash: "cx_0x1d44f8e2a6c99b337f55ea10"
+  },
+  {
+    id: "CYB-2025-8942",
+    studentName: "Alex Rivera",
+    name: "Alex Rivera",
+    courseName: "Certified Ethical Hacker (CEHv13 - AI)",
+    course: "Certified Ethical Hacker (CEHv13 - AI)",
+    issueDate: "12 November 2025",
+    grade: "A+ (Distinction)",
+    status: "VALID",
+    credentialHash: "cx_0x7a82f3c0e1b99d45a322ea89"
+  },
+  {
+    id: "CX-2025-0104",
+    studentName: "David Miller",
+    name: "David Miller",
+    courseName: "Bug Bounty Hunting & Web Security",
+    course: "Bug Bounty Hunting & Web Security",
+    issueDate: "18 December 2025",
+    grade: "A",
+    status: "VALID",
+    credentialHash: "cx_0x2e99b7a4c6d11f880e55bb72"
   }
 ];

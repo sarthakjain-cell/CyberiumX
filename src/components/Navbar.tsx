@@ -24,13 +24,15 @@ export default function Navbar() {
   return (
     <header className={`${styles.navbar} ${scrolled ? styles.scrolledNavbar : ''}`}>
       <div className={styles.navContainer}>
-        <Link href="/" className={styles.logo} aria-label="CyberiumX Home" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+        <Link href="/" className={styles.logo} aria-label="CyberiumX Home">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img 
             src="/logo.png" 
-            alt="CyberiumX" 
-            width={260}
-            height={76}
-            style={{ height: '76px', width: 'auto', objectFit: 'contain' }}
+            alt="CyberiumX Logo" 
+            width={374}
+            height={361}
+            loading="eager"
+            className={styles.logoImage}
           />
         </Link>
 
@@ -41,13 +43,15 @@ export default function Navbar() {
           <Link href="/courses" className={`${styles.navLink} ${pathname.startsWith('/courses') || pathname.startsWith('/provided-course') ? styles.active : ''}`} onClick={() => setMobileOpen(false)}>Our Courses</Link>
           <Link href="/global-services" className={`${styles.navLink} ${pathname.startsWith('/global-services') ? styles.active : ''}`} onClick={() => setMobileOpen(false)}>Global Services</Link>
 
+          <Link href="/verify" className={`${styles.navLink} ${pathname === '/verify' ? styles.active : ''}`} style={{ color: '#10b981', fontWeight: 600 }} onClick={() => setMobileOpen(false)}>Verify</Link>
+
           <div 
             className={styles.dropdown}
             onMouseEnter={() => setMoreOpen(true)}
             onMouseLeave={() => setMoreOpen(false)}
           >
             <span 
-              className={`${styles.navLink} ${pathname === '/blog' || pathname === '/faqs' || pathname === '/faq' || pathname === '/verify' ? styles.active : ''}`} 
+              className={`${styles.navLink} ${pathname === '/blog' || pathname === '/faqs' || pathname === '/faq' ? styles.active : ''}`} 
               style={{cursor: 'pointer'}}
               onClick={() => setMoreOpen(!moreOpen)}
             >
@@ -56,7 +60,7 @@ export default function Navbar() {
             <div className={`${styles.dropdownContent} ${moreOpen ? styles.dropdownShow : ''}`}>
               <Link href="/blog" className={styles.dropdownItem} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>Blog</Link>
               <Link href="/faqs" className={styles.dropdownItem} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>FAQs</Link>
-              <Link href="/verify" className={styles.dropdownItem} style={{ color: '#10b981', fontWeight: 600 }} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>Verify</Link>
+              <Link href="/verify" className={styles.dropdownItem} style={{ color: '#10b981', fontWeight: 600 }} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>Verify Certificate</Link>
             </div>
           </div>
           <Link href="/contact-us" className={`${styles.navLink} ${pathname === '/contact-us' ? styles.active : ''}`} onClick={() => setMobileOpen(false)}>Contact Us</Link>
