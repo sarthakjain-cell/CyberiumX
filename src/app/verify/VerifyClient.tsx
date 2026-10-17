@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import styles from './Verify.module.css';
-import { mockCertificates, CertificateRecord } from '@/data/mockCertificates';
+import { mockCertificates, CertificateRecord, findCertificate } from '@/data/mockCertificates';
+import { courses } from '@/data/courses';
 
 export default function VerifyClient() {
   const [certId, setCertId] = useState('');
@@ -22,27 +23,24 @@ export default function VerifyClient() {
 
     // Fast, responsive verification simulation
     setTimeout(() => {
-      const cleanQuery = trimmed.toUpperCase().replace(/[\s-]/g, '');
-      const rawUpper = trimmed.toUpperCase();
-
-      const found = mockCertificates.find((c) => {
-        const cleanId = c.id.toUpperCase().replace(/[\s-]/g, '');
-        const studentNameUpper = (c.studentName || c.name || '').toUpperCase();
-        const courseNameUpper = (c.courseName || c.course || '').toUpperCase();
-
-        return (
-          cleanId === cleanQuery ||
-          cleanId.includes(cleanQuery) ||
-          c.id.toUpperCase() === rawUpper ||
-          studentNameUpper.includes(rawUpper) ||
-          courseNameUpper.includes(rawUpper)
-        );
-      });
-
+      const found = findCertificate(trimmed);
       setResult(found || false);
       setIsSearching(false);
-    }, 300);
+    }, 280);
   };
+
+  // Support direct verification via URL query: /verify?id=CX-2026-98765
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const urlId = params.get('id') || params.get('cert') || params.get('credential');
+      if (urlId && urlId.trim()) {
+        const clean = urlId.trim();
+        setCertId(clean);
+        performVerification(clean);
+      }
+    }
+  }, []);
 
   const handleVerify = (e: React.FormEvent) => {
     e.preventDefault();
@@ -54,6 +52,12 @@ export default function VerifyClient() {
     performVerification(sampleId);
   };
 
+  // Helper to find matching course logo if available
+  const getCourseLogo = (res: CertificateRecord) => {
+    const matched = courses.find(c => c.id === res.courseId || c.title.toLowerCase() === res.courseName.toLowerCase());
+    return matched ? matched.icon : null;
+  };
+
   return (
     <div className={styles.verifySection}>
       <div className="container">
@@ -61,7 +65,7 @@ export default function VerifyClient() {
           <div className={styles.pulseBadge}>Instant Credential Verification</div>
           <h1>Verify Certificate Authenticity</h1>
           <p>
-            Enter a student name or unique CyberiumX Certificate Credential ID below to validate official academic completion records, exam grades, and cybersecurity badges.
+            Enter a student name, credential hash, or unique CyberiumX Certificate Credential ID below to validate official academic completion records, exam grades, and cybersecurity badges.
           </p>
         </div>
 
@@ -71,7 +75,7 @@ export default function VerifyClient() {
             <input 
               id="certificateIdInput"
               type="text" 
-              placeholder="Enter Certificate ID (e.g. CX-2026-98765) or Student Name..."
+              placeholder="Enter Credential ID (e.g. CX-2026-98765) or Student Name..."
               value={certId}
               onChange={(e) => setCertId(e.target.value)}
               className={styles.searchInput}
@@ -88,7 +92,7 @@ export default function VerifyClient() {
               Click any sample credential ID to test instant verification:
             </span>
             <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-              {mockCertificates.map((sample) => (
+              {mockCertificates.slice(0, 7).map((sample) => (
                 <button
                   key={sample.id}
                   type="button"
@@ -149,22 +153,44 @@ export default function VerifyClient() {
                     <label>Student Name</label>
                     <div className={styles.valueHighlight}>{result.studentName || result.name}</div>
                   </div>
+                  
                   <div className={styles.metaItem}>
                     <label>Course Program</label>
-                    <div className={styles.valueHighlight}>{result.courseName || result.course}</div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                      {getCourseLogo(result) && (
+                        <div style={{
+                          width: '32px',
+                          height: '32px',
+                          background: '#fff',
+                          borderRadius: '8px',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          padding: '4px',
+                          flexShrink: 0
+                        }}>
+                          <img src={getCourseLogo(result)!} alt="Badge" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                        </div>
+                      )}
+                      <div className={styles.valueHighlight} style={{ margin: 0 }}>{result.courseName || result.course}</div>
+                    </div>
                   </div>
+
                   <div className={styles.metaItem}>
                     <label>Issue Date</label>
                     <div>{result.issueDate}</div>
                   </div>
+
                   <div className={styles.metaItem}>
                     <label>Evaluation / Grade</label>
                     <div style={{ color: '#10b981', fontWeight: 700 }}>{result.grade || 'Passed'}</div>
                   </div>
+
                   <div className={styles.metaItem}>
                     <label>Credential ID</label>
-                    <div><code style={{ color: '#ff1616', fontWeight: 700 }}>{result.id}</code></div>
+                    <div><code style={{ color: '#ff1616', fontWeight: 700, fontSize: '1rem' }}>{result.id}</code></div>
                   </div>
+
                   <div className={styles.metaItem}>
                     <label>Security Hash Verification</label>
                     <div><code style={{ fontSize: '0.8rem', color: '#9ca3af' }}>{result.credentialHash}</code></div>
