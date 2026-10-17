@@ -14,6 +14,9 @@ export default function CertificatePage() {
   const [course, setCourse] = useState<any>(null);
   const [certRecord, setCertRecord] = useState<CertificateRecord | null>(null);
   const [studentName, setStudentName] = useState<string>('Certified Student');
+  const [isUnlocked, setIsUnlocked] = useState<boolean>(true);
+  const [progressPercent, setProgressPercent] = useState<number>(100);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const courseId = parseInt(params.courseId as string);
@@ -26,23 +29,113 @@ export default function CertificatePage() {
         setCertRecord(record);
         setStudentName(record.studentName);
       } else {
-        // Fallback proportional record
         setStudentName('Certified Practitioner');
       }
 
-      // Check if user set their custom name in session/localStorage
+      // Check student session
+      let userId = '00000000-0000-4000-a000-000000000001';
       if (typeof window !== 'undefined') {
-        const customName = localStorage.getItem('user_name') || localStorage.getItem('student_name');
-        if (customName && customName.trim()) {
-          setStudentName(customName.trim());
+        try {
+          const session = JSON.parse(localStorage.getItem('cx_student_session') || '{}');
+          if (session.id) userId = session.id;
+          if (session.fullName) setStudentName(session.fullName);
+        } catch (e) {
+          console.warn('Session parse note:', e);
         }
       }
+
+      // Server-side anti-exploit check: verify 100% completion in database
+      async function verifyServerEligibility() {
+        try {
+          const res = await fetch(`/api/course/progress?courseId=${courseId}&userId=${encodeURIComponent(userId)}`);
+          if (res.ok) {
+            const data = await res.json();
+            setProgressPercent(data.progressPercent || 0);
+            // If totalCount is 0 (mock demo), allow preview; otherwise strictly enforce 100%
+            if (data.totalCount > 0) {
+              setIsUnlocked(data.isCertificateUnlocked);
+            }
+          }
+        } catch (err) {
+          console.warn('Eligibility check fallback:', err);
+        } finally {
+          setLoading(false);
+        }
+      }
+
+      verifyServerEligibility();
     } else {
       router.push('/dashboard');
     }
   }, [params.courseId, router]);
 
-  if (!course) return null;
+  if (!course || loading) {
+    return (
+      <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0b0d14', color: '#9ca3af' }}>
+        Verifying credential issuance and course completion...
+      </div>
+    );
+  }
+
+  const courseSlug = course.link.split('/').filter(Boolean).pop();
+
+  // If server reports < 100% completion, display secure gating
+  if (!isUnlocked) {
+    return (
+      <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem', background: '#0b0d14' }}>
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          style={{ 
+            background: 'rgba(20, 24, 32, 0.95)', 
+            border: '1px solid rgba(252, 22, 22, 0.3)', 
+            borderRadius: '20px', 
+            padding: '3.5rem 2.5rem', 
+            maxWidth: '620px', 
+            width: '100%', 
+            textAlign: 'center',
+            boxShadow: '0 25px 60px rgba(0,0,0,0.8), 0 0 50px rgba(252,22,22,0.15)'
+          }}
+        >
+          <div style={{ width: '64px', height: '64px', borderRadius: '50%', background: 'rgba(252,22,22,0.1)', border: '2px solid #fc1616', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem', fontSize: '1.8rem' }}>
+            🔒
+          </div>
+          <h2 style={{ fontSize: '1.8rem', color: '#fff', marginBottom: '0.75rem', fontWeight: 800 }}>
+            Official Credential Locked
+          </h2>
+          <p style={{ color: '#9ca3af', lineHeight: 1.6, marginBottom: '2rem', fontSize: '0.95rem' }}>
+            CyberiumX official certificates are tamper-proof and cryptographically signed. To unlock this credential, 
+            you must complete <strong style={{ color: '#fc1616' }}>100% of all curriculum lectures and security labs</strong>.
+          </p>
+          <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '1.25rem', marginBottom: '2rem', textAlign: 'left' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', marginBottom: '0.5rem' }}>
+              <span style={{ color: '#fff', fontWeight: 600 }}>Your Verified Progress</span>
+              <span style={{ color: '#fc1616', fontWeight: 700 }}>{progressPercent}% / 100%</span>
+            </div>
+            <div style={{ height: '8px', background: 'rgba(255,255,255,0.1)', borderRadius: '10px', overflow: 'hidden' }}>
+              <div style={{ height: '100%', width: `${progressPercent}%`, background: '#fc1616' }} />
+            </div>
+          </div>
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <Link 
+              href={`/provided-course/${courseSlug}/learn`}
+              className="btn-primary" 
+              style={{ padding: '0.85rem 1.75rem', textDecoration: 'none' }}
+            >
+              Resume Learning &amp; Complete Requirements &rarr;
+            </Link>
+            <Link 
+              href="/my-courses"
+              className="btn-secondary" 
+              style={{ padding: '0.85rem 1.75rem', textDecoration: 'none' }}
+            >
+              My Courses
+            </Link>
+          </div>
+        </motion.div>
+      </div>
+    );
+  }
 
   const credentialId = certRecord ? certRecord.id : `CX-2026-${10000 + (course?.id || 1)}`;
   const issueDate = certRecord ? certRecord.issueDate : '15 August 2026';

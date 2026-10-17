@@ -5,19 +5,32 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { setClientStudentSession } from '@/lib/auth/session';
 import styles from './Login.module.css';
 
 export default function LoginPage() {
   const router = useRouter();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [isAuthenticating, setIsAuthenticating] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     setIsAuthenticating(true);
+
+    const namePart = email.split('@')[0] || 'Cadet';
+    const formattedName = namePart.charAt(0).toUpperCase() + namePart.slice(1);
+
+    // Persist authenticated student session across cookies & state
+    setClientStudentSession({
+      email,
+      fullName: `${formattedName} (CyberiumX Cadet)`
+    });
+
     setTimeout(() => {
-      router.push('/dashboard');
-    }, 800);
+      router.push('/my-courses');
+    }, 600);
   };
 
   return (
@@ -58,6 +71,9 @@ export default function LoginPage() {
                   id="email" 
                   className={styles.input} 
                   autoComplete="off"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="student@cyberiumx.com"
                   required 
                 />
               </div>
@@ -70,6 +86,8 @@ export default function LoginPage() {
                     id="password" 
                     className={styles.input} 
                     autoComplete="new-password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     required 
                   />
                   <button 

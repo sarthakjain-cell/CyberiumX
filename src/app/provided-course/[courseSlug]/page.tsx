@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Script from 'next/script';
 import { courses } from '@/data/courses';
 import { curriculums } from '@/data/curriculums';
+import { getClientStudentSession } from '@/lib/auth/session';
 import styles from './CourseLanding.module.css';
 
 export default function CourseLandingPage() {
@@ -15,6 +16,7 @@ export default function CourseLandingPage() {
   const [razorpayLoaded, setRazorpayLoaded] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [paymentSuccess, setPaymentSuccess] = useState<{ paymentId: string; courseTitle: string } | null>(null);
 
   const course = courses.find(c => {
     const slug = c.link.split('/').filter(Boolean).pop();
@@ -79,6 +81,7 @@ export default function CourseLandingPage() {
           handler: async function (response: any) {
             setIsEnrolling(true);
             try {
+              const session = getClientStudentSession();
               // 3. Verify payment signature on backend
               const verifyRes = await fetch('/api/razorpay/verify', {
                 method: 'POST',
@@ -88,14 +91,20 @@ export default function CourseLandingPage() {
                   razorpay_payment_id: response.razorpay_payment_id,
                   razorpay_signature: response.razorpay_signature,
                   courseSlug: params.courseSlug,
-                  courseTitle: course.title
+                  courseTitle: course.title,
+                  courseId: course.id,
+                  userId: session.id
                 })
               });
 
               const verifyData = await verifyRes.json();
 
               if (verifyRes.ok && verifyData.success) {
-                router.push(`/provided-course/${params.courseSlug}/learn?enrolled=true`);
+                setIsEnrolling(false);
+                setPaymentSuccess({
+                  paymentId: response.razorpay_payment_id,
+                  courseTitle: course.title
+                });
               } else {
                 setErrorMessage(verifyData.error || 'Payment verification failed.');
                 setIsEnrolling(false);
@@ -401,6 +410,91 @@ export default function CourseLandingPage() {
             <div className={styles.spinner}></div>
             <h3 style={{ marginBottom: '0.5rem' }}>Connecting to Razorpay Secure Gateway...</h3>
             <p style={{ color: '#9ca3af', fontSize: '0.9rem' }}>Please complete your payment in the Razorpay window.</p>
+          </div>
+        </div>
+      )}
+
+      {/* Payment Success Celebration & Access Unlocked Modal */}
+      {paymentSuccess && (
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: 'rgba(0, 0, 0, 0.88)',
+          backdropFilter: 'blur(10px)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 99999,
+          padding: '1.5rem'
+        }}>
+          <div style={{
+            background: 'rgba(20, 24, 32, 0.98)',
+            border: '1px solid #10b981',
+            borderRadius: '20px',
+            padding: '3rem 2.5rem',
+            maxWidth: '560px',
+            width: '100%',
+            textAlign: 'center',
+            boxShadow: '0 25px 60px rgba(0,0,0,0.8), 0 0 50px rgba(16,185,129,0.2)'
+          }}>
+            <div style={{
+              width: '68px',
+              height: '68px',
+              borderRadius: '50%',
+              background: 'rgba(16, 185, 129, 0.15)',
+              border: '2px solid #10b981',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: '2rem',
+              color: '#10b981',
+              margin: '0 auto 1.5rem'
+            }}>
+              ✓
+            </div>
+            <h2 style={{ fontSize: '1.8rem', color: '#fff', marginBottom: '0.5rem', fontWeight: 800 }}>
+              Payment Verified &amp; Access Unlocked!
+            </h2>
+            <p style={{ color: '#10b981', fontWeight: 600, fontSize: '0.9rem', marginBottom: '1.25rem' }}>
+              Transaction Ref: {paymentSuccess.paymentId}
+            </p>
+            <p style={{ color: '#d1d5db', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
+              All lectures, practical labs, and security examination modules for <strong>{paymentSuccess.courseTitle}</strong> have been unlocked in your portal.
+            </p>
+            
+            <div style={{
+              background: 'rgba(245, 158, 11, 0.08)',
+              border: '1px solid rgba(245, 158, 11, 0.3)',
+              borderRadius: '10px',
+              padding: '0.85rem 1rem',
+              color: '#fbbf24',
+              fontSize: '0.825rem',
+              lineHeight: 1.5,
+              marginBottom: '2rem',
+              textAlign: 'left'
+            }}>
+              <strong>🎓 Official Certificate Notice:</strong> You must complete <strong>100% of all lectures and labs</strong> to unlock and generate your official CyberiumX Certificate.
+            </div>
+
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <button
+                onClick={() => router.push(`/provided-course/${params.courseSlug}/learn?enrolled=true`)}
+                className="btn-primary"
+                style={{ padding: '0.85rem 1.75rem', fontSize: '0.95rem', background: '#fc1616', color: '#fff', border: 'none', borderRadius: '8px', cursor: 'pointer', fontWeight: 700 }}
+              >
+                🚀 Enter Course &amp; Start Learning &rarr;
+              </button>
+              <Link
+                href="/my-courses"
+                className="btn-secondary"
+                style={{ padding: '0.85rem 1.75rem', fontSize: '0.95rem', textDecoration: 'none' }}
+              >
+                🎓 View in My Courses
+              </Link>
+            </div>
           </div>
         </div>
       )}

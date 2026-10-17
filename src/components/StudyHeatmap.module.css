@@ -1,0 +1,190 @@
+.heatmapCard {
+  background: rgba(17, 24, 39, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 1.75rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.heatmapHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 1.25rem;
+}
+
+.titleArea h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #f3f4f6;
+  margin: 0 0 0.35rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.titleArea p {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.statsRow {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.statBadge {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+}
+
+.statBadge.streakActive {
+  background: rgba(252, 22, 22, 0.08);
+  border-color: rgba(252, 22, 22, 0.3);
+}
+
+.statBadge.streakActive .statVal {
+  color: #fc1616;
+}
+
+.statVal {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #10b981;
+  font-family: monospace;
+}
+
+.statLabel {
+  font-size: 0.725rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #9ca3af;
+  margin-top: 0.15rem;
+}
+
+/* Heatmap Grid Wrapper */
+.gridScrollWrapper {
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.calendarGrid {
+  display: inline-flex;
+  gap: 3px;
+  min-width: 780px;
+}
+
+.dayLabels {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-right: 6px;
+  font-size: 9px;
+  color: #6b7280;
+  line-height: 12px;
+  user-select: none;
+}
+
+.dayLabelPlaceholder {
+  height: 12px;
+}
+
+.weekColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.daySquare {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: transform 0.15s ease, outline 0.15s ease;
+  position: relative;
+}
+
+.daySquare:hover {
+  transform: scale(1.3);
+  z-index: 10;
+  outline: 1.5px solid #ffffff;
+}
+
+/* GitHub Color Scales */
+.level0 {
+  background-color: #161b22;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.level1 {
+  background-color: #0e4429;
+}
+
+.level2 {
+  background-color: #006d32;
+}
+
+.level3 {
+  background-color: #26a641;
+}
+
+.level4 {
+  background-color: #39d353;
+  box-shadow: 0 0 6px rgba(57, 211, 83, 0.6);
+}
+
+/* Legend & Footer */
+.heatmapFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.25rem;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legendText {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.legendSquare {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+/* Active Hover Info */
+.hoverInfo {
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  color: #e5e7eb;
+  font-family: monospace;
+}

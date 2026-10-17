@@ -58,6 +58,7 @@ export default function Navbar() {
               More ▼
             </span>
             <div className={`${styles.dropdownContent} ${moreOpen ? styles.dropdownShow : ''}`}>
+              <Link href="/my-courses" className={styles.dropdownItem} style={{ color: '#fc1616', fontWeight: 600 }} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>🎓 My Courses</Link>
               <Link href="/blog" className={styles.dropdownItem} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>Blog</Link>
               <Link href="/faqs" className={styles.dropdownItem} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>FAQs</Link>
               <Link href="/verify" className={styles.dropdownItem} style={{ color: '#10b981', fontWeight: 600 }} onClick={() => { setMoreOpen(false); setMobileOpen(false); }}>Verify Certificate</Link>
