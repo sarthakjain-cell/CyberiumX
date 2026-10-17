@@ -13,16 +13,7 @@ const featuredCourses = [
     level: 'Intermediate',
     duration: '80 Hours',
     link: '/provided-course/certified-ethical-hacker-cehv13-ai/',
-    renderIcon: () => (
-      <svg width="44" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="48" height="48" rx="10" fill="#0f172a"/>
-        <path d="M24 8L36 13V23C36 30.5 30.9 37.4 24 39.5C17.1 37.4 12 30.5 12 23V13L24 8Z" fill="#ff1616"/>
-        <path d="M24 16C20.7 16 18 18.7 18 22C18 24.2 19.2 26.1 21 27.2V31H27V27.2C28.8 26.1 30 24.2 30 22C30 18.7 27.3 16 24 16Z" fill="#ffffff"/>
-        <circle cx="22" cy="21" r="1.5" fill="#0f172a"/>
-        <circle cx="26" cy="21" r="1.5" fill="#0f172a"/>
-        <rect x="22.5" y="28" width="3" height="3" fill="#ff1616"/>
-      </svg>
-    )
+    logo: '/logos/CEH.png'
   },
   {
     id: 'ccna',
@@ -33,18 +24,7 @@ const featuredCourses = [
     level: 'Beginner',
     duration: '50 Hours',
     link: '/provided-course/ccna-course/',
-    renderIcon: () => (
-      <svg width="44" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="48" height="48" rx="10" fill="#032541"/>
-        <circle cx="24" cy="24" r="6" fill="#049fd9"/>
-        <circle cx="13" cy="16" r="4" fill="#00b4d8"/>
-        <circle cx="35" cy="16" r="4" fill="#00b4d8"/>
-        <circle cx="13" cy="32" r="4" fill="#00b4d8"/>
-        <circle cx="35" cy="32" r="4" fill="#00b4d8"/>
-        <path d="M16 18L20 21M28 21L32 18M16 30L20 27M28 27L32 30" stroke="#ffffff" strokeWidth="2" strokeLinecap="round"/>
-        <circle cx="24" cy="24" r="2.5" fill="#ffffff"/>
-      </svg>
-    )
+    logo: '/logos/CCNA.jpg'
   },
   {
     id: 'oscp',
@@ -55,18 +35,7 @@ const featuredCourses = [
     level: 'Advanced',
     duration: '90 Hours',
     link: '/provided-course/oscp-course/',
-    renderIcon: () => (
-      <svg width="44" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="48" height="48" rx="10" fill="#18181b"/>
-        <circle cx="24" cy="24" r="14" stroke="#e11d48" strokeWidth="2.5" strokeDasharray="3 3"/>
-        <circle cx="24" cy="24" r="9" stroke="#ffffff" strokeWidth="2"/>
-        <circle cx="24" cy="24" r="3.5" fill="#e11d48"/>
-        <line x1="24" y1="6" x2="24" y2="12" stroke="#e11d48" strokeWidth="2.5" strokeLinecap="round"/>
-        <line x1="24" y1="36" x2="24" y2="42" stroke="#e11d48" strokeWidth="2.5" strokeLinecap="round"/>
-        <line x1="6" y1="24" x2="12" y2="24" stroke="#e11d48" strokeWidth="2.5" strokeLinecap="round"/>
-        <line x1="36" y1="24" x2="42" y2="24" stroke="#e11d48" strokeWidth="2.5" strokeLinecap="round"/>
-      </svg>
-    )
+    logo: '/logos/OSCP.png'
   }
 ];
 
@@ -91,7 +60,13 @@ export default function CoursesPreview() {
               {/* Course Icon centered in the middle with white background */}
               <div className={styles.centerIconContainer}>
                 <div className={styles.centerIconBox} title={course.subtitle}>
-                  {course.renderIcon()}
+                  <img 
+                    src={course.logo} 
+                    alt={`${course.title} Logo`} 
+                    width={60} 
+                    height={60} 
+                    style={{ objectFit: 'contain', width: '100%', height: '100%' }} 
+                  />
                 </div>
               </div>
 

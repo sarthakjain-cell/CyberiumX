@@ -6,6 +6,7 @@ import styles from './GlobalServices.module.css';
 interface Item {
   title: string;
   description: string;
+  logo?: string;
 }
 
 
@@ -63,7 +64,26 @@ export default function GlobalServicesClient({
           {courses.map((item, idx) => (
             <div key={idx} className={styles.serviceCard}>
               <div className={styles.cardHeaderRow}>
-
+                {item.logo && (
+                  <div style={{
+                    width: '52px',
+                    height: '52px',
+                    background: '#ffffff',
+                    borderRadius: '14px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    padding: '8px',
+                    boxShadow: '0 4px 15px rgba(0,0,0,0.35)',
+                    flexShrink: 0
+                  }}>
+                    <img 
+                      src={item.logo} 
+                      alt={`${item.title} Logo`} 
+                      style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+                    />
+                  </div>
+                )}
                 <h3 className={styles.cardTitle}>{item.title}</h3>
               </div>
               <p className={styles.cardDescription}>{item.description}</p>

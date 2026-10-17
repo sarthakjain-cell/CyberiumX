@@ -109,7 +109,20 @@ export default function DashboardPage() {
                     style={{ background: 'var(--glass-bg)', border: '1px solid var(--border)', borderRadius: '12px', padding: '1.5rem', display: 'flex', flexDirection: 'column' }}
                   >
                     <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
-                      <Image src={course.icon} alt={course.title} width={40} height={40} />
+                      <div style={{
+                        width: '44px',
+                        height: '44px',
+                        background: '#ffffff',
+                        borderRadius: '10px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        padding: '6px',
+                        flexShrink: 0,
+                        boxShadow: '0 4px 12px rgba(0,0,0,0.3)'
+                      }}>
+                        <img src={course.icon} alt={course.title} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                      </div>
                       <h3 style={{ fontSize: '1.2rem', color: '#fff', margin: 0 }}>{course.title}</h3>
                     </div>
                     

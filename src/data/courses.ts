@@ -19,7 +19,7 @@ export const courses: Course[] = [
     duration: "80 Hours",
     description: "The Certified Ethical Hacker (CEHv13 - AI) course is designed to equip candidates with cutting-edge skills in vulnerability assessment, threat intelligence, and AI-driven ethical hacking.",
     link: "/provided-course/certified-ethical-hacker-cehv13-ai/",
-    icon: "https://cyberiumx.com/wp-content/uploads/2025/02/hacking-folder.svg"
+    icon: "/logos/CEH.png"
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ export const courses: Course[] = [
     duration: "50 Hours",
     description: "The Cisco Certified Network Associate (CCNA) course is a comprehensive training program framed to equip learners with fundamental knowledge of enterprise routing, switching, and network defense.",
     link: "/provided-course/ccna-course/",
-    icon: "https://cyberiumx.com/wp-content/uploads/2025/02/antivirus-protected.svg"
+    icon: "/logos/CCNA.jpg"
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ export const courses: Course[] = [
     duration: "90 Hours",
     description: "The OffSec Certified Professional (OSCP+) course is an elite, hands-on penetration testing certification training that trains individuals for real-world offensive assessments.",
     link: "/provided-course/oscp-course/",
-    icon: "https://cyberiumx.com/wp-content/uploads/2025/02/2125342_education_graduation_hat_learn_school_icon.svg"
+    icon: "/logos/OSCP.png"
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ export const courses: Course[] = [
     duration: "40 Hours",
     description: "The Microsoft Azure Cloud training course is designed to advance candidates with the skills required to work with enterprise cloud architecture.",
     link: "/provided-course/microsoft-azure-course/",
-    icon: "https://cdn.simpleicons.org/microsoftazure/0089D6"
+    icon: "/logos/Azure.webp"
   },
   {
     id: 5,
@@ -59,7 +59,7 @@ export const courses: Course[] = [
     duration: "60 Hours",
     description: "Most organizations have misconfigured policies for AWS services such as S3, EC2, Lambda, VPC, RDS, EBS, etc., which attackers can exploit.",
     link: "/provided-course/aws-penetration-testing-security/",
-    icon: "https://cyberiumx.com/wp-content/uploads/2025/02/aws.svg"
+    icon: "/logos/AWS.webp"
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ export const courses: Course[] = [
     duration: "45 Hours",
     description: "The Amazon Web Services (AWS) training course is designed to equip candidates with the skills required to work with cloud security environments.",
     link: "/provided-course/amazon-web-servicesaws-course/",
-    icon: "https://cyberiumx.com/wp-content/uploads/2025/02/aws.svg"
+    icon: "/logos/AWS.webp"
   },
   {
     id: 7,
@@ -79,7 +79,7 @@ export const courses: Course[] = [
     duration: "35 Hours",
     description: "The eJPTv2 training course is designed to provide a strong foundation in Ethical Hacking and Penetration Testing by gaining hands-on...",
     link: "/provided-course/ejptv2-course/",
-    icon: "https://cyberiumx.com/wp-content/uploads/2025/02/education-program.svg"
+    icon: "/logos/ejpt.webp"
   },
   {
     id: 8,
@@ -89,7 +89,7 @@ export const courses: Course[] = [
     duration: "40 Hours",
     description: "CyberiumX’s Ethical Hacking course is designed to help candidates gain the knowledge and skills required to become Ethical Hackers. This...",
     link: "/provided-course/ethical-hacking/",
-    icon: "https://cyberiumx.com/wp-content/uploads/2025/02/hacking_icon.svg"
+    icon: "/logos/ethical-hacking.jpg"
   },
   {
     id: 9,
@@ -99,7 +99,7 @@ export const courses: Course[] = [
     duration: "20 Hours",
     description: "Kali Linux is one of the most powerful distributions that we have for performing Ethical Hacking and Penetration Testing. This...",
     link: "/provided-course/kali-linux-course/",
-    icon: "https://cyberiumx.com/wp-content/uploads/2025/02/kali-logo.svg"
+    icon: "/logos/kali-linux.webp"
   },
   {
     id: 10,
@@ -109,7 +109,7 @@ export const courses: Course[] = [
     duration: "25 Hours",
     description: "A strong foundation in networking is essential for anyone pursuing a career in ethical hacking. This comprehensive course provides an...",
     link: "/provided-course/networking-for-ethical-hackers-course/",
-    icon: "https://cyberiumx.com/wp-content/uploads/2025/02/4158561_access_control_cyber_monitoring_remote_icon.svg"
+    icon: "/logos/networking-ethical-hackers.webp"
   },
   {
     id: 11,
@@ -119,7 +119,7 @@ export const courses: Course[] = [
     duration: "30 Hours",
     description: "The Bug Bounty Hunting course is designed to teach people the skills required to exploit, identify, and report security vulnerabilities legally.",
     link: "/provided-course/bug-bounty-course/",
-    icon: "https://cyberiumx.com/wp-content/uploads/2025/02/bug-hosting.svg"
+    icon: "/logos/bug-bounty.png"
   },
   {
     id: 12,
@@ -129,7 +129,7 @@ export const courses: Course[] = [
     duration: "70 Hours",
     description: "VAPT (Vulnerability Assessment and Penetration Testing) is a comprehensive security testing approach that combines two distinct but complementary methodologies to...",
     link: "/provided-course/vapt/",
-    icon: "https://cyberiumx.com/wp-content/uploads/2025/02/education-program.svg"
+    icon: "/logos/VAPT.webp"
   }
 ];
 

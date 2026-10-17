@@ -10,13 +10,41 @@ export const metadata: Metadata = {
 };
 
 const globalCourses = [
-  { title: "Ethical Hacking Training", description: "Master the fundamentals of ethical hacking. Learn how to identify, exploit, and secure vulnerabilities in enterprise systems using real-world scenarios." },
-  { title: "CEH (Certified Ethical Hacker) Training", description: "Get prepared for the CEH certification. This comprehensive training covers advanced footprinting, network scanning, and system hacking techniques." },
-  { title: "OSCP Training", description: "Rigorous, hands-on training preparing you for the Offensive Security Certified Professional exam. Focuses exclusively on practical penetration testing." },
-  { title: "Web Application Penetration Testing", description: "Deep dive into securing web applications. Learn to discover and exploit OWASP Top 10 vulnerabilities like SQLi, XSS, and CSRF." },
-  { title: "Network Penetration Testing", description: "Learn to secure enterprise networks. Covers advanced routing protocols, wireless security, and exploiting network misconfigurations." },
-  { title: "Bug Bounty Training", description: "Learn how to legally hack and get paid. Discover methodologies for finding high-severity bugs in major platforms and bug bounty programs." },
-  { title: "Kali Linux Training", description: "Master the industry-standard penetration testing operating system. Learn to utilize hundreds of built-in security and forensics tools." }
+  { 
+    title: "Ethical Hacking Training", 
+    description: "Master the fundamentals of ethical hacking. Learn how to identify, exploit, and secure vulnerabilities in enterprise systems using real-world scenarios.",
+    logo: "/logos/ethical-hacking.jpg"
+  },
+  { 
+    title: "CEH (Certified Ethical Hacker) Training", 
+    description: "Get prepared for the CEH certification. This comprehensive training covers advanced footprinting, network scanning, and system hacking techniques.",
+    logo: "/logos/CEH.png"
+  },
+  { 
+    title: "OSCP Training", 
+    description: "Rigorous, hands-on training preparing you for the Offensive Security Certified Professional exam. Focuses exclusively on practical penetration testing.",
+    logo: "/logos/OSCP.png"
+  },
+  { 
+    title: "Web Application Penetration Testing", 
+    description: "Deep dive into securing web applications. Learn to discover and exploit OWASP Top 10 vulnerabilities like SQLi, XSS, and CSRF.",
+    logo: "/logos/VAPT.webp"
+  },
+  { 
+    title: "Network Penetration Testing", 
+    description: "Learn to secure enterprise networks. Covers advanced routing protocols, wireless security, and exploiting network misconfigurations.",
+    logo: "/logos/networking-ethical-hackers.webp"
+  },
+  { 
+    title: "Bug Bounty Training", 
+    description: "Learn how to legally hack and get paid. Discover methodologies for finding high-severity bugs in major platforms and bug bounty programs.",
+    logo: "/logos/bug-bounty.png"
+  },
+  { 
+    title: "Kali Linux Training", 
+    description: "Master the industry-standard penetration testing operating system. Learn to utilize hundreds of built-in security and forensics tools.",
+    logo: "/logos/kali-linux.webp"
+  }
 ];
 
 const globalServices = [

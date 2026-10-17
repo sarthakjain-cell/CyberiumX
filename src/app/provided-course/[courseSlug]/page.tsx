@@ -151,7 +151,26 @@ export default function CourseLandingPage() {
               <span style={{ color: '#fff' }}>{course.title}</span>
             </div>
             
-            <span className={styles.providerBadge}>CyberiumX Professional Certificate</span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', marginBottom: '1.25rem', flexWrap: 'wrap' }}>
+              <div style={{
+                width: '64px',
+                height: '64px',
+                background: '#ffffff',
+                borderRadius: '16px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '8px',
+                boxShadow: '0 8px 24px rgba(0,0,0,0.45), 0 0 20px rgba(255,255,255,0.2)'
+              }}>
+                <img 
+                  src={course.icon} 
+                  alt={`${course.title} Logo`} 
+                  style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                />
+              </div>
+              <span className={styles.providerBadge} style={{ margin: 0 }}>CyberiumX Official Certification Track</span>
+            </div>
             
             <h1 className={styles.title}>{course.title}</h1>
             <p className={styles.description}>{course.description}</p>
