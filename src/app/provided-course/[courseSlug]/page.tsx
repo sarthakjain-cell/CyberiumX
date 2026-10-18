@@ -189,15 +189,13 @@ export default function CourseLandingPage() {
               <div style={{
                 width: '64px',
                 height: '64px',
-                background: 'rgba(255, 255, 255, 0.05)',
-                border: '1px solid rgba(255, 255, 255, 0.14)',
+                background: '#ffffff',
                 borderRadius: '16px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 padding: '10px',
-                boxShadow: '0 8px 24px rgba(0,0,0,0.4)',
-                backdropFilter: 'blur(8px)'
+                boxShadow: '0 8px 24px rgba(0,0,0,0.45)'
               }}>
                 <img 
                   src={course.icon} 
