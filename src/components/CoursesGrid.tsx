@@ -21,39 +21,39 @@ interface CourseItem {
 const allCourses: CourseItem[] = [
   {
     id: 'cehv13',
-    title: 'CEHv13',
+    title: 'Certified Ethical Hacker CEHv13 AI',
     subtitle: 'Certified Ethical Hacker v13 AI',
     category: 'Penetration Testing',
     overview: 'The Certified Ethical Hacker (CEHv13 - AI) course is designed to equip candidates with cutting-edge skills in vulnerability assessment, threat intelligence, and AI-driven ethical hacking.',
     rating: '5.0',
     level: 'Intermediate',
-    duration: '80 Hours',
+    duration: '50 Hours',
     link: '/provided-course/certified-ethical-hacker-cehv13-ai/',
-    logo: '/logos/CEH.png'
+    logo: '/logos/ceh.svg'
   },
   {
     id: 'ccna',
-    title: 'CCNA',
+    title: 'CCNA Course',
     subtitle: 'Cisco Certified Network Associate',
     category: 'Networking',
     overview: 'The Cisco Certified Network Associate (CCNA) course is a comprehensive training program framed to equip learners with fundamental knowledge of enterprise routing, switching, and network defense.',
     rating: '4.9',
     level: 'Beginner',
-    duration: '50 Hours',
+    duration: '40 Hours',
     link: '/provided-course/ccna-course/',
-    logo: '/logos/CCNA.jpg'
+    logo: '/logos/ccna.svg'
   },
   {
     id: 'oscp',
-    title: 'OSCP+',
+    title: 'OSCP+ Course',
     subtitle: 'OffSec Certified Professional',
     category: 'Penetration Testing',
     overview: 'The OffSec Certified Professional (OSCP+) course is an elite, hands-on penetration testing certification training that trains individuals for real-world offensive assessments.',
     rating: '5.0',
     level: 'Advanced',
-    duration: '90 Hours',
+    duration: '100 Hours',
     link: '/provided-course/oscp-course/',
-    logo: '/logos/OSCP.png'
+    logo: '/logos/oscp.svg'
   },
   {
     id: 'azure',
@@ -65,7 +65,7 @@ const allCourses: CourseItem[] = [
     level: 'Intermediate',
     duration: '40 Hours',
     link: '/provided-course/microsoft-azure-course/',
-    logo: '/logos/Azure.webp'
+    logo: '/logos/azure.png'
   },
   {
     id: 'aws-sec',
@@ -75,9 +75,9 @@ const allCourses: CourseItem[] = [
     overview: 'Hands-on training focusing on AWS cloud security auditing, detecting IAM misconfigurations, exploiting vulnerable S3/EC2/Lambda assets, and remediation architecture.',
     rating: '5.0',
     level: 'Advanced',
-    duration: '60 Hours',
+    duration: '30 Hours',
     link: '/provided-course/aws-penetration-testing-security/',
-    logo: '/logos/AWS.webp'
+    logo: '/logos/aws.svg'
   },
   {
     id: 'aws-fund',
@@ -87,9 +87,9 @@ const allCourses: CourseItem[] = [
     overview: 'The Amazon Web Services (AWS) training course is designed to equip candidates with foundational and intermediate skills required to work with cloud security environments.',
     rating: '4.8',
     level: 'Intermediate',
-    duration: '45 Hours',
+    duration: '30 Hours',
     link: '/provided-course/amazon-web-servicesaws-course/',
-    logo: '/logos/AWS.webp'
+    logo: '/logos/aws.svg'
   },
   {
     id: 'ejpt',
@@ -99,9 +99,9 @@ const allCourses: CourseItem[] = [
     overview: 'The eJPTv2 training course provides an elite, 100% practical foundation in Ethical Hacking, assessment methodology, network reconnaissance, and real-world system exploitation.',
     rating: '4.9',
     level: 'Beginner',
-    duration: '35 Hours',
+    duration: '50 Hours',
     link: '/provided-course/ejptv2-course/',
-    logo: '/logos/ejpt.webp'
+    logo: '/logos/ejpt.svg'
   },
   {
     id: 'ethical-hacking',
@@ -113,7 +113,7 @@ const allCourses: CourseItem[] = [
     level: 'Beginner',
     duration: '40 Hours',
     link: '/provided-course/ethical-hacking/',
-    logo: '/logos/ethical-hacking.jpg'
+    logo: '/logos/ethical-hacking.svg'
   },
   {
     id: 'kali-linux',
@@ -125,19 +125,19 @@ const allCourses: CourseItem[] = [
     level: 'Beginner',
     duration: '20 Hours',
     link: '/provided-course/kali-linux-course/',
-    logo: '/logos/kali-linux.webp'
+    logo: '/logos/kali.svg'
   },
   {
     id: 'networking-eh',
-    title: 'Networking For Ethical Hackers',
+    title: 'Networking For Ethical Hackers Course',
     subtitle: 'TCP/IP, Routing & Packet Analysis',
     category: 'Networking',
     overview: 'A rock-solid foundation in networking is essential for cybersecurity. Master TCP/IP packet structures, Wireshark, subnetting, firewalls, and network defense strategies.',
     rating: '4.8',
     level: 'Beginner',
-    duration: '25 Hours',
+    duration: '20 Hours',
     link: '/provided-course/networking-for-ethical-hackers-course/',
-    logo: '/logos/networking-ethical-hackers.webp'
+    logo: '/logos/networking.svg'
   },
   {
     id: 'bug-bounty',
@@ -147,9 +147,9 @@ const allCourses: CourseItem[] = [
     overview: 'Learn how to legally hack top global platforms and earn bounties. Master OWASP Top 10 vulnerabilities, IDOR, SSRF, authentication bypasses, and professional vulnerability reporting.',
     rating: '5.0',
     level: 'Beginner',
-    duration: '30 Hours',
+    duration: '40 Hours',
     link: '/provided-course/bug-bounty-course/',
-    logo: '/logos/bug-bounty.png'
+    logo: '/logos/bug-bounty.svg'
   },
   {
     id: 'vapt',
@@ -159,9 +159,9 @@ const allCourses: CourseItem[] = [
     overview: 'Comprehensive corporate security testing combining automated vulnerability assessments with hands-on manual exploitation, risk analysis, and executive remediation reporting.',
     rating: '5.0',
     level: 'Advanced',
-    duration: '70 Hours',
+    duration: '40 Hours',
     link: '/provided-course/vapt/',
-    logo: '/logos/VAPT.webp'
+    logo: '/logos/vapt.svg'
   }
 ];
 

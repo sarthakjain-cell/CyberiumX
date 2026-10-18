@@ -4,8 +4,8 @@ export async function POST(req: Request) {
   try {
     const { amount, courseId, courseTitle } = await req.json();
 
-    const keyId = process.env.RAZORPAY_KEY_ID;
-    const keySecret = process.env.RAZORPAY_KEY_SECRET;
+    const keyId = process.env.RAZORPAY_KEY_ID || 'rzp_live_TbVIWEzZGgovLH';
+    const keySecret = process.env.RAZORPAY_KEY_SECRET || '1zo3m8IgfCWhP7T0nJ3y0oKh';
 
     if (!keyId || !keySecret) {
       return NextResponse.json(

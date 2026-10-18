@@ -68,13 +68,15 @@ export default function GlobalServicesClient({
                   <div style={{
                     width: '52px',
                     height: '52px',
-                    background: '#ffffff',
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    border: '1px solid rgba(255, 255, 255, 0.12)',
                     borderRadius: '14px',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     padding: '8px',
-                    boxShadow: '0 4px 15px rgba(0,0,0,0.35)',
+                    boxShadow: '0 4px 15px rgba(0,0,0,0.4)',
+                    backdropFilter: 'blur(8px)',
                     flexShrink: 0
                   }}>
                     <img 

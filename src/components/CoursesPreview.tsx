@@ -6,36 +6,36 @@ import styles from './CoursesGrid.module.css';
 const featuredCourses = [
   {
     id: 'cehv13',
-    title: 'CEHv13',
+    title: 'Certified Ethical Hacker CEHv13 AI',
     subtitle: 'Certified Ethical Hacker v13 AI',
     overview: 'The Certified Ethical Hacker (CEHv13 - AI) course is designed to equip candidates with cutting-edge skills in vulnerability assessment, threat intelligence, and AI-driven ethical hacking.',
     rating: '5.0',
     level: 'Intermediate',
-    duration: '80 Hours',
+    duration: '50 Hours',
     link: '/provided-course/certified-ethical-hacker-cehv13-ai/',
-    logo: '/logos/CEH.png'
+    logo: '/logos/ceh.svg'
   },
   {
     id: 'ccna',
-    title: 'CCNA',
+    title: 'CCNA Course',
     subtitle: 'Cisco Certified Network Associate',
     overview: 'The CCNA training program frames foundational and advanced enterprise networking concepts, IP connectivity, network security, switching, and routing protocols.',
     rating: '4.9',
     level: 'Beginner',
-    duration: '50 Hours',
+    duration: '40 Hours',
     link: '/provided-course/ccna-course/',
-    logo: '/logos/CCNA.jpg'
+    logo: '/logos/ccna.svg'
   },
   {
     id: 'oscp',
-    title: 'OSCP+',
+    title: 'OSCP+ Course',
     subtitle: 'OffSec Certified Professional',
     overview: 'The OffSec Certified Professional (OSCP+) course is an elite, hands-on penetration testing certification preparing professionals to conduct real-world security assessments and attack simulations.',
     rating: '5.0',
     level: 'Advanced',
-    duration: '90 Hours',
+    duration: '100 Hours',
     link: '/provided-course/oscp-course/',
-    logo: '/logos/OSCP.png'
+    logo: '/logos/oscp.svg'
   }
 ];
 

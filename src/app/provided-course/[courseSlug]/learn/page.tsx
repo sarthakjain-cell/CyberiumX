@@ -17,6 +17,16 @@ export default function CoursePlayerPage() {
   const [completedLessons, setCompletedLessons] = useState<Record<string, boolean>>({});
   const [isPlaying, setIsPlaying] = useState(false);
   const [hasEnrolled, setHasEnrolled] = useState(true);
+  const [justEnrolled, setJustEnrolled] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const isEnrolledParam = new URLSearchParams(window.location.search).get('enrolled') === 'true';
+      if (isEnrolledParam) {
+        setJustEnrolled(true);
+      }
+    }
+  }, []);
 
   const course = courses.find((c) => {
     const slug = c.link.split('/').filter(Boolean).pop();
@@ -140,6 +150,30 @@ export default function CoursePlayerPage() {
           <span>&gt;</span>
           <span style={{ color: '#fff' }}>Interactive Lab Player</span>
         </div>
+
+        {/* Newly Enrolled Welcome Banner */}
+        {justEnrolled && (
+          <div style={{
+            background: 'rgba(16, 185, 129, 0.12)',
+            border: '1px solid #10b981',
+            borderRadius: '12px',
+            padding: '1rem 1.25rem',
+            marginBottom: '1.5rem',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.85rem'
+          }}>
+            <span style={{ fontSize: '1.6rem' }}>🎉</span>
+            <div>
+              <div style={{ color: '#10b981', fontWeight: 800, fontSize: '0.95rem' }}>
+                Payment Verified &amp; All Course Lectures Unlocked!
+              </div>
+              <div style={{ color: '#d1d5db', fontSize: '0.85rem', marginTop: '0.2rem' }}>
+                Welcome to your interactive cybersecurity training environment. Fulfill 100% of all lectures and practical examination labs to generate your official CyberiumX Certificate.
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Video Player */}
         <div className={styles.videoWrapper}>

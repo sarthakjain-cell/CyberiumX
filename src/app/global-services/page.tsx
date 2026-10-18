@@ -13,37 +13,37 @@ const globalCourses = [
   { 
     title: "Ethical Hacking Training", 
     description: "Master the fundamentals of ethical hacking. Learn how to identify, exploit, and secure vulnerabilities in enterprise systems using real-world scenarios.",
-    logo: "/logos/ethical-hacking.jpg"
+    logo: "/logos/ethical-hacking.svg"
   },
   { 
     title: "CEH (Certified Ethical Hacker) Training", 
     description: "Get prepared for the CEH certification. This comprehensive training covers advanced footprinting, network scanning, and system hacking techniques.",
-    logo: "/logos/CEH.png"
+    logo: "/logos/ceh.svg"
   },
   { 
     title: "OSCP Training", 
     description: "Rigorous, hands-on training preparing you for the Offensive Security Certified Professional exam. Focuses exclusively on practical penetration testing.",
-    logo: "/logos/OSCP.png"
+    logo: "/logos/oscp.svg"
   },
   { 
     title: "Web Application Penetration Testing", 
     description: "Deep dive into securing web applications. Learn to discover and exploit OWASP Top 10 vulnerabilities like SQLi, XSS, and CSRF.",
-    logo: "/logos/VAPT.webp"
+    logo: "/logos/vapt.svg"
   },
   { 
     title: "Network Penetration Testing", 
     description: "Learn to secure enterprise networks. Covers advanced routing protocols, wireless security, and exploiting network misconfigurations.",
-    logo: "/logos/networking-ethical-hackers.webp"
+    logo: "/logos/networking.svg"
   },
   { 
     title: "Bug Bounty Training", 
     description: "Learn how to legally hack and get paid. Discover methodologies for finding high-severity bugs in major platforms and bug bounty programs.",
-    logo: "/logos/bug-bounty.png"
+    logo: "/logos/bug-bounty.svg"
   },
   { 
     title: "Kali Linux Training", 
     description: "Master the industry-standard penetration testing operating system. Learn to utilize hundreds of built-in security and forensics tools.",
-    logo: "/logos/kali-linux.webp"
+    logo: "/logos/kali.svg"
   }
 ];
 
