@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 36" width="110" height="36">
+  <!-- Circular Arrows -->
+  <g transform="translate(6, 6)" fill="#0f172a">
+    <!-- Arrow 1 (top half clockwise) -->
+    <path d="M 12 2 A 10 10 0 0 1 21 8 L 24 6 L 22 13 L 15 12 L 18 9.5 A 7 7 0 0 0 12 5 A 7 7 0 0 0 5 12 L 2 12 A 10 10 0 0 1 12 2 Z"/>
+    <!-- Arrow 2 (bottom half clockwise) -->
+    <path d="M 12 22 A 10 10 0 0 1 3 16 L 0 18 L 2 11 L 9 12 L 6 14.5 A 7 7 0 0 0 12 19 A 7 7 0 0 0 19 12 L 22 12 A 10 10 0 0 1 12 22 Z"/>
+  </g>
+  <!-- Text: BANK TRANSFER -->
+  <text x="36" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="900" fill="#0f172a" letter-spacing="0.5">BANK</text>
+  <text x="36" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="800" fill="#0f172a" letter-spacing="0.8">TRANSFER</text>
+</svg>
