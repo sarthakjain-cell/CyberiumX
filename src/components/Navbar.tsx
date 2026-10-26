@@ -43,8 +43,6 @@ export default function Navbar() {
           <Link href="/courses" className={`${styles.navLink} ${pathname.startsWith('/courses') || pathname.startsWith('/provided-course') ? styles.active : ''}`} onClick={() => setMobileOpen(false)}>Our Courses</Link>
           <Link href="/global-services" className={`${styles.navLink} ${pathname.startsWith('/global-services') ? styles.active : ''}`} onClick={() => setMobileOpen(false)}>Global Services</Link>
 
-          <Link href="/verify" className={`${styles.navLink} ${pathname === '/verify' ? styles.active : ''}`} style={{ color: '#10b981', fontWeight: 600 }} onClick={() => setMobileOpen(false)}>Verify</Link>
-
           <div 
             className={styles.dropdown}
             onMouseEnter={() => setMoreOpen(true)}
