@@ -156,44 +156,58 @@
 
 .cardHeader {
   display: flex;
-  align-items: flex-start;
-  gap: 1.25rem;
+  flex-direction: column;
+  gap: 0.75rem;
   margin-bottom: 1.25rem;
 }
 
-.courseLogoWrap {
-  width: 56px;
-  height: 56px;
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 8px;
+.tagsRow {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
-}
-
-.courseLogo {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.cardMeta h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin: 0 0 0.35rem 0;
-  color: #fff;
-  line-height: 1.35;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .categoryTag {
-  font-size: 0.75rem;
+  background: rgba(252, 22, 22, 0.12);
+  border: 1px solid rgba(252, 22, 22, 0.3);
   color: #fc1616;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+}
+
+.levelTag {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #9ca3af;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+}
+
+.durationTag {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #9ca3af;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  margin-left: auto;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  line-height: 1.4;
+  min-height: 3.5rem;
 }
 
 /* Progress & Hours Bar */
@@ -241,15 +255,17 @@
 .certRequirement {
   background: rgba(245, 158, 11, 0.08);
   border: 1px solid rgba(245, 158, 11, 0.25);
-  border-radius: 8px;
-  padding: 0.65rem 0.85rem;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
   font-size: 0.775rem;
   color: #fbbf24;
-  line-height: 1.4;
-  margin-bottom: 1.25rem;
+  line-height: 1.45;
+  margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.65rem;
+  min-height: 58px;
+  box-sizing: border-box;
 }
 
 .certRequirement.certUnlocked {
@@ -261,6 +277,7 @@
 .cardActions {
   display: flex;
   gap: 0.75rem;
+  width: 100%;
 }
 
 .resumeBtn {
@@ -332,41 +349,18 @@
 
 .recHeader {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
 }
 
-.recLogo {
-  width: 44px;
-  height: 44px;
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
-}
-
-.recLogo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.recMeta h4 {
-  font-size: 1.05rem;
+.recTitle {
+  font-size: 1.1rem;
   font-weight: 700;
   color: #fff;
+  line-height: 1.4;
   margin: 0;
-  line-height: 1.3;
-}
-
-.recMeta span {
-  font-size: 0.75rem;
-  color: #9ca3af;
+  min-height: 3rem;
 }
 
 .recSpecs {

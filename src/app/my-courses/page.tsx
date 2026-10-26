@@ -169,16 +169,14 @@ export default function MyCoursesPage() {
             {enrolledList.map((course) => (
               <div key={course.id} className={styles.courseCard}>
                 <div>
-                  {/* Card Header */}
+                  {/* Symmetrical Card Header without logo */}
                   <div className={styles.cardHeader}>
-                    <div className={styles.courseLogoWrap}>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={course.icon} alt={course.title} className={styles.courseLogo} />
+                    <div className={styles.tagsRow}>
+                      <span className={styles.categoryTag}>{course.category}</span>
+                      <span className={styles.levelTag}>{course.level}</span>
+                      <span className={styles.durationTag}>⏱️ {course.duration}</span>
                     </div>
-                    <div className={styles.cardMeta}>
-                      <span className={styles.categoryTag}>{course.category} • {course.level}</span>
-                      <h3>{course.title}</h3>
-                    </div>
+                    <h3 className={styles.cardTitle}>{course.title}</h3>
                   </div>
 
                   {/* Progress & Hours Bar */}
@@ -262,14 +260,8 @@ export default function MyCoursesPage() {
               <div key={rec.id} className={styles.recommendCard}>
                 <div>
                   <div className={styles.recHeader}>
-                    <div className={styles.recLogo}>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={rec.icon} alt={rec.title} />
-                    </div>
-                    <div className={styles.recMeta}>
-                      <h4>{rec.title}</h4>
-                      <span>{rec.category}</span>
-                    </div>
+                    <span className={styles.categoryTag} style={{ alignSelf: 'flex-start' }}>{rec.category}</span>
+                    <h4 className={styles.recTitle}>{rec.title}</h4>
                   </div>
 
                   <div className={styles.recSpecs}>
