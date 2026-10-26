@@ -1,27 +1,12 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
-import { motion, AnimatePresence } from 'framer-motion';
 import GoogleReviewsModal from './GoogleReviewsModal';
 import styles from './Hero.module.css';
 
-const rotatingParts = [
-  "Master Real-World Ethical Hacking & Cyber Defense",
-  "Train in Live Virtual Cyber Ranges & Practice Labs",
-  "Earn Globally Recognized Cyber Security Certifications"
-];
-
 export default function Hero() {
-  const [partIndex, setPartIndex] = useState(0);
   const [showReviewsModal, setShowReviewsModal] = useState(false);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setPartIndex((prev) => (prev + 1) % rotatingParts.length);
-    }, 3200); // Rotates every 3.2 seconds
-    return () => clearInterval(timer);
-  }, []);
 
   return (
     <section className={styles.hero}>
@@ -30,27 +15,8 @@ export default function Hero() {
       
       <div className={`container ${styles.heroContent}`}>
         <div>
-          {/* Top Row: Welcome Banner + Google Reviews Social Proof Badge */}
+          {/* Top Row: Google Reviews Social Proof Badge */}
           <div className={styles.topBannersRow}>
-            {/* Top Auto-Changing Welcome Banner */}
-            <div className={styles.welcomeBanner}>
-              <span className={styles.welcomeTag}>WELCOME TO CYBERIUMX</span>
-              <div className={styles.rotatingTextWrapper}>
-                <AnimatePresence mode="wait">
-                  <motion.span
-                    key={partIndex}
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -8 }}
-                    transition={{ duration: 0.35 }}
-                    className={styles.rotatingPartText}
-                  >
-                    {rotatingParts[partIndex]}
-                  </motion.span>
-                </AnimatePresence>
-              </div>
-            </div>
-
             {/* Google Reviews Social Proof Badge (Direct link to Google reviews) */}
             <a
               href="https://www.google.com/search?q=CyberiumX+reviews"
@@ -89,10 +55,6 @@ export default function Hero() {
             Your Cyber Security <br />
             <span className={styles.glitchText}>Journey Starts Here !!</span>
           </h1>
-          
-          <p className={styles.heroDesc}>
-            Join CyberiumX trainings and gain cutting-edge skills to defend against cyber threats like a pro.
-          </p>
           
           <div className={styles.heroBtns}>
             <Link href="/courses" className="btn-primary">
