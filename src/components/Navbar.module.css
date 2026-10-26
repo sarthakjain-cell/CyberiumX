@@ -123,26 +123,32 @@
 
 .getStartedBtn {
   background: linear-gradient(135deg, #ff1616 0%, #b90b0b 100%);
-  color: #fff;
+  color: #ffffff !important;
   font-weight: 700;
   font-size: 1.05rem;
   padding: 0.75rem 1.75rem;
-  border-radius: 50px; /* Pill shape instead of square */
-  border: 1px solid rgba(252, 22, 22, 0.5);
-  box-shadow: 0 4px 15px rgba(252, 22, 22, 0.4), inset 0 0 10px rgba(255,255,255,0.2);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 22, 22, 0.6);
+  box-shadow: 0 4px 18px rgba(255, 22, 22, 0.45);
+  transition: background 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   white-space: nowrap;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
+  text-decoration: none !important;
   margin-left: 0.5rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
 }
 
 .getStartedBtn:hover {
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 8px 25px rgba(252, 22, 22, 0.6), inset 0 0 15px rgba(255,255,255,0.4);
-  background: linear-gradient(135deg, #ff3333 0%, #ff1616 100%);
+  background: linear-gradient(135deg, #ff3333 0%, #e01010 100%);
+  color: #ffffff !important;
+  text-decoration: none !important;
+  border-color: #ff5555;
+  box-shadow: 0 0 25px rgba(255, 22, 22, 0.8), 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes shine {
