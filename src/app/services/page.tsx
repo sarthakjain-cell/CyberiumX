@@ -93,11 +93,26 @@ export default function ServicesPage() {
   return (
     <div className="container">
       <section className={styles.servicesHero}>
-        <div>
+        <div className={styles.header}>
           <h1 className={styles.title}>7X-Security</h1>
           <p className={styles.subtitle}>
             The CyberiumX 7-Layer Cybersecurity Protection Framework, designed to provide comprehensive protection against modern cyber threats.
           </p>
+        </div>
+
+        <div className={styles.grid}>
+          {layers.map((layer, index) => (
+            <div
+              key={index}
+              className={styles.card}
+            >
+              <div className={styles.cardIcon}>
+                {layer.icon}
+              </div>
+              <h3 className={styles.cardTitle}>{layer.title}</h3>
+              <p className={styles.cardDesc}>{layer.desc}</p>
+            </div>
+          ))}
         </div>
 
         <div className={styles.articleContent}>
@@ -124,33 +139,17 @@ export default function ServicesPage() {
               Cybersecurity experts therefore recommend adopting defense-in-depth strategies, also known as layered security models. This approach ensures that security measures are applied at multiple levels—including infrastructure, applications, users, networks, and monitoring systems.
             </p>
           </div>
-        </div>
 
-        <div className={styles.grid}>
-          {layers.map((layer, index) => (
-            <div
-              key={index}
-              className={styles.card}
-            >
-              <div className={styles.cardIcon}>
-                {layer.icon}
-              </div>
-              <h3 className={styles.cardTitle}>{layer.title}</h3>
-              <p className={styles.cardDesc}>{layer.desc}</p>
+          <div
+            className={styles.textSection}
+          >
+            <h2>Benefits of CyberiumX 7X Cybersecurity Protection</h2>
+            <p>
+              Organizations that implement CyberiumX’s security framework gain several advantages. First, they achieve comprehensive protection against multiple attack vectors, reducing the likelihood of successful cyberattacks. Second, businesses improve their compliance with data protection regulations and industry standards.
+            </p>
+            <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+               <Link href="/contact-us" className="btn-primary">Book a Demo</Link>
             </div>
-          ))}
-        </div>
-
-        <div
-          className={styles.textSection}
-          style={{ marginTop: '4rem' }}
-        >
-          <h2>Benefits of CyberiumX 7X Cybersecurity Protection</h2>
-          <p>
-            Organizations that implement CyberiumX’s security framework gain several advantages. First, they achieve comprehensive protection against multiple attack vectors, reducing the likelihood of successful cyberattacks. Second, businesses improve their compliance with data protection regulations and industry standards.
-          </p>
-          <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-             <Link href="/contact-us" className="btn-primary">Book a Demo</Link>
           </div>
         </div>
 
