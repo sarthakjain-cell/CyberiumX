@@ -18,11 +18,6 @@ export default function PaymentMethods() {
           <img src="/payments/mastercard.svg" alt="Mastercard" className={styles.svgIcon} loading="lazy" />
         </div>
 
-        {/* American Express */}
-        <div className={styles.logoItem} title="American Express">
-          <img src="/payments/amex.svg?v=2" alt="American Express" className={styles.svgIcon} loading="lazy" />
-        </div>
-
         {/* Razorpay */}
         <div className={styles.logoItem} title="Razorpay Secure Checkout">
           <img src="/payments/razorpay.svg" alt="Razorpay" className={styles.svgIcon} loading="lazy" />
