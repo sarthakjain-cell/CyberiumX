@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import styles from './AboutPage.module.css';
+import TrustBadge from '@/components/TrustBadge';
 
 export const metadata: Metadata = {
   title: "About Us | CyberiumX - Elite Cybersecurity Institute",
@@ -140,6 +141,9 @@ export default function AboutUsPage() {
 
         </div>
       </section>
+
+      {/* Justdial Accreditation & Awards */}
+      <TrustBadge />
 
     </div>
   );

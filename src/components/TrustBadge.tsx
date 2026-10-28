@@ -42,25 +42,25 @@ export default function TrustBadge() {
             </div>
           </a>
 
-          {/* Award 2: Page 4 Users' Choice Certificate */}
+          {/* Award 2: Replica of Trusted Business Plaque */}
           <a 
             href="https://jsdl.in/DT-23VTC9S887W" 
             target="_blank" 
             rel="noopener noreferrer" 
             className={styles.awardCard}
-            aria-label="View CyberiumX Justdial Users Choice 2026 Certificate (opens in new tab)"
+            aria-label="View CyberiumX Justdial Trusted Business Award 2026 (opens in new tab)"
           >
             <div className={styles.imageWrapper}>
               <img 
-                src="/justdial/justdial_users_choice_award.jpg" 
-                alt="Justdial Users Choice 2026 5-Star Rating Framed Award for CyberiumX" 
+                src="/justdial/justdial_trusted_business_award.jpg" 
+                alt="Justdial CyberiumX Trusted Business Registered In 2026 Framed Award" 
                 className={styles.awardImg}
               />
             </div>
             <div className={styles.awardCaption}>
-              <span className={styles.captionBadge}>Users&apos; Choice Award</span>
-              <h4>Jd Users&apos; Choice 2026</h4>
-              <p>5-Star rated excellence in practical cybersecurity certifications & mentorship</p>
+              <span className={styles.captionBadge}>Official Recognition</span>
+              <h4>Justdial Trusted Business 2026</h4>
+              <p>Official recognition certificate with 2026 Genuine Business Gold Medallion</p>
             </div>
           </a>
         </div>
