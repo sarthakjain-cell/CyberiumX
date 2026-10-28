@@ -1,0 +1,2564 @@
+[
+  {
+    "id": 3459,
+    "date": "2026-02-22T20:25:29",
+    "date_gmt": "2026-02-22T14:55:29",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=provided-course&#038;p=3459"
+    },
+    "modified": "2026-02-22T20:27:08",
+    "modified_gmt": "2026-02-22T14:57:08",
+    "slug": "microsoft-azure-course",
+    "status": "publish",
+    "type": "provided-course",
+    "link": "https://cyberiumx.com/provided-course/microsoft-azure-course/",
+    "title": {
+      "rendered": "Microsoft Azure Course"
+    },
+    "content": {
+      "rendered": "<h3 class=\"heading-new\">Course Overview</h3>\n<p>The Microsoft Azure Cloud training course is designed to advance candidates with the skills required to work with one of the most demanding and vibrant Cloud Computing platforms. This comprehensive training includes core Azure Services like computing, storage, security, networking, databases, and identity management after which the concepts of Azure Security and Penetration Testing will be covered. Participants will explore Azure best practices for Security and Penetration Testing, cost optimization tactics, and effective deployment strategies. Practical cloud skills will be reinforced through hands-on labs and real-world scenarios. By the end of the course, learners will gain a solid understanding of Azure architecture and how to secure and pen-test one.</p>\n<h3 class=\"heading-new\">Syllabus</h3>\n<h5 class=\"heading-one\">Chapter I- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Introduction to Azure and Cloud Computing</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">What is Microsoft Azure?</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Azure vs AWS vs GCP overview</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Understanding cloud service models: IaaS, PaaS, SaaS</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Key concepts: Regions, Availability Zones, Resource Groups</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Azure portal, CLI, PowerShell &amp; Resource Manager (ARM)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Compute (VMs, App Services, Functions)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Storage (Blob, Table, File)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Networking (VNet, NSG, Azure Firewall)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Identity (Azure AD)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Database (SQL Database, Cosmos DB)</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter II- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Identity and Access Management in Azure</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Azure Active Directory (Azure AD) fundamentals</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Role-Based Access Control (RBAC)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Azure AD Conditional Access Policies</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Multi-Factor Authentication (MFA)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Azure AD Privileged Identity Management (PIM)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Just-In-Time (JIT) access and Just-Enough-Access (JEA)</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter III- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Azure Security Services Overview</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Microsoft Defender for Cloud</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Azure Sentinel (SIEM and SOAR)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Microsoft Defender for Identity</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Azure Key Vault</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Azure Policy and Blueprints</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Azure Information Protection (AIP)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">DDoS Protection Plans</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter IV- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Azure Networking and Network Security</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Virtual Network (VNet) architecture</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Subnets, Route Tables, and Network Security Groups (NSGs)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Azure Firewall and Application Gateway</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Private Endpoints and Service Endpoints</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Azure Bastion Host</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">VPN Gateway and ExpressRoute</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter V- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Data Security and Encryption in Azure</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Data classification and protection</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Encryption at rest &amp; in transit</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Customer-Managed Keys (CMKs) vs Microsoft-Managed Keys</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Azure Disk Encryption</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Secure Access to Blob Storage and SAS tokens</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Azure Purview for data governance</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter VI- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Securing Azure Compute and Applications</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Hardening Azure Virtual Machines</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Secure deployment pipelines (CI/CD) using DevOps and GitHub Actions</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Web application security (App Service, Function Apps)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Container security in Azure Kubernetes Service (AKS)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">API security with Azure API Management</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Azure App Gateway WAF (Web Application Firewall)</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter VII- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Incident Detection and Response</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Threat detection with Microsoft Defender</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Setting up Azure Sentinel for centralized threat hunting</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Creating custom detection rules and analytics</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Automated response using Logic Apps and Playbooks</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Forensics in Azure: log collection, evidence isolation</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter VIII- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Introduction to Azure Penetration Testing</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Microsoft’s cloud pen-testing policy</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Scoping and legal considerations in Azure pentests</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Penetration Testing vs Red Teaming in cloud</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Cloud vs traditional pen-testing methodology</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Permitted activities and rules of engagement</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter IX- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Reconnaissance and Enumeration in Azure</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Discovering Azure subdomains and services (AzureFront, *.cloudapp.net)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Identifying exposed resources (VMs, endpoints, blobs)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Tools: Azucar, MicroBurst, ScoutSuite, CloudFox</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Enumerating Azure AD objects and roles</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Detecting misconfigured public storage and secrets</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter X- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Attacking Azure Resources</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Exploiting misconfigured IAM and role assignments</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Privilege escalation via role chaining and token abuse</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Accessing unsecured blobs, functions, databases</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Exploiting Azure AD Connect misconfigurations</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Metadata API exploitation in Azure VMs (Managed Identity abuse)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">SSRF &amp; RCE in Azure-hosted apps</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter XI- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Post-Exploitation and Pivoting in Azure</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Lateral movement techniques in Azure environments</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Extracting credentials from Key Vault and storage accounts</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Abusing Azure automation and Logic Apps for persistence</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Access token reuse and session hijacking</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Dumping AzureAD logs, subscriptions, keys</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter XII-<span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\"> Defending and Hardening Azure</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Secure Azure AD tenant configuration</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Secure score analysis and improvement</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Conditional Access and Identity Protection best practices</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Hardening VMs and app services</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Secure DevOps with security gates and dependency scanning</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Logging and alerting for security events</span></li>\n</ul>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Course Overview The Microsoft Azure Cloud training course is designed to advance candidates with the skills required to work with one of the most demanding and vibrant Cloud Computing platforms. This comprehensive training includes core Azure Services like computing, storage, security, networking, databases, and identity management after which the concepts of Azure Security and Penetration [&hellip;]</p>\n",
+      "protected": false
+    },
+    "featured_media": 0,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3459",
+      "provided-course",
+      "type-provided-course",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course/3459",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/provided-course"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3459"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 3453,
+    "date": "2026-02-12T15:05:33",
+    "date_gmt": "2026-02-12T09:35:33",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=provided-course&#038;p=3453"
+    },
+    "modified": "2026-02-22T19:52:59",
+    "modified_gmt": "2026-02-22T14:22:59",
+    "slug": "aws-penetration-testing-security",
+    "status": "publish",
+    "type": "provided-course",
+    "link": "https://cyberiumx.com/provided-course/aws-penetration-testing-security/",
+    "title": {
+      "rendered": "AWS Penetration Testing &#038; Security"
+    },
+    "content": {
+      "rendered": "<h3 class=\"heading-new\">Course Overview</h3>\n<p>The Amazon Web Services (AWS) Penetration Testing training course is designed to help candidates with the skills required to perform penetration testing on one of the most popular Cloud Computing platforms. This Practical-focused training includes an overview of AWS Services like computing, storage, networking, databases, and security, after which we participants will explore the concepts of Penetration Testing on AWS services. Most organizations have misconfigured policies for AWS services such as S3, EC2, Lambda, VPC, RDS, EBS, etc., which attackers can exploit. So this course is designed to help you identify the misconfigurations in AWS-configured policies and help in understanding the underlying security architecture. Practical cloud pentesting skills will be reinforced through hands-on labs and real-world scenarios. By the end of the course, learners will gain a solid understanding of AWS architecture and how to secure it.</p>\n<h3 class=\"heading-new\">Syllabus</h3>\n<h5 class=\"heading-one\">Chapter I- Introduction to AWS Cloud and Security</h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Basics of AWS and cloud computing</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Shared Responsibility Model</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Cloud service models (IaaS, PaaS, SaaS)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">NIST Cloud Architecture</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Key AWS services overview (EC2, S3, IAM, RDS, Lambda, etc.)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Introduction to AWS global infrastructure</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Key terminology: Regions, Availability Zones, Budget</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">AWS penetration testing policy and scope</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Permissible vs prohibited activities</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Methodology and ethics of cloud penetration testing</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter II- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Configuring the Lab Environment</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Creating a Free Tier AWS Account</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Setting up Budget Alerts</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Installing and Configuring the AWS CLI</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Enabling Autocomplete for the AWS CLI</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Installing CloudGoat</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Installing Pacu</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Creating Free Accounts on Cybr and Pwned Labs</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter III- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Understanding IAM in AWS</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">IAM Users, Groups, and Roles</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">IAM Policies (JSON structure and permission boundaries)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">AWS STS and temporary credentials</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">MFA and IAM best practices</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Principle of least privilege</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">3.4 User and Policy Enumeration</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">3.5 Group and Role Enumeration</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Using Pacu to Automate Enumeration</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Challenge Labs</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">IAM Security Guidelines</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter IV- AWS <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">S3 Buckets</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Introduction to S3</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Creation and Management of S3 Buckets</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Utilizing S3 for Object Storage and Ensuring Data Consistency</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">S3 Security Measures and Bucket Policies</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Implementing S3 Versioning</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Identifying, Listing, and Downloading from Buckets</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Challenge Labs</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">S3 Security Guidelines</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter V- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Network Security in AWS</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Virtual Private Cloud (VPC) fundamentals</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Security Groups vs Network ACLs</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Subnetting and route tables</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">NAT Gateways, Internet Gateways, and Bastion Hosts</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">VPN and Direct Connect security</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">VPC peering and PrivateLink</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter VI- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">AWS Lambda</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Introduction to Serverless Architecture</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Creation and Deployment of Lambda Functions</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Integration of Lambda with Other AWS Services</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Utilizing Event Triggers</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Lambda Enumeration (Console)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Lambda Enumeration (CLI / Pacu)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Challenge Labs</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Lambda Security Guidelines</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter VII- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">AWS EC2 Service</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Initiating and Setting Up EC2 Instances</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Understanding EC2 Instance Types and Their Use Cases</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Management of EC2 Instances and Security Groups</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Launching Windows and Linux Instances</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Configuration of Web Servers</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Implementing Elastic IP</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Load Balancing Varieties with EC2</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Auto Scaling Applications with EC2</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Snapshots of Volumes and Instances</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">EC2 Enumeration (Console)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">EC2 Enumeration (CLI / Pacu)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Challenge Labs</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">EC2 Security Guidelines</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter VIII- Data<span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\"> Security and Encryption</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Data classification and handling</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Encryption at rest and in transit</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">AWS S3 bucket policies and public access settings</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Using AWS KMS and customer-managed keys</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Secrets Manager</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter IX- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">AWS Privilege Escalation</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Overview of Privilege Escalation in AWS</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Challenge Labs</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Security Guidelines</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter X- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">AWS Security Tools and Services</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">AWS Security Hub</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">AWS CloudTrail</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">AWS CloudWatch</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">AWS Inspector</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">AWS GuardDuty</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">AWS KMS (Key Management Service)</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">AWS WAF and AWS Shield</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter XI- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Capstone Challenges</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Real-world Lab Introduction</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Setting up a real-world lab</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Identifying vulnerabilities</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Exploiting vulnerabilities</span></li>\n</ul>\n<h5 class=\"heading-one\">Chapter XII- <span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">AWS Security Best Practices and Hardening</span></h5>\n<ul>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Securing root account and credentials</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Logging and monitoring best practices</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Hardening EC2, S3, IAM, and Lambda</span></li>\n<li><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\">Real-world misconfigurations and lessons learned</span></li>\n</ul>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Most organizations have misconfigured policies for AWS services such as S3, EC2, Lambda, VPC, RDS, EBS, etc., which attackers can exploit. So this course is designed to help you identify the misconfigurations in AWS-configured policies and help in understanding the underlying security architecture.</p>\n",
+      "protected": false
+    },
+    "featured_media": 3458,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3453",
+      "provided-course",
+      "type-provided-course",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course/3453",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/provided-course"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3458"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3453"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3458,
+          "date": "2026-02-12T16:53:41",
+          "slug": "cloud-network-hand-using-phone-technology-remix-galaxy",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/provided-course/aws-penetration-testing-security/attachment/cloud-network-hand-using-phone-technology-remix-galaxy/",
+          "title": {
+            "rendered": "AWS Penetration Testing course"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": "<p>AWS Penetration Testing course</p>\n"
+          },
+          "alt_text": "AWS Penetration Testing course",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 2560,
+            "height": 930,
+            "file": "2026/02/cloud-network-hand-using-phone-technology-remix-galaxy-scaled-e1770895497517.jpg",
+            "filesize": 624883,
+            "sizes": {
+              "medium": {
+                "file": "cloud-network-hand-using-phone-technology-remix-galaxy-scaled-e1770895497517-300x109.jpg",
+                "width": 300,
+                "height": 109,
+                "filesize": 17496,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2026/02/cloud-network-hand-using-phone-technology-remix-galaxy-scaled-e1770895497517-300x109.jpg"
+              },
+              "large": {
+                "file": "cloud-network-hand-using-phone-technology-remix-galaxy-scaled-e1770895497517-1024x372.jpg",
+                "width": 1024,
+                "height": 372,
+                "filesize": 109060,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2026/02/cloud-network-hand-using-phone-technology-remix-galaxy-scaled-e1770895497517-1024x372.jpg"
+              },
+              "thumbnail": {
+                "file": "cloud-network-hand-using-phone-technology-remix-galaxy-scaled-e1770895497517-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 14592,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2026/02/cloud-network-hand-using-phone-technology-remix-galaxy-scaled-e1770895497517-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "cloud-network-hand-using-phone-technology-remix-galaxy-scaled-e1770895497517-768x279.jpg",
+                "width": 768,
+                "height": 279,
+                "filesize": 65149,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2026/02/cloud-network-hand-using-phone-technology-remix-galaxy-scaled-e1770895497517-768x279.jpg"
+              },
+              "1536x1536": {
+                "file": "cloud-network-hand-using-phone-technology-remix-galaxy-scaled-e1770895497517-1536x558.jpg",
+                "width": 1536,
+                "height": 558,
+                "filesize": 233072,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2026/02/cloud-network-hand-using-phone-technology-remix-galaxy-scaled-e1770895497517-1536x558.jpg"
+              },
+              "2048x2048": {
+                "file": "cloud-network-hand-using-phone-technology-remix-galaxy-scaled-e1770895497517-2048x744.jpg",
+                "width": 2048,
+                "height": 744,
+                "filesize": 385733,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2026/02/cloud-network-hand-using-phone-technology-remix-galaxy-scaled-e1770895497517-2048x744.jpg"
+              },
+              "full": {
+                "file": "cloud-network-hand-using-phone-technology-remix-galaxy-scaled-e1770895497517.jpg",
+                "width": 2560,
+                "height": 930,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2026/02/cloud-network-hand-using-phone-technology-remix-galaxy-scaled-e1770895497517.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "rawpixel.com / Benjamas",
+              "camera": "",
+              "caption": "Cloud network hand using phone technology remix galaxy",
+              "created_timestamp": "0",
+              "copyright": "Rawpixel Ltd.",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "Cloud network hand using phone technology remix galaxy",
+              "orientation": "1",
+              "keywords": [
+                "background",
+                "business",
+                "business remix",
+                "cellphone",
+                "clip",
+                "cloud",
+                "cloud data",
+                "cloud network",
+                "cloud storage",
+                "cloud system",
+                "data",
+                "design",
+                "digital",
+                "digital device",
+                "digital remix",
+                "disruptive technology",
+                "electronics",
+                "finger",
+                "future",
+                "futuristic",
+                "futuristic technology",
+                "galaxy",
+                "global",
+                "global network",
+                "graphic",
+                "hand",
+                "hand gesture",
+                "information",
+                "innovation",
+                "internet",
+                "media",
+                "mobile phone",
+                "networking",
+                "person",
+                "phone",
+                "pointing",
+                "printable",
+                "remix",
+                "remixed media",
+                "smart technology",
+                "smartphone",
+                "social media",
+                "space",
+                "storage",
+                "system",
+                "tapping",
+                "technology",
+                "technology remix",
+                "using"
+              ]
+            },
+            "original_image": "cloud-network-hand-using-phone-technology-remix-galaxy.jpg"
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2026/02/cloud-network-hand-using-phone-technology-remix-galaxy-scaled-e1770895497517.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3458",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3458"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "provided-course",
+                "id": 3453,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course/3453"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3118,
+    "date": "2025-02-21T11:49:45",
+    "date_gmt": "2025-02-21T06:19:45",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=provided-course&#038;p=3118"
+    },
+    "modified": "2026-02-22T19:57:19",
+    "modified_gmt": "2026-02-22T14:27:19",
+    "slug": "amazon-web-servicesaws-course",
+    "status": "publish",
+    "type": "provided-course",
+    "link": "https://cyberiumx.com/provided-course/amazon-web-servicesaws-course/",
+    "title": {
+      "rendered": "Amazon Web Services(AWS) Course"
+    },
+    "content": {
+      "rendered": "<h3 class=\"heading-new\">Course Overview</h3>\n<p>The Amazon Web Services (AWS) training course is designed to equip candidates with the skills required to work with one of the most popular Cloud Computing platforms. This comprehensive training includes core AWS Services like computing, storage, security, networking, databases, and identity management. Participants will explore AWS best practices, cost optimization tactics, and effective deployment strategies. Practical cloud skills will be reinforced through hands-on labs and real-world scenarios. By the end of the course, learners will gain a solid understanding of AWS architecture and how to build one.</p>\n<h3 class=\"heading-new\">Syllabus</h3>\n<h5 class=\"heading-one\">Chapter I- Introduction to AWS Cloud</h5>\n<ul>\n<li>What is Cloud Computing?</li>\n<li>Benefits of Cloud Computing</li>\n<li>AWS Global Infrastructure</li>\n<li>AWS Regions, Availability Zones &amp; Edge Locations</li>\n<li>Core AWS Services Overview</li>\n</ul>\n<h5 class=\"heading-one\">Chapter II- AWS Pricing and Billing Overview</h5>\n<ul>\n<li>AWS Free Tier and Pricing Models</li>\n<li>AWS Cost Explorer</li>\n<li>AWS Pricing Calculator</li>\n<li>AWS Billing Dashboard</li>\n<li>Cost Optimization Strategies</li>\n</ul>\n<h5 class=\"heading-one\">Chapter III- AWS Identity and Access Management (IAM)</h5>\n<ul>\n<li>Introduction to IAM</li>\n<li>Creating Users, Groups, and Roles</li>\n<li>IAM Policies and Permissions</li>\n<li>Multi-Factor Authentication (MFA)</li>\n<li>Best Practices for IAM Security</li>\n</ul>\n<h5 class=\"heading-one\">Chapter IV- AWS Budgets</h5>\n<ul>\n<li>Overview of AWS Budgets</li>\n<li>Setting Up Cost and Usage Budgets</li>\n<li>Forecasting AWS Costs</li>\n<li>Budget Alerts and Notifications</li>\n</ul>\n<h5 class=\"heading-one\">Chapter V- Amazon EC2 (Elastic Compute Cloud)</h5>\n<ul>\n<li>Introduction to Amazon EC2</li>\n<li>Launching and Managing EC2 Instances</li>\n<li>Launching Windows Instances</li>\n<li>Launching Linux Instances</li>\n<li>Connecting to EC2 via SSH &amp; RDP</li>\n<li>Instance Types and Pricing</li>\n<li>Elastic IPs and Security Groups</li>\n<li>EC2 Instance Storage (EBS)</li>\n<li>EC2 Snapshot and Recovery</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VI- AWS Autoscaling</h5>\n<ul>\n<li>Introduction to Auto Scaling</li>\n<li>Creating an Auto Scaling Group</li>\n<li>Scaling Policies and Metrics</li>\n<li>Maintaining High Availability</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VII- AWS Load Balancer</h5>\n<ul>\n<li>Introduction to Elastic Load Balancing (ELB)</li>\n<li>Types of Load Balancers (ALB, NLB, CLB)</li>\n<li>Load Balancer Configuration</li>\n<li>Health Checks and Traffic Distribution</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VIII- Amazon EBS (Elastic Block Store)</h5>\n<ul>\n<li>Introduction to Amazon EBS</li>\n<li>EBS Volume Types</li>\n<li>Creating and Attaching EBS Volumes</li>\n<li>Snapshots and Backup Strategies</li>\n<li>Encrypting EBS Volumes</li>\n</ul>\n<h5 class=\"heading-one\">Chapter IX- Amazon VPC (Virtual Private Cloud)</h5>\n<ul>\n<li>Introduction to VPC</li>\n<li>Subnets, Route Tables, and Internet Gateways</li>\n<li>Security Groups vs. Network ACLs</li>\n<li>NAT Gateways</li>\n<li>VPC Peering</li>\n</ul>\n<h5 class=\"heading-one\">Chapter X- Amazon S3 (Simple Storage Service)</h5>\n<ul>\n<li>Introduction to Amazon S3</li>\n<li>Storage Classes and Use Cases</li>\n<li>Uploading and Managing Objects</li>\n<li>Bucket Policies and Access Control</li>\n<li>Bucket Versioning</li>\n<li>Static Web Hosting</li>\n<li>Data Encryption and Security</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XI- AWS DataSync</h5>\n<ul>\n<li>Overview of AWS DataSync</li>\n<li>Transferring Data Between S3 Buckets</li>\n<li>Data Migration Between On-Premise and AWS</li>\n<li>Automating Data Transfers</li>\n<li>Ensuring Data Security</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XII- AWS Elastic Beanstalk</h5>\n<ul>\n<li>Introduction to Elastic Beanstalk</li>\n<li>Deploying Applications Automatically</li>\n<li>Supported Platforms (Java, Python, Node.js, etc.)</li>\n<li>Environment Configuration and Scaling</li>\n<li>Monitoring and Troubleshooting</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XIII- Amazon Route 53</h5>\n<ul>\n<li>Introduction to DNS and Route 53</li>\n<li>Registering a Domain Name</li>\n<li>Configuring Hosted Zones</li>\n<li>Routing Policies (Simple, Weighted, Failover, etc.)</li>\n<li>Domain Registration and Health Checks</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XIV- Amazon RDS (Relational Database Service)</h5>\n<ul>\n<li>Introduction to Amazon RDS</li>\n<li>Supported Databases (MySQL, PostgreSQL, Oracle, etc.)</li>\n<li>Establishing a connection between EC2 instance and Database Instance</li>\n<li>Snapshots</li>\n<li>Automated Backups</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XV- Amazon SNS (Simple Notification Service)</h5>\n<ul>\n<li>Introduction to Amazon SNS</li>\n<li>Creating and Managing Topics</li>\n<li>Configuring Message Delivery (Email, SMS, Lambda, etc.)</li>\n<li>Integrating with Other AWS Services</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XVI- Amazon EventBridge</h5>\n<ul>\n<li>Introduction to Amazon EventBridge</li>\n<li>Event-Driven Architecture</li>\n<li>Setting Up Rules and Targets</li>\n<li>Configuring Cronjobs</li>\n<li>Integrating with AWS Lambda and S3</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XVII- Amazon CloudWatch</h5>\n<ul>\n<li>Monitoring AWS Resources</li>\n<li>Setting Up Alarms and Logs</li>\n<li>CloudWatch Metrics and Dashboards</li>\n<li>Automated Event Response with CloudWatch</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XVIII- AWS Lambda</h5>\n<ul>\n<li>Introduction to Serverless Computing</li>\n<li>Writing and Deploying Lambda Functions</li>\n<li>Configuring Triggers and Permissions</li>\n<li>Integrating Lambda with S3</li>\n<li>Lambda Use Cases and Best Practices</li>\n</ul>\n<h5 class=\"heading-one\">Final Project &amp; Hands-On Lab</h5>\n<ul>\n<li>Real-World Case Study – Implementing AWS Services in a Practical Scenario</li>\n<li>AWS Certification Preparation – Reviewing Exam Objectives and Practice Questions</li>\n</ul>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>The Amazon Web Services (AWS) training course is designed to equip candidates with the skills required to work with one of the most popular Cloud Computing platforms. This comprehensive training includes core AWS Services like computing, storage, security, networking, databases, and identity management. Participants will explore AWS best practices, cost optimization tactics, and effective deployment strategies. </p>\n",
+      "protected": false
+    },
+    "featured_media": 3074,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3118",
+      "provided-course",
+      "type-provided-course",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course/3118",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/provided-course"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3074"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3118"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3074,
+          "date": "2025-02-09T15:31:05",
+          "slug": "contact-us-2",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/contact-us/attachment/contact-us-2/",
+          "title": {
+            "rendered": "contact-us"
+          },
+          "author": 2,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/png",
+          "media_details": {
+            "width": 1920,
+            "height": 681,
+            "file": "2025/02/contact-us.png",
+            "filesize": 391366,
+            "sizes": {
+              "medium": {
+                "file": "contact-us-300x106.png",
+                "width": 300,
+                "height": 106,
+                "filesize": 42193,
+                "mime_type": "image/png",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/contact-us-300x106.png"
+              },
+              "large": {
+                "file": "contact-us-1024x363.png",
+                "width": 1024,
+                "height": 363,
+                "filesize": 442801,
+                "mime_type": "image/png",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/contact-us-1024x363.png"
+              },
+              "thumbnail": {
+                "file": "contact-us-150x150.png",
+                "width": 150,
+                "height": 150,
+                "filesize": 27330,
+                "mime_type": "image/png",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/contact-us-150x150.png"
+              },
+              "medium_large": {
+                "file": "contact-us-768x272.png",
+                "width": 768,
+                "height": 272,
+                "filesize": 242629,
+                "mime_type": "image/png",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/contact-us-768x272.png"
+              },
+              "1536x1536": {
+                "file": "contact-us-1536x545.png",
+                "width": 1536,
+                "height": 545,
+                "filesize": 1023341,
+                "mime_type": "image/png",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/contact-us-1536x545.png"
+              },
+              "full": {
+                "file": "contact-us.png",
+                "width": 1920,
+                "height": 681,
+                "mime_type": "image/png",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/contact-us.png"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/contact-us.png",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3074",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3074"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "page",
+                "id": 1238,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/pages/1238"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3116,
+    "date": "2025-02-21T11:47:51",
+    "date_gmt": "2025-02-21T06:17:51",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=provided-course&#038;p=3116"
+    },
+    "modified": "2026-02-22T20:01:41",
+    "modified_gmt": "2026-02-22T14:31:41",
+    "slug": "bug-bounty-course",
+    "status": "publish",
+    "type": "provided-course",
+    "link": "https://cyberiumx.com/provided-course/bug-bounty-course/",
+    "title": {
+      "rendered": "Bug Bounty Course"
+    },
+    "content": {
+      "rendered": "<h3 class=\"heading-new\">Course Overview</h3>\n<p>The Bug Bounty Hunting course is designed to teach people the skills required to exploit, identify, and report security vulnerabilities in web applications. As the use of technology increases, ethical hackers play a vital role in safeguarding a company&#8217;s systems by identifying threats before malicious hackers can exploit them. This detailed course will offer learners practical insights into hacking methodologies and vulnerability assessment.</p>\n<p>With hands-on labs and in-depth theoretical knowledge, participants will gain expertise in web application security testing, and API exploitation. This course will take you to experience popular bug bounty programs like HackerOne, Bugcrowd, and Open Bug Bounty. By the end of this course, participants will have the ability to analyze, exploit, and report vulnerabilities effectively, positioning themselves a valuable assets in cybersecurity.</p>\n<h3 class=\"heading-new\">Syllabus</h3>\n<h5 class=\"heading-one\">Chapter I &#8211; Introduction to Bug Bounty Hunting</h5>\n<ul>\n<li>Understanding Bug Bounty Programs and Responsible Disclosure</li>\n<li>Differences between Ethical Hacking, Penetration Testing, and Bug Bounties</li>\n<li>Overview of popular Bug Bounty Platforms (HackerOne, Bugcrowd, Intigriti, Synack, Open Bug Bounty)</li>\n<li>Legal and ethical considerations for bug bounty hunting</li>\n</ul>\n<h5 class=\"heading-one\">Chapter II &#8211; Setting Up the Bug Bounty Lab</h5>\n<ul>\n<li>Installing Kali Linux and Burp Suite</li>\n<li>Configuring Virtual Machines and Cloud-Based Environments</li>\n<li>Using Proxies, VPNs, and Anonymity Tools for ethical hacking</li>\n<li>Best practices for creating a safe and legal testing environment</li>\n</ul>\n<h5 class=\"heading-one\">Chapter III &#8211; Reconnaissance and Information Gathering</h5>\n<ul>\n<li>Passive vs. Active Reconnaissance Techniques</li>\n<li>DNS Enumeration with Amass, Sublist3r, and Recon-ng</li>\n<li>Discovering subdomains and exposed services</li>\n<li>Google Dorking, Shodan, and OSINT (Open-Source Intelligence) techniques</li>\n</ul>\n<h5 class=\"heading-one\">Chapter IV &#8211; Web Application Security Testing</h5>\n<ul>\n<li>Understanding OWASP Top 10 Vulnerabilities</li>\n<li>Using Burp Suite for Manual Web Application Testing</li>\n<li>Automating scans with Nikto, OWASP ZAP, and Wfuzz</li>\n</ul>\n<h5 class=\"heading-one\">Chapter V &#8211; SQL Injection</h5>\n<ul>\n<li>Understanding SQL Injection and its impact</li>\n<li>Types of SQLi: Error-Based, Union-Based, Blind (Boolean &amp; Time-Based)</li>\n<li>Exploiting SQLi with SQLmap and Manual Techniques</li>\n<li>Bypassing WAF (Web Application Firewall) Protections</li>\n<li>Preventing SQL Injection</li>\n<li>Hands-on Lab: Exploiting SQLi</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VI &#8211; Broken Authentication</h5>\n<ul>\n<li>Understanding Authentication Flaws and their consequences</li>\n<li>Exploiting weak authentication mechanisms: Brute Force and Session Hijacking</li>\n<li>Bypassing authentication using SQL Injection, Default Credentials, and Cookie Tampering</li>\n<li>Multi-Factor Authentication (MFA) Bypass Techniques</li>\n<li>Preventing Broken Authentication: Secure Session Management, Strong Password Policies, and Account Lockout Mechanisms</li>\n<li>Hands-on Lab: Exploiting and Fixing Authentication Vulnerabilities</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VII &#8211; Broken Access Control</h5>\n<ul>\n<li>Understanding Access Control Failures</li>\n<li>Exploiting IDOR (Insecure Direct Object References)</li>\n<li>Privilege Escalation via Role Manipulation</li>\n<li>Preventing Broken Access Control</li>\n<li>Hands-on Lab: Finding and Exploiting Broken Access Control Vulnerabilities</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VIII &#8211; File Upload Vulnerabilities</h5>\n<ul>\n<li>Understanding File Upload Risks (Remote Code Execution, Privilege Escalation)</li>\n<li>Exploiting Unrestricted File Upload to Gain Server Access</li>\n<li>Bypassing File Type Restrictions</li>\n<li>Preventing File Upload Vulnerabilities</li>\n<li>Hands-on Lab: Uploading a Malicious Shell and Gaining Remote Access</li>\n</ul>\n<h5 class=\"heading-one\">Chapter IX &#8211; Command Injection</h5>\n<ul>\n<li>Understanding OS Command Injection and its impact</li>\n<li>Exploiting Command Injection using Shell Commands and Pipes</li>\n<li>Bypassing Input Filters and Restrictions</li>\n<li>Real-World Command Injection Exploits</li>\n<li>Preventing Command Injection: Input Validation, Least Privilege Execution, and Safe API Calls</li>\n<li>Hands-on Lab: Executing Remote Commands on a Vulnerable System</li>\n</ul>\n<h5 class=\"heading-one\">Chapter X &#8211; Path Traversal (Directory Traversal)</h5>\n<ul>\n<li>Understanding Path Traversal Attacks and their impact</li>\n<li>Exploiting Path Traversal to Access Restricted Files (passwd, config, logs)</li>\n<li>Using ../, URL Encoding, and Null Byte Injection to Bypass Filters</li>\n<li>Preventing Path Traversal</li>\n<li>Hands-on Lab: Extracting Sensitive Files from a Vulnerable Web Application</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XI &#8211; Server-Side Request Forgery (SSRF)</h5>\n<ul>\n<li>Understanding SSRF vulnerability on Localhost, Local Network, and External Devices</li>\n<li>Exploring Blind SSRF</li>\n<li>Bypassing blacklisting and whitelisting defenses against SSRF</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XII &#8211; Information Disclosure</h5>\n<ul>\n<li>Understanding Information Leakage Risks</li>\n<li>Identifying Exposed Sensitive Data in Error Messages and Public Repositories</li>\n<li>Exploiting Misconfigurations</li>\n<li>Preventing Information Disclosure</li>\n<li>Hands-on Lab: Extracting Sensitive Data from Exposed Services</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XIII &#8211; Cross-Site Request Forgery (CSRF)</h5>\n<ul>\n<li>Understanding CSRF and its consequences</li>\n<li>Exploiting CSRF to Perform Unauthorized Actions on Behalf of Users</li>\n<li>Crafting Malicious Requests in HTML, JavaScript, and iFrames</li>\n<li>Preventing CSRF</li>\n<li>Hands-on Lab: Creating a Malicious CSRF Exploit and Fixing it</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XIV &#8211; Cross-Site Scripting (XSS)</h5>\n<ul>\n<li>Understanding XSS Attacks and their impact</li>\n<li>Types of XSS: Stored, Reflected, and DOM-Based</li>\n<li>Exploiting XSS to Steal Cookies, Deface Web Pages, and Conduct Phishing Attacks</li>\n<li>Bypassing XSS Filters Using Encoding, Obfuscation, and Event Handlers</li>\n<li>Preventing XSS</li>\n<li>Hands-on Lab: Injecting and Executing Malicious Scripts in a Web Application</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XV &#8211; OAuth Vulnerabilities</h5>\n<ul>\n<li>Understanding OAuth Authentication and Authorization Flaws</li>\n<li>Exploiting Improper Redirects, Token Leakage, and Insufficient Scopes</li>\n<li>Real-World OAuth Attacks</li>\n<li>Preventing OAuth Exploits</li>\n<li>Hands-on Lab: Identifying and Exploiting an OAuth Misconfiguration</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XVI &#8211; Report Writing</h5>\n<ul>\n<li>Writing detailed bug reports with PoC (Proof of Concept)</li>\n<li>Applying all techniques learned in real-world bug bounty scenarios</li>\n<li>Hunting for vulnerabilities in open-source applications and live bug bounty programs</li>\n<li>Submitting findings to HackerOne, Bugcrowd, and Intigriti</li>\n</ul>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>The Bug Bounty Hunting course is designed to teach people the skills required to exploit, identify, and report security vulnerabilities in web applications. As the use of technology increases, ethical hackers play a vital role in safeguarding a company&#8217;s systems by identifying threats before malicious hackers can exploit them.</p>\n",
+      "protected": false
+    },
+    "featured_media": 3037,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3116",
+      "provided-course",
+      "type-provided-course",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course/3116",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/provided-course"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3037"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3116"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3037,
+          "date": "2025-02-07T14:26:16",
+          "slug": "slider-01",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/hero_slider/sharpen-your-penetration-testing-skills/attachment/slider-01/",
+          "title": {
+            "rendered": "slider-01"
+          },
+          "author": 2,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1920,
+            "height": 1079,
+            "file": "2025/02/slider-01.jpg",
+            "filesize": 64807,
+            "sizes": {
+              "medium": {
+                "file": "slider-01-300x169.jpg",
+                "width": 300,
+                "height": 169,
+                "filesize": 5486,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-300x169.jpg"
+              },
+              "large": {
+                "file": "slider-01-1024x575.jpg",
+                "width": 1024,
+                "height": 575,
+                "filesize": 33603,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-1024x575.jpg"
+              },
+              "thumbnail": {
+                "file": "slider-01-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 3495,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "slider-01-768x432.jpg",
+                "width": 768,
+                "height": 432,
+                "filesize": 21677,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-768x432.jpg"
+              },
+              "1536x1536": {
+                "file": "slider-01-1536x863.jpg",
+                "width": 1536,
+                "height": 863,
+                "filesize": 61506,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-1536x863.jpg"
+              },
+              "full": {
+                "file": "slider-01.jpg",
+                "width": 1920,
+                "height": 1079,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3037",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3037"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "hero_slider",
+                "id": 3036,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/hero_slider/3036"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3114,
+    "date": "2025-02-21T11:46:18",
+    "date_gmt": "2025-02-21T06:16:18",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=provided-course&#038;p=3114"
+    },
+    "modified": "2026-03-15T14:54:09",
+    "modified_gmt": "2026-03-15T09:24:09",
+    "slug": "ccna-course",
+    "status": "publish",
+    "type": "provided-course",
+    "link": "https://cyberiumx.com/provided-course/ccna-course/",
+    "title": {
+      "rendered": "CCNA Course"
+    },
+    "content": {
+      "rendered": "<h3 class=\"heading-new\">Course Overview</h3>\n<p>The Cisco Certified Network Associate (CCNAv1.1) course is a comprehensive training program framed to equip learners with the fundamental knowledge and practical skills required for modern IT and networking requirements. The CCNA Certification serves as a strong foundation in the IT industry helping individuals build careers in network administration, cyber security, and IT infrastructure. The integration of Artificial Intelligence in the latest CCNAv1.1 has significantly enhanced its efficiency and adaptability. AI-driven insights help optimize network automation, security, and troubleshooting, making the certification more relevant to modern IT environments. Also, this detailed course covers fundamental networking concepts, Routing and Switching, and Wireless Networking.</p>\n<h3 class=\"heading-new\">Syllabus</h3>\n<h5 class=\"heading-one\">Chapter I: Introduction to Networking Fundamentals</h5>\n<ul>\n<li>Introduction to Networking</li>\n<li>OSI and TCP/IP Models</li>\n<li>Types of Networks (LAN, WAN, WLAN, MAN)</li>\n<li>Network Topologies and Architectures</li>\n<li>Data Transmission Methods</li>\n</ul>\n<h5 class=\"heading-one\">Chapter II: Network Access &amp; Switching</h5>\n<ul>\n<li>Introduction to Cisco Switches</li>\n<li>MAC Address Table and Frame Forwarding</li>\n<li>VLANs and Trunking</li>\n<li>Spanning Tree Protocol (STP)</li>\n<li>SSH Protocol</li>\n</ul>\n<h5 class=\"heading-one\">Chapter III: IP Connectivity &amp; Routing</h5>\n<ul>\n<li>Introduction to IP Addressing (IPv4 and IPv6)</li>\n<li>Subnetting</li>\n<li>DHCP Protocol</li>\n<li>MAC Addresses</li>\n<li>Static vs. Dynamic Routing</li>\n<li>Routing Protocols: OSPF, RIP</li>\n<li>Configuring and Verifying Routing Tables</li>\n</ul>\n<h5 class=\"heading-one\">Chapter IV: Wireless Networks</h5>\n<ul>\n<li>Introduction to Wireless Standards (802.11a/b/g/n/ac/ax)</li>\n<li>WLAN Configuration and Security</li>\n<li>Wireless Authentication and Encryption Methods</li>\n<li>Troubleshooting Wireless Connectivity</li>\n</ul>\n<h5 class=\"heading-one\">Chapter V: Network Security Essentials</h5>\n<ul>\n<li>Common Cybersecurity Threats</li>\n<li>Configuring Firewalls and Access Control Lists (ACLs)</li>\n<li>CDP and LLDP Protocol</li>\n<li>Firewalls, IDS, and IPS</li>\n<li>VPNs and Secure Remote Access</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VI: Network Automation &amp; Programmability</h5>\n<ul>\n<li>Introduction to Network Automation</li>\n<li>Using Python and Ansible for Network Configuration</li>\n<li>YAML Syntax</li>\n<li>Cloud Networking Concepts</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VII: Artificial Intelligence (AI)</h5>\n<ul>\n<li>Introduction to Artificial Intelligence</li>\n<li>Application of AI in Networking</li>\n<li>Cisco’s New Innovation in AI</li>\n</ul>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>The Cisco Certified Network Associate (CCNAv1.1) course is a comprehensive training program framed to equip learners with the fundamental knowledge and practical skills required for modern IT and networking requirements. The CCNA Certification serves as a strong foundation in the IT industry helping individuals build careers in network administration</p>\n",
+      "protected": false
+    },
+    "featured_media": 3037,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3114",
+      "provided-course",
+      "type-provided-course",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course/3114",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/provided-course"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3037"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3114"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3037,
+          "date": "2025-02-07T14:26:16",
+          "slug": "slider-01",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/hero_slider/sharpen-your-penetration-testing-skills/attachment/slider-01/",
+          "title": {
+            "rendered": "slider-01"
+          },
+          "author": 2,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1920,
+            "height": 1079,
+            "file": "2025/02/slider-01.jpg",
+            "filesize": 64807,
+            "sizes": {
+              "medium": {
+                "file": "slider-01-300x169.jpg",
+                "width": 300,
+                "height": 169,
+                "filesize": 5486,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-300x169.jpg"
+              },
+              "large": {
+                "file": "slider-01-1024x575.jpg",
+                "width": 1024,
+                "height": 575,
+                "filesize": 33603,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-1024x575.jpg"
+              },
+              "thumbnail": {
+                "file": "slider-01-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 3495,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "slider-01-768x432.jpg",
+                "width": 768,
+                "height": 432,
+                "filesize": 21677,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-768x432.jpg"
+              },
+              "1536x1536": {
+                "file": "slider-01-1536x863.jpg",
+                "width": 1536,
+                "height": 863,
+                "filesize": 61506,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-1536x863.jpg"
+              },
+              "full": {
+                "file": "slider-01.jpg",
+                "width": 1920,
+                "height": 1079,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3037",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3037"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "hero_slider",
+                "id": 3036,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/hero_slider/3036"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3112,
+    "date": "2025-02-21T11:44:46",
+    "date_gmt": "2025-02-21T06:14:46",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=provided-course&#038;p=3112"
+    },
+    "modified": "2026-02-22T20:04:55",
+    "modified_gmt": "2026-02-22T14:34:55",
+    "slug": "certified-ethical-hacker-cehv13-ai",
+    "status": "publish",
+    "type": "provided-course",
+    "link": "https://cyberiumx.com/provided-course/certified-ethical-hacker-cehv13-ai/",
+    "title": {
+      "rendered": "Certified Ethical Hacker CEHv13 AI"
+    },
+    "content": {
+      "rendered": "<h3 class=\"heading-new\">Course Overview</h3>\n<p>The Certified Ethical Hacker- Artificial Intelligence (CEHv13- AI) course is one of the most important and demanding certification courses designed by the EC Council. This course provides all the skills required to become an Ethical Hacker and builds foundational knowledge for exploring Penetration Testing. It is a highly valuable and regarded certification in the Cyber Security domain. This new version includes Artificial Intelligence which empowers ethical hackers in securing modern networks. Its key topics include web application security, IoT, OT security, Cloud Computing, Malware Threats, Cryptography, and Network security. After completing the course, you will have proficiency in ethical hacking methodology and hands-on experience with popular tools like Nmap, Burp Suite, Metasploit Framework, Nessus, Hydra, Hashcat, and others.</p>\n<h3 class=\"heading-new\">Syllabus</h3>\n<h5 class=\"heading-one\">Chapter I &#8211; Introduction to Ethical Hacking</h5>\n<ul>\n<li>Basics of Information Security</li>\n<li>Hacker Types and Ethical Hacking Practices</li>\n<li>Phases involved in Ethical Hacking</li>\n<li>Understanding Cyber Kill Chain Methodology</li>\n<li>Exploring MITRE ATT&amp;CK Framework</li>\n<li>Classification of Cyber Attacks</li>\n<li>Managing Risks in Security</li>\n<li>Handling Security Incidents</li>\n<li>Information Assurance (IA)</li>\n<li>Overview of PCI DSS</li>\n<li>Understanding SOX</li>\n<li>GDPR Essentials</li>\n<li>HIPAA and Its Relevance</li>\n</ul>\n<p><strong>Practical:</strong> Setting up a secure hacking environment using virtual machines and labs.</p>\n<h5 class=\"heading-one\">Chapter II &#8211; Reconnaissance and Footprinting</h5>\n<ul>\n<li>Search Engine based Footprinting</li>\n<li>Social Media based Footprinting</li>\n<li>Web Services</li>\n<li>DNS Footprinting</li>\n<li>Network Footprinting</li>\n<li>Website Footprinting</li>\n<li>Email Footprinting</li>\n<li>Whois Lookups</li>\n</ul>\n<p><strong>Practical:</strong> Using search engines, social media, and specialized tools for online footprinting. Employing reconnaissance techniques like OSINT, WHOIS information gathering, WayBack machine, Google Dorking, IMINT and Email footprinting.</p>\n<h5 class=\"heading-one\">Chapter III &#8211; Scanning</h5>\n<ul>\n<li>Discovering Hosts</li>\n<li>Scanning Ports</li>\n<li>Identifying Operating Systems</li>\n<li>Service Version Detection</li>\n<li>Vulnerability Scanning</li>\n</ul>\n<p><strong>Practical:</strong> Utilizing Nmap for recognizing open ports, services, and vulnerabilities.</p>\n<h5 class=\"heading-one\">Chapter IV &#8211; Enumeration</h5>\n<ul>\n<li>Identifying Service Vulnerabilities</li>\n<li>Brute-forcing Credentials of various services</li>\n<li>Exploring SSH and Telnet</li>\n<li>Understanding SMTP Enumeration</li>\n<li>RDP and VNC Enumeration</li>\n<li>Investigating SMB</li>\n<li>Examining FTP</li>\n<li>Investigating DNS</li>\n</ul>\n<p><strong>Practical:</strong> Extracting information like usernames, shares, and resources using various tools. Identifying exploits for vulnerable services. Introduction to Metasploit Framework. Brute-Force attacks using Hydra.</p>\n<h5 class=\"heading-one\">Chapter V &#8211; Vulnerability Analysis</h5>\n<ul>\n<li>Understanding the Vulnerability Assessment Life Cycle</li>\n<li>Researching vulnerabilities through scoring systems and databases</li>\n<li>Conducting vulnerability assessments using tools like Nessus, nikto, Burp Suite Professional</li>\n</ul>\n<p><strong>Practical:</strong> Performing vulnerability scans using tools like Nessus, Nikto, or OpenVAS.</p>\n<h5 class=\"heading-one\">Chapter VI – System Hacking</h5>\n<ul>\n<li>Executing active attacks to crack password hashes of Windows and Linux OS</li>\n<li>Bypassing Authentication on Linux and Windows machines</li>\n<li>Exploiting vulnerabilities to gain remote system access</li>\n<li>Escalating Privileges on Linux and Windows</li>\n<li>Concealing data through Steganography</li>\n<li>Using Malwares for persistent access.</li>\n<li>Clearing logs on Windows and Linux machines using various utilities</li>\n<li>Hiding artifacts within Windows and Linux systems</li>\n</ul>\n<p><strong>Practical:</strong> Cracking passwords using tools like John the Ripper or Hashcat. Exploiting system vulnerabilities in a controlled environment. Generating malicious Payloads. Tools for Steganography. Tools for covering tracks on various OS.</p>\n<h5 class=\"heading-one\">Chapter VII – Malware Threats</h5>\n<ul>\n<li>Understanding Malware and its Components</li>\n<li>Overview of Trojan Horses</li>\n<li>Different Types of Trojans</li>\n<li>Gaining control through Trojans</li>\n<li>Exploring Viruses</li>\n<li>Introduction to Ransomware</li>\n<li>Understanding Computer Worms</li>\n<li>Keyloggers and Spywares</li>\n<li>Analysis of Malware</li>\n<li>Static and Dynamic Malware Analysis</li>\n<li>Techniques for Detecting Malwares</li>\n<li>Antivirus Software</li>\n</ul>\n<p><strong>Practical:</strong> Working with various malwares like Trojan horses, Ransomware, etc. Identifying and protecting systems from Malware threats.</p>\n<h5 class=\"heading-one\">Chapter VIII &#8211; Sniffing</h5>\n<ul>\n<li>Network Sniffing</li>\n<li>MAC Flooding</li>\n<li>DHCP Starvation Attack</li>\n<li>ARP Spoofing Attack</li>\n<li>ARP Poisoning (Man-in-the-middle)</li>\n<li>Tools for ARP Poisoning</li>\n<li>MAC Address Spoofing</li>\n<li>DNS Poisoning and relevant tools</li>\n<li>Sniffing Tools</li>\n<li>Detection Techniques for Sniffing</li>\n</ul>\n<p><strong>Practical:</strong> Packet sniffing using Wireshark or Tcpdump for network traffic analysis. Executing Man-in-the-Middle attack using ARP poisoning. Performing MAC spoofing. Conducting DHCP attacks.</p>\n<h5 class=\"heading-one\">Chapter IX – Social Engineering</h5>\n<ul>\n<li>Executing social engineering through various techniques</li>\n<li>Linux machine MAC address spoofing</li>\n<li>Identifying phishing attacks</li>\n<li>Evaluating an organization&#8217;s security against phishing</li>\n<li>Key topics include-</li>\n<li>Different Types of Social Engineering</li>\n<li>Human, Computer, and Mobile-based Social Engineering</li>\n<li>Phishing Attacks and Tools</li>\n<li>Insider Threats and Attacks</li>\n<li>Identity Theft</li>\n</ul>\n<p><strong>Practical:</strong> Simulating phishing attacks to demonstrate social engineering tactics. Embedding a malicious link.</p>\n<h5 class=\"heading-one\">Chapter X &#8211; DoS</h5>\n<ul>\n<li>DoS Attacks</li>\n<li>Distributed DoS (DDoS) Attacks</li>\n<li>Understanding Botnets</li>\n<li>Techniques used in DoS/DDoS Attacks</li>\n<li>Ping of Death attack</li>\n<li>Smurf attack</li>\n<li>SYN flood attack</li>\n<li>Slowloris attack</li>\n<li>Tools used in DoS/DDoS Attacks</li>\n</ul>\n<p><strong>Practical:</strong> Simulating DoS attacks using tools like LOIC, hping3, or Metasploit Framework to understand their impact on systems and networks.</p>\n<h5 class=\"heading-one\">Chapter XI – Session Hijacking</h5>\n<ul>\n<li>Understanding Sessions and Cookies</li>\n<li>Exploring Session Hijacking</li>\n<li>Varieties of Session Hijacking</li>\n<li>Differentiating Spoofing and Hijacking</li>\n<li>Application-Level Session Hijacking</li>\n<li>Client-Side Attacks</li>\n<li>Session Replay Attacks</li>\n<li>Tools for Session Hijacking</li>\n</ul>\n<p><strong>Practical:</strong> Demonstrating session hijacking exercises to gain control of active HTTP connections and illustrate associated risks.</p>\n<h5 class=\"heading-one\">Chapter XII – Evading IDS, Firewall and Honeypots</h5>\n<ul>\n<li>Understanding Defensive Devices- IDS, Firewalls, Honeypots</li>\n<li>Intrusion Detection System (IDS) Overview</li>\n<li>Firewall Concepts</li>\n<li>Honeypot Functionality</li>\n<li>Circumventing Firewall Rules</li>\n<li>Strategies for Evading IDS and Firewalls</li>\n</ul>\n<p><strong>Practical:</strong> Exploring IDS functions using Snort. Understanding Firewalls using Firewalld and Windows Firewalls. Exploring Honeypots. Implementing techniques to bypass IDS and Firewalls to understand their limitations.</p>\n<h5 class=\"heading-one\">Chapter XIII – Hacking Web Server</h5>\n<ul>\n<li>Understanding Web Architecture</li>\n<li>Functions of Web Servers</li>\n<li>Attacks on Web Servers</li>\n<li>DNS Server Hijacking</li>\n<li>Defacement of Websites</li>\n<li>Methodologies for Attacking Web Servers</li>\n<li>Patch Management</li>\n<li>Tools for Web Server Attacks</li>\n<li>Tools for Enhancing Web Server Security</li>\n</ul>\n<p><strong>Practical:</strong> Identifying vulnerabilities in web servers (like Apache, Nginx) and exploiting them.</p>\n<h5 class=\"heading-one\">Chapter XIV – Hacking Web Application</h5>\n<ul>\n<li>Web Application Architecture</li>\n<li>Threats to Web Applications</li>\n<li>SQL Injection</li>\n<li>Cross-Site Scripting (XSS)</li>\n<li>Directory Traversal</li>\n<li>Command Injection</li>\n<li>File Upload Vulnerabilities</li>\n<li>Server-Side Request Forgery (SSRF)</li>\n<li>Cross-Site Request Forgery (CSRF)</li>\n<li>Broken Authentication</li>\n<li>Broken Access Control</li>\n<li>Clickjacking</li>\n<li>OWASP Top 10 Application Security Risks – 2021</li>\n<li>Methodology for Hacking Web Applications</li>\n<li>Web Shells</li>\n<li>Web Application Security Measures</li>\n</ul>\n<p><strong>Practical:</strong> Assessing web application security using Burp Suite. Exploiting web application vulnerabilities like Cross-Site Scripting, Directory Traversal, File Upload, CSRF, SSRF, Command Injection, etc.</p>\n<h5 class=\"heading-one\">Chapter XV – SQL Injection</h5>\n<ul>\n<li>Understanding SQL Injection</li>\n<li>Varieties of SQL Injection</li>\n<li>Error-Based SQL Injection</li>\n<li>Union-Based SQL Injection</li>\n<li>Blind SQL Injection</li>\n<li>Methodology for SQL Injection</li>\n<li>Tools for SQL Injection</li>\n</ul>\n<p><strong>Practical:</strong> Executing SQL injection exercises against vulnerable web applications to retrieve or manipulate data. Understanding different types of SQL Injection like Error, Union, and Blind-based attacks.</p>\n<h5 class=\"heading-one\">Chapter XVI – Hacking Wireless Networks</h5>\n<ul>\n<li>Wireless Network Terminology</li>\n<li>Characteristics of Wireless Networks</li>\n<li>Wireless Encryption Standards (WEP, WPA, WPA2, WPA3)</li>\n<li>Threats to Wireless Networks</li>\n<li>Methodology for Hacking Wireless Networks</li>\n<li>Techniques for Cracking Wi-Fi Passwords</li>\n<li>Evil-Twin Attacks</li>\n<li>Jamming Signal Attack</li>\n<li>De-Authentication Attack</li>\n<li>Threats Associated with Bluetooth</li>\n</ul>\n<p><strong>Practical:</strong> Conducting wireless network password cracking attacks. Employing tools like aircrack-ng suite for various wireless attacks.</p>\n<h5 class=\"heading-one\">Chapter XVII – Hacking Mobile devices</h5>\n<ul>\n<li>Attack Vectors for Mobile Platforms</li>\n<li>App Sandboxing, SMS Phishing Attack (SMiShing)</li>\n<li>Android Rooting</li>\n<li>Hacking Techniques for Android Devices</li>\n<li>Android Security Tools</li>\n<li>Jailbreaking iOS</li>\n<li>Hacking Methods for iOS Devices</li>\n<li>Tools for iOS Device Security</li>\n<li>Bring You Own Device (BYOD)</li>\n<li>Mobile Device Management (MDM)</li>\n<li>Tools for Mobile Security</li>\n</ul>\n<p><strong>Practical:</strong> Exploring various mobile threats (malware, phishing, etc.) and implementing countermeasures. Generating malicious Payloads for mobile devices. Exploring attacks like DoS, SMS/call bombing, Port scanning, etc.</p>\n<h5 class=\"heading-one\">Chapter XVIII – IoT and OT Hacking</h5>\n<ul>\n<li>IoT Architecture</li>\n<li>IoT Communication Models</li>\n<li>Vulnerabilities in IoT</li>\n<li>Methodology for Hacking IoT</li>\n<li>Tools for Hacking IoT</li>\n<li>Introduction to OT</li>\n<li>IT/OT Convergence and IIoT</li>\n<li>Vulnerabilities in ICS and OT</li>\n<li>Attacks on OT</li>\n<li>Methodology for Hacking OT</li>\n<li>Tools for Hacking OT</li>\n<li>Tools for OT Security</li>\n</ul>\n<p><strong>Practical:</strong> Identifying and analyzing IoT and OT devices within a network using tools like Shodan, search engines, or network scanning techniques. Conducting vulnerability scanning and analysis of IoT and OT devices using specialized tools like Nessus, nmap, etc.</p>\n<h5 class=\"heading-one\">Chapter XIX – Cloud Computing</h5>\n<ul>\n<li>Cloud Computing Overview</li>\n<li>Types of Cloud Computing Services</li>\n<li>Cloud Deployment Models</li>\n<li>Cloud Architecture</li>\n<li>Cloud Service Providers</li>\n<li>Containers</li>\n<li>Docker</li>\n<li>Cloud-Based Attacks</li>\n<li>Cloud Network Security</li>\n<li>Controls for Cloud Security</li>\n</ul>\n<p><strong>Practical:</strong> Understanding Cloud platforms like AWS. Exploring AWS EC2 service for deploying a virtual machine.</p>\n<h5 class=\"heading-one\">Chapter XX &#8211; Cryptography</h5>\n<ul>\n<li>Introduction to Cryptography</li>\n<li>Encryption Algorithms</li>\n<li>Types of Encryption</li>\n<li>Hashing</li>\n<li>MD5 and SHA Hash Calculation</li>\n<li>Cryptographic Tools</li>\n<li>Public Key Infrastructure (PKI)</li>\n<li>Email Encryption</li>\n<li>Disk Encryption</li>\n<li>Cryptography Attacks</li>\n<li>Countermeasures for Attacks</li>\n</ul>\n<p><strong>Practical:</strong> Hands-on practice with encryption and decryption using tools like OpenSSL or PGPtool. Practical experience with Hashing using tools like hashmyfiles, hashcalc, etc. Understanding password cracking using CrackStation. Exploring different Encoding methods like Base64, ROT13, Morse code, etc.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>The Certified Ethical Hacker- Artificial Intelligence (CEHv13- AI) course is one of the most important and demanding certification courses designed by the EC Council. This course provides all the skills required to become an Ethical Hacker and builds foundational knowledge for exploring Penetration Testing. </p>\n",
+      "protected": false
+    },
+    "featured_media": 3037,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3112",
+      "provided-course",
+      "type-provided-course",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course/3112",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/provided-course"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3037"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3112"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3037,
+          "date": "2025-02-07T14:26:16",
+          "slug": "slider-01",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/hero_slider/sharpen-your-penetration-testing-skills/attachment/slider-01/",
+          "title": {
+            "rendered": "slider-01"
+          },
+          "author": 2,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1920,
+            "height": 1079,
+            "file": "2025/02/slider-01.jpg",
+            "filesize": 64807,
+            "sizes": {
+              "medium": {
+                "file": "slider-01-300x169.jpg",
+                "width": 300,
+                "height": 169,
+                "filesize": 5486,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-300x169.jpg"
+              },
+              "large": {
+                "file": "slider-01-1024x575.jpg",
+                "width": 1024,
+                "height": 575,
+                "filesize": 33603,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-1024x575.jpg"
+              },
+              "thumbnail": {
+                "file": "slider-01-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 3495,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "slider-01-768x432.jpg",
+                "width": 768,
+                "height": 432,
+                "filesize": 21677,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-768x432.jpg"
+              },
+              "1536x1536": {
+                "file": "slider-01-1536x863.jpg",
+                "width": 1536,
+                "height": 863,
+                "filesize": 61506,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-1536x863.jpg"
+              },
+              "full": {
+                "file": "slider-01.jpg",
+                "width": 1920,
+                "height": 1079,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3037",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3037"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "hero_slider",
+                "id": 3036,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/hero_slider/3036"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3110,
+    "date": "2025-02-21T11:41:54",
+    "date_gmt": "2025-02-21T06:11:54",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=provided-course&#038;p=3110"
+    },
+    "modified": "2026-02-22T20:06:02",
+    "modified_gmt": "2026-02-22T14:36:02",
+    "slug": "ejptv2-course",
+    "status": "publish",
+    "type": "provided-course",
+    "link": "https://cyberiumx.com/provided-course/ejptv2-course/",
+    "title": {
+      "rendered": "eJPTv2 Course"
+    },
+    "content": {
+      "rendered": "<h3 class=\"heading-new\">Course Overview</h3>\n<p>The eJPTv2 training course is designed to provide a strong foundation in Ethical Hacking and Penetration Testing by gaining hands-on experience in identifying and exploiting security vulnerabilities. Key topics of this course include Linux &amp; Windows basics, reconnaissance, scanning, enumeration, vulnerability assessment, exploitation, privilege escalation, and report writing. Exploring Capture The Flag (CTF) contests will help an individual to understand real-world examples. By the end of this course, candidates will be empowered with the hands-on skills required to conduct penetration tests, making it an excellent starting point for those pursuing a career in cyber security. Candidates will be prepared for appearing and clearing the eJPTv2 International certification exam.</p>\n<h3 class=\"heading-new\">Syllabus</h3>\n<h5 class=\"heading-one\">Chapter I &#8211; Introduction to Penetration Testing</h5>\n<ul>\n<li>Overview of Penetration Testing</li>\n<li>Rules of Engagement (ROE)</li>\n<li>Understanding the Testing Lifecycle</li>\n<li>Setting Up the Lab Environment</li>\n</ul>\n<h5 class=\"heading-one\">Chapter II &#8211; Information Gathering</h5>\n<ul>\n<li>Passive and Active Reconnaissance</li>\n<li>Identifying Open Ports and Services</li>\n<li>Footprinting and Scanning</li>\n<li>Gathering Information from Public Sources</li>\n<li>Enumerating Network and Domain Data</li>\n</ul>\n<h5 class=\"heading-one\">Chapter III &#8211; Enumeration</h5>\n<ul>\n<li>Banner Grabbing and OS Fingerprinting</li>\n<li>Enumerating Users and Shared Resources</li>\n<li>Network Mapping and Protocol Identification</li>\n<li>System-Specific Information Collection</li>\n</ul>\n<h5 class=\"heading-one\">Chapter IV &#8211; Vulnerability Assessment</h5>\n<ul>\n<li>Identifying Vulnerabilities in Network Services</li>\n<li>Utilizing Scanning Tools (e.g., Nessus, OpenVAS)</li>\n<li>Manual Vulnerability Verification</li>\n<li>Evaluating Risk and Impact of Vulnerabilities</li>\n</ul>\n<h5 class=\"heading-one\">Chapter V &#8211; Host-Based Exploitation</h5>\n<ul>\n<li>Brute Force Attacks and Password Cracking</li>\n<li>Using Metasploit Framework for Exploitation</li>\n<li>Privilege Escalation Techniques</li>\n<li>Exploitation of System Vulnerabilities</li>\n<li>Hash Dumping and Credential Extraction</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VI &#8211; Network-Based Exploitation</h5>\n<ul>\n<li>Network Service Exploitation</li>\n<li>Man-in-the-Middle (MITM) Attacks</li>\n<li>ARP Spoofing and Packet Manipulation</li>\n<li>Exploiting Protocol Vulnerabilities</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VII &#8211; Post-Exploitation</h5>\n<ul>\n<li>Data Exfiltration Techniques</li>\n<li>Clearing Logs and Covering Tracks</li>\n<li>Persistent Access Methods</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VIII &#8211; Web Application Basics</h5>\n<ul>\n<li>Understanding HTTP Protocols</li>\n<li>Cookie Management and Sessions</li>\n<li>Introduction to Web Servers and Technologies</li>\n</ul>\n<h5 class=\"heading-one\">Chapter IX &#8211; Web Application Reconnaissance</h5>\n<ul>\n<li>Directory and File Enumeration</li>\n<li>Hidden Parameter and Resource Discovery</li>\n<li>Brute Force Techniques for Login Pages</li>\n<li>Subdomain Enumeration</li>\n<li>Technology Profiling</li>\n</ul>\n<h5 class=\"heading-one\">Chapter X &#8211; Web Application Exploitation</h5>\n<ul>\n<li>OWASP Top 10 Vulnerabilities</li>\n<li>SQL Injection, XSS, and File Upload Exploits</li>\n<li>Authentication Bypass and Broken Access Control</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XI &#8211; Reporting and Documentation</h5>\n<ul>\n<li>Writing Effective Penetration Test Reports</li>\n<li>Recommendations for Mitigation</li>\n<li>Ethical Practices in Penetration Testing</li>\n</ul>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>The eJPTv2 training course is designed to provide a strong foundation in Ethical Hacking and Penetration Testing by gaining hands-on experience in identifying and exploiting security vulnerabilities. Key topics of this course include Linux &#038; Windows basics, reconnaissance, scanning, enumeration, vulnerability assessment, exploitation, privilege escalation, and report writing. </p>\n",
+      "protected": false
+    },
+    "featured_media": 3037,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3110",
+      "provided-course",
+      "type-provided-course",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course/3110",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/provided-course"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3037"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3110"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3037,
+          "date": "2025-02-07T14:26:16",
+          "slug": "slider-01",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/hero_slider/sharpen-your-penetration-testing-skills/attachment/slider-01/",
+          "title": {
+            "rendered": "slider-01"
+          },
+          "author": 2,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1920,
+            "height": 1079,
+            "file": "2025/02/slider-01.jpg",
+            "filesize": 64807,
+            "sizes": {
+              "medium": {
+                "file": "slider-01-300x169.jpg",
+                "width": 300,
+                "height": 169,
+                "filesize": 5486,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-300x169.jpg"
+              },
+              "large": {
+                "file": "slider-01-1024x575.jpg",
+                "width": 1024,
+                "height": 575,
+                "filesize": 33603,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-1024x575.jpg"
+              },
+              "thumbnail": {
+                "file": "slider-01-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 3495,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "slider-01-768x432.jpg",
+                "width": 768,
+                "height": 432,
+                "filesize": 21677,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-768x432.jpg"
+              },
+              "1536x1536": {
+                "file": "slider-01-1536x863.jpg",
+                "width": 1536,
+                "height": 863,
+                "filesize": 61506,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-1536x863.jpg"
+              },
+              "full": {
+                "file": "slider-01.jpg",
+                "width": 1920,
+                "height": 1079,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3037",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3037"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "hero_slider",
+                "id": 3036,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/hero_slider/3036"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3108,
+    "date": "2025-02-21T11:36:31",
+    "date_gmt": "2025-02-21T06:06:31",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=provided-course&#038;p=3108"
+    },
+    "modified": "2026-02-22T20:07:39",
+    "modified_gmt": "2026-02-22T14:37:39",
+    "slug": "ethical-hacking",
+    "status": "publish",
+    "type": "provided-course",
+    "link": "https://cyberiumx.com/provided-course/ethical-hacking/",
+    "title": {
+      "rendered": "Ethical Hacking"
+    },
+    "content": {
+      "rendered": "<h3 class=\"heading-new\">Course Overview</h3>\n<p>CyberiumX’s Ethical Hacking course is designed to help candidates gain the knowledge and skills required to become Ethical Hackers. This advanced training course will equip learners to identify, analyze, and mitigate cyber threats. Apart from ethical hacking, this course will also cover the basic concepts of Kali Linux Operating system and Networking which is required for learning ethical hacking concepts. You will cover the practical aspects of ethical hacking, as well as the fundamentals of advanced hacking concepts. Key topics covered are Ethical hacking and its phases, Malware, Web Application attacks, DOS attacks, Sniffing, Social Engineering, Mobile hacking, Cryptography, and Penetration Testing. By the end of this course, candidates will have hands-on experience with Ethical Hacking, Penetration Testing, and securing networks &amp; systems from cyber-attacks.</p>\n<h3 class=\"heading-new\">Syllabus</h3>\n<h5 class=\"heading-one\">Chapter I &#8211; Introduction to Ethical Hacking</h5>\n<ul>\n<li>What is Hacking?</li>\n<li>Types of Hackers (White Hat, Black Hat, Grey Hat)</li>\n<li>What is Ethical Hacking?</li>\n<li>Importance of Cyber Security</li>\n<li>Phases of Ethical Hacking</li>\n<li>Setting Up a Hacking Lab (Kali Linux, Virtual Machines, Windows, Metasploitable, OWASP-BWA)</li>\n<li>How to use your Kali Linux for Ethical Hacking</li>\n<li>Basics commands of Kali Linux OS</li>\n</ul>\n<h5 class=\"heading-one\">Chapter II &#8211; Cyber Security Fundamentals</h5>\n<ul>\n<li>What is Cyber Security?</li>\n<li>What is Information Security?</li>\n<li>Elements of Information Security</li>\n<li>Essential Networking Concepts for Hackers (IP, MAC, DNS, ARP, OSI &amp; TCP/IP Models)</li>\n<li>Understanding Cyber Threats</li>\n<li>Common Cyber Attacks</li>\n<li>Vulnerabilities, and Exploits</li>\n</ul>\n<h5 class=\"heading-one\">Chapter III &#8211; Reconnaissance &amp; Footprinting</h5>\n<ul>\n<li>What is Reconnaissance?</li>\n<li>Types of Footprinting (Active &amp; Passive)</li>\n<li>Gathering Information from Open Sources (OSINT)\n<ul>\n<li>Google Hacking (Google Dorking)</li>\n<li>Google Hacking Database</li>\n<li>WHOIS Lookups</li>\n<li>DNS Footprinting (NSLookup, Dig)</li>\n<li>Social Media Intelligence (SOCMINT)</li>\n</ul>\n</li>\n<li>Practical Lab: OSINT &amp; Google Dorking Techniques</li>\n</ul>\n<h5 class=\"heading-one\">Chapter IV &#8211; Scanning &amp; Enumeration</h5>\n<ul>\n<li>Understanding Scanning &amp; Enumeration</li>\n<li>Types of Scanning\n<ul>\n<li>Network Scanning (TCP, UDP)</li>\n<li>Port Scanning (Nmap, Zenmap)</li>\n<li>Vulnerability Scanning (Nessus)</li>\n</ul>\n</li>\n<li>Banner Grabbing &amp; Service Fingerprinting</li>\n<li>Operating System Detection</li>\n<li>Enumeration Techniques\n<ul>\n<li>FTP, SMB, SSH Enumeration</li>\n</ul>\n</li>\n<li>Practical Lab: Using Nmap &amp; Nessus for Scanning &amp; Enumeration</li>\n</ul>\n<h5 class=\"heading-one\">Chapter V &#8211; Gaining Access</h5>\n<ul>\n<li>Exploiting Vulnerabilities</li>\n<li>Types of Exploits (Zero-Day, Known Vulnerabilities)</li>\n<li>Exploiting Vulnerabilities with Metasploit Framework (MSFconsole)</li>\n<li>Exploiting Vulnerabilities with Exploit Database</li>\n<li>Brute Force &amp; Password Cracking (Hydra, John the Ripper, Hashcat)</li>\n<li>Privilege Escalation</li>\n<li>Practical Lab: Exploiting Vulnerabilities Using Metasploit &amp; Hydra</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VI &#8211; Maintaining Access</h5>\n<ul>\n<li>Backdoors, Spywares &amp; Trojans</li>\n<li>Netcat &amp; Reverse Shells</li>\n<li>Practical Lab: Using Trojans and Spywares</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VII &#8211; Covering Tracks</h5>\n<ul>\n<li>Clearing Logs &amp; Removing Traces</li>\n<li>Clearing Commands</li>\n<li>Practical Lab: Covering Tracks in Windows &amp; Linux</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VIII &#8211; Malware &amp; Ransomware Analysis</h5>\n<ul>\n<li>Types of Malware (Viruses, Trojans, Worms, Ransomware)</li>\n<li>Working of a Ransomware</li>\n<li>Working of Trojan Horse</li>\n<li>Creating &amp; Analyzing Malware</li>\n<li>Practical Lab: Creating &amp; Detecting Malware using SEToolkit</li>\n</ul>\n<h5 class=\"heading-one\">Chapter IX &#8211; Denial of Service (DoS) &amp; Distributed DoS (DDoS) Attacks</h5>\n<ul>\n<li>Understanding DoS &amp; DDoS Attacks</li>\n<li>Types of DoS Attacks (SYN Flood, Ping of Death Flood, HTTP Flood)</li>\n<li>Using LOIC and Hping3 for DoS Attacks</li>\n<li>Mitigation Techniques (Firewalls, Rate Limiting, WAF)</li>\n<li>Practical Lab: Simulating a DoS Attack using Hping3</li>\n</ul>\n<h5 class=\"heading-one\">Chapter X &#8211; Social Engineering Attacks</h5>\n<ul>\n<li>Psychology Behind Social Engineering</li>\n<li>Types of Social Engineering Attacks\n<ul>\n<li>Phishing (Spear Phishing, Whaling, Smishing)</li>\n<li>Impersonation &amp; Pretexting</li>\n<li>Baiting &amp; Tailgating</li>\n</ul>\n</li>\n<li>Using Social Engineering Toolkit (SET)</li>\n<li>How to protect against Phishing</li>\n<li>Practical Lab: Conducting a Phishing Attack Simulation</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XI &#8211; Sniffing &amp; Traffic Analysis</h5>\n<ul>\n<li>What is Packet Sniffing?</li>\n<li>Tools: Wireshark, TCPDump, Ettercap</li>\n<li>MITM (Man-in-the-Middle) Attack</li>\n<li>MAC Spoofing &amp; ARP Poisoning</li>\n<li>Practical Lab: Intercepting Network Traffic using Wireshark</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XII &#8211; Web Application Security &amp; OWASP Top 10</h5>\n<ul>\n<li>Understanding Web Architecture</li>\n<li>Common Web App Vulnerabilities</li>\n<li>OWASP Top 10 Web Application Vulnerabilities</li>\n<li>Injection Attacks (SQL Injection, Command Injection)</li>\n<li>Cross-Site Scripting (XSS)</li>\n<li>Cross-Site Request Forgery (CSRF)</li>\n<li>File Upload Vulnerability</li>\n<li>Directory Traversal</li>\n<li>Security Misconfigurations &amp; Broken Authentication</li>\n<li>Practical Lab: Exploiting SQLi &amp; XSS on DVWA</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XIII &#8211; Cryptography &amp; Encryption Techniques</h5>\n<ul>\n<li>Basics of Cryptography (Symmetric &amp; Asymmetric Encryption)</li>\n<li>Hashing &amp; Digital Signatures</li>\n<li>Cracking Hashes with Hashcat</li>\n<li>Encoding and Decoding</li>\n<li>Practical Lab: Encryption, Hashing and Encoding</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XIV &#8211; Wireless Network Hacking</h5>\n<ul>\n<li>Wireless Network Fundamentals</li>\n<li>Wireless Security Fundamentals</li>\n<li>WEP, WPA, WPA2 &amp; WPA3 Security</li>\n<li>Evil Twin Attack</li>\n<li>Cracking Wi-Fi Passwords (Aircrack-ng)</li>\n<li>Deauthentication Attack</li>\n<li>Practical Lab: Capturing &amp; Cracking Wi-Fi Handshakes</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XV &#8211; Mobile Hacking &amp; Security</h5>\n<ul>\n<li>Understanding Mobile Devices</li>\n<li>Understanding Mobile Vulnerabilities</li>\n<li>Android Hacking with Kali Linux</li>\n<li>Reverse Shell on Android using Metasploit</li>\n<li>Practical Lab: Exploiting an Android Device using Metasploit</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XVI &#8211; Ethical Hacking Challenges &amp; Real-World Scenarios</h5>\n<ul>\n<li>Bug Bounty Programs</li>\n<li>CTF (Capture The Flag) Competitions</li>\n<li>Legal &amp; Ethical Responsibilities of an Ethical Hacker</li>\n<li>Best Practices for Cyber Security</li>\n<li>Career Paths in Ethical Hacking</li>\n</ul>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>CyberiumX’s Ethical Hacking course is designed to help candidates gain the knowledge and skills required to become Ethical Hackers. This advanced training course will equip learners to identify, analyze, and mitigate cyber threats. Apart from ethical hacking, this course will also cover the basic concepts of Kali Linux Operating system and Networking which is required for learning ethical hacking concepts. </p>\n",
+      "protected": false
+    },
+    "featured_media": 3037,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3108",
+      "provided-course",
+      "type-provided-course",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course/3108",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/provided-course"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3037"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3108"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3037,
+          "date": "2025-02-07T14:26:16",
+          "slug": "slider-01",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/hero_slider/sharpen-your-penetration-testing-skills/attachment/slider-01/",
+          "title": {
+            "rendered": "slider-01"
+          },
+          "author": 2,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1920,
+            "height": 1079,
+            "file": "2025/02/slider-01.jpg",
+            "filesize": 64807,
+            "sizes": {
+              "medium": {
+                "file": "slider-01-300x169.jpg",
+                "width": 300,
+                "height": 169,
+                "filesize": 5486,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-300x169.jpg"
+              },
+              "large": {
+                "file": "slider-01-1024x575.jpg",
+                "width": 1024,
+                "height": 575,
+                "filesize": 33603,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-1024x575.jpg"
+              },
+              "thumbnail": {
+                "file": "slider-01-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 3495,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "slider-01-768x432.jpg",
+                "width": 768,
+                "height": 432,
+                "filesize": 21677,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-768x432.jpg"
+              },
+              "1536x1536": {
+                "file": "slider-01-1536x863.jpg",
+                "width": 1536,
+                "height": 863,
+                "filesize": 61506,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-1536x863.jpg"
+              },
+              "full": {
+                "file": "slider-01.jpg",
+                "width": 1920,
+                "height": 1079,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3037",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3037"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "hero_slider",
+                "id": 3036,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/hero_slider/3036"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3106,
+    "date": "2025-02-21T11:32:02",
+    "date_gmt": "2025-02-21T06:02:02",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=provided-course&#038;p=3106"
+    },
+    "modified": "2026-02-22T20:08:34",
+    "modified_gmt": "2026-02-22T14:38:34",
+    "slug": "kali-linux-course",
+    "status": "publish",
+    "type": "provided-course",
+    "link": "https://cyberiumx.com/provided-course/kali-linux-course/",
+    "title": {
+      "rendered": "Kali Linux Course"
+    },
+    "content": {
+      "rendered": "<h3 class=\"heading-new\">Course Overview</h3>\n<p>Kali Linux is one of the most powerful distributions that we have for performing Ethical Hacking and Penetration Testing. This advanced training will help ethical hackers start their practical journey in this field. In this course, we will cover the Command Line Interface (CLI) of Linux OS and perform various operations such as file management, user and group management, installing and uninstalling software, and exploring other commands related to ethical hacking. By the end of this course, students will have the skills to effectively use Kali Linux for ethical hacking and penetration testing, making it ideal for cybersecurity professionals, ethical hackers, and security enthusiasts.</p>\n<h3 class=\"heading-new\">Syllabus</h3>\n<h5 class=\"heading-one\">Chapter I &#8211; Introduction to Kali Linux</h5>\n<ul>\n<li>Introduction to Linux Operating System</li>\n<li>Difference between Linux and Windows OS</li>\n<li>Various Linux Distributions</li>\n<li>Installing Kali Linux on a Virtual Platform</li>\n</ul>\n<h5 class=\"heading-one\">Chapter II &#8211; Lab Setup</h5>\n<ul>\n<li>Virtualization (VMware, VirtualBox, KVM)</li>\n<li>Troubleshooting Installation Issues</li>\n<li>Downloading and installing Oracle Virtual Box</li>\n<li>Downloading and installing Kali Linux</li>\n</ul>\n<h5 class=\"heading-one\">Chapter III &#8211; Overview of Linux</h5>\n<ul>\n<li>Introduction to Linux OS</li>\n<li>Various Linux Distributions</li>\n<li>Understanding Kali Linux</li>\n</ul>\n<h5 class=\"heading-one\">Chapter IV &#8211; File Handling</h5>\n<ul>\n<li>Accessing and Navigating the Command Line Interface</li>\n<li>Managing Files through Command Line Operations</li>\n<li>Creating, Viewing, and Editing Text Files</li>\n<li>Managing Linux File System Permissions for File Access Control</li>\n<li>Monitoring and Administering Linux Processes</li>\n<li>Working with Vim and Nano text editors</li>\n<li>Using Find and Grep commands for searching and pattern matching</li>\n</ul>\n<h5 class=\"heading-one\">Chapter V &#8211; User Administration</h5>\n<ul>\n<li>Creating New User Accounts</li>\n<li>Setting and Changing Passwords for Users</li>\n<li>Removing or Deleting User Accounts</li>\n<li>Retrieving User Information</li>\n<li>Obtaining Password Hashes of Linux Users</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VI &#8211; Group Administration</h5>\n<ul>\n<li>Creating New Groups</li>\n<li>Adding Users to Specific Groups</li>\n<li>Establishing Administrative Users for Groups</li>\n<li>Removing Users from Groups</li>\n<li>Deleting Existing Groups</li>\n<li>Obtaining Group Information</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VII &#8211; Linux Package Manager</h5>\n<ul>\n<li>Understanding various kinds of Package Managers</li>\n<li>Updating the Repository</li>\n<li>Upgrading Applications</li>\n<li>Installing Application and Softwares using Package Managers</li>\n<li>Removing Application from Kali Linux</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VIII &#8211; Standard Input, Output, and Error</h5>\n<ul>\n<li>Understanding Standard Input, Output and Error in Linux</li>\n<li>Working with various use cases</li>\n<li>Linux Operators</li>\n<li>Combination of Linux Operators</li>\n</ul>\n<h5 class=\"heading-one\">Chapter IX &#8211; Task Automation</h5>\n<ul>\n<li>Understanding Cronjobs</li>\n<li>Working with Crontab tool</li>\n<li>Scheduling Tasks for different Users</li>\n<li>Online Websites to generate Crontab line</li>\n</ul>\n<h5 class=\"heading-one\">Chapter X &#8211; File Compression and Archiving</h5>\n<ul>\n<li>Understanding the concept behind the Compression and Archiving</li>\n<li>Compressing Files and Directories using various tools</li>\n<li>Decompressing Files and Directories</li>\n<li>Grouping Files of similar types</li>\n<li>Adding Files in an existing Archive</li>\n<li>Extracting Files from Archive</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XI &#8211; Process Management</h5>\n<ul>\n<li>Understanding Linux Processes</li>\n<li>Managing Processes on Linux using various tools</li>\n<li>Terminating Processes</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XII &#8211; Network Configuration and Administration</h5>\n<ul>\n<li>Configuring Network Settings</li>\n<li>Enabling and Disabling Network Interfaces</li>\n<li>Providing Static IP Address</li>\n<li>Setting Host Names and Configuring Name Resolution</li>\n<li>Configuring Hosts file</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XIII &#8211; SSH &amp; HTTP Configuration</h5>\n<ul>\n<li>Setting up SSH and SecureCopy (SCP) Configurations</li>\n<li>Password-less Login on SSH and SCP</li>\n<li>Basic Firewall Configuration using Firewalld</li>\n<li>Configuring Secure Rules on Firewall</li>\n<li>Setting up different Zones</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XIV &#8211; Configuring Linux based Firewall for Security</h5>\n<ul>\n<li>Introduction to Firewalls (iptables, nftables, UFW)</li>\n<li>Configuring Traffic Filtering Rules</li>\n<li>Logging &amp; Monitoring Firewall Activity</li>\n<li>NAT &amp; Port Forwarding</li>\n<li>Hardening Firewall Security</li>\n</ul>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Kali Linux is one of the most powerful distributions that we have for performing Ethical Hacking and Penetration Testing. This advanced training will help ethical hackers start their practical journey in this field. In this course, we will cover the Command Line </p>\n",
+      "protected": false
+    },
+    "featured_media": 3037,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3106",
+      "provided-course",
+      "type-provided-course",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course/3106",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/provided-course"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3037"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3106"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3037,
+          "date": "2025-02-07T14:26:16",
+          "slug": "slider-01",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/hero_slider/sharpen-your-penetration-testing-skills/attachment/slider-01/",
+          "title": {
+            "rendered": "slider-01"
+          },
+          "author": 2,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1920,
+            "height": 1079,
+            "file": "2025/02/slider-01.jpg",
+            "filesize": 64807,
+            "sizes": {
+              "medium": {
+                "file": "slider-01-300x169.jpg",
+                "width": 300,
+                "height": 169,
+                "filesize": 5486,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-300x169.jpg"
+              },
+              "large": {
+                "file": "slider-01-1024x575.jpg",
+                "width": 1024,
+                "height": 575,
+                "filesize": 33603,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-1024x575.jpg"
+              },
+              "thumbnail": {
+                "file": "slider-01-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 3495,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "slider-01-768x432.jpg",
+                "width": 768,
+                "height": 432,
+                "filesize": 21677,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-768x432.jpg"
+              },
+              "1536x1536": {
+                "file": "slider-01-1536x863.jpg",
+                "width": 1536,
+                "height": 863,
+                "filesize": 61506,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-1536x863.jpg"
+              },
+              "full": {
+                "file": "slider-01.jpg",
+                "width": 1920,
+                "height": 1079,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3037",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3037"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "hero_slider",
+                "id": 3036,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/hero_slider/3036"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3105,
+    "date": "2025-02-21T11:29:57",
+    "date_gmt": "2025-02-21T05:59:57",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=provided-course&#038;p=3105"
+    },
+    "modified": "2026-02-22T20:09:28",
+    "modified_gmt": "2026-02-22T14:39:28",
+    "slug": "networking-for-ethical-hackers-course",
+    "status": "publish",
+    "type": "provided-course",
+    "link": "https://cyberiumx.com/provided-course/networking-for-ethical-hackers-course/",
+    "title": {
+      "rendered": "Networking For Ethical Hackers Course"
+    },
+    "content": {
+      "rendered": "<h3 class=\"heading-new\">Course Overview</h3>\n<p>A strong foundation in networking is essential for anyone pursuing a career in ethical hacking. This comprehensive course provides an in-depth understanding of how networks function, covering key concepts such as various protocols, IP addressing, subnetting, and the OSI and TCP/IP models. It also explores critical security measures, including firewalls, VPNs, and IDS/IPS, to help secure network infrastructures.</p>\n<p>By developing expertise in network monitoring and analysis, ethical hackers can effectively identify, assess, and mitigate potential security threats, making them better equipped to protect systems from cyberattacks.</p>\n<h3 class=\"heading-new\">Syllabus</h3>\n<h5 class=\"heading-one\">Chapter I &#8211; Introduction to Networking</h5>\n<ul>\n<li>Basics of Networking</li>\n<li>Purpose of Computer Networks</li>\n<li>Types of Networks</li>\n<li>Network Topologies</li>\n</ul>\n<h5 class=\"heading-one\">Chapter II &#8211; Networking Models</h5>\n<ul>\n<li>Overview of the OSI Model</li>\n<li>Detailed study of each layer</li>\n<li>Importance of OSI Model</li>\n<li>Overview of the TCP/IP Model</li>\n<li>Comparison between OSI and TCP/IP Models</li>\n</ul>\n<h5 class=\"heading-one\">Chapter III &#8211; Network Protocols and Ports</h5>\n<ul>\n<li>Fundamental Protocols</li>\n<li>Transport Layer Protocols</li>\n<li>Application Layer Protocols &#8211; HTTP, HTTPS, FTP, SMTP, POP3, IMAP, DNS, DHCP</li>\n<li>Port Numbers for Protocols</li>\n</ul>\n<h5 class=\"heading-one\">Chapter IV &#8211; IPv4 Addressing and Subnetting</h5>\n<ul>\n<li>IP Addressing</li>\n<li>IPv4 and IPv6 Addressing</li>\n<li>Public vs. Private IP Addresses</li>\n<li>Static vs. Dynamic IP Addressing</li>\n<li>Subnetting</li>\n<li>Subnet Masks</li>\n<li>Calculating Subnets and Subnetting</li>\n<li>CIDR Notation</li>\n</ul>\n<h5 class=\"heading-one\">Chapter V &#8211; Networking Devices</h5>\n<ul>\n<li>Network Hardware Devices- Routers, Switches, Hubs, Bridges</li>\n<li>End Devices- PC, Laptops, Phones, Servers</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VI &#8211; Basic Network Configuration on Windows</h5>\n<ul>\n<li>Basic Network Configuration (IP Addressing, Gateway Settings)</li>\n<li>VLANs and Inter-VLAN Routing</li>\n<li>Common Network Issues</li>\n<li>Troubleshooting</li>\n<li>Tools and Techniques for Network Troubleshooting (ping, tracert, nslookup)</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VII &#8211; Basic Network Configuration on Linux</h5>\n<ul>\n<li>Configuring IP Addresses (Static &amp; DHCP)</li>\n<li>Network Interface Management (ifconfig, ip, nmcli)</li>\n<li>DNS &amp; Hostname Configuration</li>\n<li>Managing Routes &amp; Default Gateway</li>\n<li>Network Services &amp; Ports</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VIII &#8211; Network Troubleshooting</h5>\n<ul>\n<li>Checking Network Connectivity (ping, traceroute)</li>\n<li>Analyzing Network Interfaces (netstat)</li>\n</ul>\n<h5 class=\"heading-one\">Chapter IX &#8211; Wireless Networking</h5>\n<ul>\n<li>Basics of Wireless Networks &amp; Protocols</li>\n<li>Wireless Encryption Standards</li>\n<li>Wireless Authentication</li>\n</ul>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>A strong foundation in networking is essential for anyone pursuing a career in ethical hacking. This comprehensive course provides an in-depth understanding of how networks function, covering key concepts such as various protocols, IP addressing, subnetting, and the OSI and TCP/IP models. </p>\n",
+      "protected": false
+    },
+    "featured_media": 3037,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3105",
+      "provided-course",
+      "type-provided-course",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course/3105",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/provided-course"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3037"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3105"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3037,
+          "date": "2025-02-07T14:26:16",
+          "slug": "slider-01",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/hero_slider/sharpen-your-penetration-testing-skills/attachment/slider-01/",
+          "title": {
+            "rendered": "slider-01"
+          },
+          "author": 2,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1920,
+            "height": 1079,
+            "file": "2025/02/slider-01.jpg",
+            "filesize": 64807,
+            "sizes": {
+              "medium": {
+                "file": "slider-01-300x169.jpg",
+                "width": 300,
+                "height": 169,
+                "filesize": 5486,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-300x169.jpg"
+              },
+              "large": {
+                "file": "slider-01-1024x575.jpg",
+                "width": 1024,
+                "height": 575,
+                "filesize": 33603,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-1024x575.jpg"
+              },
+              "thumbnail": {
+                "file": "slider-01-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 3495,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "slider-01-768x432.jpg",
+                "width": 768,
+                "height": 432,
+                "filesize": 21677,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-768x432.jpg"
+              },
+              "1536x1536": {
+                "file": "slider-01-1536x863.jpg",
+                "width": 1536,
+                "height": 863,
+                "filesize": 61506,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-1536x863.jpg"
+              },
+              "full": {
+                "file": "slider-01.jpg",
+                "width": 1920,
+                "height": 1079,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3037",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3037"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "hero_slider",
+                "id": 3036,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/hero_slider/3036"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3104,
+    "date": "2025-02-21T11:28:59",
+    "date_gmt": "2025-02-21T05:58:59",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=provided-course&#038;p=3104"
+    },
+    "modified": "2026-02-22T20:11:16",
+    "modified_gmt": "2026-02-22T14:41:16",
+    "slug": "oscp-course",
+    "status": "publish",
+    "type": "provided-course",
+    "link": "https://cyberiumx.com/provided-course/oscp-course/",
+    "title": {
+      "rendered": "OSCP+ Course"
+    },
+    "content": {
+      "rendered": "<h3 class=\"heading-new\">Course Overview</h3>\n<p>The OffSec Certified Professional (OSCP+) course is a hands-on Penetration Testing Certification training that trains individuals for real-world assessments. It emphasizes identifying, exploiting, and mitigating vulnerabilities across diverse systems in networks. Key areas of this course cover information gathering, enumeration, initial access, privilege escalation, web exploitation, active directory attacks, and pivoting. This OSCP+ is renowned for its 48-hour certification exam demanding candidate’s persistence and deep understanding of ethical hacking concepts. It is highly valued for cyber security professional aiming to gain expertise in pentesting.</p>\n<h3 class=\"heading-new\">Syllabus</h3>\n<h5 class=\"heading-one\">Chapter I &#8211; Introduction to OSCP course</h5>\n<ul>\n<li>Overview of OSCP objectives and requirements.</li>\n<li>Setting up a Kali Linux VM and necessary tools.</li>\n<li>Introduction to PEN-200 modules and learning pathways.</li>\n<li>Broad overview of penetration testing fundamentals.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter II &#8211; Report Writing</h5>\n<ul>\n<li>Basics of note-taking during penetration tests.</li>\n<li>Tools and techniques for effective documentation (screenshot utilities, note-taking apps).</li>\n<li>Structure of penetration testing documentation:\n<ul>\n<li>Executive Summary.</li>\n<li>Technical Summary.</li>\n</ul>\n</li>\n<li>Writing actionable technical findings and recommendations.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter III &#8211; The Penetration Testing Lifecycle</h5>\n<ul>\n<li>Phases of penetration testing:\n<ul>\n<li>Reconnaissance.</li>\n<li>Scanning and Vulnerability Assessment.</li>\n<li>Exploitation.</li>\n<li>Post-Exploitation.</li>\n</ul>\n</li>\n<li>Real-world workflow for assessments.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter IV &#8211; Information Gathering</h5>\n<ul>\n<li>Passive vs. active reconnaissance techniques.</li>\n<li>Introduction to OSINT (Open Source Intelligence).</li>\n<li>DNS, SMB, SNMP, and Web Enumeration.</li>\n<li>Tools: Nmap, Rustscan, and custom scripts.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter V &#8211; Vulnerability Scanning</h5>\n<ul>\n<li>Understanding the vulnerability scanning process.</li>\n<li>Installing and configuring Nessus.</li>\n<li>Utilizing Nmap NSE scripts for vulnerability assessment.</li>\n<li>Interpreting scan results for actionable insights.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VI &#8211; Introduction to Web Applications</h5>\n<ul>\n<li>Overview of OWASP Top 10 vulnerabilities.</li>\n<li>Use of Burp Suite and other proxies for analysis.</li>\n<li>Techniques to enumerate headers, cookies, and source code.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VII &#8211; Cross-Site Scripting</h5>\n<ul>\n<li>Types of XSS vulnerabilities: Reflected, Stored, DOM-based.</li>\n<li>Exploiting XSS for privilege escalation.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VIII &#8211; Directory Traversal</h5>\n<ul>\n<li>Absolute vs. relative paths in exploitation.</li>\n<li>Encoding techniques for bypassing filters.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter IX &#8211; File Inclusion Vulnerability</h5>\n<ul>\n<li>LFI vs. RFI attacks.</li>\n<li>Using PHP wrappers and other advanced techniques.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter X &#8211; File Upload Vulnerability</h5>\n<ul>\n<li>Identifying and exploiting file upload flaws.</li>\n<li>Bypassing content-type validation.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XI &#8211; Command Injection Vulnerability</h5>\n<ul>\n<li>Basics of OS command injection.</li>\n<li>Chaining commands to gain access.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XII &#8211; SQL Injection Vulnerability</h5>\n<ul>\n<li>Advanced SQL injection types: Error-based, UNION-based, Blind SQLi.</li>\n<li>Exploiting MSSQL databases with xp_cmdshell.</li>\n<li>Automation using SQLMap.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XIII &#8211; Attacks on Client-Side</h5>\n<ul>\n<li>Preparing for Office document attacks using macros.</li>\n<li>Leveraging Windows shortcuts and library files.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XIV &#8211; Searching for Public Exploits (Online)</h5>\n<ul>\n<li>Reviewing online exploit repositories.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XV &#8211; Searching for Public Exploits (Offline)</h5>\n<ul>\n<li>Using SearchSploit and frameworks for offline exploitation.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XVI &#8211; Exploit Adaptation and Development</h5>\n<ul>\n<li>Basics of Python Programming.</li>\n<li>Debugging and upgrading existing exploits.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XVII &#8211; Antivirus Evasion</h5>\n<ul>\n<li>Understanding AV detection methods.</li>\n<li>Manual and automated AV bypass techniques.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XVIII &#8211; Password Attacks</h5>\n<ul>\n<li>Brute-forcing SSH, RDP, and HTTP logins.</li>\n<li>NTLM hash cracking and pass-the-hash attacks.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XIX &#8211; Windows Privilege Escalation</h5>\n<ul>\n<li>Enumerating sensitive information using tools like PowerShell.</li>\n<li>Techniques: DLL hijacking, unquoted paths, and Scheduled Tasks.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XX &#8211; Linux Privilege Escalation</h5>\n<ul>\n<li>Exploiting misconfigured cron jobs, SUID binaries, and kernel vulnerabilities.</li>\n<li>Utilizing special sudo permissions.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XXI &#8211; Port Redirection and SSH Tunneling</h5>\n<ul>\n<li>Techniques for port forwarding using Socat and SSH.</li>\n<li>Local, remote, and dynamic forwarding.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XXII &#8211; Advanced Tunneling</h5>\n<ul>\n<li>HTTP and DNS tunneling using tools like Chisel and dnscat.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XXIII &#8211; The Metasploit Framework</h5>\n<ul>\n<li>Exploiting vulnerabilities using Metasploit modules.</li>\n<li>Post-exploitation and pivoting techniques.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XXIV &#8211; Active Directory Introduction and Enumeration</h5>\n<ul>\n<li>Active Directory enumeration using tools like BloodHound.</li>\n<li>Gathering domain-specific data for further exploitation.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XXV &#8211; Attacking Active Directory Authentication</h5>\n<ul>\n<li>Techniques like Kerberoasting and NTLM attacks.</li>\n<li>Exploiting SPN-based vulnerabilities.</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XXVI &#8211; Lateral Movement in Active Directory</h5>\n<ul>\n<li>WMI, WinRM, and Pass the Hash techniques.</li>\n<li>Persistence using golden tickets and shadow copies.</li>\n</ul>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>The OffSec Certified Professional (OSCP+) course is a hands-on Penetration Testing Certification training that trains individuals for real-world assessments. It emphasizes identifying, exploiting, and mitigating vulnerabilities across diverse systems in networks. </p>\n",
+      "protected": false
+    },
+    "featured_media": 3037,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3104",
+      "provided-course",
+      "type-provided-course",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course/3104",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/provided-course"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3037"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3104"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3037,
+          "date": "2025-02-07T14:26:16",
+          "slug": "slider-01",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/hero_slider/sharpen-your-penetration-testing-skills/attachment/slider-01/",
+          "title": {
+            "rendered": "slider-01"
+          },
+          "author": 2,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1920,
+            "height": 1079,
+            "file": "2025/02/slider-01.jpg",
+            "filesize": 64807,
+            "sizes": {
+              "medium": {
+                "file": "slider-01-300x169.jpg",
+                "width": 300,
+                "height": 169,
+                "filesize": 5486,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-300x169.jpg"
+              },
+              "large": {
+                "file": "slider-01-1024x575.jpg",
+                "width": 1024,
+                "height": 575,
+                "filesize": 33603,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-1024x575.jpg"
+              },
+              "thumbnail": {
+                "file": "slider-01-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 3495,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "slider-01-768x432.jpg",
+                "width": 768,
+                "height": 432,
+                "filesize": 21677,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-768x432.jpg"
+              },
+              "1536x1536": {
+                "file": "slider-01-1536x863.jpg",
+                "width": 1536,
+                "height": 863,
+                "filesize": 61506,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-1536x863.jpg"
+              },
+              "full": {
+                "file": "slider-01.jpg",
+                "width": 1920,
+                "height": 1079,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3037",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3037"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "hero_slider",
+                "id": 3036,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/hero_slider/3036"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3103,
+    "date": "2025-02-21T11:26:25",
+    "date_gmt": "2025-02-21T05:56:25",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=provided-course&#038;p=3103"
+    },
+    "modified": "2026-02-22T20:13:04",
+    "modified_gmt": "2026-02-22T14:43:04",
+    "slug": "vapt",
+    "status": "publish",
+    "type": "provided-course",
+    "link": "https://cyberiumx.com/provided-course/vapt/",
+    "title": {
+      "rendered": "VAPT"
+    },
+    "content": {
+      "rendered": "<h3 class=\"heading-new\">Course Overview</h3>\n<p>VAPT training provides a wide understanding of Vulnerability Assessment (VA) and Penetration Testing (PT) methodologies used to identify, analyze, and exploit security weaknesses in networks, systems, and applications. Key topics covered are Vulnerability Assessment Methodologies &amp; Tools, Penetration Testing Phases &amp; Techniques, Network Security Testing &amp; Exploitation, Web Application Security &amp; OWASP Top 10, Post-Exploitation and Privilege Escalation, and finally Reporting &amp; Documentation of Findings. By the end of the course, learners will be equipped with practical skills to conduct comprehensive security assessments, making them ready for roles like Penetration testers, Security analysts, or Ethical Hackers.</p>\n<h3 class=\"heading-new\">Syllabus</h3>\n<h5 class=\"heading-one\">Chapter I- Introduction to VAPT</h5>\n<ul>\n<li>Understanding Vulnerability Assessment and Penetration Testing</li>\n<li>Differences between Vulnerability Assessment and Penetration Testing</li>\n<li>Ethical hacking methodologies and legal considerations</li>\n<li>Importance of cybersecurity in modern organizations</li>\n</ul>\n<h5 class=\"heading-one\">Chapter II- Setting Up the Lab Environment</h5>\n<ul>\n<li>Introduction to Kali Linux</li>\n<li>Installing and configuring Virtual Machines (VMs)</li>\n<li>Setting up Metasploitable 2, OWASP-BWA, and vulnerable applications</li>\n<li>Using penetration testing tools and frameworks</li>\n</ul>\n<h5 class=\"heading-one\">Chapter III- Information Gathering and Reconnaissance</h5>\n<ul>\n<li>Passive vs. Active Reconnaissance</li>\n<li>OSINT Framework</li>\n<li>Host Discovery</li>\n<li>Using WHOIS, Shodan, and Google Dorking</li>\n<li>DNS Lookup, Wappalyzer, and Wayback Machine</li>\n<li>Email Footprinting</li>\n</ul>\n<h5 class=\"heading-one\">Chapter IV- Scanning and Enumeration</h5>\n<ul>\n<li>Network scanning with Nmap and Zenmap</li>\n<li>Host Discovery using Nmap</li>\n<li>Port Scanning</li>\n<li>Vulnerability Scanning using Nmap</li>\n<li>Enumerating services</li>\n<li>FTP, SMB, SSH, RDP, Telnet, SMTP, VNC, and MySQL Enumeration</li>\n<li>Service Credential Brute Forcing using Hydra</li>\n</ul>\n<h5 class=\"heading-one\">Chapter V- Vulnerability Assessment</h5>\n<ul>\n<li>Introduction to vulnerability scanning</li>\n<li>Vulnerability Analysis Life Cycle</li>\n<li>Understanding terms such as CVE, CVSS, and NVD</li>\n<li>Automated vs. Manual vulnerability assessment</li>\n<li>Using Nessus, Burp Suite Professional, and Nikto</li>\n<li>Interpreting scan results and risk analysis</li>\n<li>Generating Report</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VI- Penetration Testing Methodologies</h5>\n<ul>\n<li>Planning and executing penetration tests</li>\n<li>Black Box, White Box, and Gray Box Testing</li>\n<li>Understanding OWASP Top 10 vulnerabilities</li>\n<li>Reporting and documenting findings</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VII- Network Penetration Testing</h5>\n<ul>\n<li>Identifying open ports and services</li>\n<li>Exploiting misconfigurations and weak credentials</li>\n<li>Conducting attacks such as Man-in-the-Middle (MITM), Brute Force attacks</li>\n<li>Conducting Exploitation and Post Exploitation</li>\n<li>Performing Privilege Escalation on Windows and Linux machines</li>\n<li>Conducting Credential Looting</li>\n<li>Pivoting in Networks</li>\n</ul>\n<h5 class=\"heading-one\">Chapter VIII- Web Application Penetration Testing</h5>\n<ul>\n<li>Understanding OWASP Top 10 Web Vulnerabilities</li>\n<li>SQL Injection, Cross-Site Scripting (XSS), and Command Injection attacks</li>\n<li>Directory Traversal, File Upload, and API vulnerabilities</li>\n<li>Broken Access Control, SSRF, CSRF, and Information Disclosure</li>\n<li>Exploiting authentication and session management flaws</li>\n<li>Burp Suite for manual web application testing</li>\n</ul>\n<h5 class=\"heading-one\">Chapter IX- Exploitation and Privilege Escalation</h5>\n<ul>\n<li>Exploiting vulnerabilities with Metasploit Framework</li>\n<li>Windows and Linux privilege escalation techniques</li>\n<li>Post-exploitation techniques and maintaining access</li>\n<li>Covering tracks and avoiding detection</li>\n</ul>\n<h5 class=\"heading-one\">Chapter X- Social Engineering and Phishing Attacks</h5>\n<ul>\n<li>Understanding social engineering techniques</li>\n<li>Creating phishing campaigns using SET (Social Engineering Toolkit)</li>\n<li>Spear phishing, credential harvesting, and email spoofing</li>\n<li>Countermeasures and security awareness training</li>\n</ul>\n<h5 class=\"heading-one\">Chapter XI- Writing Penetration Testing Reports</h5>\n<ul>\n<li>Documenting findings and risk assessment</li>\n<li>Writing professional security assessment reports</li>\n<li>Recommendations and mitigation strategies</li>\n<li>Presenting findings to stakeholders</li>\n</ul>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>VAPT training provides a wide understanding of Vulnerability Assessment (VA) and Penetration Testing (PT) methodologies used to identify, analyze, and exploit security weaknesses in networks, systems, and applications. </p>\n",
+      "protected": false
+    },
+    "featured_media": 3037,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3103",
+      "provided-course",
+      "type-provided-course",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course/3103",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/provided-course"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/provided-course"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3037"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3103"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3037,
+          "date": "2025-02-07T14:26:16",
+          "slug": "slider-01",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/hero_slider/sharpen-your-penetration-testing-skills/attachment/slider-01/",
+          "title": {
+            "rendered": "slider-01"
+          },
+          "author": 2,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1920,
+            "height": 1079,
+            "file": "2025/02/slider-01.jpg",
+            "filesize": 64807,
+            "sizes": {
+              "medium": {
+                "file": "slider-01-300x169.jpg",
+                "width": 300,
+                "height": 169,
+                "filesize": 5486,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-300x169.jpg"
+              },
+              "large": {
+                "file": "slider-01-1024x575.jpg",
+                "width": 1024,
+                "height": 575,
+                "filesize": 33603,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-1024x575.jpg"
+              },
+              "thumbnail": {
+                "file": "slider-01-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 3495,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "slider-01-768x432.jpg",
+                "width": 768,
+                "height": 432,
+                "filesize": 21677,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-768x432.jpg"
+              },
+              "1536x1536": {
+                "file": "slider-01-1536x863.jpg",
+                "width": 1536,
+                "height": 863,
+                "filesize": 61506,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01-1536x863.jpg"
+              },
+              "full": {
+                "file": "slider-01.jpg",
+                "width": 1920,
+                "height": 1079,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/02/slider-01.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3037",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/2"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3037"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "hero_slider",
+                "id": 3036,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/hero_slider/3036"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+]

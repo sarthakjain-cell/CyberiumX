@@ -98,6 +98,146 @@
   line-height: 1.8;
 }
 
+.htmlContent {
+  color: #d1d5db;
+  font-size: 1.1rem;
+  line-height: 1.85;
+}
+
+.htmlContent p {
+  margin-bottom: 1.5rem;
+}
+
+.htmlContent h2,
+.htmlContent h3,
+.htmlContent h4,
+.htmlContent h5 {
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.35;
+}
+
+.htmlContent h2 {
+  font-size: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.htmlContent h3 {
+  font-size: 1.6rem;
+  color: #ff3b3b;
+}
+
+.htmlContent h4 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.75rem 1rem;
+  border-left: 3px solid #ff1616;
+  border-radius: 0 8px 8px 0;
+}
+
+.htmlContent strong,
+.htmlContent b {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.htmlContent a {
+  color: #ff3333;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease;
+}
+
+.htmlContent a:hover {
+  color: #ff6666;
+}
+
+.htmlContent img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 2rem auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  background: #080b12;
+}
+
+.htmlContent ul,
+.htmlContent ol {
+  margin: 1rem 0 1.5rem 1.8rem;
+  padding: 0;
+}
+
+.htmlContent li {
+  margin-bottom: 0.6rem;
+  line-height: 1.7;
+}
+
+.htmlContent blockquote {
+  background: rgba(255, 22, 22, 0.05);
+  border-left: 4px solid #ff1616;
+  border-radius: 0 10px 10px 0;
+  padding: 1.25rem 1.75rem;
+  margin: 2rem 0;
+  color: #e5e7eb;
+}
+
+.htmlContent pre,
+.htmlContent code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+.htmlContent code {
+  background: rgba(255, 255, 255, 0.08);
+  color: #58a6ff;
+  padding: 0.2rem 0.45rem;
+  border-radius: 5px;
+  font-size: 0.95em;
+}
+
+.htmlContent pre {
+  background: #0d1117;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 1.25rem;
+  overflow-x: auto;
+  margin: 1.75rem 0;
+}
+
+.htmlContent pre code {
+  background: transparent;
+  padding: 0;
+  color: #e6edf3;
+  font-size: 0.95rem;
+}
+
+.htmlContent table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.htmlContent th,
+.htmlContent td {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.85rem 1.2rem;
+  text-align: left;
+}
+
+.htmlContent th {
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  font-weight: 600;
+}
+
 .sectionHeading {
   font-size: 1.8rem;
   color: #ffffff;

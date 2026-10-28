@@ -23,6 +23,8 @@ export default function BlogClient({ initialBlogs }: BlogClientProps) {
     return counts;
   }, [initialBlogs]);
 
+  const [visibleCount, setVisibleCount] = useState<number>(12);
+
   // Filter and sort blogs
   const filteredBlogs = useMemo(() => {
     let result = [...initialBlogs];
@@ -55,6 +57,14 @@ export default function BlogClient({ initialBlogs }: BlogClientProps) {
     return result;
   }, [initialBlogs, selectedCategory, searchQuery, sortBy]);
 
+  // Sliced blogs for rendering (show all when searching, otherwise slice by visibleCount)
+  const displayedBlogs = useMemo(() => {
+    if (searchQuery.trim()) return filteredBlogs;
+    return filteredBlogs.slice(0, visibleCount);
+  }, [filteredBlogs, visibleCount, searchQuery]);
+
+  const hasMore = !searchQuery.trim() && visibleCount < filteredBlogs.length;
+
   return (
     <div>
       {/* Category Filter and Search Toolbar */}
@@ -66,7 +76,10 @@ export default function BlogClient({ initialBlogs }: BlogClientProps) {
               key={cat}
               type="button"
               className={`${styles.filterTab} ${selectedCategory === cat ? styles.filterTabActive : ''}`}
-              onClick={() => setSelectedCategory(cat)}
+              onClick={() => {
+                setSelectedCategory(cat);
+                setVisibleCount(12);
+              }}
             >
               <span>{cat}</span>
               <span className={styles.countBadge}>
@@ -117,55 +130,75 @@ export default function BlogClient({ initialBlogs }: BlogClientProps) {
       </div>
 
       {/* Blog Cards Grid */}
-      {filteredBlogs.length > 0 ? (
-        <div className={styles.blogGrid}>
-          {filteredBlogs.map((blog, index) => (
-            <div key={index} className={styles.blogCard}>
-              <div className={styles.blogImageWrapper}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={blog.image}
-                  alt={blog.title}
-                  loading="lazy"
-                  className={styles.blogImage}
-                />
-              </div>
-              <div className={styles.blogCardContent}>
-                <div className={styles.blogHeader}>
-                  <span className={styles.blogCategory}>{blog.category}</span>
-                  <span style={{ fontSize: '0.85rem', color: '#9ca3af' }}>
-                    {blog.readTime}
-                  </span>
+      {displayedBlogs.length > 0 ? (
+        <>
+          <div className={styles.blogGrid}>
+            {displayedBlogs.map((blog, index) => (
+              <div key={blog.slug || index} className={styles.blogCard}>
+                <div className={styles.blogImageWrapper}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={blog.image}
+                    alt={blog.title}
+                    loading="lazy"
+                    className={styles.blogImage}
+                  />
                 </div>
-                <h3 className={styles.blogTitle}>
-                  <Link href={`/blog/${blog.slug}`}>{blog.title}</Link>
-                </h3>
-                <p className={styles.blogDesc}>{blog.desc}</p>
-                <div className={styles.readMore}>
-                  <Link
-                    href={`/blog/${blog.slug}`}
-                    aria-label={`Read article: ${blog.title}`}
-                  >
-                    <span>Read Article</span>
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
+                <div className={styles.blogCardContent}>
+                  <div className={styles.blogHeader}>
+                    <span className={styles.blogCategory}>{blog.category}</span>
+                    <span style={{ fontSize: '0.85rem', color: '#9ca3af' }}>
+                      {blog.readTime}
+                    </span>
+                  </div>
+                  <h3 className={styles.blogTitle}>
+                    <Link href={`/blog/${blog.slug}`}>{blog.title}</Link>
+                  </h3>
+                  <p className={styles.blogDesc}>{blog.desc}</p>
+                  <div className={styles.readMore}>
+                    <Link
+                      href={`/blog/${blog.slug}`}
+                      aria-label={`Read article: ${blog.title}`}
                     >
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </Link>
+                      <span>Read Article</span>
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </Link>
+                  </div>
                 </div>
               </div>
+            ))}
+          </div>
+
+          {hasMore && (
+            <div style={{ textAlign: 'center', marginTop: '3.5rem' }}>
+              <button
+                type="button"
+                className="btn-outline"
+                style={{
+                  padding: '0.9rem 2.2rem',
+                  fontSize: '1rem',
+                  cursor: 'pointer',
+                  borderRadius: '10px'
+                }}
+                onClick={() => setVisibleCount((prev) => prev + 12)}
+              >
+                Load More Write-ups ({filteredBlogs.length - visibleCount} remaining)
+              </button>
             </div>
-          ))}
-        </div>
+          )}
+        </>
       ) : (
         <div className={styles.noResults}>
           <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🔍</div>

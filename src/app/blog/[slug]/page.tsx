@@ -78,38 +78,59 @@ export default async function BlogPostPage({ params }: PageProps) {
           />
         </div>
 
-        <div className={styles.introBox}>
-          <p>{blog.content.intro}</p>
-        </div>
-
-        <div className={styles.articleBody}>
-          {blog.content.sections.map((section, sIdx) => (
-            <section key={sIdx}>
-              <h2 className={styles.sectionHeading}>{section.heading}</h2>
-              <ul className={styles.contentList}>
-                {section.body.map((item, bIdx) => (
-                  <li key={bIdx} className={styles.contentItem}>
-                    <span className={styles.itemBullet}>▹</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ))}
-        </div>
-
-        <div className={styles.conclusionCard}>
-          <h3 className={styles.conclusionTitle}>Summary & Next Steps</h3>
-          <p className={styles.conclusionText}>{blog.content.conclusion}</p>
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="/courses" className="btn-primary" style={{ display: 'inline-block' }}>
-              Explore Cybersecurity Courses
-            </Link>
-            <Link href="/contact-us" className="btn-outline" style={{ display: 'inline-block' }}>
-              Talk with an Instructor
-            </Link>
+        {blog.date && (
+          <div style={{ color: '#9ca3af', fontSize: '0.9rem', marginBottom: '1rem' }}>
+            Published on {blog.date}
           </div>
-        </div>
+        )}
+
+        {blog.contentHtml ? (
+          <div 
+            className={styles.htmlContent} 
+            dangerouslySetInnerHTML={{ __html: blog.contentHtml }} 
+          />
+        ) : (
+          <>
+            {blog.content?.intro && (
+              <div className={styles.introBox}>
+                <p>{blog.content.intro}</p>
+              </div>
+            )}
+
+            {blog.content?.sections && (
+              <div className={styles.articleBody}>
+                {blog.content.sections.map((section, sIdx) => (
+                  <section key={sIdx}>
+                    <h2 className={styles.sectionHeading}>{section.heading}</h2>
+                    <ul className={styles.contentList}>
+                      {section.body.map((item, bIdx) => (
+                        <li key={bIdx} className={styles.contentItem}>
+                          <span className={styles.itemBullet}>▹</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
+                ))}
+              </div>
+            )}
+
+            {blog.content?.conclusion && (
+              <div className={styles.conclusionCard}>
+                <h3 className={styles.conclusionTitle}>Summary & Next Steps</h3>
+                <p className={styles.conclusionText}>{blog.content.conclusion}</p>
+                <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                  <Link href="/courses" className="btn-primary" style={{ display: 'inline-block' }}>
+                    Explore Cybersecurity Courses
+                  </Link>
+                  <Link href="/contact-us" className="btn-outline" style={{ display: 'inline-block' }}>
+                    Talk with an Instructor
+                  </Link>
+                </div>
+              </div>
+            )}
+          </>
+        )}
 
         <div style={{ marginTop: '2.5rem' }}>
           <Link href="/blog" className={styles.backBtn}>

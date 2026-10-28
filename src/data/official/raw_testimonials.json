@@ -1,0 +1,2064 @@
+[
+  {
+    "id": 3269,
+    "date": "2025-04-03T10:52:17",
+    "date_gmt": "2025-04-03T05:22:17",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=student-testimonial&#038;p=3269"
+    },
+    "modified": "2025-04-03T13:11:22",
+    "modified_gmt": "2025-04-03T07:41:22",
+    "slug": "zeeshan-ahmed",
+    "status": "publish",
+    "type": "student-testimonial",
+    "link": "https://cyberiumx.com/student-testimonial/zeeshan-ahmed/",
+    "title": {
+      "rendered": "Zeeshan Ahmed"
+    },
+    "content": {
+      "rendered": "<h5>I highly recommend the CyberiumX Ethical Hacking course to anyone aspiring to build a career in cybersecurity. The course is well-structured, covering everything from network security to ethical hacking techniques. The hands-on labs and simulations provided essential practical experience, making it an invaluable learning opportunity in this field.</h5>\n",
+      "protected": false
+    },
+    "featured_media": 3270,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3269",
+      "student-testimonial",
+      "type-student-testimonial",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3269",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/student-testimonial"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3270"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3269"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3270,
+          "date": "2025-04-03T13:10:52",
+          "slug": "middle-aged-hispanic-business-people",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/student-testimonial/zeeshan-ahmed/attachment/middle-aged-hispanic-business-people/",
+          "title": {
+            "rendered": "middle-aged-hispanic-business-people"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1828,
+            "height": 2560,
+            "file": "2025/04/middle-aged-hispanic-business-people-scaled.jpg",
+            "filesize": 526873,
+            "sizes": {
+              "medium": {
+                "file": "middle-aged-hispanic-business-people-214x300.jpg",
+                "width": 214,
+                "height": 300,
+                "filesize": 41689,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/middle-aged-hispanic-business-people-214x300.jpg"
+              },
+              "large": {
+                "file": "middle-aged-hispanic-business-people-731x1024.jpg",
+                "width": 731,
+                "height": 1024,
+                "filesize": 141249,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/middle-aged-hispanic-business-people-731x1024.jpg"
+              },
+              "thumbnail": {
+                "file": "middle-aged-hispanic-business-people-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 31993,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/middle-aged-hispanic-business-people-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "middle-aged-hispanic-business-people-768x1075.jpg",
+                "width": 768,
+                "height": 1075,
+                "filesize": 150281,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/middle-aged-hispanic-business-people-768x1075.jpg"
+              },
+              "1536x1536": {
+                "file": "middle-aged-hispanic-business-people-1097x1536.jpg",
+                "width": 1097,
+                "height": 1536,
+                "filesize": 243017,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/middle-aged-hispanic-business-people-1097x1536.jpg"
+              },
+              "2048x2048": {
+                "file": "middle-aged-hispanic-business-people-1463x2048.jpg",
+                "width": 1463,
+                "height": 2048,
+                "filesize": 370566,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/middle-aged-hispanic-business-people-1463x2048.jpg"
+              },
+              "full": {
+                "file": "middle-aged-hispanic-business-people-scaled.jpg",
+                "width": 1828,
+                "height": 2560,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/middle-aged-hispanic-business-people-scaled.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "4",
+              "credit": "Fernando Veloso Leao",
+              "camera": "NIKON Z 7_2",
+              "caption": "",
+              "created_timestamp": "1697290168",
+              "copyright": "Direitos Reservados",
+              "focal_length": "35",
+              "iso": "800",
+              "shutter_speed": "0.01",
+              "title": "",
+              "orientation": "1",
+              "keywords": []
+            },
+            "original_image": "middle-aged-hispanic-business-people.jpg"
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/middle-aged-hispanic-business-people-scaled.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3270",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3270"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "student-testimonial",
+                "id": 3269,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3269"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3268,
+    "date": "2025-04-03T10:51:09",
+    "date_gmt": "2025-04-03T05:21:09",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=student-testimonial&#038;p=3268"
+    },
+    "modified": "2025-04-03T13:18:18",
+    "modified_gmt": "2025-04-03T07:48:18",
+    "slug": "nelson-fadeh",
+    "status": "publish",
+    "type": "student-testimonial",
+    "link": "https://cyberiumx.com/student-testimonial/nelson-fadeh/",
+    "title": {
+      "rendered": "Nelson Fadeh"
+    },
+    "content": {
+      "rendered": "<h5>The CyberiumX Bug Bounty course went beyond my expectations. The content was current and relevant, and the instructors were not only highly knowledgeable but also deeply passionate about cybersecurity. The real-world scenarios integrated into the course offered practical experience in identifying and mitigating security threats.</h5>\n",
+      "protected": false
+    },
+    "featured_media": 3272,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3268",
+      "student-testimonial",
+      "type-student-testimonial",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3268",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/student-testimonial"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3272"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3268"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3272,
+          "date": "2025-04-03T13:17:37",
+          "slug": "image",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/student-testimonial/nelson-fadeh/attachment/image/",
+          "title": {
+            "rendered": "image"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 2560,
+            "height": 1707,
+            "file": "2025/04/image-scaled.jpg",
+            "filesize": 393390,
+            "sizes": {
+              "medium": {
+                "file": "image-300x200.jpg",
+                "width": 300,
+                "height": 200,
+                "filesize": 33697,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-300x200.jpg"
+              },
+              "large": {
+                "file": "image-1024x683.jpg",
+                "width": 1024,
+                "height": 683,
+                "filesize": 112393,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1024x683.jpg"
+              },
+              "thumbnail": {
+                "file": "image-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 26081,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "image-768x512.jpg",
+                "width": 768,
+                "height": 512,
+                "filesize": 79559,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-768x512.jpg"
+              },
+              "1536x1536": {
+                "file": "image-1536x1024.jpg",
+                "width": 1536,
+                "height": 1024,
+                "filesize": 191284,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1536x1024.jpg"
+              },
+              "2048x2048": {
+                "file": "image-2048x1365.jpg",
+                "width": 2048,
+                "height": 1365,
+                "filesize": 285487,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-2048x1365.jpg"
+              },
+              "full": {
+                "file": "image-scaled.jpg",
+                "width": 2560,
+                "height": 1707,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-scaled.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "2.8",
+              "credit": "",
+              "camera": "NIKON D850",
+              "caption": "",
+              "created_timestamp": "1646058031",
+              "copyright": "",
+              "focal_length": "85",
+              "iso": "800",
+              "shutter_speed": "0.00625",
+              "title": "",
+              "orientation": "1",
+              "keywords": []
+            },
+            "original_image": "image.jpg"
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-scaled.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3272",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3272"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "student-testimonial",
+                "id": 3268,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3268"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3267,
+    "date": "2025-04-03T10:50:13",
+    "date_gmt": "2025-04-03T05:20:13",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=student-testimonial&#038;p=3267"
+    },
+    "modified": "2025-04-03T13:23:00",
+    "modified_gmt": "2025-04-03T07:53:00",
+    "slug": "max-j",
+    "status": "publish",
+    "type": "student-testimonial",
+    "link": "https://cyberiumx.com/student-testimonial/max-j/",
+    "title": {
+      "rendered": "Max J"
+    },
+    "content": {
+      "rendered": "<h5>Enrolling in the CyberiumX OSCP+ course was a game-changer for my career. The well-structured curriculum covered every key aspect of cybersecurity, while the hands-on labs provided invaluable practical experience. With expert instructors guiding the way, I now feel confident in tackling the ever-evolving challenges of the cybersecurity landscape.</h5>\n",
+      "protected": false
+    },
+    "featured_media": 3273,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3267",
+      "student-testimonial",
+      "type-student-testimonial",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3267",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/student-testimonial"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3273"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3267"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3273,
+          "date": "2025-04-03T13:20:18",
+          "slug": "image-1",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/student-testimonial/max-j/attachment/image-1/",
+          "title": {
+            "rendered": "image 1"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1707,
+            "height": 2560,
+            "file": "2025/04/image-1-scaled.jpg",
+            "filesize": 399145,
+            "sizes": {
+              "medium": {
+                "file": "image-1-200x300.jpg",
+                "width": 200,
+                "height": 300,
+                "filesize": 24554,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1-200x300.jpg"
+              },
+              "large": {
+                "file": "image-1-683x1024.jpg",
+                "width": 683,
+                "height": 1024,
+                "filesize": 77132,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1-683x1024.jpg"
+              },
+              "thumbnail": {
+                "file": "image-1-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 20869,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "image-1-768x1152.jpg",
+                "width": 768,
+                "height": 1152,
+                "filesize": 92305,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1-768x1152.jpg"
+              },
+              "1536x1536": {
+                "file": "image-1-1024x1536.jpg",
+                "width": 1024,
+                "height": 1536,
+                "filesize": 148954,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1-1024x1536.jpg"
+              },
+              "2048x2048": {
+                "file": "image-1-1365x2048.jpg",
+                "width": 1365,
+                "height": 2048,
+                "filesize": 258681,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1-1365x2048.jpg"
+              },
+              "full": {
+                "file": "image-1-scaled.jpg",
+                "width": 1707,
+                "height": 2560,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1-scaled.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "4",
+              "credit": "",
+              "camera": "NIKON Z 6",
+              "caption": "",
+              "created_timestamp": "1580636192",
+              "copyright": "Freepik.com",
+              "focal_length": "50",
+              "iso": "100",
+              "shutter_speed": "0.00625",
+              "title": "",
+              "orientation": "1",
+              "keywords": []
+            },
+            "original_image": "image-1.jpg"
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1-scaled.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3273",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3273"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "student-testimonial",
+                "id": 3267,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3267"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3266,
+    "date": "2025-04-03T10:48:27",
+    "date_gmt": "2025-04-03T05:18:27",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=student-testimonial&#038;p=3266"
+    },
+    "modified": "2025-04-03T21:35:56",
+    "modified_gmt": "2025-04-03T16:05:56",
+    "slug": "addae-prince",
+    "status": "publish",
+    "type": "student-testimonial",
+    "link": "https://cyberiumx.com/student-testimonial/addae-prince/",
+    "title": {
+      "rendered": "Addae Prince"
+    },
+    "content": {
+      "rendered": "<h5>The CEH training material was exceptional! It was packed with valuable knowledge, and I was thrilled to learn various techniques for identifying and exploiting system vulnerabilities.What an incredible learning journey! Thank you, CyberiumX.</h5>\n",
+      "protected": false
+    },
+    "featured_media": 3274,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3266",
+      "student-testimonial",
+      "type-student-testimonial",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3266",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/student-testimonial"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3274"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3266"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3274,
+          "date": "2025-04-03T21:35:17",
+          "slug": "middle-aged-hispanic-business-people-2",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/student-testimonial/addae-prince/attachment/middle-aged-hispanic-business-people-2/",
+          "title": {
+            "rendered": "middle-aged-hispanic-business-people"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1828,
+            "height": 2560,
+            "file": "2025/04/middle-aged-hispanic-business-people-1-scaled.jpg",
+            "filesize": 526873,
+            "sizes": {
+              "medium": {
+                "file": "middle-aged-hispanic-business-people-1-214x300.jpg",
+                "width": 214,
+                "height": 300,
+                "filesize": 41689,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/middle-aged-hispanic-business-people-1-214x300.jpg"
+              },
+              "large": {
+                "file": "middle-aged-hispanic-business-people-1-731x1024.jpg",
+                "width": 731,
+                "height": 1024,
+                "filesize": 141249,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/middle-aged-hispanic-business-people-1-731x1024.jpg"
+              },
+              "thumbnail": {
+                "file": "middle-aged-hispanic-business-people-1-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 31993,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/middle-aged-hispanic-business-people-1-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "middle-aged-hispanic-business-people-1-768x1075.jpg",
+                "width": 768,
+                "height": 1075,
+                "filesize": 150281,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/middle-aged-hispanic-business-people-1-768x1075.jpg"
+              },
+              "1536x1536": {
+                "file": "middle-aged-hispanic-business-people-1-1097x1536.jpg",
+                "width": 1097,
+                "height": 1536,
+                "filesize": 243017,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/middle-aged-hispanic-business-people-1-1097x1536.jpg"
+              },
+              "2048x2048": {
+                "file": "middle-aged-hispanic-business-people-1-1463x2048.jpg",
+                "width": 1463,
+                "height": 2048,
+                "filesize": 370566,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/middle-aged-hispanic-business-people-1-1463x2048.jpg"
+              },
+              "full": {
+                "file": "middle-aged-hispanic-business-people-1-scaled.jpg",
+                "width": 1828,
+                "height": 2560,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/middle-aged-hispanic-business-people-1-scaled.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "4",
+              "credit": "Fernando Veloso Leao",
+              "camera": "NIKON Z 7_2",
+              "caption": "",
+              "created_timestamp": "1697290168",
+              "copyright": "Direitos Reservados",
+              "focal_length": "35",
+              "iso": "800",
+              "shutter_speed": "0.01",
+              "title": "",
+              "orientation": "1",
+              "keywords": []
+            },
+            "original_image": "middle-aged-hispanic-business-people-1.jpg"
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/middle-aged-hispanic-business-people-1-scaled.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3274",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3274"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "student-testimonial",
+                "id": 3266,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3266"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3264,
+    "date": "2025-04-03T10:42:22",
+    "date_gmt": "2025-04-03T05:12:22",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=student-testimonial&#038;p=3264"
+    },
+    "modified": "2025-04-10T14:51:15",
+    "modified_gmt": "2025-04-10T09:21:15",
+    "slug": "aarav",
+    "status": "publish",
+    "type": "student-testimonial",
+    "link": "https://cyberiumx.com/student-testimonial/aarav/",
+    "title": {
+      "rendered": "Aarav"
+    },
+    "content": {
+      "rendered": "<h5>I recently attended the Crash Course on Ethical Hacking Practicals offered by CyberiumX, and it exceeded all my expectations. This intensive course was packed with real-world scenarios, practical exercises, and hands-on labs that provided me with a strong foundation in ethical hacking.</h5>\n",
+      "protected": false
+    },
+    "featured_media": 3286,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3264",
+      "student-testimonial",
+      "type-student-testimonial",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3264",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/student-testimonial"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3286"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3264"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3286,
+          "date": "2025-04-10T14:51:04",
+          "slug": "front-view-beautiful-smiling-woman_23-2148489637",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/student-testimonial/aarav/attachment/front-view-beautiful-smiling-woman_23-2148489637/",
+          "title": {
+            "rendered": "front-view-beautiful-smiling-woman_23-2148489637"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/avif",
+          "media_details": {
+            "width": 740,
+            "height": 1036,
+            "file": "2025/04/front-view-beautiful-smiling-woman_23-2148489637.avif",
+            "filesize": 51482,
+            "sizes": {
+              "medium": {
+                "file": "front-view-beautiful-smiling-woman_23-2148489637-214x300.avif",
+                "width": 214,
+                "height": 300,
+                "filesize": 9306,
+                "mime_type": "image/avif",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/front-view-beautiful-smiling-woman_23-2148489637-214x300.avif"
+              },
+              "large": {
+                "file": "front-view-beautiful-smiling-woman_23-2148489637-731x1024.avif",
+                "width": 731,
+                "height": 1024,
+                "filesize": 53315,
+                "mime_type": "image/avif",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/front-view-beautiful-smiling-woman_23-2148489637-731x1024.avif"
+              },
+              "thumbnail": {
+                "file": "front-view-beautiful-smiling-woman_23-2148489637-150x150.avif",
+                "width": 150,
+                "height": 150,
+                "filesize": 4541,
+                "mime_type": "image/avif",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/front-view-beautiful-smiling-woman_23-2148489637-150x150.avif"
+              },
+              "full": {
+                "file": "front-view-beautiful-smiling-woman_23-2148489637.avif",
+                "width": 740,
+                "height": 1036,
+                "mime_type": "image/avif",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/front-view-beautiful-smiling-woman_23-2148489637.avif"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/front-view-beautiful-smiling-woman_23-2148489637.avif",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3286",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3286"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "student-testimonial",
+                "id": 3264,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3264"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3263,
+    "date": "2025-04-03T10:39:18",
+    "date_gmt": "2025-04-03T05:09:18",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=student-testimonial&#038;p=3263"
+    },
+    "modified": "2025-04-10T14:52:51",
+    "modified_gmt": "2025-04-10T09:22:51",
+    "slug": "shikha",
+    "status": "publish",
+    "type": "student-testimonial",
+    "link": "https://cyberiumx.com/student-testimonial/shikha/",
+    "title": {
+      "rendered": "Shikha"
+    },
+    "content": {
+      "rendered": "<h5>I recently completed the eJPT (eLearnSecurity Junior Penetration Tester) course through CyberiumX, and I must say, the experience was phenomenal. From start to finish, the course was thoughtfully structured, providing a perfect blend of theoretical knowledge and hands-on practical exercises.</h5>\n",
+      "protected": false
+    },
+    "featured_media": 3287,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3263",
+      "student-testimonial",
+      "type-student-testimonial",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3263",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/student-testimonial"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3287"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3263"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3287,
+          "date": "2025-04-10T14:52:43",
+          "slug": "woman-with-laptop-computer-sitting-floor-isolated-white_231208-9490",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/student-testimonial/shikha/attachment/woman-with-laptop-computer-sitting-floor-isolated-white_231208-9490/",
+          "title": {
+            "rendered": "woman-with-laptop-computer-sitting-floor-isolated-white_231208-9490"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/avif",
+          "media_details": {
+            "width": 740,
+            "height": 493,
+            "file": "2025/04/woman-with-laptop-computer-sitting-floor-isolated-white_231208-9490.avif",
+            "filesize": 14350,
+            "sizes": {
+              "medium": {
+                "file": "woman-with-laptop-computer-sitting-floor-isolated-white_231208-9490-300x200.avif",
+                "width": 300,
+                "height": 200,
+                "filesize": 4428,
+                "mime_type": "image/avif",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/woman-with-laptop-computer-sitting-floor-isolated-white_231208-9490-300x200.avif"
+              },
+              "thumbnail": {
+                "file": "woman-with-laptop-computer-sitting-floor-isolated-white_231208-9490-150x150.avif",
+                "width": 150,
+                "height": 150,
+                "filesize": 3041,
+                "mime_type": "image/avif",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/woman-with-laptop-computer-sitting-floor-isolated-white_231208-9490-150x150.avif"
+              },
+              "full": {
+                "file": "woman-with-laptop-computer-sitting-floor-isolated-white_231208-9490.avif",
+                "width": 740,
+                "height": 493,
+                "mime_type": "image/avif",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/woman-with-laptop-computer-sitting-floor-isolated-white_231208-9490.avif"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/woman-with-laptop-computer-sitting-floor-isolated-white_231208-9490.avif",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3287",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3287"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "student-testimonial",
+                "id": 3263,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3263"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3262,
+    "date": "2025-04-03T10:37:23",
+    "date_gmt": "2025-04-03T05:07:23",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=student-testimonial&#038;p=3262"
+    },
+    "modified": "2025-04-10T14:53:16",
+    "modified_gmt": "2025-04-10T09:23:16",
+    "slug": "andreas-samson",
+    "status": "publish",
+    "type": "student-testimonial",
+    "link": "https://cyberiumx.com/student-testimonial/andreas-samson/",
+    "title": {
+      "rendered": "Andreas Samson"
+    },
+    "content": {
+      "rendered": "<h5>Before starting the CEH training, I had some knowledge of Kali Linux, Networking, Wireshark, Nmap and other tools. However, CEH provided me with advanced training on these tools and introduced me to many more, such as Metasploit, Burp Suite, Hashcat Netcat, Zenmap, Nessus, and others.</h5>\n",
+      "protected": false
+    },
+    "featured_media": 3272,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3262",
+      "student-testimonial",
+      "type-student-testimonial",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3262",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/student-testimonial"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3272"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3262"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3272,
+          "date": "2025-04-03T13:17:37",
+          "slug": "image",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/student-testimonial/nelson-fadeh/attachment/image/",
+          "title": {
+            "rendered": "image"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 2560,
+            "height": 1707,
+            "file": "2025/04/image-scaled.jpg",
+            "filesize": 393390,
+            "sizes": {
+              "medium": {
+                "file": "image-300x200.jpg",
+                "width": 300,
+                "height": 200,
+                "filesize": 33697,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-300x200.jpg"
+              },
+              "large": {
+                "file": "image-1024x683.jpg",
+                "width": 1024,
+                "height": 683,
+                "filesize": 112393,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1024x683.jpg"
+              },
+              "thumbnail": {
+                "file": "image-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 26081,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "image-768x512.jpg",
+                "width": 768,
+                "height": 512,
+                "filesize": 79559,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-768x512.jpg"
+              },
+              "1536x1536": {
+                "file": "image-1536x1024.jpg",
+                "width": 1536,
+                "height": 1024,
+                "filesize": 191284,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1536x1024.jpg"
+              },
+              "2048x2048": {
+                "file": "image-2048x1365.jpg",
+                "width": 2048,
+                "height": 1365,
+                "filesize": 285487,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-2048x1365.jpg"
+              },
+              "full": {
+                "file": "image-scaled.jpg",
+                "width": 2560,
+                "height": 1707,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-scaled.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "2.8",
+              "credit": "",
+              "camera": "NIKON D850",
+              "caption": "",
+              "created_timestamp": "1646058031",
+              "copyright": "",
+              "focal_length": "85",
+              "iso": "800",
+              "shutter_speed": "0.00625",
+              "title": "",
+              "orientation": "1",
+              "keywords": []
+            },
+            "original_image": "image.jpg"
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-scaled.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3272",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3272"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "student-testimonial",
+                "id": 3268,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3268"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3261,
+    "date": "2025-04-03T10:35:58",
+    "date_gmt": "2025-04-03T05:05:58",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=student-testimonial&#038;p=3261"
+    },
+    "modified": "2025-04-10T14:53:54",
+    "modified_gmt": "2025-04-10T09:23:54",
+    "slug": "pearl",
+    "status": "publish",
+    "type": "student-testimonial",
+    "link": "https://cyberiumx.com/student-testimonial/pearl/",
+    "title": {
+      "rendered": "Pearl"
+    },
+    "content": {
+      "rendered": "<h5>As someone new to cybersecurity, I was nervous about where to start. CyberiumX made the learning process easy and enjoyable. The step-by-step guidance and 24/7 support are amazing. It’s the best investment I’ve made for my career!</h5>\n",
+      "protected": false
+    },
+    "featured_media": 3273,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3261",
+      "student-testimonial",
+      "type-student-testimonial",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3261",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/student-testimonial"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3273"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3261"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3273,
+          "date": "2025-04-03T13:20:18",
+          "slug": "image-1",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/student-testimonial/max-j/attachment/image-1/",
+          "title": {
+            "rendered": "image 1"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1707,
+            "height": 2560,
+            "file": "2025/04/image-1-scaled.jpg",
+            "filesize": 399145,
+            "sizes": {
+              "medium": {
+                "file": "image-1-200x300.jpg",
+                "width": 200,
+                "height": 300,
+                "filesize": 24554,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1-200x300.jpg"
+              },
+              "large": {
+                "file": "image-1-683x1024.jpg",
+                "width": 683,
+                "height": 1024,
+                "filesize": 77132,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1-683x1024.jpg"
+              },
+              "thumbnail": {
+                "file": "image-1-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 20869,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "image-1-768x1152.jpg",
+                "width": 768,
+                "height": 1152,
+                "filesize": 92305,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1-768x1152.jpg"
+              },
+              "1536x1536": {
+                "file": "image-1-1024x1536.jpg",
+                "width": 1024,
+                "height": 1536,
+                "filesize": 148954,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1-1024x1536.jpg"
+              },
+              "2048x2048": {
+                "file": "image-1-1365x2048.jpg",
+                "width": 1365,
+                "height": 2048,
+                "filesize": 258681,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1-1365x2048.jpg"
+              },
+              "full": {
+                "file": "image-1-scaled.jpg",
+                "width": 1707,
+                "height": 2560,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1-scaled.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "4",
+              "credit": "",
+              "camera": "NIKON Z 6",
+              "caption": "",
+              "created_timestamp": "1580636192",
+              "copyright": "Freepik.com",
+              "focal_length": "50",
+              "iso": "100",
+              "shutter_speed": "0.00625",
+              "title": "",
+              "orientation": "1",
+              "keywords": []
+            },
+            "original_image": "image-1.jpg"
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/04/image-1-scaled.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3273",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3273"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "student-testimonial",
+                "id": 3267,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3267"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3195,
+    "date": "2025-03-10T22:36:26",
+    "date_gmt": "2025-03-10T17:06:26",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=student-testimonial&#038;p=3195"
+    },
+    "modified": "2025-10-22T16:31:07",
+    "modified_gmt": "2025-10-22T11:01:07",
+    "slug": "duvalier",
+    "status": "publish",
+    "type": "student-testimonial",
+    "link": "https://cyberiumx.com/student-testimonial/duvalier/",
+    "title": {
+      "rendered": "Duvalier Miafo"
+    },
+    "content": {
+      "rendered": "<h5>I recently completed the Certified Ethical Hacking (CEH) course from CyberiumX, and it was an outstanding experience! The course provided a deep dive into ethical hacking methodologies, tools, and techniques, making it perfect for both beginners and professionals looking to strengthen their cybersecurity skills.</h5>\n",
+      "protected": false
+    },
+    "featured_media": 3445,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3195",
+      "student-testimonial",
+      "type-student-testimonial",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3195",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/student-testimonial"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3445"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3195"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 3445,
+          "date": "2025-10-22T16:29:41",
+          "slug": "duvalier-2",
+          "type": "attachment",
+          "link": "https://cyberiumx.com/student-testimonial/duvalier/attachment/duvalier-2/",
+          "title": {
+            "rendered": "Duvalier"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": "<p>Duvalier</p>\n"
+          },
+          "alt_text": "Duvalier",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 2560,
+            "height": 2560,
+            "file": "2025/03/Duvalier-scaled.jpg",
+            "filesize": 1023579,
+            "sizes": {
+              "medium": {
+                "file": "Duvalier-300x300.jpg",
+                "width": 300,
+                "height": 300,
+                "filesize": 81377,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/03/Duvalier-300x300.jpg"
+              },
+              "large": {
+                "file": "Duvalier-1024x1024.jpg",
+                "width": 1024,
+                "height": 1024,
+                "filesize": 198291,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/03/Duvalier-1024x1024.jpg"
+              },
+              "thumbnail": {
+                "file": "Duvalier-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 69674,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/03/Duvalier-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "Duvalier-768x768.jpg",
+                "width": 768,
+                "height": 768,
+                "filesize": 146131,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/03/Duvalier-768x768.jpg"
+              },
+              "1536x1536": {
+                "file": "Duvalier-1536x1536.jpg",
+                "width": 1536,
+                "height": 1536,
+                "filesize": 371919,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/03/Duvalier-1536x1536.jpg"
+              },
+              "2048x2048": {
+                "file": "Duvalier-2048x2048.jpg",
+                "width": 2048,
+                "height": 2048,
+                "filesize": 650729,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/03/Duvalier-2048x2048.jpg"
+              },
+              "full": {
+                "file": "Duvalier-scaled.jpg",
+                "width": 2560,
+                "height": 2560,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cyberiumx.com/wp-content/uploads/2025/03/Duvalier-scaled.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "2.2",
+              "credit": "",
+              "camera": "SM-S908E",
+              "caption": "",
+              "created_timestamp": "1734250995",
+              "copyright": "",
+              "focal_length": "3.8",
+              "iso": "200",
+              "shutter_speed": "0.02",
+              "title": "",
+              "orientation": "1",
+              "keywords": []
+            },
+            "original_image": "Duvalier.jpg"
+          },
+          "source_url": "https://cyberiumx.com/wp-content/uploads/2025/03/Duvalier-scaled.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media/3445",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://cyberiumx.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/comments?post=3445"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "student-testimonial",
+                "id": 3195,
+                "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3195"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3194,
+    "date": "2025-03-10T22:35:25",
+    "date_gmt": "2025-03-10T17:05:25",
+    "guid": {
+      "rendered": "https://cyberiumx.com/?post_type=student-testimonial&#038;p=3194"
+    },
+    "modified": "2025-04-10T14:56:32",
+    "modified_gmt": "2025-04-10T09:26:32",
+    "slug": "ajit",
+    "status": "publish",
+    "type": "student-testimonial",
+    "link": "https://cyberiumx.com/student-testimonial/ajit/",
+    "title": {
+      "rendered": "Ajit"
+    },
+    "content": {
+      "rendered": "<h5>The OSCP training by CyberiumX provided a highly detailed and immersive learning experience. It introduced me to a wide range of advanced penetration testing tools, many of which were entirely new to me, significantly enhancing my technical proficiency. The hands-on labs and real-world scenarios ensured a practical, skill-oriented approach to learning. Overall, this training was instrumental in refining my offensive security expertise.</h5>\n",
+      "protected": false
+    },
+    "featured_media": 3026,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "class_list": [
+      "post-3194",
+      "student-testimonial",
+      "type-student-testimonial",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial/3194",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/student-testimonial"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/types/student-testimonial"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media/3026"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cyberiumx.com/wp-json/wp/v2/media?parent=3194"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "code": "rest_forbidden",
+          "message": "Sorry, you are not allowed to do that.",
+          "data": {
+            "status": 401
+          }
+        }
+      ]
+    }
+  }
+]

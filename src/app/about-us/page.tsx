@@ -18,10 +18,10 @@ export default function AboutUsPage() {
         <div className={styles.heroBackground}></div>
         <div className={styles.heroContent}>
           <div>
-            <span className={styles.heroBadge}>Our Mission</span>
-            <h1 className={styles.heroTitle}>Securing the Future of<br/>Digital Infrastructure</h1>
+            <span className={styles.heroBadge}>About CyberiumX</span>
+            <h1 className={styles.heroTitle}>Empowering Minds.<br/>Securing the Digital World.</h1>
             <p className={styles.heroDesc}>
-              CyberiumX is an elite, globally recognized institution dedicated to forging the next generation of cybersecurity professionals. We don&apos;t just teach theory; we simulate real-world cyber warfare.
+              At CyberiumX, we are impassioned about Cyber Security and devoted to providing valuable information and resources to help individuals and organizations stay safe in the digital world. Our mission is to equip Cyber Security professionals with practical skills and in-depth knowledge to help create a safer digital world.
             </p>
           </div>
         </div>
@@ -107,34 +107,34 @@ export default function AboutUsPage() {
         <div className={styles.timelineContainer}>
           
           <div className={styles.timelineItem}>
-            <div className={styles.timelineYear}>2018</div>
-            <h3 className={styles.timelineTitle}>The Inception</h3>
+            <div className={styles.timelineYear}>Mission</div>
+            <h3 className={styles.timelineTitle}>Trusted Training Leader</h3>
             <p className={styles.timelineDesc}>
-              Founded by a collective of former intelligence officers and penetration testers, CyberiumX was built to address the massive global shortage of truly practical, hands-on cybersecurity training.
+              Our mission is to equip Cyber Security professionals with practical skills and in-depth knowledge to help create a safer digital world. We provide top-quality training, certifications, degree programs, cyber ranges, and essential resources tailored to meet the needs of every Cyber Security professional.
             </p>
           </div>
 
           <div className={styles.timelineItem}>
-            <div className={styles.timelineYear}>2021</div>
-            <h3 className={styles.timelineTitle}>Global Expansion</h3>
+            <div className={styles.timelineYear}>Faculty</div>
+            <h3 className={styles.timelineTitle}>Certified Industry Experts</h3>
             <p className={styles.timelineDesc}>
-              Our training platforms went fully digital, allowing us to reach students in over 120 countries. We launched our flagship CEH and OSCP preparatory cyber ranges.
+              CyberiumX online training platform has instructors who are all recognized as certified experts and respected leaders in their fields. As the industry constantly evolves, so does the CyberiumX curriculum to hold foundational courses for starters to highly advanced tracks for seasoned security professionals.
             </p>
           </div>
 
           <div className={styles.timelineItem}>
-            <div className={styles.timelineYear}>2024</div>
-            <h3 className={styles.timelineTitle}>Enterprise Security Division</h3>
+            <div className={styles.timelineYear}>Curriculum</div>
+            <h3 className={styles.timelineTitle}>Technology-Motivated Programs</h3>
             <p className={styles.timelineDesc}>
-              Beyond training, we launched our Professional Security Services division, directly securing Fortune 500 companies and critical infrastructure through rigorous penetration testing.
+              CyberiumX has been implementing several technology-motivated training programs that provide Cyber Security Certifications and Courses Online. In addition to providing custom security programs, we offer comprehensive IT security training services in the areas of Cyber Security.
             </p>
           </div>
 
           <div className={styles.timelineItem}>
-            <div className={styles.timelineYear}>Present</div>
-            <h3 className={styles.timelineTitle}>The Future of Cyber</h3>
+            <div className={styles.timelineYear}>Delivery</div>
+            <h3 className={styles.timelineTitle}>The Pursuit of Excellence</h3>
             <p className={styles.timelineDesc}>
-              Today, CyberiumX stands at the forefront of AI-driven threat modeling and advanced vulnerability research, continuing our mission to forge the world&apos;s elite cyber defenders.
+              We help candidates in gaining knowledge in the pursuit of excellence. Cost-effectiveness, flexibility, and value-based delivery of courses make our services prominent in academia and the industry of Information Security.
             </p>
           </div>
 
