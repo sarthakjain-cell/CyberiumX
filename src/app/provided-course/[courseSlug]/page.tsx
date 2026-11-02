@@ -210,7 +210,14 @@ export default function CourseLandingPage() {
             <p className={styles.description}>{course.description}</p>
             
             <div className={styles.instructorInfo}>
-              <div className={styles.instructorAvatar}>CX</div>
+              <div className={styles.instructorAvatar}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/logo.png"
+                  alt="CyberiumX Logo"
+                  style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                />
+              </div>
               <div>
                 <div style={{ fontWeight: 700 }}>CyberiumX Education & Training</div>
                 <div style={{ fontSize: '0.85rem', color: '#9ca3af' }}>Industry Experts & Elite Practitioners</div>
@@ -387,7 +394,14 @@ export default function CourseLandingPage() {
               <div style={{ color: '#fc1616', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.8rem', fontWeight: 700, marginBottom: '1rem' }}>CyberiumX Education & Training</div>
               <div className={styles.certTitle}>Certificate of Completion</div>
               <div style={{ color: '#d1d5db', marginBottom: '2rem' }}>This certifies that you have successfully completed<br/><span style={{ fontWeight: 700, color: '#fff', fontSize: '1.2rem', display: 'block', marginTop: '0.5rem' }}>{course.title}</span></div>
-              <div className={styles.certSeal}>CX SEAL</div>
+              <div className={styles.certSeal}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/logo.png"
+                  alt="CyberiumX Official Seal"
+                  style={{ width: '48px', height: '48px', objectFit: 'contain' }}
+                />
+              </div>
             </div>
           </div>
         </div>

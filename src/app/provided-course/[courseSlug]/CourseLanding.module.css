@@ -99,15 +99,18 @@
 }
 
 .instructorAvatar {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
-  background: rgba(252, 22, 22, 0.2);
+  background: rgba(11, 13, 20, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
   border: 2px solid var(--primary);
+  padding: 7px;
+  box-shadow: 0 0 15px rgba(252, 22, 22, 0.25);
+  flex-shrink: 0;
 }
 
 .statsRow {
@@ -269,10 +272,10 @@
 .certSeal {
   width: 80px;
   height: 80px;
-  background: radial-gradient(circle, #fc1616 0%, #7f0707 100%);
+  background: radial-gradient(circle, #181b26 0%, #0b0d14 100%);
   border-radius: 50%;
   margin: 1rem auto;
-  border: 2px dashed rgba(255,255,255,0.5);
+  border: 2px dashed rgba(252, 22, 22, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -280,7 +283,7 @@
   font-size: 0.8rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  box-shadow: 0 0 20px rgba(252, 22, 22, 0.5);
+  box-shadow: 0 0 20px rgba(252, 22, 22, 0.4);
 }
 
 /* Syllabus styling */
