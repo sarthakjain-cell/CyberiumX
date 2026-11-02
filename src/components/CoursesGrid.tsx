@@ -187,7 +187,6 @@ export default function CoursesGrid() {
       <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         
         <div className={styles.sectionHeader}>
-          <div className={styles.pulseBadge}>PREMIUM TRAINING</div>
           <h2 className={styles.mainTitle}>Best Online Cybersecurity Training</h2>
           <p style={{ color: '#9ca3af', fontSize: '1.25rem', maxWidth: '700px', margin: '0 auto' }}>
             Master real-world offensive defense with our globally recognized, expert-led training tracks.
