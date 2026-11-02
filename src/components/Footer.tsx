@@ -52,7 +52,10 @@ export default function Footer() {
               <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
             </a>
             <a href="https://jsdl.in/DT-23VTC9S887W" target="_blank" rel="noopener noreferrer" className={`${styles.socialIcon} ${styles.justdial}`} title="JustDial" aria-label="JustDial">
-              <span style={{ fontSize: '0.75rem', fontWeight: 900 }}>JD</span>
+              <span style={{ fontSize: '0.9rem', fontWeight: 900, letterSpacing: '-0.5px', lineHeight: 1, fontFamily: 'Arial, sans-serif' }}>
+                <span style={{ color: '#0076D7' }}>J</span>
+                <span style={{ color: '#FF6600' }}>d</span>
+              </span>
             </a>
           </div>
         </div>

@@ -149,15 +149,14 @@
 }
 
 .justdial {
-  background: #FF6600 !important;
-  color: #ffffff !important;
-  border-color: #FF6600 !important;
-  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.45) !important;
+  background: #ffffff !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.25) !important;
 }
 .justdial:hover {
-  background: #FF6600 !important;
-  color: #ffffff !important;
-  box-shadow: 0 0 22px rgba(255, 102, 0, 0.85) !important;
+  background: #ffffff !important;
+  border-color: #FF6600 !important;
+  box-shadow: 0 0 22px rgba(255, 102, 0, 0.65) !important;
 }
 
 .formSection {
