@@ -12,16 +12,15 @@ const CheckCircle = ({ size = 24, color = "currentColor" }) => (
 const features = [
   "Intensive Hands-On Training",
   "Industry-Recognized Global Certifications",
-  "Virtual Lab Practice & Cyber Ranges",
+  "Virtual Lab Practice",
   "CTF (Capture The Flag) Challenges",
   "Comprehensive Course Material",
-  "Expert-Led Training by Elite Hackers",
+  "Expert-Led Training",
   "Complimentary High-Quality E-Learning Access",
-  "Exam Prep Mastery & Practice Tests",
-  "Hands-on Cybersecurity Toolkit & Playbooks",
-  "Mock Interviews & Career Placement Support",
-  "Exam Success Strategy & Mentorship",
-  "24/7 Dedicated Mentor & Alumni Support Network"
+  "Exam Prep Mastery",
+  "Hands-on Cybersecurity Toolkit",
+  "Mock Interviews and Career Prep",
+  "Exam Success Strategy"
 ];
 
 export default function StandOut() {
