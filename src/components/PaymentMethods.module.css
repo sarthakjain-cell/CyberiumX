@@ -26,27 +26,22 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
-  padding: 6px 16px;
-  border-radius: 8px;
+  background: transparent;
+  padding: 4px 8px;
   height: 42px;
-  min-width: 90px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4), 0 0 1px rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  transition: all 0.25s ease;
+  transition: transform 0.25s ease, opacity 0.25s ease;
   cursor: pointer;
 }
 
 .logoItem:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 255, 255, 0.4);
-  background: #ffffff;
+  background: transparent;
 }
 
 .svgIcon {
-  height: 24px;
+  height: 28px;
   width: auto;
-  max-width: 100px;
+  max-width: 110px;
   object-fit: contain;
   display: block;
 }
