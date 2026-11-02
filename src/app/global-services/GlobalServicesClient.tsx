@@ -87,48 +87,10 @@ export default function GlobalServicesClient({
         </div>
       </section>
 
-      {/* Regional Hub Selector (Matches Official Global Services Sub-Menu) */}
-      <div style={{ marginTop: '2.5rem' }}>
-        <div className={styles.regionTabsWrapper}>
-          {globalCountryPages.map((region) => (
-            <button
-              key={region.key}
-              type="button"
-              className={`${styles.regionTab} ${selectedRegion === region.key && !showCoursesGrid ? styles.regionTabActive : ''}`}
-              onClick={() => {
-                setSelectedRegion(region.key);
-                setShowCoursesGrid(false);
-              }}
-            >
-              {region.key === 'worldwide' ? 'Worldwide Overview' : `Training & Services in ${region.country}`}
-            </button>
-          ))}
-        </div>
-
-        {selectedRegion !== 'worldwide' && (
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
-            <button
-              type="button"
-              className={`${styles.regionTab} ${!showCoursesGrid ? styles.regionTabActive : ''}`}
-              onClick={() => setShowCoursesGrid(false)}
-            >
-              {activeRegionPage.title}
-            </button>
-            <button
-              type="button"
-              className={`${styles.regionTab} ${showCoursesGrid ? styles.regionTabActive : ''}`}
-              onClick={() => setShowCoursesGrid(true)}
-            >
-              Cybersecurity Courses in {activeRegionPage.country}
-            </button>
-          </div>
-        )}
-      </div>
-
       {selectedRegion === 'worldwide' ? (
         <>
           {/* Official Opening Section */}
-          <section className={styles.contentSection} style={{ paddingTop: '1rem' }}>
+          <section className={styles.contentSection} style={{ paddingTop: '2.5rem' }}>
             <div className={styles.officialProseCard}>
               <h2>Cybersecurity Training &amp; Security Services Worldwide</h2>
               <p>
@@ -275,7 +237,7 @@ export default function GlobalServicesClient({
         </>
       ) : showCoursesGrid ? (
         /* Country Courses View (Matches /cybersecurity-courses-in-* on official site) */
-        <section className={styles.contentSection} style={{ paddingTop: '1rem' }}>
+        <section className={styles.contentSection} style={{ paddingTop: '2.5rem' }}>
           <div className={styles.cardsGrid}>
             {allOfficialCourses.map((course) => (
               <div key={course.id} className={styles.serviceCard}>
@@ -314,7 +276,7 @@ export default function GlobalServicesClient({
         </section>
       ) : (
         /* Official Country Training & Services View (USA, Australia, UK, Canada, Germany) */
-        <section className={styles.contentSection} style={{ paddingTop: '1rem' }}>
+        <section className={styles.contentSection} style={{ paddingTop: '2.5rem' }}>
           <div 
             className={styles.officialProseCard}
             onClick={handleProseClick}
