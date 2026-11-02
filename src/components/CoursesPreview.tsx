@@ -13,7 +13,7 @@ const featuredCourses = [
     level: 'Intermediate',
     duration: '50 Hours',
     link: '/provided-course/certified-ethical-hacker-cehv13-ai/',
-    logo: '/logos/ceh.svg'
+    logo: '/logos/CEH.png'
   },
   {
     id: 'ccna',
@@ -24,7 +24,7 @@ const featuredCourses = [
     level: 'Beginner',
     duration: '40 Hours',
     link: '/provided-course/ccna-course/',
-    logo: '/logos/ccna.svg'
+    logo: '/logos/CCNA.jpg'
   },
   {
     id: 'oscp',
@@ -35,7 +35,7 @@ const featuredCourses = [
     level: 'Advanced',
     duration: '100 Hours',
     link: '/provided-course/oscp-course/',
-    logo: '/logos/oscp.svg'
+    logo: '/logos/OSCP.png'
   }
 ];
 

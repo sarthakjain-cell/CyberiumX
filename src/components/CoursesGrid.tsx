@@ -29,7 +29,7 @@ const allCourses: CourseItem[] = [
     level: 'Intermediate',
     duration: '50 Hours',
     link: '/provided-course/certified-ethical-hacker-cehv13-ai/',
-    logo: '/logos/ceh.svg'
+    logo: '/logos/CEH.png'
   },
   {
     id: 'ccna',
@@ -41,7 +41,7 @@ const allCourses: CourseItem[] = [
     level: 'Beginner',
     duration: '40 Hours',
     link: '/provided-course/ccna-course/',
-    logo: '/logos/ccna.svg'
+    logo: '/logos/CCNA.jpg'
   },
   {
     id: 'oscp',
@@ -53,7 +53,7 @@ const allCourses: CourseItem[] = [
     level: 'Advanced',
     duration: '100 Hours',
     link: '/provided-course/oscp-course/',
-    logo: '/logos/oscp.svg'
+    logo: '/logos/OSCP.png'
   },
   {
     id: 'azure',
@@ -65,7 +65,7 @@ const allCourses: CourseItem[] = [
     level: 'Intermediate',
     duration: '40 Hours',
     link: '/provided-course/microsoft-azure-course/',
-    logo: '/logos/azure.png'
+    logo: '/logos/Azure.webp'
   },
   {
     id: 'aws-sec',
@@ -77,7 +77,7 @@ const allCourses: CourseItem[] = [
     level: 'Advanced',
     duration: '30 Hours',
     link: '/provided-course/aws-penetration-testing-security/',
-    logo: '/logos/aws.svg'
+    logo: '/logos/AWS.webp'
   },
   {
     id: 'aws-fund',
@@ -89,7 +89,7 @@ const allCourses: CourseItem[] = [
     level: 'Intermediate',
     duration: '30 Hours',
     link: '/provided-course/amazon-web-servicesaws-course/',
-    logo: '/logos/aws.svg'
+    logo: '/logos/AWS.webp'
   },
   {
     id: 'ejpt',
@@ -101,7 +101,7 @@ const allCourses: CourseItem[] = [
     level: 'Beginner',
     duration: '50 Hours',
     link: '/provided-course/ejptv2-course/',
-    logo: '/logos/ejpt.svg'
+    logo: '/logos/ejpt.webp'
   },
   {
     id: 'ethical-hacking',
@@ -113,7 +113,7 @@ const allCourses: CourseItem[] = [
     level: 'Beginner',
     duration: '40 Hours',
     link: '/provided-course/ethical-hacking/',
-    logo: '/logos/ethical-hacking.svg'
+    logo: '/logos/ethical-hacking.jpg'
   },
   {
     id: 'kali-linux',
@@ -125,7 +125,7 @@ const allCourses: CourseItem[] = [
     level: 'Beginner',
     duration: '20 Hours',
     link: '/provided-course/kali-linux-course/',
-    logo: '/logos/kali.svg'
+    logo: '/logos/kali-linux.webp'
   },
   {
     id: 'networking-eh',
@@ -137,7 +137,7 @@ const allCourses: CourseItem[] = [
     level: 'Beginner',
     duration: '20 Hours',
     link: '/provided-course/networking-for-ethical-hackers-course/',
-    logo: '/logos/networking.svg'
+    logo: '/logos/networking-ethical-hackers.webp'
   },
   {
     id: 'bug-bounty',
@@ -149,7 +149,7 @@ const allCourses: CourseItem[] = [
     level: 'Beginner',
     duration: '40 Hours',
     link: '/provided-course/bug-bounty-course/',
-    logo: '/logos/bug-bounty.svg'
+    logo: '/logos/bug-bounty.png'
   },
   {
     id: 'vapt',
@@ -161,7 +161,7 @@ const allCourses: CourseItem[] = [
     level: 'Advanced',
     duration: '40 Hours',
     link: '/provided-course/vapt/',
-    logo: '/logos/vapt.svg'
+    logo: '/logos/VAPT.webp'
   }
 ];
 
