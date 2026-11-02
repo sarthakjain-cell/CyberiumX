@@ -11,6 +11,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const [moreOpen, setMoreOpen] = useState(false);
+  const [globalOpen, setGlobalOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
@@ -41,7 +42,32 @@ export default function Navbar() {
           <Link href="/about-us" className={`${styles.navLink} ${pathname === '/about-us' ? styles.active : ''}`} onClick={() => setMobileOpen(false)}>About Us</Link>
           <Link href="/services" className={`${styles.navLink} ${styles.specialLink}`} onClick={() => setMobileOpen(false)}>7X-Security</Link>
           <Link href="/courses" className={`${styles.navLink} ${pathname.startsWith('/courses') || pathname.startsWith('/provided-course') ? styles.active : ''}`} onClick={() => setMobileOpen(false)}>Our Courses</Link>
-          <Link href="/global-services" className={`${styles.navLink} ${pathname.startsWith('/global-services') ? styles.active : ''}`} onClick={() => setMobileOpen(false)}>Global Services</Link>
+          <div 
+            className={styles.dropdown}
+            onMouseEnter={() => setGlobalOpen(true)}
+            onMouseLeave={() => setGlobalOpen(false)}
+          >
+            <Link 
+              href="/global-services" 
+              className={`${styles.navLink} ${pathname.startsWith('/global-services') ? styles.active : ''}`} 
+              onClick={() => { setGlobalOpen(false); setMobileOpen(false); }}
+            >
+              Global Services ▼
+            </Link>
+            <div className={`${styles.dropdownContent} ${globalOpen ? styles.dropdownShow : ''}`} style={{ minWidth: '280px' }}>
+              <Link href="/global-services" className={styles.dropdownItem} style={{ color: '#fc1616', fontWeight: 600 }} onClick={() => { setGlobalOpen(false); setMobileOpen(false); }}>Worldwide Overview</Link>
+              <Link href="/global-services?region=usa" className={styles.dropdownItem} onClick={() => { setGlobalOpen(false); setMobileOpen(false); }}>Cybersecurity Training &amp; Services in USA</Link>
+              <Link href="/global-services?region=usa&view=courses" className={styles.dropdownItem} style={{ paddingLeft: '1.75rem', fontSize: '0.85rem', color: '#9ca3af' }} onClick={() => { setGlobalOpen(false); setMobileOpen(false); }}>↳ Cybersecurity Courses in USA</Link>
+              <Link href="/global-services?region=australia" className={styles.dropdownItem} onClick={() => { setGlobalOpen(false); setMobileOpen(false); }}>Cybersecurity Training &amp; Services in Australia</Link>
+              <Link href="/global-services?region=australia&view=courses" className={styles.dropdownItem} style={{ paddingLeft: '1.75rem', fontSize: '0.85rem', color: '#9ca3af' }} onClick={() => { setGlobalOpen(false); setMobileOpen(false); }}>↳ Cybersecurity Courses in Australia</Link>
+              <Link href="/global-services?region=uk" className={styles.dropdownItem} onClick={() => { setGlobalOpen(false); setMobileOpen(false); }}>Cybersecurity Training &amp; Services in UK</Link>
+              <Link href="/global-services?region=uk&view=courses" className={styles.dropdownItem} style={{ paddingLeft: '1.75rem', fontSize: '0.85rem', color: '#9ca3af' }} onClick={() => { setGlobalOpen(false); setMobileOpen(false); }}>↳ Cybersecurity Courses in UK</Link>
+              <Link href="/global-services?region=canada" className={styles.dropdownItem} onClick={() => { setGlobalOpen(false); setMobileOpen(false); }}>Cybersecurity Training &amp; Services in Canada</Link>
+              <Link href="/global-services?region=canada&view=courses" className={styles.dropdownItem} style={{ paddingLeft: '1.75rem', fontSize: '0.85rem', color: '#9ca3af' }} onClick={() => { setGlobalOpen(false); setMobileOpen(false); }}>↳ Cybersecurity Courses in Canada</Link>
+              <Link href="/global-services?region=germany" className={styles.dropdownItem} onClick={() => { setGlobalOpen(false); setMobileOpen(false); }}>Cybersecurity Training &amp; Services in Germany</Link>
+              <Link href="/global-services?region=germany&view=courses" className={styles.dropdownItem} style={{ paddingLeft: '1.75rem', fontSize: '0.85rem', color: '#9ca3af' }} onClick={() => { setGlobalOpen(false); setMobileOpen(false); }}>↳ Cybersecurity Courses in Germany</Link>
+            </div>
+          </div>
 
           <div 
             className={styles.dropdown}

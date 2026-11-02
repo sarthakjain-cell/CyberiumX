@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
 import GlobalServicesClient from './GlobalServicesClient';
 
 export const metadata: Metadata = {
-  title: "Global Cybersecurity Services & Training | CyberiumX",
-  description: "Providing elite cybersecurity training and robust security solutions to businesses, governments, and individuals across Australia, Canada, the UK, Germany, and worldwide.",
+  title: "Global Services | Cybersecurity Training & Security Services Worldwide - CyberiumX",
+  description: "CyberiumX provides practical and industry-focused cybersecurity training and security services to students and organizations in the USA, Australia, Canada, the United Kingdom, Germany, and worldwide.",
   alternates: {
     canonical: "https://cyberiumx.com/global-services",
   },
@@ -11,50 +12,73 @@ export const metadata: Metadata = {
 
 const globalCourses = [
   { 
-    title: "Ethical Hacking Training", 
-    description: "Master the fundamentals of ethical hacking. Learn how to identify, exploit, and secure vulnerabilities in enterprise systems using real-world scenarios.",
-    logo: "/logos/ethical-hacking.svg"
+    title: "1. Ethical Hacking Training", 
+    description: "Ethical hacking is one of the most exciting and in-demand fields in cybersecurity. This course teaches students how hackers think and how security professionals can identify and fix vulnerabilities before attackers exploit them. Students learn techniques such as network scanning, vulnerability analysis, exploitation, and post-exploitation methods.",
+    logo: "/logos/ethical-hacking.svg",
+    link: "/provided-course/ethical-hacking/"
   },
   { 
-    title: "CEH (Certified Ethical Hacker) Training", 
-    description: "Get prepared for the CEH certification. This comprehensive training covers advanced footprinting, network scanning, and system hacking techniques.",
-    logo: "/logos/ceh.svg"
+    title: "2. CEH (Certified Ethical Hacker) Training", 
+    description: "CyberiumX provides comprehensive preparation for the globally recognized CEH certification. This course covers key topics such as system hacking, malware threats, social engineering attacks, and network security. The CEH certification is widely respected by organizations around the world and is often considered an essential credential for cybersecurity professionals.",
+    logo: "/logos/ceh.svg",
+    link: "/provided-course/certified-ethical-hacker-cehv13-ai/"
   },
   { 
-    title: "OSCP Training", 
-    description: "Rigorous, hands-on training preparing you for the Offensive Security Certified Professional exam. Focuses exclusively on practical penetration testing.",
-    logo: "/logos/oscp.svg"
+    title: "3. OSCP Training", 
+    description: "The Offensive Security Certified Professional (OSCP) certification is known for its challenging hands-on examination. CyberiumX provides structured guidance and practical training to help students master advanced penetration testing techniques required to succeed in the OSCP exam.",
+    logo: "/logos/oscp.svg",
+    link: "/provided-course/oscp-course/"
   },
   { 
-    title: "Web Application Penetration Testing", 
-    description: "Deep dive into securing web applications. Learn to discover and exploit OWASP Top 10 vulnerabilities like SQLi, XSS, and CSRF.",
-    logo: "/logos/vapt.svg"
+    title: "4. Web Application Penetration Testing", 
+    description: "Web applications are among the most common targets for cyber attacks. In this course, students learn how to identify and exploit vulnerabilities in web applications, including issues listed in the OWASP Top 10. The training covers vulnerabilities such as SQL injection, cross-site scripting, authentication flaws, and more.",
+    logo: "/logos/vapt.svg",
+    link: "/provided-course/vapt/"
   },
   { 
-    title: "Network Penetration Testing", 
-    description: "Learn to secure enterprise networks. Covers advanced routing protocols, wireless security, and exploiting network misconfigurations.",
-    logo: "/logos/networking.svg"
+    title: "5. Network Penetration Testing", 
+    description: "This course focuses on assessing and securing network infrastructure. Students learn how to discover network vulnerabilities, perform exploitation, and secure network environments against cyber attacks.",
+    logo: "/logos/networking.svg",
+    link: "/provided-course/networking-for-ethical-hackers-course/"
   },
   { 
-    title: "Bug Bounty Training", 
-    description: "Learn how to legally hack and get paid. Discover methodologies for finding high-severity bugs in major platforms and bug bounty programs.",
-    logo: "/logos/bug-bounty.svg"
+    title: "6. Bug Bounty Training", 
+    description: "Bug bounty programs allow ethical hackers to discover and report vulnerabilities in real-world applications and receive rewards. CyberiumX teaches students the methodologies and tools used by successful bug hunters to find security flaws and report them professionally.",
+    logo: "/logos/bug-bounty.svg",
+    link: "/provided-course/bug-bounty-course/"
   },
   { 
-    title: "Kali Linux Training", 
-    description: "Master the industry-standard penetration testing operating system. Learn to utilize hundreds of built-in security and forensics tools.",
-    logo: "/logos/kali.svg"
+    title: "7. Kali Linux Training", 
+    description: "Kali Linux is one of the most powerful operating systems used by cybersecurity professionals. This training program helps students understand and use various security tools available in Kali Linux for penetration testing and vulnerability assessment.",
+    logo: "/logos/kali.svg",
+    link: "/provided-course/kali-linux-course/"
   }
 ];
 
 const globalServices = [
-  { title: "Website security testing", description: "Comprehensive security audits of your web applications to uncover vulnerabilities before malicious actors can exploit them." },
-  { title: "Network security assessment", description: "Deep analysis of your internal and external network infrastructure to identify misconfigurations and weak points." },
-  { title: "Vulnerability assessment", description: "Automated and manual scanning of your digital assets to catalog and prioritize security flaws for remediation." },
-  { title: "Penetration testing", description: "Simulated cyber attacks on your organization's systems to evaluate the effectiveness of your security controls." },
-  { title: "Social media security", description: "Protect your brand and executives from social engineering, account takeover, and OSINT-based targeted attacks." }
+  { title: "Website security testing" },
+  { title: "Network security assessment" },
+  { title: "Vulnerability assessment" },
+  { title: "Penetration testing" },
+  { title: "Social media security" }
+];
+
+const globalCareers = [
+  "Ethical Hacker",
+  "Penetration Tester",
+  "Security Analyst",
+  "Cybersecurity Consultant",
+  "Bug Bounty Hunter"
 ];
 
 export default function GlobalServicesPage() {
-  return <GlobalServicesClient courses={globalCourses} services={globalServices} />;
+  return (
+    <Suspense fallback={<div style={{ minHeight: '100vh' }} />}>
+      <GlobalServicesClient 
+        courses={globalCourses} 
+        services={globalServices} 
+        careers={globalCareers}
+      />
+    </Suspense>
+  );
 }
