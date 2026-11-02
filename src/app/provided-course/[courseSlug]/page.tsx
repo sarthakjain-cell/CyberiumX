@@ -207,7 +207,6 @@ export default function CourseLandingPage() {
             </div>
             
             <h1 className={styles.title}>{course.title}</h1>
-            <p className={styles.description}>{course.description}</p>
             
             <div className={styles.instructorInfo}>
               <div className={styles.instructorAvatar}>

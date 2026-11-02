@@ -261,7 +261,7 @@ export default function CoursePlayerPage() {
           {activeTab === 'overview' && (
             <div>
               <h2>{course.title} – Master Certification Track</h2>
-              <p>{course.description}</p>
+              <p>{course.overview || course.description}</p>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem', marginTop: '1.5rem' }}>
                 <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid var(--border)', borderRadius: '10px', padding: '1rem' }}>
                   <span style={{ fontSize: '0.8rem', color: '#9ca3af', textTransform: 'uppercase' }}>Difficulty</span>
