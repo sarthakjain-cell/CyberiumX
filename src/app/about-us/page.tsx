@@ -19,22 +19,33 @@ export default function AboutUsPage() {
       <section className={styles.heroSection}>
         <div className={styles.heroBackground}></div>
         <div className={styles.heroContent}>
-          <div>
-            <span className={styles.heroBadge}>About Us</span>
-            <h1 className={styles.heroTitle}>About CyberiumX</h1>
-            <div className={styles.heroDesc} style={{ textAlign: 'left', display: 'flex', flexDirection: 'column', gap: '1.25rem', marginTop: '1.5rem' }}>
-              <p>
-                At CyberiumX, we are impassioned about Cyber Security and devoted to providing valuable information and resources to help individuals and organizations stay safe in the digital world. Our goal is to demystify Cyber Security and empower our readers with the knowledge they need to protect themselves against evolving threats. CyberiumX is a trusted leader in Cyber Security training. Our mission is to equip Cyber Security professionals with practical skills and in-depth knowledge to help create a safer digital world. We provide top-quality training, certifications, degree programs, cyber ranges, and essential resources tailored to meet the needs of every Cyber Security professional.
-              </p>
-              <p>
-                CyberiumX online training platform has instructors who are all recognized as certified experts and respected leaders in their fields. As the industry constantly evolves, so does the CyberiumX curriculum. Over the years, the course curriculum has grown to hold different courses, ranging from foundational courses for starters to highly advanced courses for seasoned security professionals. Having started its journey and mission, CyberiumX has rapidly grown over the years.
-              </p>
-              <p>
-                CyberiumX has been implementing several technology-motivated training programs that provide Cyber Security Certifications and Courses Online. In addition to providing custom security programs, we offer comprehensive IT security training services in the areas of Cyber Security.
-              </p>
-              <p>
-                We help the candidates in gaining knowledge in the pursuit of excellence. Cost-effectiveness, flexibility, and value-based delivery of courses make our services prominent in academia and the industry of Information Security.
-              </p>
+          <div className={styles.aboutHeroSplit}>
+            <div className={styles.aboutHeroText}>
+              <span className={styles.heroBadge}>About Us</span>
+              <h1 className={styles.heroTitle}>About CyberiumX</h1>
+              <div className={styles.heroDesc} style={{ textAlign: 'left', display: 'flex', flexDirection: 'column', gap: '1.25rem', marginTop: '1.25rem' }}>
+                <p>
+                  At CyberiumX, we are impassioned about Cyber Security and devoted to providing valuable information and resources to help individuals and organizations stay safe in the digital world. Our goal is to demystify Cyber Security and empower our readers with the knowledge they need to protect themselves against evolving threats. CyberiumX is a trusted leader in Cyber Security training. Our mission is to equip Cyber Security professionals with practical skills and in-depth knowledge to help create a safer digital world. We provide top-quality training, certifications, degree programs, cyber ranges, and essential resources tailored to meet the needs of every Cyber Security professional.
+                </p>
+                <p>
+                  CyberiumX online training platform has instructors who are all recognized as certified experts and respected leaders in their fields. As the industry constantly evolves, so does the CyberiumX curriculum. Over the years, the course curriculum has grown to hold different courses, ranging from foundational courses for starters to highly advanced courses for seasoned security professionals. Having started its journey and mission, CyberiumX has rapidly grown over the years.
+                </p>
+                <p>
+                  CyberiumX has been implementing several technology-motivated training programs that provide Cyber Security Certifications and Courses Online. In addition to providing custom security programs, we offer comprehensive IT security training services in the areas of Cyber Security.
+                </p>
+                <p>
+                  We help the candidates in gaining knowledge in the pursuit of excellence. Cost-effectiveness, flexibility, and value-based delivery of courses make our services prominent in academia and the industry of Information Security.
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.aboutHeroImageCol}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/about_us.png"
+                alt="CyberiumX Cybersecurity Training & Mentorship"
+                className={styles.aboutHeroImg}
+              />
             </div>
           </div>
         </div>
