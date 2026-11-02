@@ -399,7 +399,7 @@ export default function CourseLandingPage() {
                 <img
                   src="/logo.png"
                   alt="CyberiumX Official Seal"
-                  style={{ width: '48px', height: '48px', objectFit: 'contain' }}
+                  style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                 />
               </div>
             </div>
