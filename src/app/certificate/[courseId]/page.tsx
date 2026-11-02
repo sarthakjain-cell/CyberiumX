@@ -125,11 +125,11 @@ export default function CertificatePage() {
               Resume Learning &amp; Complete Requirements &rarr;
             </Link>
             <Link 
-              href="/my-courses"
+              href="/courses"
               className="btn-secondary" 
               style={{ padding: '0.85rem 1.75rem', textDecoration: 'none' }}
             >
-              My Courses
+              Browse Courses
             </Link>
           </div>
         </motion.div>

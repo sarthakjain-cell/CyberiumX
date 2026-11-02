@@ -540,11 +540,11 @@ export default function CourseLandingPage() {
                 🚀 Enter Course &amp; Start Learning &rarr;
               </button>
               <Link
-                href="/my-courses"
+                href="/courses"
                 className="btn-secondary"
                 style={{ padding: '0.85rem 1.75rem', fontSize: '0.95rem', textDecoration: 'none' }}
               >
-                🎓 View in My Courses
+                Explore More Courses
               </Link>
             </div>
           </div>

@@ -29,7 +29,7 @@ export default function LoginPage() {
     });
 
     setTimeout(() => {
-      router.push('/my-courses');
+      router.push('/courses');
     }, 600);
   };
 
