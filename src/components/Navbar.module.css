@@ -243,11 +243,32 @@
     top: 98px;
     left: 0;
     width: 100%;
-    background: rgba(5, 7, 10, 0.95);
-    padding: 2rem;
+    box-sizing: border-box;
+    max-height: calc(100vh - 98px);
+    overflow-y: auto;
+    background: rgba(5, 7, 10, 0.97);
+    padding: 1.5rem;
     border-bottom: 1px solid rgba(255, 22, 22, 0.3);
     backdrop-filter: blur(20px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+  }
+  .mobileNavShow .dropdown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobileNavShow .dropdownContent {
+    position: static !important;
+    transform: none !important;
+    width: 100%;
+    min-width: 0 !important;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+  }
+  .mobileNavShow .dropdownContent::before,
+  .mobileNavShow .dropdownContent::after {
+    display: none;
   }
 }
 
@@ -255,11 +276,17 @@
   .navbar {
     height: 84px;
   }
+  .navContainer {
+    padding: 0 1.25rem;
+    box-sizing: border-box;
+  }
   .logo img {
-    height: 72px;
+    height: 64px;
   }
   .mobileNavShow {
     top: 84px;
+    max-height: calc(100vh - 84px);
+    padding: 1.25rem;
   }
 }
 

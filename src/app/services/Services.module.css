@@ -128,3 +128,26 @@
   margin-bottom: 1rem;
   font-size: 1.1rem;
 }
+
+@media (max-width: 768px) {
+  .servicesHero {
+    padding: 105px 0 3rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+  .textSection {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .textSection h2 {
+    font-size: 1.6rem;
+  }
+  .textSection p {
+    font-size: 1rem;
+  }
+}

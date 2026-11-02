@@ -455,7 +455,39 @@
 }
 
 @media (max-width: 768px) {
+  .coursesSection {
+    padding: 4rem 1rem !important;
+  }
+  .sectionHeader {
+    margin-bottom: 2.5rem;
+  }
+  .mainTitle,
   .sectionHeader h2 {
-    font-size: 3rem;
+    font-size: clamp(2rem, 7vw, 2.6rem);
+    line-height: 1.2;
+  }
+  .filterBar {
+    gap: 0.5rem;
+    margin-bottom: 2.25rem;
+  }
+  .filterBtn {
+    padding: 0.65rem 1.1rem;
+    font-size: 0.78rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .card {
+    padding: 1.5rem;
+    min-width: 0;
+  }
+  .cardTitle {
+    font-size: 1.45rem;
+  }
+  .cardLink {
+    width: 100%;
+    min-width: 0;
+    padding: 0.8rem 1.25rem;
   }
 }

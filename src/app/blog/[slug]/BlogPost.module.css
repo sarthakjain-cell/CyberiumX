@@ -316,9 +316,16 @@
 
 @media (max-width: 768px) {
   .articleContainer {
-    padding: 6rem 1rem 3rem;
+    padding: 6.5rem 0.5rem 3rem;
   }
   .articleTitle {
-    font-size: 2rem;
+    font-size: 1.85rem;
+  }
+  .htmlContent table {
+    display: block;
+    overflow-x: auto;
+  }
+  .conclusionCard {
+    padding: 1.5rem;
   }
 }

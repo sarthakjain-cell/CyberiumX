@@ -296,6 +296,23 @@
 }
 
 @media (max-width: 640px) {
+  .blogHero {
+    padding: 6.5rem 0 2.5rem;
+  }
+  .title {
+    font-size: 2.25rem;
+  }
+  .subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 2.5rem;
+  }
+  .blogGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .blogCardContent {
+    padding: 1.5rem;
+  }
   .searchSortRow {
     flex-direction: column;
   }

@@ -254,8 +254,33 @@
 }
 
 @media (max-width: 600px) {
-  .heroTitle { font-size: 2.2rem; }
-  .timelineContainer::before { left: 20px; }
-  .timelineItem { padding-left: 60px; }
-  .timelineItem::before { left: 11px; width: 16px; height: 16px; }
+  .heroSection {
+    padding: 6.5rem 1.25rem 3.5rem;
+  }
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+  .heroDesc {
+    font-size: 1.05rem;
+  }
+  .valuesSection {
+    padding: 3rem 1.25rem;
+  }
+  .bentoCard {
+    padding: 1.5rem;
+  }
+  .timelineSection {
+    padding: 3rem 1.25rem;
+  }
+  .timelineContainer::before {
+    left: 20px;
+  }
+  .timelineItem {
+    padding-left: 52px;
+  }
+  .timelineItem::before {
+    left: 11px;
+    width: 16px;
+    height: 16px;
+  }
 }
