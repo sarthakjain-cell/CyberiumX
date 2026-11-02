@@ -65,7 +65,7 @@ const allCourses: CourseItem[] = [
     level: 'Intermediate',
     duration: '40 Hours',
     link: '/provided-course/microsoft-azure-course/',
-    logo: '/logos/Azure.webp'
+    logo: '/logos/azure.png'
   },
   {
     id: 'aws-sec',
@@ -77,7 +77,7 @@ const allCourses: CourseItem[] = [
     level: 'Advanced',
     duration: '30 Hours',
     link: '/provided-course/aws-penetration-testing-security/',
-    logo: '/logos/AWS.webp'
+    logo: '/logos/aws.svg'
   },
   {
     id: 'aws-fund',
@@ -89,7 +89,7 @@ const allCourses: CourseItem[] = [
     level: 'Intermediate',
     duration: '30 Hours',
     link: '/provided-course/amazon-web-servicesaws-course/',
-    logo: '/logos/AWS.webp'
+    logo: '/logos/aws.svg'
   },
   {
     id: 'ejpt',
