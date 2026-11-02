@@ -31,6 +31,71 @@ const nextConfig: NextConfig = {
         destination: '/faqs',
         permanent: true,
       },
+      {
+        source: '/reviews-and-faqs',
+        destination: '/faqs',
+        permanent: true,
+      },
+      {
+        source: '/7-layer-cybersecurity-services',
+        destination: '/services',
+        permanent: true,
+      },
+      {
+        source: '/courses-in-us',
+        destination: '/global-services?region=usa&view=courses',
+        permanent: true,
+      },
+      {
+        source: '/cybersecurity-courses-in-us',
+        destination: '/global-services?region=usa&view=courses',
+        permanent: true,
+      },
+      {
+        source: '/cybersecurity-courses-in-australia',
+        destination: '/global-services?region=australia&view=courses',
+        permanent: true,
+      },
+      {
+        source: '/cybersecurity-courses-in-uk',
+        destination: '/global-services?region=uk&view=courses',
+        permanent: true,
+      },
+      {
+        source: '/cybersecurity-courses-in-canada',
+        destination: '/global-services?region=canada&view=courses',
+        permanent: true,
+      },
+      {
+        source: '/cybersecurity-courses-in-germany',
+        destination: '/global-services?region=germany&view=courses',
+        permanent: true,
+      },
+      {
+        source: '/cybersecurity-services-in-usa',
+        destination: '/global-services?region=usa',
+        permanent: true,
+      },
+      {
+        source: '/cybersecurity-services-in-australia',
+        destination: '/global-services?region=australia',
+        permanent: true,
+      },
+      {
+        source: '/cybersecurity-services-in-the-uk',
+        destination: '/global-services?region=uk',
+        permanent: true,
+      },
+      {
+        source: '/cybersecurity-services-in-the-canada',
+        destination: '/global-services?region=canada',
+        permanent: true,
+      },
+      {
+        source: '/cybersecurity-services-in-the-germany',
+        destination: '/global-services?region=germany',
+        permanent: true,
+      },
     ];
   },
   async headers() {

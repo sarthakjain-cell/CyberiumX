@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { globalCountryPages } from '@/data/globalPages';
 import { courses as allOfficialCourses } from '@/data/courses';
@@ -28,6 +28,7 @@ export default function GlobalServicesClient({
   careers: string[];
 }) {
   const searchParams = useSearchParams();
+  const router = useRouter();
   const regionParam = searchParams.get('region') || 'worldwide';
   const viewParam = searchParams.get('view') || 'services';
   const [selectedRegion, setSelectedRegion] = useState<string>(regionParam);
@@ -39,6 +40,26 @@ export default function GlobalServicesClient({
     setSelectedRegion(r);
     setShowCoursesGrid(v === 'courses');
   }, [searchParams]);
+
+  const handleProseClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    const target = (e.target as HTMLElement).closest('a');
+    if (!target) return;
+    const href = target.getAttribute('href');
+    if (!href) return;
+    if (href.startsWith('/global-services')) {
+      e.preventDefault();
+      if (href.includes('view=courses')) {
+        setShowCoursesGrid(true);
+      } else {
+        setShowCoursesGrid(false);
+      }
+      router.push(href);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (href.startsWith('/')) {
+      e.preventDefault();
+      router.push(href);
+    }
+  };
 
   const activeRegionPage = globalCountryPages.find(p => p.key === selectedRegion) || globalCountryPages[0];
 
@@ -296,6 +317,7 @@ export default function GlobalServicesClient({
         <section className={styles.contentSection} style={{ paddingTop: '1rem' }}>
           <div 
             className={styles.officialProseCard}
+            onClick={handleProseClick}
             dangerouslySetInnerHTML={{ __html: activeRegionPage.contentHtml }}
           />
         </section>
