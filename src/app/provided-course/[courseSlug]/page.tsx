@@ -407,8 +407,40 @@ export default function CourseLandingPage() {
         
         <div className={styles.sidebarContent}>
            <div style={{ background: 'rgba(255,255,255,0.02)', padding: '2rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)', position: 'sticky', top: '100px' }}>
-              <h3 style={{ marginBottom: '1rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>Earn a Career Certificate</h3>
-              <p style={{ fontSize: '0.9rem', color: '#9ca3af', marginBottom: '1.5rem', lineHeight: 1.6 }}>Add this credential to your LinkedIn profile, resume, or CV. Share it on social media.</p>
+              <h3 style={{ marginBottom: '0.75rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>Course Syllabus (PDF)</h3>
+              <p style={{ fontSize: '0.9rem', color: '#9ca3af', marginBottom: '1rem', lineHeight: 1.6 }}>
+                Preview or download the official CyberiumX syllabus PDF for <strong>{course.title}</strong>.
+              </p>
+              {course.syllabusPdf && (
+                <div style={{ marginBottom: '1.75rem' }}>
+                  <div style={{ width: '100%', height: '360px', borderRadius: '8px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.12)', marginBottom: '0.85rem', background: '#0b0d14' }}>
+                    <iframe
+                      src={`${course.syllabusPdf}#toolbar=0&navpanes=0`}
+                      title={`${course.title} Official Syllabus PDF`}
+                      style={{ width: '100%', height: '100%', border: 'none' }}
+                    />
+                  </div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                    <a
+                      href={course.syllabusPdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary"
+                      style={{ width: '100%', padding: '0.7rem', textAlign: 'center', textDecoration: 'none', fontSize: '0.85rem' }}
+                    >
+                      📄 Open Full Syllabus PDF
+                    </a>
+                    <a
+                      href={course.syllabusPdf}
+                      download
+                      className="btn-secondary"
+                      style={{ width: '100%', padding: '0.65rem', textAlign: 'center', textDecoration: 'none', fontSize: '0.85rem' }}
+                    >
+                      ⬇ Download Syllabus PDF
+                    </a>
+                  </div>
+                </div>
+              )}
               
               <h3 style={{ marginBottom: '1rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>Student Review / Report Issue</h3>
               <form onSubmit={async (e) => {
