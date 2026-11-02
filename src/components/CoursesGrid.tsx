@@ -169,10 +169,18 @@ const categories = ["All", "Penetration Testing", "Networking", "Cloud Security"
 
 export default function CoursesGrid() {
   const [activeCategory, setActiveCategory] = useState("All");
+  const [searchQuery, setSearchQuery] = useState("");
 
-  const filteredCourses = activeCategory === "All" 
-    ? allCourses 
-    : allCourses.filter(c => c.category === activeCategory);
+  const filteredCourses = allCourses.filter((course) => {
+    const matchesCategory = activeCategory === "All" || course.category === activeCategory;
+    const q = searchQuery.trim().toLowerCase();
+    const matchesSearch =
+      !q ||
+      course.title.toLowerCase().includes(q) ||
+      course.subtitle.toLowerCase().includes(q) ||
+      course.category.toLowerCase().includes(q);
+    return matchesCategory && matchesSearch;
+  });
 
   return (
     <section className={styles.coursesSection} style={{ padding: '3rem 2rem 6rem' }}>
@@ -184,6 +192,45 @@ export default function CoursesGrid() {
           <p style={{ color: '#9ca3af', fontSize: '1.25rem', maxWidth: '700px', margin: '0 auto' }}>
             Master real-world offensive defense with our globally recognized, expert-led training tracks.
           </p>
+        </div>
+
+        {/* Course Search Bar */}
+        <div className={styles.searchContainer}>
+          <div className={styles.searchInputWrapper}>
+            <svg
+              className={styles.searchIcon}
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <input
+              type="text"
+              className={styles.searchInput}
+              placeholder="Search course by name (e.g., CEHv13, CCNA, OSCP+, Kali Linux, Bug Bounty)..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              aria-label="Search courses by name"
+            />
+            {searchQuery && (
+              <button
+                type="button"
+                className={styles.clearSearchBtn}
+                onClick={() => setSearchQuery("")}
+                aria-label="Clear search"
+              >
+                ✕
+              </button>
+            )}
+          </div>
         </div>
 
         {/* Category Filter Bar */}
@@ -273,6 +320,28 @@ export default function CoursesGrid() {
             ))}
           </AnimatePresence>
         </div>
+
+        {filteredCourses.length === 0 && (
+          <div className={styles.emptyState}>
+            <p className={styles.emptyStateTitle}>
+              No courses found matching &ldquo;{searchQuery}&rdquo;
+            </p>
+            <p className={styles.emptyStateSub}>
+              Try searching for another course name or resetting the category filter.
+            </p>
+            <button
+              type="button"
+              className="btn-primary"
+              style={{ marginTop: '1rem', padding: '0.75rem 1.75rem' }}
+              onClick={() => {
+                setSearchQuery("");
+                setActiveCategory("All");
+              }}
+            >
+              Show All Courses
+            </button>
+          </div>
+        )}
         
       </div>
       
