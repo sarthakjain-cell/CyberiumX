@@ -10,22 +10,22 @@ export default function PaymentMethods() {
       <div className={styles.paymentLogos}>
         {/* PayPal */}
         <div className={styles.logoItem} title="PayPal">
-          <img src="/payments/paypal.svg" alt="PayPal" className={styles.svgIcon} loading="lazy" />
+          <img src="/payments/paypal.svg?v=3" alt="PayPal" className={styles.svgIcon} loading="lazy" />
         </div>
 
         {/* Mastercard */}
         <div className={styles.logoItem} title="Mastercard">
-          <img src="/payments/mastercard.svg" alt="Mastercard" className={styles.svgIcon} loading="lazy" />
+          <img src="/payments/mastercard.svg?v=3" alt="Mastercard" className={styles.svgIcon} loading="lazy" />
         </div>
 
         {/* Razorpay */}
         <div className={styles.logoItem} title="Razorpay Secure Checkout">
-          <img src="/payments/razorpay.svg" alt="Razorpay" className={styles.svgIcon} loading="lazy" />
+          <img src="/payments/razorpay.svg?v=3" alt="Razorpay" className={styles.svgIcon} loading="lazy" />
         </div>
 
         {/* UPI */}
         <div className={styles.logoItem} title="UPI Instant Payments">
-          <img src="/payments/upi.svg?v=2" alt="UPI" className={styles.svgIcon} loading="lazy" />
+          <img src="/payments/upi.svg?v=3" alt="UPI" className={styles.svgIcon} loading="lazy" />
         </div>
       </div>
     </div>
